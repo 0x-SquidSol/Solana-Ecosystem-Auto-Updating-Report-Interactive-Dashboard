@@ -1,0 +1,17 @@
+{
+  "rpc_endpoints": [
+    "https://api.mainnet-beta.solana.com",
+    "https://solana-rpc.publicnode.com"
+  ],
+  "refresh_interval_minutes": 30,
+  "top_validators": 25,
+  "history_days": 7,
+  "http_timeout_seconds": 10,
+  "output_dir": "docs",
+  "data_dir": "data",
+  "delinquent_stake_alert_pct": 5.0,
+  "heartbeat_addresses": {
+    "USDC mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "Jupiter v6": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4"
+  }
+}

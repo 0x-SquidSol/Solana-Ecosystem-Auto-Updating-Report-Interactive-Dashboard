@@ -18,7 +18,7 @@ class ConfigTests(unittest.TestCase):
     def test_defaults(self) -> None:
         cfg = Config()
         self.assertEqual(cfg.rpc_endpoints, DEFAULT_RPC_ENDPOINTS)
-        self.assertEqual(cfg.refresh_interval_minutes, 30)
+        self.assertEqual(cfg.refresh_interval_minutes, 15)
         self.assertEqual(cfg.top_validators, 25)
         self.assertIsNone(cfg.dune_api_key)
 

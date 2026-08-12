@@ -32,7 +32,7 @@ class Config:
     rpc_endpoints: list[str] = field(
         default_factory=lambda: list(DEFAULT_RPC_ENDPOINTS)
     )
-    refresh_interval_minutes: int = 30
+    refresh_interval_minutes: int = 15
     top_validators: int = 25
     history_days: int = 7
     http_timeout_seconds: int = 10

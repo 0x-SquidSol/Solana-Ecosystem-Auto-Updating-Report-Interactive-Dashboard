@@ -3,7 +3,7 @@ name: report
 on:
   schedule:
     # refresh cadence; keep in sync with refresh_interval_minutes
-    - cron: "*/30 * * * *"
+    - cron: "*/15 * * * *"
   workflow_dispatch:
 
 permissions:

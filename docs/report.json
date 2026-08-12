@@ -1,0 +1,628 @@
+{
+  "generated_at": "2026-08-12T03:50:14Z",
+  "generator": "heliostat 0.1.0",
+  "refresh_interval_minutes": 30,
+  "rpc_endpoint": "https://api.mainnet-beta.solana.com",
+  "sources": {
+    "network": "ok",
+    "validators": "ok",
+    "supply": "ok",
+    "defillama": "ok",
+    "price": "ok",
+    "news": "ok"
+  },
+  "sections": {
+    "network": {
+      "ok": true,
+      "data": {
+        "health": {
+          "ok": true,
+          "detail": "ok"
+        },
+        "slot": 438737613,
+        "block_height": 416791150,
+        "block_time_unix": 1786506562,
+        "epoch": 1015,
+        "epoch_progress_pct": 59.63,
+        "epoch_slot_index": 257620,
+        "epoch_slots_total": 432000,
+        "epoch_remaining_hours": 20.4,
+        "tps_total": 3163.5,
+        "tps_true": 1544.6,
+        "tps_total_peak": 3544.1,
+        "tps_true_peak": 1903.9,
+        "mean_slot_time_secs": 0.422,
+        "sample_window_minutes": 30
+      },
+      "error": null,
+      "fetched_at": "2026-08-12T03:49:58Z"
+    },
+    "validators": {
+      "ok": true,
+      "data": {
+        "active_count": 690,
+        "delinquent_count": 9,
+        "delinquent_stake_pct": 0.02,
+        "delinquency_alert": false,
+        "total_stake_sol": 434931021,
+        "nakamoto_coefficient": 18,
+        "top10_stake_pct": 24.4,
+        "top20_stake_pct": 35.7,
+        "top_validators": [
+          {
+            "vote_pubkey": "CcaHc2L43ZWjwCHART3oZoJvHLAe9hzT2DJNUpBzoTN1",
+            "node_pubkey": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+            "stake_sol": 16988468,
+            "stake_pct": 3.91,
+            "commission_pct": 7
+          },
+          {
+            "vote_pubkey": "he1iusunGwqrNtafDtLdhsUQDFvo13z9sUa36PauBtk",
+            "node_pubkey": "HEL1USMZKAL2odpNBj2oCjffnFGaYwmbGmyewGv1e2TU",
+            "stake_sol": 15978711,
+            "stake_pct": 3.67,
+            "commission_pct": 0
+          },
+          {
+            "vote_pubkey": "CatzoSMUkTRidT5DwBxAC2pEtnwMBTpkCepHkFgZDiqb",
+            "node_pubkey": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+            "stake_sol": 12495007,
+            "stake_pct": 2.87,
+            "commission_pct": 5
+          },
+          {
+            "vote_pubkey": "3N7s9zXMZ4QqvHQR15t5GNHyqc89KduzMP7423eWiD5g",
+            "node_pubkey": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy",
+            "stake_sol": 12334140,
+            "stake_pct": 2.84,
+            "commission_pct": 0
+          },
+          {
+            "vote_pubkey": "26pV97Ce83ZQ6Kz9XT4td8tdoUFPTng8Fb8gPyc53dJx",
+            "node_pubkey": "C8Bey3LKVJHVqN6xPTeW8WJfUgFQAeGNBpT4Rp99JP1k",
+            "stake_sol": 9151705,
+            "stake_pct": 2.1,
+            "commission_pct": 7
+          },
+          {
+            "vote_pubkey": "51JBzSTU5rAM8gLAVQKgp4WoZerQcSqWC7BitBzgUNAm",
+            "node_pubkey": "CAo1dCGYrB6NhHh5xb1cGjUiu86iyCfMTENxgHumSve4",
+            "stake_sol": 8964622,
+            "stake_pct": 2.06,
+            "commission_pct": 10
+          },
+          {
+            "vote_pubkey": "8GbwASqdpw4dVcwbWUxbHXMrjyQx2aKkoBR5H1GJF8iD",
+            "node_pubkey": "E1r4Psq84tHfQ6aPTvvDka4U3u8zPVD7gEUrH25RdxHL",
+            "stake_sol": 8172871,
+            "stake_pct": 1.88,
+            "commission_pct": 0
+          },
+          {
+            "vote_pubkey": "9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF",
+            "node_pubkey": "EvnRmnMrd69kFdbLMxWkTn1icZ7DCceRhvmb2SJXqDo4",
+            "stake_sol": 7954158,
+            "stake_pct": 1.83,
+            "commission_pct": 7
+          },
+          {
+            "vote_pubkey": "CvSb7wdQAFpHuSpTYTJnX5SYH4hCfQ9VuGnqrKaKwycB",
+            "node_pubkey": "9eGrDohdNTAo61DRHyfMuqKWXqYnA3i254Wiszxe8FoY",
+            "stake_sol": 7367684,
+            "stake_pct": 1.69,
+            "commission_pct": 5
+          },
+          {
+            "vote_pubkey": "DumiCKHVqoCQKD8roLApzR5Fit8qGV5fVQsJV9sTZk4a",
+            "node_pubkey": "Awes4Tr6TX8JDzEhCZY2QVNimT6iD1zWHzf1vNyGvpLM",
+            "stake_sol": 6577941,
+            "stake_pct": 1.51,
+            "commission_pct": 0
+          },
+          {
+            "vote_pubkey": "HZKopZYvv8v6un2H6KUNVQCnK5zM9emKKezvqhTBSpEc",
+            "node_pubkey": "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP",
+            "stake_sol": 6122617,
+            "stake_pct": 1.41,
+            "commission_pct": 100
+          },
+          {
+            "vote_pubkey": "3JD3jMmnR6g88qff2WZ3cMHJRjJMUk9yVZtmYTYeFrXf",
+            "node_pubkey": "JD549HsbJHeEKKUrKgg4Fj2iyv2RGjsV7NTZjZUrHybB",
+            "stake_sol": 5983959,
+            "stake_pct": 1.38,
+            "commission_pct": 0
+          },
+          {
+            "vote_pubkey": "DdCNGDpP7qMgoAy6paFzhhak2EeyCZcgjH7ak5u5v28m",
+            "node_pubkey": "5pPRHniefFjkiaArbGX3Y8NUysJmQ9tMZg3FrFGwHzSm",
+            "stake_sol": 5924839,
+            "stake_pct": 1.36,
+            "commission_pct": 5
+          },
+          {
+            "vote_pubkey": "GHViLgbrJdZDPb6sphRbeuPNM9cmjsFuGWzrTF1sKF5n",
+            "node_pubkey": "5Cchr1XGEg7dbBXByV5NY2ad8jfxAM7HA3x8D56rq9Ux",
+            "stake_sol": 5803980,
+            "stake_pct": 1.33,
+            "commission_pct": 100
+          },
+          {
+            "vote_pubkey": "HimWQUK61d9wxhw7EYu9jUje7xQiDs4jKexaTSvuCmXE",
+            "node_pubkey": "9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ",
+            "stake_sol": 4630769,
+            "stake_pct": 1.06,
+            "commission_pct": 8
+          },
+          {
+            "vote_pubkey": "FKsC411dik9ktS6xPADxs4Fk2SCENvAiuccQHLAPndvk",
+            "node_pubkey": "GnC339vkyXRm1jRX69dt9mapPPu2LbzXfSDoxc91qta6",
+            "stake_sol": 4598081,
+            "stake_pct": 1.06,
+            "commission_pct": 7
+          },
+          {
+            "vote_pubkey": "3ZYJxzCeweSoh2Jj7oCgencFs9y27iKmXJeqYapje1cj",
+            "node_pubkey": "EkvdKhULbMFqjKBKotAzGi3kwMvMpYNDKJXXQQmi6C1f",
+            "stake_sol": 4125585,
+            "stake_pct": 0.95,
+            "commission_pct": 100
+          },
+          {
+            "vote_pubkey": "AZoCYB4VgoM9DR9f1ZFcBn8xPSbtbqoxZnKJR7tkvEoX",
+            "node_pubkey": "FBKFWadXZJahGtFitAsBvbqh5968gLY7dMBBJUoUjeNi",
+            "stake_sol": 4056151,
+            "stake_pct": 0.93,
+            "commission_pct": 100
+          },
+          {
+            "vote_pubkey": "G9x1mqewTeVnXLmv3FamYD5tq1AdS395RHH3MLQPj6TY",
+            "node_pubkey": "BtsmiEEvnSuUnKxqXj2PZRYpPJAc7C34mGz8gtJ1DAaH",
+            "stake_sol": 4036230,
+            "stake_pct": 0.93,
+            "commission_pct": 100
+          },
+          {
+            "vote_pubkey": "EcEowA4GKDsdVBF9PNAZa6c9M4WgYG8y4GnpZSUaqioS",
+            "node_pubkey": "5ZqveVffQPiUbkjBg4KD9kib1MKHLqiFno4ke9jSq9qk",
+            "stake_sol": 4006024,
+            "stake_pct": 0.92,
+            "commission_pct": 100
+          },
+          {
+            "vote_pubkey": "H74qox1GASBWd94FWMyy6GVAbRVLf9SAMgbJ1tzSUAst",
+            "node_pubkey": "Hz5aLvpKScNWoe9YZWxBLrQA3qzHJivBGtfciMekk8m5",
+            "stake_sol": 3943594,
+            "stake_pct": 0.91,
+            "commission_pct": 100
+          },
+          {
+            "vote_pubkey": "HkFuE9NJahP7uA8RooXtp64UQb7XNUMVisWsJTgx3far",
+            "node_pubkey": "A1vqhA2fS6K7CvHsJKX1ACcHJFEmyRg4KuR5pctHANy4",
+            "stake_sol": 3911433,
+            "stake_pct": 0.9,
+            "commission_pct": 100
+          },
+          {
+            "vote_pubkey": "8Pep3GmYiijRALqrMKpez92cxvF4YPTzoZg83uXh14pW",
+            "node_pubkey": "J6etcxDdYjPHrtyvDXrbCkx3q9W1UjMj1vy1jBFPJEbK",
+            "stake_sol": 3896603,
+            "stake_pct": 0.9,
+            "commission_pct": 0
+          },
+          {
+            "vote_pubkey": "9jToNMWCLW1GeoLGPZNvEfuXE4AUwiRsrC1HMGmh3PTu",
+            "node_pubkey": "9UM8wQ8F5oMiRcP5YdqD6Lr4krpBWCD8LtgQYoisJd9i",
+            "stake_sol": 3651897,
+            "stake_pct": 0.84,
+            "commission_pct": 2
+          },
+          {
+            "vote_pubkey": "shft7Fry1js37Hm9wq4dfwcZSp2DyKszeWMvEpjYCQ1",
+            "node_pubkey": "shftkxnsXmqAkmLgz9Mn7bNB5Fr6mKgFc58kFHfVikj",
+            "stake_sol": 3610139,
+            "stake_pct": 0.83,
+            "commission_pct": 0
+          }
+        ],
+        "commission_histogram": {
+          "0%": 257,
+          "1-5%": 307,
+          "6-10%": 60,
+          ">10%": 66
+        },
+        "weighted_mean_commission_pct": 27.12,
+        "client_stake_split_pct": {
+          "agave": 88.4,
+          "firedancer": 11.5,
+          "unknown": 0.1
+        }
+      },
+      "error": null,
+      "fetched_at": "2026-08-12T03:50:00Z"
+    },
+    "supply": {
+      "ok": true,
+      "data": {
+        "total_supply_sol": 632009016,
+        "circulating_supply_sol": 582499950,
+        "non_circulating_supply_sol": 49509066,
+        "fees": {
+          "error": "block sample unavailable: getBlock: Slot 438737559 was skipped, or missing due to ledger jump to recent snapshot (code -32007)"
+        },
+        "median_priority_fee_microlamports": 0,
+        "max_priority_fee_microlamports": 0,
+        "incinerator_balance_sol": 0.0,
+        "heartbeats": [
+          {
+            "label": "USDC mint",
+            "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "last_activity_unix": 1786506583,
+            "seconds_since_activity": 17
+          },
+          {
+            "label": "Jupiter v6",
+            "address": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+            "last_activity_unix": 1786506584,
+            "seconds_since_activity": 16
+          }
+        ]
+      },
+      "error": null,
+      "fetched_at": "2026-08-12T03:50:09Z"
+    },
+    "defillama": {
+      "ok": true,
+      "data": {
+        "tvl_usd": 4851008408,
+        "tvl_change_24h_pct": 0.53,
+        "tvl_change_7d_pct": 1.28,
+        "tvl_series": [
+          {
+            "date": 1783987200,
+            "tvl_usd": 4800314040
+          },
+          {
+            "date": 1784073600,
+            "tvl_usd": 4911656804
+          },
+          {
+            "date": 1784160000,
+            "tvl_usd": 4918419377
+          },
+          {
+            "date": 1784246400,
+            "tvl_usd": 4838623250
+          },
+          {
+            "date": 1784332800,
+            "tvl_usd": 4816369107
+          },
+          {
+            "date": 1784419200,
+            "tvl_usd": 4861134889
+          },
+          {
+            "date": 1784505600,
+            "tvl_usd": 4863921759
+          },
+          {
+            "date": 1784592000,
+            "tvl_usd": 4965979263
+          },
+          {
+            "date": 1784678400,
+            "tvl_usd": 4985727915
+          },
+          {
+            "date": 1784764800,
+            "tvl_usd": 4953961830
+          },
+          {
+            "date": 1784851200,
+            "tvl_usd": 4910769239
+          },
+          {
+            "date": 1784937600,
+            "tvl_usd": 4776297727
+          },
+          {
+            "date": 1785024000,
+            "tvl_usd": 4826686052
+          },
+          {
+            "date": 1785110400,
+            "tvl_usd": 4905396243
+          },
+          {
+            "date": 1785196800,
+            "tvl_usd": 4802569937
+          },
+          {
+            "date": 1785283200,
+            "tvl_usd": 4778172182
+          },
+          {
+            "date": 1785369600,
+            "tvl_usd": 4782012435
+          },
+          {
+            "date": 1785456000,
+            "tvl_usd": 4812810087
+          },
+          {
+            "date": 1785542400,
+            "tvl_usd": 4736130794
+          },
+          {
+            "date": 1785628800,
+            "tvl_usd": 4704144266
+          },
+          {
+            "date": 1785715200,
+            "tvl_usd": 4726924045
+          },
+          {
+            "date": 1785801600,
+            "tvl_usd": 4749380354
+          },
+          {
+            "date": 1785888000,
+            "tvl_usd": 4789768870
+          },
+          {
+            "date": 1785974400,
+            "tvl_usd": 4789850728
+          },
+          {
+            "date": 1786060800,
+            "tvl_usd": 4707203417
+          },
+          {
+            "date": 1786147200,
+            "tvl_usd": 4733573525
+          },
+          {
+            "date": 1786233600,
+            "tvl_usd": 4792264217
+          },
+          {
+            "date": 1786320000,
+            "tvl_usd": 4837765787
+          },
+          {
+            "date": 1786406400,
+            "tvl_usd": 4825588252
+          },
+          {
+            "date": 1786492800,
+            "tvl_usd": 4851008408
+          }
+        ],
+        "stablecoin_supply_usd": 15709090107,
+        "dex_volume_24h_usd": 1650912679.28,
+        "dex_volume_7d_usd": 10281792333.97,
+        "dex_volume_change_24h_pct": 4.36,
+        "network_fees_24h_usd": 727623,
+        "jito_tips_24h_usd": 150274,
+        "rev_24h_usd": 877897,
+        "rev_includes_tips": true,
+        "app_fees_24h_usd": 9847480.23,
+        "rwa_tvl_usd": 1847130988,
+        "rwa_protocol_count": 23,
+        "rwa_top": [
+          {
+            "name": "BlackRock BUIDL",
+            "tvl_usd": 728161910
+          },
+          {
+            "name": "xStocks",
+            "tvl_usd": 376787991
+          },
+          {
+            "name": "OnRe",
+            "tvl_usd": 255989363
+          },
+          {
+            "name": "Ondo Yield Assets",
+            "tvl_usd": 178447511
+          },
+          {
+            "name": "Hastra",
+            "tvl_usd": 174779535
+          }
+        ]
+      },
+      "error": null,
+      "fetched_at": "2026-08-12T03:50:11Z"
+    },
+    "price": {
+      "ok": true,
+      "data": {
+        "price_usd": 76.35,
+        "market_cap_usd": 44472616634,
+        "market_cap_rank": 7,
+        "volume_24h_usd": 1383206717,
+        "change_24h_pct": 0.4,
+        "change_7d_pct": 3.0,
+        "ath_usd": 293.31,
+        "from_ath_pct": -73.96914,
+        "price_source": "coingecko",
+        "jupiter_price_usd": 76.32597109021178,
+        "price_divergence_pct": 0.031,
+        "price_sources_agree": true
+      },
+      "error": null,
+      "fetched_at": "2026-08-12T03:50:12Z"
+    },
+    "news": {
+      "ok": true,
+      "data": {
+        "sections": {
+          "blog": {
+            "label": "Solana News",
+            "source": "https://solana.com/news/rss.xml",
+            "items": [
+              {
+                "title": "MoneyGram Ramps launches on Solana",
+                "url": "https://solana.com/news/moneygram-ramps",
+                "published": "2026-08-11T10:00:00Z"
+              },
+              {
+                "title": "Solana Changelog: August 6, 2026",
+                "url": "https://solana.com/news/solana-changelog-august-6-2026",
+                "published": "2026-08-06T17:57:00Z"
+              },
+              {
+                "title": "Webinar Recap: Giving AI agents a native way to pay with x402",
+                "url": "https://solana.com/news/webinar-recap-agentic-payments",
+                "published": "2026-08-05T18:55:00Z"
+              },
+              {
+                "title": "Solana Ecosystem Roundup: July 2026",
+                "url": "https://solana.com/news/solana-ecosystem-roundup-july-2026",
+                "published": "2026-08-05T09:33:00Z"
+              },
+              {
+                "title": "Breakpoint 2026: The Token Supercycle",
+                "url": "https://solana.com/news/the-token-supercycle",
+                "published": "2026-08-04T13:05:00Z"
+              }
+            ]
+          },
+          "incidents": {
+            "label": "Solana Status",
+            "source": "https://status.solana.com/history.rss",
+            "items": [
+              {
+                "title": "mb-020624",
+                "url": "https://status.solana.com/incidents/n5kcgs8dl9pj",
+                "published": "2024-02-06T15:09:24Z"
+              },
+              {
+                "title": "Cluster Instability",
+                "url": "https://status.solana.com/incidents/ymr0gyj9xqyz",
+                "published": "2023-02-26T02:09:04Z"
+              },
+              {
+                "title": "Public Endpoints and Explorer offline",
+                "url": "https://status.solana.com/incidents/mf9plxrkjhnk",
+                "published": "2023-01-08T07:01:17Z"
+              },
+              {
+                "title": "Degraded Performance",
+                "url": "https://status.solana.com/incidents/kxsv0xcz9dn3",
+                "published": "2022-10-01T07:06:06Z"
+              },
+              {
+                "title": "Mainnet Beta Clock Drift",
+                "url": "https://status.solana.com/incidents/f68wm876ph9m",
+                "published": "2022-06-06T16:32:07Z"
+              }
+            ]
+          },
+          "agave": {
+            "label": "Agave Releases",
+            "source": "https://github.com/anza-xyz/agave/releases.atom",
+            "items": [
+              {
+                "title": "Release v4.2.0",
+                "url": "https://github.com/anza-xyz/agave/releases/tag/v4.2.0",
+                "published": "2026-08-11T13:45:40Z"
+              },
+              {
+                "title": "Release v4.3.0-alpha.3",
+                "url": "https://github.com/anza-xyz/agave/releases/tag/v4.3.0-alpha.3",
+                "published": "2026-08-05T20:19:12Z"
+              },
+              {
+                "title": "Release v4.2.0-rc.1",
+                "url": "https://github.com/anza-xyz/agave/releases/tag/v4.2.0-rc.1",
+                "published": "2026-08-03T12:41:49Z"
+              },
+              {
+                "title": "Release v4.2.0-rc.0",
+                "url": "https://github.com/anza-xyz/agave/releases/tag/v4.2.0-rc.0",
+                "published": "2026-07-27T15:24:59Z"
+              },
+              {
+                "title": "Release v4.3.0-alpha.2",
+                "url": "https://github.com/anza-xyz/agave/releases/tag/v4.3.0-alpha.2",
+                "published": "2026-07-24T14:31:17Z"
+              }
+            ]
+          },
+          "firedancer": {
+            "label": "Firedancer Releases",
+            "source": "https://github.com/firedancer-io/firedancer/releases.atom",
+            "items": [
+              {
+                "title": "Firedancer Testnet v26.08.0",
+                "url": "https://github.com/firedancer-io/firedancer/releases/tag/v26.08.0",
+                "published": "2026-08-12T02:41:17Z"
+              },
+              {
+                "title": "Frankendancer Mainnet v0.1105.40200",
+                "url": "https://github.com/firedancer-io/firedancer/releases/tag/v0.1105.40200",
+                "published": "2026-08-11T22:44:21Z"
+              },
+              {
+                "title": "Firedancer Mainnet 1.1.4",
+                "url": "https://github.com/firedancer-io/firedancer/releases/tag/v1.1.4",
+                "published": "2026-08-10T14:51:25Z"
+              },
+              {
+                "title": "Firedancer Mainnet v1.1.3",
+                "url": "https://github.com/firedancer-io/firedancer/releases/tag/v1.1.3",
+                "published": "2026-08-04T21:10:44Z"
+              },
+              {
+                "title": "Frankendancer Testnet v0.1104.40200",
+                "url": "https://github.com/firedancer-io/firedancer/releases/tag/v0.1104.40200",
+                "published": "2026-07-30T16:10:12Z"
+              }
+            ]
+          },
+          "simd": {
+            "label": "SIMD Activity",
+            "source": "https://github.com/solana-foundation/solana-improvement-documents/commits/main.atom",
+            "items": [
+              {
+                "title": "re-amend SIMD-0340: additional inter- and intra- validation (#551)",
+                "url": "https://github.com/solana-foundation/solana-improvement-documents/commit/fc519fb3d1ef0f7624b6232bda958438feba09ce",
+                "published": "2026-07-31T16:27:22Z"
+              },
+              {
+                "title": "SIMD-0433: Loader V3: Set Program Data to ELF Length (#433)",
+                "url": "https://github.com/solana-foundation/solana-improvement-documents/commit/06bd4bd6b0b835d110bf4ccb0bc7c759ae88e997",
+                "published": "2026-07-31T08:06:24Z"
+              },
+              {
+                "title": "SIMD-0550: Double disinflation (#550)",
+                "url": "https://github.com/solana-foundation/solana-improvement-documents/commit/b13be70e7454144becbe9c474b296d737d72df98",
+                "published": "2026-07-23T01:49:14Z"
+              },
+              {
+                "title": "SIMD-0553: Resource and Inclusion Fee (#553)",
+                "url": "https://github.com/solana-foundation/solana-improvement-documents/commit/2e6243a5010255ed5b1592f42ebfc890a2c21d05",
+                "published": "2026-07-20T18:46:49Z"
+              },
+              {
+                "title": "SIMD-0392: Clarify included stake accounts and calculations (#572)",
+                "url": "https://github.com/solana-foundation/solana-improvement-documents/commit/0c3548e91bc6553774607181446dd09b00e4a649",
+                "published": "2026-07-16T22:18:10Z"
+              }
+            ]
+          }
+        }
+      },
+      "error": null,
+      "fetched_at": "2026-08-12T03:50:14Z"
+    }
+  },
+  "anomalies": {
+    "active": [],
+    "log": [],
+    "armed": false
+  }
+}

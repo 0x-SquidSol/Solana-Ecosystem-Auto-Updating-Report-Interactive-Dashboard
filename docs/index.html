@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="refresh" content="1800"><title>Solana Ecosystem Report</title><style>
+:root {
+  --bg:#0b0e11; --panel:#10141a; --line:#1d232b; --dash:#161b22;
+  --text:#e6e4df; --muted:#8b949e; --accent:#e8a33d;
+  --ok:#3fb27f; --bad:#e5534b; --warn:#e8a33d;
+}
+html { color-scheme: dark; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--bg); color: var(--text);
+  font-family: ui-monospace, "Cascadia Mono", Consolas, Menlo, monospace;
+  font-variant-numeric: tabular-nums;
+  font-size: 14px; line-height: 1.55; padding: 26px 20px 48px;
+}
+.wrap { max-width: 1180px; margin: 0 auto; }
+header {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 16px; flex-wrap: wrap;
+  border-bottom: 1px solid var(--line); padding-bottom: 14px;
+}
+.brand { display: flex; align-items: center; gap: 12px; }
+.logo { width: 22px; height: auto; flex: none; }
+h1 { font-size: 15px; letter-spacing: .18em; font-weight: 600; }
+h1 .sub { color: var(--muted); font-weight: 400; letter-spacing: .08em; }
+.meta { color: var(--muted); font-size: 12px; display: flex; gap: 16px; flex-wrap: wrap; }
+.age.stale { color: var(--warn); }
+.strip {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1px; background: var(--line); border: 1px solid var(--line); margin-top: 18px;
+}
+.tile { background: var(--panel); padding: 12px 14px; }
+.tile .k { font-size: 10px; letter-spacing: .14em; color: var(--muted); text-transform: uppercase; }
+.tile .v { font-size: 20px; margin-top: 4px; white-space: nowrap; }
+.tile .d { font-size: 11px; color: var(--muted); margin-top: 2px; }
+.up { color: var(--ok); } .down { color: var(--bad); }
+.dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%;
+  margin-right: 7px; vertical-align: middle; }
+.dot.ok { background: var(--ok); } .dot.bad { background: var(--bad); }
+.dot.warn { background: var(--warn); }
+.bar { height: 4px; background: var(--dash); margin-top: 7px; }
+.bar i { display: block; height: 100%; background: var(--accent); }
+.alerts {
+  border: 1px solid var(--bad); background: #180f0e;
+  margin-top: 18px; padding: 10px 14px; font-size: 13px;
+}
+.alerts p { padding: 2px 0; }
+.alerts .sev-alert { color: var(--bad); }
+.alerts .sev-warning { color: var(--warn); }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 18px; }
+.panel { border: 1px solid var(--line); background: var(--panel); min-width: 0; }
+.panel h2 {
+  font-size: 11px; letter-spacing: .16em; color: var(--accent);
+  text-transform: uppercase; font-weight: 600;
+  padding: 10px 14px; border-bottom: 1px solid var(--line);
+}
+.panel .body { padding: 8px 14px 13px; }
+.row {
+  display: flex; justify-content: space-between; gap: 12px;
+  padding: 5px 0; border-bottom: 1px dashed var(--dash); font-size: 13px;
+}
+.row:last-child { border-bottom: none; }
+.row .l { color: var(--muted); }
+.row .r { text-align: right; }
+.note { color: var(--muted); font-size: 11px; margin-top: 8px; }
+.scroll { overflow-x: auto; }
+.tbl { width: 100%; border-collapse: collapse; font-size: 12.5px; margin-top: 8px; }
+.tbl th {
+  color: var(--muted); text-align: left; font-weight: 400; font-size: 10.5px;
+  letter-spacing: .1em; text-transform: uppercase;
+  padding: 4px 10px 4px 0; border-bottom: 1px solid var(--line);
+}
+.tbl td { padding: 4px 10px 4px 0; border-bottom: 1px dashed var(--dash); white-space: nowrap; }
+.tbl tr:last-child td { border-bottom: none; }
+.feed h3 {
+  font-size: 10.5px; letter-spacing: .12em; color: var(--muted);
+  text-transform: uppercase; font-weight: 600; margin: 10px 0 4px;
+}
+.feed p { font-size: 12.5px; padding: 2px 0; }
+.feed .when { color: var(--muted); font-size: 11px; }
+a { color: var(--text); text-decoration: none; border-bottom: 1px dotted var(--muted); }
+a:hover { color: var(--accent); border-color: var(--accent); }
+.foot {
+  margin-top: 22px; color: var(--muted); font-size: 11.5px;
+  border-top: 1px solid var(--line); padding-top: 12px;
+}
+.foot .cols { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+@media (max-width: 860px) {
+  .grid { grid-template-columns: 1fr; }
+  body { padding: 16px 12px 40px; }
+}
+</style></head><body><div class="wrap"><header><div class="brand"><svg class="logo" viewBox="0 0 397.7 311.7" role="img" aria-label="Solana"><defs><linearGradient id="sg" x1="360.879" y1="351.455" x2="141.213" y2="-69.294" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#00FFA3"/><stop offset="1" stop-color="#DC1FFF"/></linearGradient></defs><path fill="url(#sg)" d="M64.6 237.9c2.4-2.4 5.7-3.8 9.2-3.8h317.4c5.8 0 8.7 7 4.6 11.1l-62.7 62.7c-2.4 2.4-5.7 3.8-9.2 3.8H6.5c-5.8 0-8.7-7-4.6-11.1l62.7-62.7z"/><path fill="url(#sg)" d="M64.6 3.8C67.1 1.4 70.4 0 73.8 0h317.4c5.8 0 8.7 7 4.6 11.1l-62.7 62.7c-2.4 2.4-5.7 3.8-9.2 3.8H6.5c-5.8 0-8.7-7-4.6-11.1L64.6 3.8z"/><path fill="url(#sg)" d="M330.1 120.9c-2.4-2.4-5.7-3.8-9.2-3.8H3.5c-5.8 0-8.7 7-4.6 11.1l62.7 62.7c2.4 2.4 5.7 3.8 9.2 3.8h317.4c5.8 0 8.7-7 4.6-11.1l-62.7-62.7z"/></svg><h1>SOLANA <span class="sub">ECOSYSTEM REPORT</span></h1></div><div class="meta"><span>generated 2026-08-12T03:50:14Z UTC</span><span id="age" class="age" data-generated="2026-08-12T03:50:14Z" data-staleminutes="60">data age –</span></div></header><section class="strip" aria-label="network status summary"><div class="tile"><div class="k">status</div><div class="v"><span class="dot ok"></span>healthy</div><div class="d">ok</div></div><div class="tile"><div class="k">slot</div><div class="v">438,737,613</div><div class="d">block height 416,791,150</div></div><div class="tile"><div class="k">epoch 1015</div><div class="v">59.6%<div class="bar"><i style="width:59.6%"></i></div></div><div class="d">~20.4 h remaining</div></div><div class="tile"><div class="k">true tps</div><div class="v">1,545</div><div class="d">total 3,164 incl. votes</div></div><div class="tile"><div class="k">sol price</div><div class="v">$76.35</div><div class="d"><span class="up">+0.4%</span> 24h</div></div><div class="tile"><div class="k">tvl</div><div class="v">$4.85B</div><div class="d"><span class="up">+0.5%</span> 24h</div></div></section><main class="grid"><section class="panel"><h2>network</h2><div class="body"><div class="row"><span class="l">peak true tps (30 min)</span><span class="r">1,904</span></div><div class="row"><span class="l">mean slot time</span><span class="r">0.422 s</span></div><div class="row"><span class="l">epoch slots</span><span class="r">257,620 / 432,000</span></div><div class="row"><span class="l">USDC mint last activity</span><span class="r">17 s ago</span></div><div class="row"><span class="l">Jupiter v6 last activity</span><span class="r">16 s ago</span></div></div></section><section class="panel"><h2>validators</h2><div class="body"><div class="row"><span class="l">active validators</span><span class="r">690</span></div><div class="row"><span class="l">delinquent</span><span class="r">9 (0.02% of stake)</span></div><div class="row"><span class="l">total stake</span><span class="r">434,931,021 SOL</span></div><div class="row"><span class="l">nakamoto coefficient</span><span class="r">18</span></div><div class="row"><span class="l">stake concentration</span><span class="r">top-10 24.4% / top-20 35.7%</span></div><div class="row"><span class="l">client stake split</span><span class="r">agave 88.4% / firedancer 11.5% / unknown 0.1%</span></div><div class="row"><span class="l">stake-weighted commission</span><span class="r">27.12%</span></div><div class="scroll"><table class="tbl"><thead><tr><th>#</th><th>vote account</th><th>stake</th><th>share</th><th>comm</th></tr></thead><tbody><tr><td>1</td><td title="CcaHc2L43ZWjwCHART3oZoJvHLAe9hzT2DJNUpBzoTN1">CcaH..oTN1</td><td>16,988,468 SOL</td><td>3.91%</td><td>7%</td></tr><tr><td>2</td><td title="he1iusunGwqrNtafDtLdhsUQDFvo13z9sUa36PauBtk">he1i..uBtk</td><td>15,978,711 SOL</td><td>3.67%</td><td>0%</td></tr><tr><td>3</td><td title="CatzoSMUkTRidT5DwBxAC2pEtnwMBTpkCepHkFgZDiqb">Catz..Diqb</td><td>12,495,007 SOL</td><td>2.87%</td><td>5%</td></tr><tr><td>4</td><td title="3N7s9zXMZ4QqvHQR15t5GNHyqc89KduzMP7423eWiD5g">3N7s..iD5g</td><td>12,334,140 SOL</td><td>2.84%</td><td>0%</td></tr><tr><td>5</td><td title="26pV97Ce83ZQ6Kz9XT4td8tdoUFPTng8Fb8gPyc53dJx">26pV..3dJx</td><td>9,151,705 SOL</td><td>2.10%</td><td>7%</td></tr><tr><td>6</td><td title="51JBzSTU5rAM8gLAVQKgp4WoZerQcSqWC7BitBzgUNAm">51JB..UNAm</td><td>8,964,622 SOL</td><td>2.06%</td><td>10%</td></tr><tr><td>7</td><td title="8GbwASqdpw4dVcwbWUxbHXMrjyQx2aKkoBR5H1GJF8iD">8Gbw..F8iD</td><td>8,172,871 SOL</td><td>1.88%</td><td>0%</td></tr><tr><td>8</td><td title="9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF">9QU2..29mF</td><td>7,954,158 SOL</td><td>1.83%</td><td>7%</td></tr><tr><td>9</td><td title="CvSb7wdQAFpHuSpTYTJnX5SYH4hCfQ9VuGnqrKaKwycB">CvSb..wycB</td><td>7,367,684 SOL</td><td>1.69%</td><td>5%</td></tr><tr><td>10</td><td title="DumiCKHVqoCQKD8roLApzR5Fit8qGV5fVQsJV9sTZk4a">Dumi..Zk4a</td><td>6,577,941 SOL</td><td>1.51%</td><td>0%</td></tr></tbody></table></div><p class="note">stake-weighted commission is skewed by custodial validators that charge 100% and bill their customers off-chain.</p></div></section><section class="panel"><h2>economy</h2><div class="body"><div class="row"><span class="l">sol price</span><span class="r">$76.35 · <span class="up">+3.0%</span> 7d</span></div><div class="row" title="CoinGecko vs Jupiter"><span class="l">price cross-check</span><span class="r">agree, 0.031% apart</span></div><div class="row"><span class="l">market cap</span><span class="r">$44.47B (rank 7)</span></div><div class="row"><span class="l">stablecoin supply</span><span class="r">$15.71B</span></div><div class="row"><span class="l">dex volume 24h</span><span class="r">$1.65B</span></div><div class="row" title="network fees + Jito MEV tips"><span class="l">rev 24h</span><span class="r">$877.9K</span></div><div class="row"><span class="l">· fees / tips</span><span class="r">$727.6K / $150.3K</span></div><div class="row"><span class="l">app fees 24h</span><span class="r">$9.85M</span></div><div class="row" title="votes excluded, sampled block"><span class="l">median user fee</span><span class="r">– lamports</span></div><div class="row"><span class="l">circulating supply</span><span class="r">582,499,950 SOL</span></div></div></section><section class="panel"><h2>ecosystem growth</h2><div class="body"><div class="row"><span class="l">tokenized assets (rwa)</span><span class="r">$1.85B · 23 protocols</span></div><div class="row"><span class="l">· BlackRock BUIDL</span><span class="r">$728.16M</span></div><div class="row"><span class="l">· xStocks</span><span class="r">$376.79M</span></div><div class="row"><span class="l">· OnRe</span><span class="r">$255.99M</span></div><div class="row"><span class="l">· Ondo Yield Assets</span><span class="r">$178.45M</span></div><div class="row"><span class="l">· Hastra</span><span class="r">$174.78M</span></div></div></section><section class="panel"><h2>news &amp; upgrades</h2><div class="body"><div class="feed"><h3>Solana News</h3><p><a href="https://solana.com/news/moneygram-ramps" rel="noopener">MoneyGram Ramps launches on Solana</a> <span class="when">2026-08-11</span></p><p><a href="https://solana.com/news/solana-changelog-august-6-2026" rel="noopener">Solana Changelog: August 6, 2026</a> <span class="when">2026-08-06</span></p><p><a href="https://solana.com/news/webinar-recap-agentic-payments" rel="noopener">Webinar Recap: Giving AI agents a native way to pay with x402</a> <span class="when">2026-08-05</span></p><h3>Solana Status</h3><p><span class="dot ok"></span>no incidents in the last 30 days</p><h3>Agave Releases</h3><p><a href="https://github.com/anza-xyz/agave/releases/tag/v4.2.0" rel="noopener">Release v4.2.0</a> <span class="when">2026-08-11</span></p><p><a href="https://github.com/anza-xyz/agave/releases/tag/v4.3.0-alpha.3" rel="noopener">Release v4.3.0-alpha.3</a> <span class="when">2026-08-05</span></p><p><a href="https://github.com/anza-xyz/agave/releases/tag/v4.2.0-rc.1" rel="noopener">Release v4.2.0-rc.1</a> <span class="when">2026-08-03</span></p><h3>Firedancer Releases</h3><p><a href="https://github.com/firedancer-io/firedancer/releases/tag/v26.08.0" rel="noopener">Firedancer Testnet v26.08.0</a> <span class="when">2026-08-12</span></p><p><a href="https://github.com/firedancer-io/firedancer/releases/tag/v0.1105.40200" rel="noopener">Frankendancer Mainnet v0.1105.40200</a> <span class="when">2026-08-11</span></p><p><a href="https://github.com/firedancer-io/firedancer/releases/tag/v1.1.4" rel="noopener">Firedancer Mainnet 1.1.4</a> <span class="when">2026-08-10</span></p><h3>SIMD Activity</h3><p><a href="https://github.com/solana-foundation/solana-improvement-documents/commit/fc519fb3d1ef0f7624b6232bda958438feba09ce" rel="noopener">re-amend SIMD-0340: additional inter- and intra- validation (#551)</a> <span class="when">2026-07-31</span></p><p><a href="https://github.com/solana-foundation/solana-improvement-documents/commit/06bd4bd6b0b835d110bf4ccb0bc7c759ae88e997" rel="noopener">SIMD-0433: Loader V3: Set Program Data to ELF Length (#433)</a> <span class="when">2026-07-31</span></p><p><a href="https://github.com/solana-foundation/solana-improvement-documents/commit/b13be70e7454144becbe9c474b296d737d72df98" rel="noopener">SIMD-0550: Double disinflation (#550)</a> <span class="when">2026-07-23</span></p></div></div></section><section class="panel"><h2>recent alerts</h2><div class="body"><p class="note">statistical detection is arming - it activates automatically once enough history has accumulated.</p></div></section></main><footer class="foot"><div class="cols"><span><span title="fetched 2026-08-12T03:49:58Z"><span class="dot ok"></span>network: ok</span> · <span title="fetched 2026-08-12T03:50:00Z"><span class="dot ok"></span>validators: ok</span> · <span title="fetched 2026-08-12T03:50:09Z"><span class="dot ok"></span>supply: ok</span> · <span title="fetched 2026-08-12T03:50:11Z"><span class="dot ok"></span>defillama: ok</span> · <span title="fetched 2026-08-12T03:50:12Z"><span class="dot ok"></span>price: ok</span> · <span title="fetched 2026-08-12T03:50:14Z"><span class="dot ok"></span>news: ok</span></span><span>rpc: https://api.mainnet-beta.solana.com</span></div><p>heliostat 0.1.0 · zero dependencies, zero API keys · auto-refreshes every 30 min · incinerator holds 0.0000 SOL</p></footer></div><script>
+(function () {
+  var el = document.getElementById('age');
+  if (!el) return;
+  var generated = Date.parse(el.dataset.generated);
+  var staleAfter = Number(el.dataset.staleminutes) * 60000;
+  function tick() {
+    var mins = Math.floor((Date.now() - generated) / 60000);
+    el.textContent = 'data age ' + (mins < 1 ? '<1' : mins) + ' min';
+    el.className = (Date.now() - generated > staleAfter) ? 'age stale' : 'age';
+  }
+  tick();
+  setInterval(tick, 30000);
+})();
+</script></body></html>

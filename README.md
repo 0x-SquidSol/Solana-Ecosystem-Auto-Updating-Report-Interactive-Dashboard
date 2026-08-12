@@ -1,5 +1,8 @@
 # Solana Ecosystem Report
 
+[![tests](https://github.com/0x-SquidSol/Solana-Ecosystem-Auto-Updating-Report-Interactive-Dashboard/actions/workflows/tests.yml/badge.svg)](https://github.com/0x-SquidSol/Solana-Ecosystem-Auto-Updating-Report-Interactive-Dashboard/actions/workflows/tests.yml)
+[![report](https://github.com/0x-SquidSol/Solana-Ecosystem-Auto-Updating-Report-Interactive-Dashboard/actions/workflows/report.yml/badge.svg)](https://github.com/0x-SquidSol/Solana-Ecosystem-Auto-Updating-Report-Interactive-Dashboard/actions/workflows/report.yml)
+
 **A self-updating report and interactive dashboard on the state of the
 Solana network — pure Python standard library, zero API keys, zero
 third-party dependencies.**

@@ -1,0 +1,24 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  unit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      # the oldest supported interpreter keeps the 3.10+ claim honest
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Run the offline test suite
+        run: python -m unittest discover -s tests

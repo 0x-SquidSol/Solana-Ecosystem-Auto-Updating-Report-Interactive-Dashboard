@@ -22,6 +22,19 @@ from heliostat.util import LAMPORTS_PER_SOL
 INCIDENT_RECENT_DAYS = 30
 MAX_LOG_ROWS = 8
 
+# browser-tab icon: the Solana mark, URL-encoded so it needs no file
+FAVICON = (
+    "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' "
+    "viewBox='0 0 397.7 311.7'%3E%3Cpath fill='%239945FF' d='M64.6 237.9c2.4"
+    "-2.4 5.7-3.8 9.2-3.8h317.4c5.8 0 8.7 7 4.6 11.1l-62.7 62.7c-2.4 2.4-5.7 "
+    "3.8-9.2 3.8H6.5c-5.8 0-8.7-7-4.6-11.1l62.7-62.7z'/%3E%3Cpath fill="
+    "'%238752F3' d='M64.6 3.8C67.1 1.4 70.4 0 73.8 0h317.4c5.8 0 8.7 7 4.6 "
+    "11.1l-62.7 62.7c-2.4 2.4-5.7 3.8-9.2 3.8H6.5c-5.8 0-8.7-7-4.6-11.1L64.6 "
+    "3.8z'/%3E%3Cpath fill='%2314F195' d='M330.1 120.9c-2.4-2.4-5.7-3.8-9.2"
+    "-3.8H3.5c-5.8 0-8.7 7-4.6 11.1l62.7 62.7c2.4 2.4 5.7 3.8 9.2 3.8h317.4c"
+    "5.8 0 8.7-7 4.6-11.1l-62.7-62.7z'/%3E%3C/svg%3E"
+)
+
 # Official Solana mark (solana.com/branding), inlined so the page
 # stays dependency-free.
 SOLANA_LOGO = (
@@ -99,9 +112,11 @@ h1 .sub { color: var(--muted); font-weight: 400; letter-spacing: .08em; }
 .panel .body { padding: 8px 14px 13px; }
 .row {
   display: flex; justify-content: space-between; gap: 12px;
-  padding: 5px 0; border-bottom: 1px dashed var(--dash); font-size: 13px;
+  padding: 5px 4px; margin: 0 -4px;
+  border-bottom: 1px dashed var(--dash); font-size: 13px;
 }
 .row:last-child { border-bottom: none; }
+.row:hover { background: #131820; }
 .row .l { color: var(--muted); }
 .row .r { text-align: right; }
 .note { color: var(--muted); font-size: 11px; margin-top: 8px; }
@@ -116,12 +131,16 @@ h1 .sub { color: var(--muted); font-weight: 400; letter-spacing: .08em; }
 .tbl tr:last-child td { border-bottom: none; }
 .feed h3 {
   font-size: 10.5px; letter-spacing: .12em; color: var(--muted);
-  text-transform: uppercase; font-weight: 600; margin: 10px 0 4px;
+  text-transform: uppercase; font-weight: 600; margin: 12px 0 4px;
 }
+.feed h3:first-child { margin-top: 4px; }
 .feed p { font-size: 12.5px; padding: 2px 0; }
 .feed .when { color: var(--muted); font-size: 11px; }
 a { color: var(--text); text-decoration: none; border-bottom: 1px dotted var(--muted); }
 a:hover { color: var(--accent); border-color: var(--accent); }
+a:focus-visible, summary:focus-visible {
+  outline: 1px solid var(--accent); outline-offset: 2px;
+}
 .foot {
   margin-top: 22px; color: var(--muted); font-size: 11.5px;
   border-top: 1px solid var(--line); padding-top: 12px;
@@ -530,6 +549,14 @@ def _economy_panel(report: dict) -> str:
                 lambda v: usd(v, 2),
             )
         )
+        # the sparkline header already carries the price itself
+        rows.append(
+            _row(
+                "price change",
+                f"{_delta(price.get('change_24h_pct'))} 24h · "
+                f"{_delta(price.get('change_7d_pct'))} 7d",
+            )
+        )
         divergence = price.get("price_divergence_pct")
         if divergence is not None:
             if price.get("price_sources_agree"):
@@ -539,12 +566,11 @@ def _economy_panel(report: dict) -> str:
         else:
             check = f"single source ({esc(price.get('price_source'))})"
         rows += [
-            _row(
-                "sol price",
-                f"{usd(price.get('price_usd'), 2)} · {_delta(price.get('change_7d_pct'))} 7d",
-            ),
             _row("price cross-check", check, title="CoinGecko vs Jupiter"),
-            _row("market cap", f"{usd(price.get('market_cap_usd'))} (rank {esc(price.get('market_cap_rank'))})"),
+            _row(
+                "market cap",
+                f"{usd(price.get('market_cap_usd'))} (rank {esc(price.get('market_cap_rank'))})",
+            ),
         ]
     if defi is not None:
         rows += [
@@ -731,6 +757,7 @@ def render(report: dict, output_dir: str | Path) -> Path:
         '<meta name="viewport" content="width=device-width, initial-scale=1">'
         f'<meta http-equiv="refresh" content="{refresh_minutes * 60}">'
         "<title>Solana Ecosystem Report</title>"
+        f'<link rel="icon" href="{FAVICON}">'
         f"<style>{CSS}</style></head><body><div class=\"wrap\">"
         "<header>"
         f'<div class="brand">{SOLANA_LOGO}'

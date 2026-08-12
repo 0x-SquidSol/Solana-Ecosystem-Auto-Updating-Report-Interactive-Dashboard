@@ -18,7 +18,7 @@ from __future__ import annotations
 
 from statistics import median
 
-from heliostat.rpc import RpcClient, RpcError
+from heliostat.rpc import AllEndpointsFailed, RpcClient, RpcError
 from heliostat.util import error_envelope, lamports_to_sol, ok_envelope
 
 VOTE_PROGRAM_ID = "Vote111111111111111111111111111111111111111"
@@ -95,7 +95,7 @@ def _heartbeats(rpc: RpcClient, addresses: dict[str, str], now_unix: int) -> lis
             entry["seconds_since_activity"] = (
                 max(0, now_unix - block_time) if block_time else None
             )
-        except RpcError as err:
+        except (RpcError, AllEndpointsFailed) as err:
             entry["last_activity_unix"] = None
             entry["seconds_since_activity"] = None
             entry["error"] = str(err)

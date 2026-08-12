@@ -1,7 +1,7 @@
 import unittest
 
 from heliostat.collect import supply
-from heliostat.rpc import RpcError
+from heliostat.rpc import AllEndpointsFailed, RpcError
 
 SOL = 1_000_000_000
 NOW = 1_786_500_000
@@ -101,6 +101,20 @@ class SupplyCollectorTests(unittest.TestCase):
     def test_heartbeat_failure_is_isolated(self) -> None:
         rpc = FakeRpc(
             {"getSignaturesForAddress": RpcError("getSignaturesForAddress", -32005, "x")}
+        )
+        result = supply.collect(rpc, HEARTBEATS, NOW)
+        self.assertTrue(result["ok"])
+        beat = result["data"]["heartbeats"][0]
+        self.assertIsNone(beat["seconds_since_activity"])
+        self.assertIn("error", beat)
+
+    def test_heartbeat_survives_total_endpoint_exhaustion(self) -> None:
+        rpc = FakeRpc(
+            {
+                "getSignaturesForAddress": AllEndpointsFailed(
+                    "getSignaturesForAddress", ["a down", "b down"]
+                )
+            }
         )
         result = supply.collect(rpc, HEARTBEATS, NOW)
         self.assertTrue(result["ok"])

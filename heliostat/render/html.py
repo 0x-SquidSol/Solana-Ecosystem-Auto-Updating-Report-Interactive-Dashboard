@@ -163,15 +163,14 @@ h1 .sub { color: var(--muted); font-weight: 400; letter-spacing: .08em; }
 .ring-fg {
   fill: none; stroke: url(#sgrad); stroke-width: 3.5; stroke-linecap: round;
 }
-.strip .tile, .grid .panel { animation: rise .5s cubic-bezier(.2, .7, .3, 1) both; }
-.strip .tile:nth-child(2), .grid .panel:nth-child(2) { animation-delay: .05s; }
-.strip .tile:nth-child(3), .grid .panel:nth-child(3) { animation-delay: .10s; }
-.strip .tile:nth-child(4), .grid .panel:nth-child(4) { animation-delay: .15s; }
-.strip .tile:nth-child(5), .grid .panel:nth-child(5) { animation-delay: .20s; }
-.strip .tile:nth-child(6), .grid .panel:nth-child(6) { animation-delay: .25s; }
+.strip .tile, .col .panel { animation: rise .5s cubic-bezier(.2, .7, .3, 1) both; }
+.strip .tile:nth-child(2), .col .panel:nth-child(2) { animation-delay: .07s; }
+.strip .tile:nth-child(3), .col .panel:nth-child(3) { animation-delay: .14s; }
+.strip .tile:nth-child(4) { animation-delay: .21s; }
+.strip .tile:nth-child(5) { animation-delay: .28s; }
 @keyframes rise { from { opacity: 0; transform: translateY(8px); } }
 @media (prefers-reduced-motion: reduce) {
-  .strip .tile, .grid .panel { animation: none; }
+  .strip .tile, .col .panel { animation: none; }
 }
 .alerts {
   border: 1px solid var(--bad); background: #180f0e;
@@ -180,7 +179,10 @@ h1 .sub { color: var(--muted); font-weight: 400; letter-spacing: .08em; }
 .alerts p { padding: 2px 0; }
 .alerts .sev-alert { color: var(--bad); }
 .alerts .sev-warning { color: var(--warn); }
-.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 18px; }
+.grid { display: flex; gap: 18px; margin-top: 18px; align-items: flex-start; }
+.col {
+  flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 18px;
+}
 .panel { border: 1px solid var(--line); background: var(--panel); min-width: 0;
   transition: border-color .2s ease; }
 .panel:hover { border-color: #342952; }
@@ -257,7 +259,7 @@ details { margin-top: 8px; }
 summary { cursor: pointer; color: var(--muted); font-size: 11.5px; letter-spacing: .06em; }
 summary:hover, summary:focus { color: var(--accent); }
 @media (max-width: 860px) {
-  .grid { grid-template-columns: 1fr; }
+  .grid { flex-direction: column; }
   .hero { flex-direction: column; gap: 12px; }
   body { padding: 16px 12px 40px; }
 }
@@ -973,19 +975,25 @@ def render(report: dict, output_dir: str | Path) -> Path:
     refresh_minutes = int(report.get("refresh_interval_minutes") or 30)
     generated_at = esc(report.get("generated_at"))
 
-    panels = [
-        ("network", _network_panel(report)),
-        ("validators", _validators_panel(report)),
-        ("economy", _economy_panel(report)),
-        ("ecosystem growth", _growth_panel(report)),
-        ("news &amp; upgrades", _news_panel(report)),
-        ("recent alerts", _alert_log_panel(report)),
-    ]
-    panel_html = "".join(
-        f'<section class="panel"><h2>{title}</h2>'
-        f'<div class="body">{body}</div></section>'
-        for title, body in panels
+    def panel(title: str, body: str) -> str:
+        return (
+            f'<section class="panel"><h2>{title}</h2>'
+            f'<div class="body">{body}</div></section>'
+        )
+
+    # asymmetric columns sized to their content: the dense validator
+    # panel anchors one side while lighter panels stack opposite
+    left = (
+        panel("network", _network_panel(report))
+        + panel("economy", _economy_panel(report))
+        + panel("ecosystem growth", _growth_panel(report))
     )
+    right = (
+        panel("validators", _validators_panel(report))
+        + panel("news &amp; upgrades", _news_panel(report))
+        + panel("recent alerts", _alert_log_panel(report))
+    )
+    panel_html = f'<div class="col">{left}</div><div class="col">{right}</div>'
 
     page = (
         "<!DOCTYPE html>\n"

@@ -11,7 +11,7 @@
   "kind": "statistical",
   "severity": "alert",
   "metric": "defillama.tvl_usd",
-  "message": "TVL is 7.1 standard deviations below its recent mean (4.83306e+09 vs 4.84836e+09)",
+  "message": "TVL is 7.1 standard deviations below its recent mean (4.83B vs 4.85B)",
   "value": 4833061130.0,
   "baseline_mean": 4848359807.8182,
   "z_score": -7.06
@@ -21,7 +21,7 @@
   "kind": "statistical",
   "severity": "warning",
   "metric": "defillama.tvl_usd",
-  "message": "TVL is 2.6 standard deviations below its recent mean (4.83434e+09 vs 4.84708e+09)",
+  "message": "TVL is 2.6 standard deviations below its recent mean (4.83B vs 4.85B)",
   "value": 4834339370.0,
   "baseline_mean": 4847084918.0,
   "z_score": -2.61
@@ -81,9 +81,19 @@
   "kind": "statistical",
   "severity": "alert",
   "metric": "defillama.tvl_usd",
-  "message": "TVL is 3.6 standard deviations below its recent mean (4.82773e+09 vs 4.84705e+09)",
+  "message": "TVL is 3.6 standard deviations below its recent mean (4.83B vs 4.85B)",
   "value": 4827726112.0,
   "baseline_mean": 4847046797.4211,
   "z_score": -3.55
+ },
+ {
+  "seen_at": "2026-08-12T16:13:42Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "defillama.tvl_usd",
+  "message": "TVL is 2.7 standard deviations below its recent mean (4.83B vs 4.85B)",
+  "value": 4827910815.0,
+  "baseline_mean": 4846080763.15,
+  "z_score": -2.66
  }
 ]

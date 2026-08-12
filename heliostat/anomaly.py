@@ -30,6 +30,18 @@ from heliostat.store import SnapshotStore
 MIN_SAMPLES = 12
 WARNING_Z = 2.5
 ALERT_Z = 3.5
+
+
+def _humanize(value: float) -> str:
+    """Readable magnitude for alert messages: no scientific notation."""
+    magnitude = abs(value)
+    if magnitude >= 1e9:
+        return f"{value / 1e9:,.2f}B"
+    if magnitude >= 1e6:
+        return f"{value / 1e6:,.2f}M"
+    if magnitude >= 1e3:
+        return f"{value:,.0f}"
+    return f"{value:g}"
 LOG_NAME = "anomaly-log.json"
 LOG_RETENTION_DAYS = 14
 
@@ -71,7 +83,7 @@ def _z_flags(store: SnapshotStore) -> list[dict]:
                 "metric": path,
                 "message": (
                     f"{label} is {magnitude:.1f} standard deviations {side} "
-                    f"its recent mean ({current:g} vs {mu:g})"
+                    f"its recent mean ({_humanize(current)} vs {_humanize(mu)})"
                 ),
                 "value": current,
                 "baseline_mean": round(mu, 4),

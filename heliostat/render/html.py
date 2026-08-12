@@ -261,6 +261,17 @@ a:focus-visible, summary:focus-visible {
 }
 .sky-val { color: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
 .sky-note { color: var(--muted); }
+.logrow {
+  display: flex; justify-content: space-between; align-items: baseline;
+  gap: 14px; padding: 6px 0; border-bottom: 1px dashed var(--dash);
+  font-size: 12.5px;
+}
+.logrow:last-child { border-bottom: none; }
+.logrow .msg { flex: 1; }
+.logrow .when {
+  color: var(--muted); font-size: 11px; white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
 .chip-a { background: var(--brand-a); } .chip-f { background: var(--brand-b); }
 .hbar { display: flex; height: 8px; background: var(--dash); margin-top: 8px; }
 .hbar i { display: block; height: 100%; }
@@ -995,12 +1006,11 @@ def _alert_log_panel(report: dict) -> str:
     rows = []
     for e in log:
         dot = "bad" if e.get("severity") == "alert" else "warn"
-        stamp = esc((e.get("seen_at") or "")[:16].replace("T", " "))
+        stamp = esc((e.get("seen_at") or "")[5:16].replace("T", " "))
         rows.append(
-            _row(
-                f'<span class="dot {dot}"></span>{stamp}',
-                esc(e.get("message")),
-            )
+            f'<div class="logrow"><span class="msg">'
+            f'<span class="dot {dot}"></span>{esc(e.get("message"))}</span>'
+            f'<span class="when">{stamp}</span></div>'
         )
     return "".join(rows)
 

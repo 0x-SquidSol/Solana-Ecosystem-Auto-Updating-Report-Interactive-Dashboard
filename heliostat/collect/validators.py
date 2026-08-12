@@ -36,6 +36,11 @@ def _client_family(version: str | None) -> str:
     return "firedancer" if major == "0" else "agave"
 
 
+def _short(pubkey: str | None) -> str:
+    key = pubkey or ""
+    return f"{key[:4]}..{key[-4:]}" if len(key) > 10 else key
+
+
 def _nakamoto_coefficient(stakes_desc: list[int], total_stake: int) -> int | None:
     if not total_stake:
         return None
@@ -127,6 +132,21 @@ def collect(rpc: RpcClient, top_n: int = 25, delinquent_alert_pct: float = 5.0) 
             else {}
         )
 
+        # every active validator in compact form for distribution
+        # charts and machine consumers: [stake_sol, commission,
+        # short_vote_pubkey, client_family], largest stake first
+        all_validators = [
+            [
+                round(lamports_to_sol(v.get("activatedStake", 0))),
+                v.get("commission"),
+                _short(v.get("votePubkey")),
+                _client_family(version_by_pubkey.get(v.get("nodePubkey"))),
+            ]
+            for v in sorted(
+                current, key=lambda v: v.get("activatedStake", 0), reverse=True
+            )
+        ]
+
         data = {
             "active_count": len(current),
             "delinquent_count": len(delinquent),
@@ -142,6 +162,7 @@ def collect(rpc: RpcClient, top_n: int = 25, delinquent_alert_pct: float = 5.0) 
             "top10_stake_pct": _concentration_pct(active_stakes, active_total, 10),
             "top20_stake_pct": _concentration_pct(active_stakes, active_total, 20),
             "top_validators": top_list,
+            "all_validators": all_validators,
             "commission_histogram": histogram,
             "weighted_mean_commission_pct": weighted_commission,
             "client_stake_split_pct": client_split_pct,

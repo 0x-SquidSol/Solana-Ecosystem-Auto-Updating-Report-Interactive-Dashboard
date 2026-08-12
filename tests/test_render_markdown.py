@@ -53,6 +53,15 @@ def full_report() -> dict:
                             "commission_pct": 7,
                         }
                     ],
+                    "all_validators": [
+                        [
+                            16_988_468 - i * 500_000,
+                            5,
+                            f"Val{i:02d}..key{i:02d}",
+                            "firedancer" if i % 5 == 0 else "agave",
+                        ]
+                        for i in range(30)
+                    ],
                 }
             ),
             "supply": ok_envelope(

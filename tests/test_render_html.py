@@ -181,12 +181,27 @@ class ChartTests(unittest.TestCase):
         text = render_to_text(report)
         self.assertIn("tvl · 30 days", text)
 
-    def test_stake_bar_and_commission_strip(self) -> None:
+    def test_skyline_and_commission_strip(self) -> None:
         text = render_to_text(full_report())
-        self.assertIn('aria-label="stake concentration"', text)
-        self.assertIn("top 10 · 24.4%", text)
-        self.assertIn("all others · 64.3%", text)
+        self.assertIn('class="sky"', text)
+        self.assertIn('aria-label="stake distribution across 30 validators"', text)
+        # nakamoto marker at the superminority boundary
+        self.assertIn('class="sky-mark" x1="18"', text)
+        self.assertIn("the 18 validators", text)
+        # client tinting present for both families
+        self.assertIn('class="ska"', text)
+        self.assertIn('class="skf"', text)
+        # hover data embedded and escaped
+        self.assertIn('data-vals="[[', text)
         self.assertIn('aria-label="commission distribution"', text)
+
+    def test_skyline_hidden_with_few_validators(self) -> None:
+        report = full_report()
+        report["sections"]["validators"]["data"]["all_validators"] = [
+            [100, 5, "aa..bb", "agave"]
+        ]
+        text = render_to_text(report)
+        self.assertNotIn('class="sky"', text)
 
     def test_hero_figure_without_series(self) -> None:
         text = render_to_text(full_report())

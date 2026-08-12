@@ -87,6 +87,15 @@ class ValidatorCollectorTests(unittest.TestCase):
         # (40*0 + 30*5 + 20*10 + 10*100) / 100 = 13.5
         self.assertEqual(data["weighted_mean_commission_pct"], 13.5)
 
+    def test_all_validators_compact_list(self) -> None:
+        data = validators.collect(make_rpc())["data"]
+        rows = data["all_validators"]
+        self.assertEqual(len(rows), 4)
+        # largest stake first: [stake_sol, commission, short_key, family]
+        self.assertEqual(rows[0], [40, 0, "v1", "agave"])
+        self.assertEqual(rows[1], [30, 5, "v2", "firedancer"])
+        self.assertEqual(rows[3][3], "unknown")
+
     def test_client_split_stake_weighted(self) -> None:
         data = validators.collect(make_rpc())["data"]
         split = data["client_stake_split_pct"]

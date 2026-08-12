@@ -249,6 +249,19 @@ a:focus-visible, summary:focus-visible {
   display: flex; align-items: center; justify-content: center;
   color: var(--muted); font-size: 11px; letter-spacing: .06em;
 }
+.sky {
+  display: block; width: 100%; height: 96px; margin-top: 6px;
+  cursor: crosshair; background: #0e0b16;
+}
+.ska { fill: var(--brand-a); } .skf { fill: var(--brand-b); }
+.sku { fill: #3a3450; }
+.sky-mark {
+  stroke: var(--warn); stroke-width: 1; stroke-dasharray: 3 2;
+  vector-effect: non-scaling-stroke;
+}
+.sky-val { color: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
+.sky-note { color: var(--muted); }
+.chip-a { background: var(--brand-a); } .chip-f { background: var(--brand-b); }
 .hbar { display: flex; height: 8px; background: var(--dash); margin-top: 8px; }
 .hbar i { display: block; height: 100%; }
 .s1 { background: var(--brand-a); } .s2 { background: #6b34b3; }
@@ -299,6 +312,23 @@ document.querySelectorAll('.spark').forEach(function (svg) {
     cx.setAttribute('visibility', 'hidden');
     cd.setAttribute('visibility', 'hidden');
     if (val) val.textContent = val.dataset.latest;
+  });
+});
+document.querySelectorAll('.sky').forEach(function (svg) {
+  var vals;
+  try { vals = JSON.parse(svg.dataset.vals || '[]'); } catch (err) { return; }
+  if (!vals.length) return;
+  var out = svg.parentElement.querySelector('.sky-val');
+  svg.addEventListener('mousemove', function (ev) {
+    var r = svg.getBoundingClientRect();
+    var i = Math.floor((ev.clientX - r.left) / Math.max(1, r.width) * vals.length);
+    var v = vals[Math.max(0, Math.min(vals.length - 1, i))];
+    if (out) out.textContent = '#' + (Math.min(i + 1, vals.length)) + ' ' +
+      v[2] + ' \\u00b7 ' + Number(v[0]).toLocaleString('en-US') +
+      ' SOL \\u00b7 ' + (v[1] == null ? '?' : v[1]) + '% comm \\u00b7 ' + v[3];
+  });
+  svg.addEventListener('mouseleave', function () {
+    if (out) out.textContent = out.dataset.idle;
   });
 });
 (function () {
@@ -449,22 +479,58 @@ def _series(report: dict, path: str) -> list[tuple[str, float]]:
     return (report.get("series") or {}).get(path) or []
 
 
-def _stake_bar(data: dict) -> str:
-    top10 = data.get("top10_stake_pct")
-    top20 = data.get("top20_stake_pct")
-    if top10 is None or top20 is None:
+SKYLINE_H = 96.0
+
+
+def _skyline(data: dict) -> str:
+    """Every validator as one bar, tallest first — the stake skyline.
+
+    Square-root height scaling keeps the long tail visible next to
+    the megavalidators; the dashed marker sits at the superminority
+    boundary. Bars tint by client family.
+    """
+    rows = data.get("all_validators") or []
+    if len(rows) < 10:
         return ""
-    mid = max(0.0, top20 - top10)
-    rest = max(0.0, 100.0 - top20)
+    max_stake = rows[0][0] or 1
+    count = len(rows)
+    classes = {"agave": "ska", "firedancer": "skf"}
+    rects = []
+    for i, row in enumerate(rows):
+        stake = row[0] or 0
+        height = max(1.0, (stake / max_stake) ** 0.5 * (SKYLINE_H - 4))
+        cls = classes.get(row[3] if len(row) > 3 else "", "sku")
+        rects.append(
+            f'<rect class="{cls}" x="{i}" y="{SKYLINE_H - height:.1f}" '
+            f'width="1" height="{height:.1f}"/>'
+        )
+    nakamoto = data.get("nakamoto_coefficient")
+    marker = (
+        f'<line class="sky-mark" x1="{nakamoto}" x2="{nakamoto}" '
+        f'y1="0" y2="{SKYLINE_H:g}"/>'
+        if nakamoto
+        else ""
+    )
+    vals_json = esc(json.dumps(rows, separators=(",", ":")))
+    idle = f"hover to explore · {num(count)} validators"
+    note = (
+        f'<span class="sky-note">dashed line: the {num(nakamoto)} validators '
+        "left of it hold ⅓ of all stake</span>"
+        if nakamoto
+        else ""
+    )
     return (
-        f'<div class="hbar" role="img" aria-label="stake concentration">'
-        f'<i class="s1" style="width:{top10:.1f}%"></i>'
-        f'<i class="s2" style="width:{mid:.1f}%"></i>'
-        f'<i class="s3" style="width:{rest:.1f}%"></i></div>'
-        '<div class="chips">'
-        f'<span><i class="s1"></i>top 10 · {pct(top10, 1)}</span>'
-        f'<span><i class="s2"></i>11-20 · {pct(mid, 1)}</span>'
-        f'<span><i class="s3"></i>all others · {pct(rest, 1)}</span></div>'
+        '<div class="spark-wrap">'
+        f'<div class="spark-head"><span class="l">stake skyline · '
+        f'√ scale</span><span class="sky-val" data-idle="{esc(idle)}">'
+        f"{esc(idle)}</span></div>"
+        f'<svg class="sky" viewBox="0 0 {count} {SKYLINE_H:g}" '
+        f'preserveAspectRatio="none" data-vals="{vals_json}" role="img" '
+        f'aria-label="stake distribution across {count} validators">'
+        f"{''.join(rects)}{marker}</svg>"
+        '<div class="chips"><span><i class="chip-a"></i>agave</span>'
+        '<span><i class="chip-f"></i>firedancer</span>'
+        f"{note}</div></div>"
     )
 
 
@@ -724,7 +790,7 @@ def _validators_panel(report: dict, footnote: bool = True) -> str:
         lambda v: pct(v),
     )
     out += "".join(rows)
-    out += _stake_bar(data)
+    out += _skyline(data)
     out += _commission_strip(data)
     top = data.get("top_validators") or []
     if top:

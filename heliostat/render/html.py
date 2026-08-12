@@ -12,6 +12,7 @@ through :func:`esc` before it reaches the page.
 from __future__ import annotations
 
 import html as html_lib
+import json
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -126,6 +127,29 @@ a:hover { color: var(--accent); border-color: var(--accent); }
   border-top: 1px solid var(--line); padding-top: 12px;
 }
 .foot .cols { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+.spark-wrap { margin: 4px 0 10px; }
+.spark-head { display: flex; justify-content: space-between; font-size: 11px; }
+.spark-head .l { color: var(--muted); letter-spacing: .1em; text-transform: uppercase; }
+.spark-val { color: var(--text); }
+.spark { display: block; width: 100%; height: 48px; margin-top: 5px; cursor: crosshair; }
+.spark .line { fill: none; stroke: var(--accent); stroke-width: 1.5; vector-effect: non-scaling-stroke; }
+.spark .fill { fill: rgba(232, 163, 61, .07); }
+.spark .cx { stroke: #3a4250; stroke-width: 1; vector-effect: non-scaling-stroke; }
+.spark .cd { fill: var(--accent); }
+.spark-empty {
+  height: 48px; margin-top: 5px; border: 1px dashed var(--line);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--muted); font-size: 11px; letter-spacing: .06em;
+}
+.hbar { display: flex; height: 8px; background: var(--dash); margin-top: 8px; }
+.hbar i { display: block; height: 100%; }
+.s1 { background: var(--accent); } .s2 { background: #8a6524; }
+.s3 { background: #4d3d1d; } .s4 { background: #232a33; }
+.chips { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 6px; font-size: 11px; color: var(--muted); }
+.chips i { display: inline-block; width: 8px; height: 8px; margin-right: 5px; }
+details { margin-top: 8px; }
+summary { cursor: pointer; color: var(--muted); font-size: 11.5px; letter-spacing: .06em; }
+summary:hover, summary:focus { color: var(--accent); }
 @media (max-width: 860px) {
   .grid { grid-template-columns: 1fr; }
   body { padding: 16px 12px 40px; }
@@ -146,6 +170,28 @@ JS = """
   tick();
   setInterval(tick, 30000);
 })();
+document.querySelectorAll('.spark').forEach(function (svg) {
+  var pts;
+  try { pts = JSON.parse(svg.dataset.points || '[]'); } catch (err) { return; }
+  if (!pts.length) return;
+  var cx = svg.querySelector('.cx');
+  var cd = svg.querySelector('.cd');
+  var val = svg.parentElement.querySelector('.spark-val');
+  svg.addEventListener('mousemove', function (ev) {
+    var r = svg.getBoundingClientRect();
+    var i = Math.round((ev.clientX - r.left) / Math.max(1, r.width) * (pts.length - 1));
+    var p = pts[Math.max(0, Math.min(pts.length - 1, i))];
+    cx.setAttribute('x1', p[2]); cx.setAttribute('x2', p[2]);
+    cd.setAttribute('cx', p[2]); cd.setAttribute('cy', p[3]);
+    cx.removeAttribute('visibility'); cd.removeAttribute('visibility');
+    if (val) val.textContent = p[1] + ' \\u00b7 ' + p[0];
+  });
+  svg.addEventListener('mouseleave', function () {
+    cx.setAttribute('visibility', 'hidden');
+    cd.setAttribute('visibility', 'hidden');
+    if (val) val.textContent = val.dataset.latest;
+  });
+});
 """
 
 
@@ -193,6 +239,105 @@ def _parse_iso(value: str | None) -> datetime | None:
         )
     except ValueError:
         return None
+
+
+# metric series the dashboard charts from accumulated snapshots;
+# the orchestrator attaches them under report["series"]
+SPARKLINE_PATHS = [
+    "network.tps_true",
+    "price.price_usd",
+    "validators.delinquent_stake_pct",
+]
+
+SPARK_W, SPARK_H, SPARK_PAD = 240.0, 48.0, 3.0
+SPARK_MAX_POINTS = 96
+
+
+def _sparkline(label: str, points: list[tuple[str, float]], formatter) -> str:
+    """A self-contained SVG sparkline with a JS hover crosshair.
+
+    ``points`` are ``(iso_timestamp, value)`` pairs, oldest first. With
+    fewer than two points the chart renders an honest placeholder —
+    history accumulates one point per run.
+    """
+    if len(points) < 2:
+        return (
+            '<div class="spark-wrap">'
+            f'<div class="spark-head"><span class="l">{label}</span></div>'
+            '<div class="spark-empty">collecting history · '
+            f"{len(points)}/2 snapshots</div></div>"
+        )
+
+    recent = points[-SPARK_MAX_POINTS:]
+    values = [v for _, v in recent]
+    low, high = min(values), max(values)
+    spread = (high - low) or abs(high) * 0.01 or 1.0
+    inner_h = SPARK_H - 2 * SPARK_PAD
+
+    coords = []
+    for i, (stamp, value) in enumerate(recent):
+        x = round(i / (len(recent) - 1) * SPARK_W, 1)
+        y = round(SPARK_H - SPARK_PAD - (value - low) / spread * inner_h, 1)
+        short_stamp = stamp[5:16].replace("T", " ")
+        coords.append((short_stamp, formatter(value), x, y))
+
+    line = " ".join(f"{x},{y}" for _, _, x, y in coords)
+    area = f"0,{SPARK_H} {line} {SPARK_W},{SPARK_H}"
+    latest = esc(coords[-1][1])
+    points_json = esc(
+        json.dumps([[s, d, x, y] for s, d, x, y in coords], separators=(",", ":"))
+    )
+    return (
+        '<div class="spark-wrap">'
+        f'<div class="spark-head"><span class="l">{label}</span>'
+        f'<span class="spark-val" data-latest="{latest}">{latest}</span></div>'
+        f'<svg class="spark" viewBox="0 0 {SPARK_W:g} {SPARK_H:g}" '
+        f'preserveAspectRatio="none" data-points="{points_json}" '
+        f'role="img" aria-label="{label} trend">'
+        f'<polygon class="fill" points="{area}"/>'
+        f'<polyline class="line" points="{line}"/>'
+        f'<line class="cx" y1="0" y2="{SPARK_H:g}" visibility="hidden"/>'
+        f'<circle class="cd" r="2.5" visibility="hidden"/>'
+        "</svg></div>"
+    )
+
+
+def _series(report: dict, path: str) -> list[tuple[str, float]]:
+    return (report.get("series") or {}).get(path) or []
+
+
+def _stake_bar(data: dict) -> str:
+    top10 = data.get("top10_stake_pct")
+    top20 = data.get("top20_stake_pct")
+    if top10 is None or top20 is None:
+        return ""
+    mid = max(0.0, top20 - top10)
+    rest = max(0.0, 100.0 - top20)
+    return (
+        f'<div class="hbar" role="img" aria-label="stake concentration">'
+        f'<i class="s1" style="width:{top10:.1f}%"></i>'
+        f'<i class="s2" style="width:{mid:.1f}%"></i>'
+        f'<i class="s3" style="width:{rest:.1f}%"></i></div>'
+        '<div class="chips">'
+        f'<span><i class="s1"></i>top 10 · {pct(top10, 1)}</span>'
+        f'<span><i class="s2"></i>11-20 · {pct(mid, 1)}</span>'
+        f'<span><i class="s3"></i>all others · {pct(rest, 1)}</span></div>'
+    )
+
+
+def _commission_strip(data: dict) -> str:
+    histogram = data.get("commission_histogram") or {}
+    total = sum(histogram.values())
+    if not total:
+        return ""
+    classes = ["s1", "s2", "s3", "s4"]
+    bar = '<div class="hbar" role="img" aria-label="commission distribution">'
+    chips = '<div class="chips">'
+    for (label, count), cls in zip(histogram.items(), classes):
+        width = 100.0 * count / total
+        bar += f'<i class="{cls}" style="width:{width:.1f}%"></i>'
+        chips += f"<span><i class=\"{cls}\"></i>{esc(label)} comm · {count}</span>"
+    return bar + "</div>" + chips + "</div>"
 
 
 def _status_strip(report: dict) -> str:
@@ -270,6 +415,9 @@ def _network_panel(report: dict) -> str:
     supply = _section(report, "supply") or {}
     if data is None:
         return _unavailable(report, "network")
+    out = _sparkline(
+        "true tps", _series(report, "network.tps_true"), lambda v: num(v)
+    )
     rows = [
         _row("peak true tps (30 min)", num(data.get("tps_true_peak"))),
         _row("mean slot time", f"{num(data.get('mean_slot_time_secs'), 3)} s"),
@@ -293,7 +441,25 @@ def _network_panel(report: dict) -> str:
         seconds = beat.get("seconds_since_activity")
         text = f"{num(seconds)} s ago" if seconds is not None else "–"
         rows.append(_row(f"{esc(beat.get('label'))} last activity", text))
-    return "".join(rows)
+    return out + "".join(rows)
+
+
+def _validator_table(rows: list[dict], start: int) -> str:
+    out = '<table class="tbl">'
+    out += (
+        "<thead><tr><th>#</th><th>vote account</th><th>stake</th>"
+        "<th>share</th><th>comm</th></tr></thead><tbody>"
+    )
+    for i, v in enumerate(rows, start=start):
+        pubkey = str(v.get("vote_pubkey") or "")
+        short = f"{pubkey[:4]}..{pubkey[-4:]}" if len(pubkey) > 10 else pubkey
+        out += (
+            f"<tr><td>{i}</td><td title=\"{esc(pubkey)}\">{esc(short)}</td>"
+            f"<td>{num(v.get('stake_sol'))} SOL</td>"
+            f"<td>{pct(v.get('stake_pct'))}</td>"
+            f"<td>{pct(v.get('commission_pct'), 0)}</td></tr>"
+        )
+    return out + "</tbody></table>"
 
 
 def _validators_panel(report: dict, footnote: bool = True) -> str:
@@ -324,24 +490,25 @@ def _validators_panel(report: dict, footnote: bool = True) -> str:
             pct(data.get("weighted_mean_commission_pct")),
         ),
     ]
-    out = "".join(rows)
+    out = _sparkline(
+        "delinquent stake",
+        _series(report, "validators.delinquent_stake_pct"),
+        lambda v: pct(v),
+    )
+    out += "".join(rows)
+    out += _stake_bar(data)
+    out += _commission_strip(data)
     top = data.get("top_validators") or []
     if top:
-        out += '<div class="scroll"><table class="tbl">'
-        out += (
-            "<thead><tr><th>#</th><th>vote account</th><th>stake</th>"
-            "<th>share</th><th>comm</th></tr></thead><tbody>"
-        )
-        for i, v in enumerate(top[:10], start=1):
-            pubkey = str(v.get("vote_pubkey") or "")
-            short = f"{pubkey[:4]}..{pubkey[-4:]}" if len(pubkey) > 10 else pubkey
+        out += '<div class="scroll">' + _validator_table(top[:10], start=1) + "</div>"
+        overflow = top[10:25]
+        if overflow:
             out += (
-                f"<tr><td>{i}</td><td title=\"{esc(pubkey)}\">{esc(short)}</td>"
-                f"<td>{num(v.get('stake_sol'))} SOL</td>"
-                f"<td>{pct(v.get('stake_pct'))}</td>"
-                f"<td>{pct(v.get('commission_pct'), 0)}</td></tr>"
+                f"<details><summary>show validators 11-{10 + len(overflow)}"
+                "</summary>"
+                f'<div class="scroll">{_validator_table(overflow, start=11)}</div>'
+                "</details>"
             )
-        out += "</tbody></table></div>"
     if footnote:
         out += (
             '<p class="note">stake-weighted commission is skewed by custodial '
@@ -356,6 +523,13 @@ def _economy_panel(report: dict) -> str:
     supply = _section(report, "supply")
     rows: list[str] = []
     if price is not None:
+        rows.append(
+            _sparkline(
+                "sol price",
+                _series(report, "price.price_usd"),
+                lambda v: usd(v, 2),
+            )
+        )
         divergence = price.get("price_divergence_pct")
         if divergence is not None:
             if price.get("price_sources_agree"):
@@ -415,12 +589,23 @@ def _growth_panel(report: dict) -> str:
     defi = _section(report, "defillama")
     if defi is None:
         return _unavailable(report, "defillama")
+    tvl_points = [
+        (
+            datetime.fromtimestamp(p["date"], tz=timezone.utc).strftime(
+                "%Y-%m-%dT%H:%M"
+            ),
+            float(p["tvl_usd"]),
+        )
+        for p in defi.get("tvl_series") or []
+        if isinstance(p.get("tvl_usd"), (int, float))
+    ]
     rows = [
+        _sparkline("tvl · 30 days", tvl_points, lambda v: usd(v)),
         _row(
             "tokenized assets (rwa)",
             f"{usd(defi.get('rwa_tvl_usd'))} · "
             f"{num(defi.get('rwa_protocol_count'))} protocols",
-        )
+        ),
     ]
     for p in defi.get("rwa_top") or []:
         rows.append(_row(f"· {esc(p.get('name'))}", usd(p.get("tvl_usd"))))
@@ -565,5 +750,5 @@ def render(report: dict, output_dir: str | Path) -> Path:
     out = Path(output_dir)
     out.mkdir(parents=True, exist_ok=True)
     path = out / "index.html"
-    path.write_text(page, encoding="utf-8")
+    path.write_text(page, encoding="utf-8", newline="\n")
     return path

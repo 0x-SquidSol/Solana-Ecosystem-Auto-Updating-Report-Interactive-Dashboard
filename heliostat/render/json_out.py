@@ -14,5 +14,6 @@ def render(report: dict, output_dir: str | Path) -> Path:
     path.write_text(
         json.dumps(report, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8",
+        newline="\n",
     )
     return path

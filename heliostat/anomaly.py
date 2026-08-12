@@ -161,7 +161,9 @@ def _append_log(
 
     data_dir.mkdir(parents=True, exist_ok=True)
     log_path.write_text(
-        json.dumps(entries, indent=1, ensure_ascii=False), encoding="utf-8"
+        json.dumps(entries, indent=1, ensure_ascii=False),
+        encoding="utf-8",
+        newline="\n",
     )
     return entries
 

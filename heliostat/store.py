@@ -87,8 +87,10 @@ class SnapshotStore:
         day_dir.mkdir(parents=True, exist_ok=True)
         path = day_dir / f"{now.strftime('%H%M')}.json"
         text = json.dumps(snapshot, indent=1)
-        path.write_text(text, encoding="utf-8")
-        (self.root / "latest.json").write_text(text, encoding="utf-8")
+        path.write_text(text, encoding="utf-8", newline="\n")
+        (self.root / "latest.json").write_text(
+            text, encoding="utf-8", newline="\n"
+        )
         return path
 
     def load_series(self, metric_path: str) -> list[tuple[str, float]]:
@@ -159,7 +161,7 @@ class SnapshotStore:
             rollup_dir = self.root / ROLLUP_DIR_NAME
             rollup_dir.mkdir(parents=True, exist_ok=True)
             (rollup_dir / f"{day}.json").write_text(
-                json.dumps(rollup, indent=1), encoding="utf-8"
+                json.dumps(rollup, indent=1), encoding="utf-8", newline="\n"
             )
             for snap_path in day_dir.glob("*.json"):
                 snap_path.unlink()

@@ -139,5 +139,71 @@ class HtmlRenderTests(unittest.TestCase):
         self.assertIn("unknown", text)
 
 
+class ChartTests(unittest.TestCase):
+    def test_sparkline_placeholder_with_short_history(self) -> None:
+        report = full_report()
+        report["series"] = {"network.tps_true": [("2026-08-12T03:50:00Z", 1500.0)]}
+        text = render_to_text(report)
+        self.assertIn("collecting history · 1/2 snapshots", text)
+
+    def test_sparkline_renders_with_history(self) -> None:
+        report = full_report()
+        report["series"] = {
+            "network.tps_true": [
+                (f"2026-08-12T{h:02d}:00:00Z", 1500.0 + h * 10) for h in range(6)
+            ]
+        }
+        text = render_to_text(report)
+        self.assertIn('svg class="spark"', text)
+        self.assertIn("data-points=", text)
+        self.assertIn('polyline class="line"', text)
+        # latest value shown in the header, formatted
+        self.assertIn('data-latest="1,550"', text)
+
+    def test_sparkline_points_are_escaped_json(self) -> None:
+        report = full_report()
+        report["series"] = {
+            "network.tps_true": [
+                ("2026-08-12T00:00:00Z", 1500.0),
+                ("2026-08-12T00:30:00Z", 1510.0),
+            ]
+        }
+        text = render_to_text(report)
+        # json double quotes must be escaped inside the attribute
+        self.assertIn("data-points=\"[[&quot;", text)
+
+    def test_tvl_chart_from_llama_series(self) -> None:
+        report = full_report()
+        report["sections"]["defillama"]["data"]["tvl_series"] = [
+            {"date": 1_786_000_000 + i * 86_400, "tvl_usd": 4.0e9 + i * 1e8}
+            for i in range(10)
+        ]
+        text = render_to_text(report)
+        self.assertIn("tvl · 30 days", text)
+
+    def test_stake_bar_and_commission_strip(self) -> None:
+        text = render_to_text(full_report())
+        self.assertIn('aria-label="stake concentration"', text)
+        self.assertIn("top 10 · 24.4%", text)
+        self.assertIn("all others · 64.3%", text)
+        self.assertIn('aria-label="commission distribution"', text)
+
+    def test_validator_overflow_in_details(self) -> None:
+        report = full_report()
+        validators = report["sections"]["validators"]["data"]
+        validators["top_validators"] = [
+            {
+                "vote_pubkey": f"Validator{i:02d}xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                "stake_sol": 1_000_000 - i,
+                "stake_pct": 1.0,
+                "commission_pct": 5,
+            }
+            for i in range(25)
+        ]
+        text = render_to_text(report)
+        self.assertIn("<details>", text)
+        self.assertIn("show validators 11-25", text)
+
+
 if __name__ == "__main__":
     unittest.main()

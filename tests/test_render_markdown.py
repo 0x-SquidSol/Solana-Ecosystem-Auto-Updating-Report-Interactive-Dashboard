@@ -39,6 +39,12 @@ def full_report() -> dict:
                     "top20_stake_pct": 35.7,
                     "client_stake_split_pct": {"agave": 88.5, "firedancer": 11.5},
                     "weighted_mean_commission_pct": 27.12,
+                    "commission_histogram": {
+                        "0%": 257,
+                        "1-5%": 306,
+                        "6-10%": 60,
+                        ">10%": 66,
+                    },
                     "top_validators": [
                         {
                             "vote_pubkey": "CcaHc2L43ZWjwCHART3oZoJvHLAe9hzT2DJN",

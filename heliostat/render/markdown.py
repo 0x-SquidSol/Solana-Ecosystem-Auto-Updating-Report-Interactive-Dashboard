@@ -245,5 +245,5 @@ def render(report: dict, output_dir: str | Path) -> Path:
     out = Path(output_dir)
     out.mkdir(parents=True, exist_ok=True)
     path = out / "report.md"
-    path.write_text(md, encoding="utf-8")
+    path.write_text(md, encoding="utf-8", newline="\n")
     return path

@@ -5,5 +5,15 @@
   "severity": "alert",
   "metric": "validators.delinquent_stake_pct",
   "message": "delinquent stake at 21.2% exceeds the 5.0% limit"
+ },
+ {
+  "seen_at": "2026-08-12T09:00:41Z",
+  "kind": "statistical",
+  "severity": "alert",
+  "metric": "defillama.tvl_usd",
+  "message": "TVL is 7.1 standard deviations below its recent mean (4.83306e+09 vs 4.84836e+09)",
+  "value": 4833061130.0,
+  "baseline_mean": 4848359807.8182,
+  "z_score": -7.06
  }
 ]

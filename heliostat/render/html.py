@@ -388,6 +388,25 @@ document.querySelectorAll('.sky').forEach(function (svg) {
     }
   }
 
+  var eta = document.getElementById('epoch-eta');
+  if (eta) {
+    var hoursLeft = Number(eta.dataset.hours);
+    if (hoursLeft > 0) {
+      var boundaryMs = generatedMs + hoursLeft * 3600000;
+      var tickEta = function () {
+        var secs = Math.floor((boundaryMs - Date.now()) / 1000);
+        if (secs <= 0) { eta.textContent = 'epoch boundary imminent'; return; }
+        var h = Math.floor(secs / 3600);
+        var mns = Math.floor((secs % 3600) / 60);
+        var s = secs % 60;
+        eta.textContent = h + ':' + ('0' + mns).slice(-2) + ':' +
+          ('0' + s).slice(-2) + ' to next epoch';
+      };
+      tickEta();
+      setInterval(tickEta, 1000);
+    }
+  }
+
   var beats = document.querySelectorAll('.hb');
   if (beats.length) {
     setInterval(function () {
@@ -698,7 +717,9 @@ def _status_strip(report: dict) -> str:
         (
             f"epoch {esc(network.get('epoch'))}",
             f"{ring}{pct(network.get('epoch_progress_pct'), 1)}",
-            f"~{num(network.get('epoch_remaining_hours'), 1)} h remaining",
+            f'<span id="epoch-eta" '
+            f'data-hours="{esc(network.get("epoch_remaining_hours"))}">'
+            f"~{num(network.get('epoch_remaining_hours'), 1)} h remaining</span>",
         ),
         (
             "sol price",

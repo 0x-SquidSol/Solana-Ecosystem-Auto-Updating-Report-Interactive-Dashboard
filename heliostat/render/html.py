@@ -93,6 +93,44 @@ h1 .sub { color: var(--muted); font-weight: 400; letter-spacing: .08em; }
   font-family: ui-monospace, "Cascadia Mono", Consolas, Menlo, monospace;
 }
 .age.stale { color: var(--warn); }
+.hero {
+  display: flex; gap: 28px; align-items: stretch;
+  border: 1px solid var(--line); background: var(--panel);
+  margin-top: 18px; padding: 14px 20px 10px;
+}
+.hero-figure {
+  display: flex; flex-direction: column; justify-content: center;
+  min-width: 215px;
+}
+.hero-figure .k {
+  font-size: 10.5px; letter-spacing: .16em; color: var(--muted);
+  text-transform: uppercase;
+}
+.hero-figure .d { font-size: 11.5px; color: var(--muted); }
+.hero-number {
+  font-size: 52px; font-weight: 700; letter-spacing: -0.02em;
+  line-height: 1.15; font-variant-numeric: tabular-nums;
+  animation: drift 16s ease-in-out infinite alternate;
+}
+@keyframes drift { to { filter: hue-rotate(45deg); } }
+.hero-chart { display: flex; flex: 1; gap: 10px; min-width: 0; }
+.hero-axis-y {
+  display: flex; flex-direction: column; justify-content: space-between;
+  font-size: 10.5px; color: var(--muted); text-align: right;
+  padding: 2px 0 20px; font-variant-numeric: tabular-nums;
+}
+.hero-plot { flex: 1; min-width: 0; }
+.spark.hero-svg { height: 150px; margin-top: 0; }
+.hero-svg .line { stroke-width: 2; }
+.hero-axis-x {
+  display: flex; justify-content: space-between; font-size: 10.5px;
+  color: var(--muted); margin-top: 4px;
+}
+.pulse { fill: var(--brand-b); animation: ppulse 1.6s ease-out infinite; }
+@keyframes ppulse { 0% { opacity: 1; } 70% { opacity: .2; } 100% { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) {
+  .hero-number, .pulse { animation: none; }
+}
 .strip {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 1px; background: var(--line); border: 1px solid var(--line); margin-top: 18px;
@@ -220,6 +258,7 @@ summary { cursor: pointer; color: var(--muted); font-size: 11.5px; letter-spacin
 summary:hover, summary:focus { color: var(--accent); }
 @media (max-width: 860px) {
   .grid { grid-template-columns: 1fr; }
+  .hero { flex-direction: column; gap: 12px; }
   body { padding: 16px 12px 40px; }
 }
 """
@@ -442,6 +481,66 @@ def _commission_strip(data: dict) -> str:
     return bar + "</div>" + chips + "</div>"
 
 
+HERO_W, HERO_H, HERO_PAD = 720.0, 200.0, 8.0
+
+
+def _hero(report: dict) -> str:
+    """Full-width lead: the true-TPS figure beside a 30-minute chart."""
+    network = _section(report, "network") or {}
+    tps = network.get("tps_true")
+    series = network.get("tps_series") or []
+    if tps is None and not series:
+        return ""
+
+    chart = ""
+    if len(series) >= 2:
+        values = [v for _, v in series]
+        low, high = min(values), max(values)
+        spread = (high - low) or abs(high) * 0.01 or 1.0
+        inner_h = HERO_H - 2 * HERO_PAD
+        coords = []
+        for i, (minutes_ago, value) in enumerate(series):
+            x = round(i / (len(series) - 1) * HERO_W, 1)
+            y = round(HERO_H - HERO_PAD - (value - low) / spread * inner_h, 1)
+            label = "now" if minutes_ago == 0 else f"-{minutes_ago} min"
+            coords.append((label, f"{num(value)} tps", x, y))
+        line = " ".join(f"{x},{y}" for _, _, x, y in coords)
+        area = f"0,{HERO_H:g} {line} {HERO_W:g},{HERO_H:g}"
+        points_json = esc(
+            json.dumps([list(c) for c in coords], separators=(",", ":"))
+        )
+        last_x, last_y = coords[-1][2], coords[-1][3]
+        chart = (
+            '<div class="hero-chart">'
+            '<div class="hero-axis-y">'
+            f"<span>{num(high)}</span><span>{num((high + low) / 2)}</span>"
+            f"<span>{num(low)}</span></div>"
+            '<div class="hero-plot">'
+            f'<svg class="spark hero-svg" viewBox="0 0 {HERO_W:g} {HERO_H:g}" '
+            f'preserveAspectRatio="none" data-points="{points_json}" '
+            'role="img" aria-label="true tps, last 30 minutes">'
+            f'<polygon class="fill" points="{area}"/>'
+            f'<polyline class="line" points="{line}"/>'
+            f'<circle class="pulse" cx="{last_x}" cy="{last_y}" r="3.5"/>'
+            f'<line class="cx" y1="0" y2="{HERO_H:g}" visibility="hidden"/>'
+            f'<circle class="cd" r="3" visibility="hidden"/>'
+            "</svg>"
+            '<div class="hero-axis-x"><span>30 min ago</span>'
+            '<span class="spark-val" data-latest="live network activity">'
+            "live network activity</span><span>now</span></div>"
+            "</div></div>"
+        )
+
+    figure = (
+        '<div class="hero-figure">'
+        '<div class="k">true tps · non-vote</div>'
+        f'<div class="hero-number gtext">{num(tps)}</div>'
+        f'<div class="d">total {num(network.get("tps_total"))} incl. votes '
+        f"· peak {num(network.get('tps_true_peak'))}</div></div>"
+    )
+    return f'<section class="hero" aria-label="network activity">{figure}{chart}</section>'
+
+
 RING_RADIUS = 13.0
 
 
@@ -496,11 +595,6 @@ def _status_strip(report: dict) -> str:
             f"epoch {esc(network.get('epoch'))}",
             f"{ring}{pct(network.get('epoch_progress_pct'), 1)}",
             f"~{num(network.get('epoch_remaining_hours'), 1)} h remaining",
-        ),
-        (
-            "true tps",
-            num(network.get("tps_true")),
-            f"total {num(network.get('tps_total'))} incl. votes",
         ),
         (
             "sol price",
@@ -916,6 +1010,7 @@ def render(report: dict, output_dir: str | Path) -> Path:
         f'<span id="age" class="age" data-generated="{generated_at}" '
         f'data-staleminutes="{refresh_minutes * 2}">data age –</span>'
         "</div></header>"
+        f"{_hero(report)}"
         f"{_status_strip(report)}"
         f"{_anomaly_band(report)}"
         f'<main class="grid">{panel_html}</main>'

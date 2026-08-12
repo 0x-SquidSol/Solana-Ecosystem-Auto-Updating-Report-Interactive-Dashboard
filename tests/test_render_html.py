@@ -188,6 +188,26 @@ class ChartTests(unittest.TestCase):
         self.assertIn("all others · 64.3%", text)
         self.assertIn('aria-label="commission distribution"', text)
 
+    def test_hero_figure_without_series(self) -> None:
+        text = render_to_text(full_report())
+        self.assertIn('class="hero-number gtext"', text)
+        self.assertIn("2,099", text)
+        # no chart element without minute data (the css class
+        # definition is always present; the rendered svg is not)
+        self.assertNotIn('class="spark hero-svg"', text)
+
+    def test_hero_chart_with_series(self) -> None:
+        report = full_report()
+        report["sections"]["network"]["data"]["tps_series"] = [
+            [29 - i, 2000.0 + i * 10] for i in range(30)
+        ]
+        text = render_to_text(report)
+        self.assertIn('class="spark hero-svg"', text)
+        self.assertIn('class="pulse"', text)
+        self.assertIn("30 min ago", text)
+        # y-axis carries the series max
+        self.assertIn("2,290", text)
+
     def test_epoch_ring_rendered(self) -> None:
         text = render_to_text(full_report())
         self.assertIn('class="ring-fg"', text)

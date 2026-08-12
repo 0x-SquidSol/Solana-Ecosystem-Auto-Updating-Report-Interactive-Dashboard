@@ -49,7 +49,19 @@ def _throughput(samples: list[dict]) -> dict:
         if s.get("numNonVoteTransactions") is not None:
             peak_true = max(peak_true, s["numNonVoteTransactions"] / period)
 
+    # per-sample series, oldest first (rpc returns newest first);
+    # [minutes_ago, true_tps] pairs for minute-resolution charting
+    tps_series = [
+        [
+            index,
+            round(s["numNonVoteTransactions"] / s["samplePeriodSecs"], 1),
+        ]
+        for index, s in enumerate(usable)
+        if s.get("numNonVoteTransactions") is not None
+    ][::-1]
+
     return {
+        "tps_series": tps_series,
         "tps_total": round(total_txs / total_secs, 1) if total_secs else None,
         "tps_true": (
             round(total_non_vote / total_secs, 1)

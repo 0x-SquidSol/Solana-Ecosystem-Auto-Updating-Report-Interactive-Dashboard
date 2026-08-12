@@ -63,6 +63,8 @@ class NetworkCollectorTests(unittest.TestCase):
         # 216k slots left at 0.4s => 24h
         self.assertEqual(data["epoch_remaining_hours"], 24.0)
         self.assertTrue(data["health"]["ok"])
+        # per-minute series, oldest first: [minutes_ago, true_tps]
+        self.assertEqual(data["tps_series"], [[1, 1000.0], [0, 1200.0]])
 
     def test_unhealthy_node_is_reported_not_fatal(self) -> None:
         rpc = FakeRpc({"getHealth": RpcError("getHealth", -32005, "behind")})

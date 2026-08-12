@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import html as html_lib
 import json
+import math
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -112,6 +113,21 @@ h1 .sub { color: var(--muted); font-weight: 400; letter-spacing: .08em; }
 .bar i {
   display: block; height: 100%;
   background: linear-gradient(90deg, var(--brand-a), var(--brand-b));
+}
+.ring { width: 24px; height: 24px; margin-right: 8px; vertical-align: -5px; }
+.ring-bg { fill: none; stroke: var(--dash); stroke-width: 3.5; }
+.ring-fg {
+  fill: none; stroke: url(#sgrad); stroke-width: 3.5; stroke-linecap: round;
+}
+.strip .tile, .grid .panel { animation: rise .5s cubic-bezier(.2, .7, .3, 1) both; }
+.strip .tile:nth-child(2), .grid .panel:nth-child(2) { animation-delay: .05s; }
+.strip .tile:nth-child(3), .grid .panel:nth-child(3) { animation-delay: .10s; }
+.strip .tile:nth-child(4), .grid .panel:nth-child(4) { animation-delay: .15s; }
+.strip .tile:nth-child(5), .grid .panel:nth-child(5) { animation-delay: .20s; }
+.strip .tile:nth-child(6), .grid .panel:nth-child(6) { animation-delay: .25s; }
+@keyframes rise { from { opacity: 0; transform: translateY(8px); } }
+@media (prefers-reduced-motion: reduce) {
+  .strip .tile, .grid .panel { animation: none; }
 }
 .alerts {
   border: 1px solid var(--bad); background: #180f0e;
@@ -235,6 +251,40 @@ document.querySelectorAll('.spark').forEach(function (svg) {
     if (val) val.textContent = val.dataset.latest;
   });
 });
+(function () {
+  var age = document.getElementById('age');
+  var generatedMs = age ? Date.parse(age.dataset.generated) : NaN;
+  if (isNaN(generatedMs)) return;
+
+  var slotEl = document.getElementById('slot-live');
+  if (slotEl) {
+    var baseSlot = Number(slotEl.dataset.slot);
+    var slotTime = Number(slotEl.dataset.slotTime);
+    if (baseSlot && slotTime > 0) {
+      var tile = slotEl.closest('.tile');
+      var detail = tile ? tile.querySelector('.d') : null;
+      if (detail) detail.textContent += ' \\u00b7 live estimate';
+      setInterval(function () {
+        var est = baseSlot +
+          Math.floor((Date.now() - generatedMs) / 1000 / slotTime);
+        slotEl.textContent = est.toLocaleString('en-US');
+      }, 400);
+    }
+  }
+
+  var beats = document.querySelectorAll('.hb');
+  if (beats.length) {
+    setInterval(function () {
+      var extra = Math.floor((Date.now() - generatedMs) / 1000);
+      beats.forEach(function (el) {
+        var s = Number(el.dataset.base) + extra;
+        el.textContent = (s < 120
+          ? s + ' s'
+          : Math.floor(s / 60) + ' min') + ' ago';
+      });
+    }, 1000);
+  }
+})();
 """
 
 
@@ -383,6 +433,23 @@ def _commission_strip(data: dict) -> str:
     return bar + "</div>" + chips + "</div>"
 
 
+RING_RADIUS = 13.0
+
+
+def _epoch_ring(pct_value: float) -> str:
+    """A small circular progress gauge, stroked with the brand gradient."""
+    circumference = 2 * math.pi * RING_RADIUS
+    filled = circumference * pct_value / 100.0
+    return (
+        '<svg class="ring" viewBox="0 0 32 32" role="img" '
+        f'aria-label="epoch {pct_value:.1f} percent complete">'
+        f'<circle class="ring-bg" cx="16" cy="16" r="{RING_RADIUS:g}"/>'
+        f'<circle class="ring-fg" cx="16" cy="16" r="{RING_RADIUS:g}" '
+        f'stroke-dasharray="{filled:.1f} {circumference - filled:.1f}" '
+        'transform="rotate(-90 16 16)"/></svg>'
+    )
+
+
 def _status_strip(report: dict) -> str:
     network = _section(report, "network") or {}
     price = _section(report, "price") or {}
@@ -397,10 +464,17 @@ def _status_strip(report: dict) -> str:
         dot, health_text = "bad", "degraded"
 
     epoch_pct = network.get("epoch_progress_pct")
-    bar = ""
+    ring = ""
     if epoch_pct is not None:
-        width = max(0.0, min(100.0, float(epoch_pct)))
-        bar = f'<div class="bar"><i style="width:{width:.1f}%"></i></div>'
+        ring = _epoch_ring(max(0.0, min(100.0, float(epoch_pct))))
+
+    slot_value = num(network.get("slot"))
+    if network.get("slot") is not None:
+        slot_value = (
+            f'<span id="slot-live" data-slot="{network["slot"]}" '
+            f'data-slot-time="{network.get("mean_slot_time_secs")}">'
+            f"{slot_value}</span>"
+        )
 
     tiles = [
         (
@@ -408,10 +482,10 @@ def _status_strip(report: dict) -> str:
             f'<span class="dot {dot}"></span>{health_text}',
             esc(report.get("sources", {}).get("network", "")) or "&nbsp;",
         ),
-        ("slot", num(network.get("slot")), f"block height {num(network.get('block_height'))}"),
+        ("slot", slot_value, f"block height {num(network.get('block_height'))}"),
         (
             f"epoch {esc(network.get('epoch'))}",
-            f"{pct(network.get('epoch_progress_pct'), 1)}{bar}",
+            f"{ring}{pct(network.get('epoch_progress_pct'), 1)}",
             f"~{num(network.get('epoch_remaining_hours'), 1)} h remaining",
         ),
         (
@@ -482,7 +556,13 @@ def _network_panel(report: dict) -> str:
     beats = supply.get("heartbeats") or []
     for beat in beats:
         seconds = beat.get("seconds_since_activity")
-        text = f"{num(seconds)} s ago" if seconds is not None else "–"
+        if seconds is not None:
+            text = (
+                f'<span class="hb" data-base="{int(seconds)}">'
+                f"{num(seconds)} s ago</span>"
+            )
+        else:
+            text = "–"
         rows.append(_row(f"{esc(beat.get('label'))} last activity", text))
     return out + "".join(rows)
 

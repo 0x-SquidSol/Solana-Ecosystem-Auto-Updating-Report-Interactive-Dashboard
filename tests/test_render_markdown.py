@@ -59,6 +59,14 @@ def full_report() -> dict:
                 {
                     "circulating_supply_sol": 582_499_999,
                     "fees": {"median_fee_lamports": 5514},
+                    "heartbeats": [
+                        {
+                            "label": "USDC mint",
+                            "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                            "last_activity_unix": 1_786_500_000,
+                            "seconds_since_activity": 8,
+                        }
+                    ],
                 }
             ),
             "defillama": ok_envelope(

@@ -188,6 +188,21 @@ class ChartTests(unittest.TestCase):
         self.assertIn("all others · 64.3%", text)
         self.assertIn('aria-label="commission distribution"', text)
 
+    def test_epoch_ring_rendered(self) -> None:
+        text = render_to_text(full_report())
+        self.assertIn('class="ring-fg"', text)
+        self.assertIn("stroke-dasharray=", text)
+
+    def test_slot_ticker_attributes(self) -> None:
+        text = render_to_text(full_report())
+        self.assertIn('id="slot-live"', text)
+        self.assertIn('data-slot="438723045"', text)
+        self.assertIn('data-slot-time="0.42"', text)
+
+    def test_heartbeat_tick_attributes(self) -> None:
+        text = render_to_text(full_report())
+        self.assertIn('class="hb" data-base="8"', text)
+
     def test_validator_overflow_in_details(self) -> None:
         report = full_report()
         validators = report["sections"]["validators"]["data"]

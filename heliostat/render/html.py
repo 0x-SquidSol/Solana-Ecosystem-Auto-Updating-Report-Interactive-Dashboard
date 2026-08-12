@@ -327,6 +327,29 @@ document.querySelectorAll('.spark').forEach(function (svg) {
     if (val) val.textContent = val.dataset.latest;
   });
 });
+(function () {
+  if (window.matchMedia &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  document.querySelectorAll('.tile .v, .hero-number').forEach(function (el) {
+    if (el.children.length) return;
+    var m = el.textContent.match(/^([^0-9]*)([0-9][0-9,]*(?:\.[0-9]+)?)(.*)$/);
+    if (!m) return;
+    var target = parseFloat(m[2].replace(/,/g, ''));
+    if (!isFinite(target)) return;
+    var decimals = (m[2].split('.')[1] || '').length;
+    var start = null;
+    function step(ts) {
+      if (start === null) start = ts;
+      var t = Math.min(1, (ts - start) / 650);
+      var eased = 1 - Math.pow(1 - t, 3);
+      el.textContent = m[1] + (target * eased).toLocaleString('en-US', {
+        minimumFractionDigits: decimals, maximumFractionDigits: decimals
+      }) + m[3];
+      if (t < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  });
+})();
 document.querySelectorAll('.sky').forEach(function (svg) {
   var vals;
   try { vals = JSON.parse(svg.dataset.vals || '[]'); } catch (err) { return; }

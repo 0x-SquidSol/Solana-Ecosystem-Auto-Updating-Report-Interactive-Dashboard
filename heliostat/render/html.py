@@ -924,6 +924,7 @@ def _economy_panel(report: dict) -> str:
         fees = supply.get("fees") or {}
         median_fee = fees.get("median_fee_lamports")
         fee_text = f"{num(median_fee)} lamports"
+        per_dollar_row = ""
         if (
             median_fee is not None
             and price is not None
@@ -931,8 +932,15 @@ def _economy_panel(report: dict) -> str:
         ):
             fee_usd = median_fee / LAMPORTS_PER_SOL * price["price_usd"]
             fee_text += f" (~${fee_usd:.6f})"
+            if fee_usd > 0:
+                per_dollar_row = _row(
+                    "· what a dollar buys",
+                    f"≈ {num(1 / fee_usd)} transactions",
+                    title="at the current median fee and SOL price",
+                )
         rows += [
             _row("median user fee", fee_text, title="votes excluded, sampled block"),
+            per_dollar_row,
             _row(
                 "circulating supply",
                 f"{num(supply.get('circulating_supply_sol'))} SOL",

@@ -142,6 +142,8 @@ def _economy(report: dict) -> str:
         fee_text = f"{_num(median_fee)} lamports"
         if fee_usd is not None:
             fee_text += f" (~${fee_usd:.6f})"
+            if fee_usd > 0:
+                fee_text += f" - about {_num(1 / fee_usd)} transactions per $1"
         lines += [
             ("Median fee (user txs)", fee_text),
             ("Circulating supply", f"{_num(supply.get('circulating_supply_sol'))} SOL"),

@@ -56,17 +56,23 @@ SOLANA_LOGO = (
 
 CSS = """
 :root {
-  --bg:#0b0e11; --panel:#10141a; --line:#1d232b; --dash:#161b22;
-  --text:#e6e4df; --muted:#8b949e; --accent:#e8a33d;
-  --ok:#3fb27f; --bad:#e5534b; --warn:#e8a33d;
+  --bg:#0c0a12; --panel:#120f1a; --line:#241d33; --dash:#1a1526;
+  --text:#eceaf2; --muted:#9a93ac;
+  --brand-a:#9945FF; --brand-b:#14F195; --accent:#a869ff;
+  --ok:#14F195; --bad:#ff5c5c; --warn:#f3c34d;
 }
 html { color-scheme: dark; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
-  background: var(--bg); color: var(--text);
+  background: radial-gradient(1100px 520px at 50% -12%, #171029 0%, var(--bg) 58%) fixed var(--bg);
+  color: var(--text);
   font-family: ui-monospace, "Cascadia Mono", Consolas, Menlo, monospace;
   font-variant-numeric: tabular-nums;
   font-size: 14px; line-height: 1.55; padding: 26px 20px 48px;
+}
+.gtext {
+  background: linear-gradient(92deg, var(--brand-a), var(--brand-b));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
 }
 .wrap { max-width: 1180px; margin: 0 auto; }
 header {
@@ -86,15 +92,27 @@ h1 .sub { color: var(--muted); font-weight: 400; letter-spacing: .08em; }
 }
 .tile { background: var(--panel); padding: 12px 14px; }
 .tile .k { font-size: 10px; letter-spacing: .14em; color: var(--muted); text-transform: uppercase; }
-.tile .v { font-size: 20px; margin-top: 4px; white-space: nowrap; }
+.tile .v {
+  font-size: 21px; margin-top: 4px; white-space: nowrap; font-weight: 600;
+  background: linear-gradient(92deg, var(--brand-a) 10%, var(--brand-b) 90%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
 .tile .d { font-size: 11px; color: var(--muted); margin-top: 2px; }
 .up { color: var(--ok); } .down { color: var(--bad); }
 .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%;
   margin-right: 7px; vertical-align: middle; }
-.dot.ok { background: var(--ok); } .dot.bad { background: var(--bad); }
-.dot.warn { background: var(--warn); }
+.dot.ok { background: var(--ok); animation: pulse 2.4s ease-in-out infinite; }
+.dot.bad { background: var(--bad); } .dot.warn { background: var(--warn); }
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(20, 241, 149, .45); }
+  55% { box-shadow: 0 0 0 6px rgba(20, 241, 149, 0); }
+}
+@media (prefers-reduced-motion: reduce) { .dot.ok { animation: none; } }
 .bar { height: 4px; background: var(--dash); margin-top: 7px; }
-.bar i { display: block; height: 100%; background: var(--accent); }
+.bar i {
+  display: block; height: 100%;
+  background: linear-gradient(90deg, var(--brand-a), var(--brand-b));
+}
 .alerts {
   border: 1px solid var(--bad); background: #180f0e;
   margin-top: 18px; padding: 10px 14px; font-size: 13px;
@@ -103,7 +121,9 @@ h1 .sub { color: var(--muted); font-weight: 400; letter-spacing: .08em; }
 .alerts .sev-alert { color: var(--bad); }
 .alerts .sev-warning { color: var(--warn); }
 .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 18px; }
-.panel { border: 1px solid var(--line); background: var(--panel); min-width: 0; }
+.panel { border: 1px solid var(--line); background: var(--panel); min-width: 0;
+  transition: border-color .2s ease; }
+.panel:hover { border-color: #342952; }
 .panel h2 {
   font-size: 11px; letter-spacing: .16em; color: var(--accent);
   text-transform: uppercase; font-weight: 600;
@@ -151,10 +171,14 @@ a:focus-visible, summary:focus-visible {
 .spark-head .l { color: var(--muted); letter-spacing: .1em; text-transform: uppercase; }
 .spark-val { color: var(--text); }
 .spark { display: block; width: 100%; height: 48px; margin-top: 5px; cursor: crosshair; }
-.spark .line { fill: none; stroke: var(--accent); stroke-width: 1.5; vector-effect: non-scaling-stroke; }
-.spark .fill { fill: rgba(232, 163, 61, .07); }
-.spark .cx { stroke: #3a4250; stroke-width: 1; vector-effect: non-scaling-stroke; }
-.spark .cd { fill: var(--accent); }
+.spark .line {
+  fill: none; stroke: url(#sgrad); stroke-width: 1.6;
+  vector-effect: non-scaling-stroke;
+  filter: drop-shadow(0 0 4px rgba(153, 69, 255, .5));
+}
+.spark .fill { fill: url(#sgrad); opacity: .08; }
+.spark .cx { stroke: #4a3f66; stroke-width: 1; vector-effect: non-scaling-stroke; }
+.spark .cd { fill: var(--brand-b); }
 .spark-empty {
   height: 48px; margin-top: 5px; border: 1px dashed var(--line);
   display: flex; align-items: center; justify-content: center;
@@ -162,8 +186,8 @@ a:focus-visible, summary:focus-visible {
 }
 .hbar { display: flex; height: 8px; background: var(--dash); margin-top: 8px; }
 .hbar i { display: block; height: 100%; }
-.s1 { background: var(--accent); } .s2 { background: #8a6524; }
-.s3 { background: #4d3d1d; } .s4 { background: #232a33; }
+.s1 { background: var(--brand-a); } .s2 { background: #6b34b3; }
+.s3 { background: #47246e; } .s4 { background: #241d33; }
 .chips { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 6px; font-size: 11px; color: var(--muted); }
 .chips i { display: inline-block; width: 8px; height: 8px; margin-right: 5px; }
 details { margin-top: 8px; }
@@ -758,10 +782,17 @@ def render(report: dict, output_dir: str | Path) -> Path:
         f'<meta http-equiv="refresh" content="{refresh_minutes * 60}">'
         "<title>Solana Ecosystem Report</title>"
         f'<link rel="icon" href="{FAVICON}">'
-        f"<style>{CSS}</style></head><body><div class=\"wrap\">"
+        f"<style>{CSS}</style></head><body>"
+        '<svg width="0" height="0" style="position:absolute" aria-hidden="true">'
+        '<defs><linearGradient id="sgrad" x1="0" y1="0" x2="1" y2="0">'
+        '<stop offset="0" stop-color="#9945FF"/>'
+        '<stop offset="1" stop-color="#14F195"/>'
+        "</linearGradient></defs></svg>"
+        '<div class="wrap">'
         "<header>"
         f'<div class="brand">{SOLANA_LOGO}'
-        '<h1>SOLANA <span class="sub">ECOSYSTEM REPORT</span></h1></div>'
+        '<h1><span class="gtext">SOLANA</span> '
+        '<span class="sub">ECOSYSTEM REPORT</span></h1></div>'
         '<div class="meta">'
         f"<span>generated {generated_at} UTC</span>"
         f'<span id="age" class="age" data-generated="{generated_at}" '

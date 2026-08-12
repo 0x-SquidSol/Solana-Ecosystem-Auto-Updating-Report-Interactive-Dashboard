@@ -9,6 +9,7 @@ successfully, subsequent calls start there instead of retrying dead ones.
 from __future__ import annotations
 
 import logging
+import threading
 from typing import Any
 
 from heliostat.net import HttpError, request_json
@@ -48,6 +49,9 @@ class RpcClient:
         self._timeout = timeout
         self._active = 0
         self._next_id = 1
+        # collectors share one client across threads; calls serialize,
+        # which the per-host politeness spacing would enforce anyway
+        self._lock = threading.Lock()
 
     @property
     def active_endpoint(self) -> str:
@@ -56,6 +60,10 @@ class RpcClient:
 
     def call(self, method: str, params: list[Any] | None = None) -> Any:
         """Invoke one RPC method, failing over across endpoints as needed."""
+        with self._lock:
+            return self._call_locked(method, params)
+
+    def _call_locked(self, method: str, params: list[Any] | None) -> Any:
         payload = {
             "jsonrpc": "2.0",
             "id": self._next_id,

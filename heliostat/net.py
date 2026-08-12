@@ -15,6 +15,7 @@ from __future__ import annotations
 import json
 import random
 import socket
+import threading
 import time
 import urllib.error
 import urllib.parse
@@ -32,7 +33,8 @@ MAX_ATTEMPTS = 3
 MAX_RETRY_AFTER_SECONDS = 15.0
 PER_HOST_SPACING_SECONDS = 0.5
 
-_last_request_at: dict[str, float] = {}
+_next_allowed_at: dict[str, float] = {}
+_spacing_lock = threading.Lock()
 
 
 class HttpError(Exception):
@@ -45,13 +47,21 @@ class HttpError(Exception):
 
 
 def _polite_wait(url: str) -> None:
+    """Reserve the next request slot for this host, thread-safely.
+
+    Each caller atomically claims the earliest available slot and
+    pushes the host's next slot back by the spacing interval, then
+    sleeps outside the lock — concurrent collectors stay polite to
+    a shared host without blocking requests to other hosts.
+    """
     host = urllib.parse.urlsplit(url).netloc
-    last = _last_request_at.get(host)
-    if last is not None:
-        elapsed = time.monotonic() - last
-        if elapsed < PER_HOST_SPACING_SECONDS:
-            time.sleep(PER_HOST_SPACING_SECONDS - elapsed)
-    _last_request_at[host] = time.monotonic()
+    with _spacing_lock:
+        now = time.monotonic()
+        slot = max(now, _next_allowed_at.get(host, now))
+        _next_allowed_at[host] = slot + PER_HOST_SPACING_SECONDS
+    wait = slot - now
+    if wait > 0:
+        time.sleep(wait)
 
 
 def _backoff_delay(attempt: int, retry_after: str | None) -> float:

@@ -26,6 +26,7 @@ from __future__ import annotations
 
 import logging
 import time
+from concurrent.futures import ThreadPoolExecutor
 
 from heliostat import __version__
 from heliostat.config import Config
@@ -55,35 +56,39 @@ def _status(name: str, envelope: dict) -> str:
 
 
 def assemble(cfg: Config, rpc: RpcClient | None = None) -> dict:
-    """Run all collectors and return the canonical report dict."""
+    """Run all collectors concurrently; return the canonical report dict.
+
+    Collectors contain their own failures (envelope pattern), so the
+    fan-out needs no error plumbing: every future resolves to an
+    envelope. On-chain collectors share one RPC client, whose lock
+    serializes them — the politeness spacing toward a shared host
+    would impose the same ordering anyway.
+    """
     rpc = rpc or RpcClient(cfg.rpc_endpoints, timeout=cfg.http_timeout_seconds)
     timeout = float(cfg.http_timeout_seconds)
 
-    sections = {}
-    log.info("collecting network metrics")
-    sections["network"] = network.collect(rpc)
-    log.info("collecting validator set")
-    sections["validators"] = validators.collect(
-        rpc,
-        top_n=cfg.top_validators,
-        delinquent_alert_pct=cfg.delinquent_stake_alert_pct,
-    )
-    log.info("collecting supply and fees")
-    sections["supply"] = supply.collect(
-        rpc, cfg.heartbeat_addresses, int(time.time())
-    )
-    log.info("collecting defi metrics")
-    sections["defillama"] = defillama.collect(timeout=timeout)
-    log.info("collecting price")
-    sections["price"] = price.collect(timeout=timeout)
-    log.info("collecting news and releases")
-    sections["news"] = news.collect(timeout=timeout)
-    log.info("collecting solana.com highlights")
-    sections["solana_com"] = solana_site.collect(timeout=timeout)
-    log.info("collecting dune enrichment")
-    sections["dune"] = dune.collect(
-        cfg.dune_api_key, cfg.dune_query_ids, timeout=timeout
-    )
+    tasks: dict = {
+        "network": lambda: network.collect(rpc),
+        "validators": lambda: validators.collect(
+            rpc,
+            top_n=cfg.top_validators,
+            delinquent_alert_pct=cfg.delinquent_stake_alert_pct,
+        ),
+        "supply": lambda: supply.collect(
+            rpc, cfg.heartbeat_addresses, int(time.time())
+        ),
+        "defillama": lambda: defillama.collect(timeout=timeout),
+        "price": lambda: price.collect(timeout=timeout),
+        "news": lambda: news.collect(timeout=timeout),
+        "solana_com": lambda: solana_site.collect(timeout=timeout),
+        "dune": lambda: dune.collect(
+            cfg.dune_api_key, cfg.dune_query_ids, timeout=timeout
+        ),
+    }
+    log.info("collecting %d sources concurrently", len(tasks))
+    with ThreadPoolExecutor(max_workers=len(tasks)) as pool:
+        futures = {name: pool.submit(task) for name, task in tasks.items()}
+        sections = {name: future.result() for name, future in futures.items()}
 
     report = {
         "generated_at": now_iso(),

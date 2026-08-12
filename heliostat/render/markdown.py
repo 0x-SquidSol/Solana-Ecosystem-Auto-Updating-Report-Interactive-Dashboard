@@ -14,6 +14,11 @@ from heliostat.render.fmt import num as _num, pct as _pct, usd as _usd
 from heliostat.util import LAMPORTS_PER_SOL
 
 
+def _mdsafe(value) -> str:
+    """Neutralize table-breaking characters in externally sourced text."""
+    return str(value).replace("|", "\\|").replace("\n", " ")
+
+
 def _section(report: dict, name: str) -> dict | None:
     envelope = (report.get("sections") or {}).get(name) or {}
     if envelope.get("ok"):
@@ -169,13 +174,16 @@ def _growth(report: dict) -> str:
     if site:
         for stat in site.get("stats") or []:
             rows.append(
-                (f"{stat.get('label')} (solana.com)", str(stat.get("value")))
+                (
+                    f"{_mdsafe(stat.get('label'))} (solana.com)",
+                    _mdsafe(stat.get("value")),
+                )
             )
     dune = _section(report, "dune")
     if dune and dune.get("enabled") and dune.get("stats"):
         for label, row in dune["stats"].items():
             value = next(iter(row.values())) if row else "–"
-            rows.append((f"{label} (Dune)", str(value)))
+            rows.append((f"{_mdsafe(label)} (Dune)", _mdsafe(value)))
     elif dune is not None and not dune.get("enabled"):
         rows.append(
             ("Daily active addresses", "available via optional DUNE_API_KEY")
@@ -261,7 +269,7 @@ def render(report: dict, output_dir: str | Path) -> Path:
         elif envelope.get("ok"):
             status = "ok"
         else:
-            status = f"failed: {envelope.get('error')}"
+            status = f"failed: {_mdsafe(envelope.get('error'))}"
         md += f"| {name} | {status} | {envelope.get('fetched_at', '–')} |\n"
     md += f"\n_On-chain data served by `{report.get('rpc_endpoint')}`._\n"
 

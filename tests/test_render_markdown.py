@@ -188,6 +188,20 @@ class MarkdownRenderTests(unittest.TestCase):
         # other sections unaffected
         self.assertIn("$4.85B", text)
 
+    def test_external_pipes_cannot_break_tables(self) -> None:
+        report = full_report()
+        report["sections"]["solana_com"] = {
+            "ok": True,
+            "data": {
+                "stats": [{"label": "Odd | label", "value": "1|2"}],
+            },
+            "error": None,
+            "fetched_at": "2026-08-12T14:30:00Z",
+        }
+        text = render_to_text(report)
+        self.assertIn("Odd \\| label (solana.com)", text)
+        self.assertIn("1\\|2", text)
+
     def test_single_price_source_is_neutral(self) -> None:
         report = full_report()
         report["sections"]["price"]["data"]["price_divergence_pct"] = None

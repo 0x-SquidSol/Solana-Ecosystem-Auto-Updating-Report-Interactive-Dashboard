@@ -10,32 +10,8 @@ from __future__ import annotations
 
 from pathlib import Path
 
+from heliostat.render.fmt import num as _num, pct as _pct, usd as _usd
 from heliostat.util import LAMPORTS_PER_SOL
-
-
-def _usd(value, decimals: int = 0) -> str:
-    if value is None:
-        return "–"
-    if abs(value) >= 1e9:
-        return f"${value / 1e9:,.2f}B"
-    if abs(value) >= 1e6:
-        return f"${value / 1e6:,.2f}M"
-    if abs(value) >= 1e3:
-        return f"${value / 1e3:,.1f}K"
-    return f"${value:,.{decimals}f}"
-
-
-def _num(value, decimals: int = 0) -> str:
-    if value is None:
-        return "–"
-    return f"{value:,.{decimals}f}"
-
-
-def _pct(value, decimals: int = 2, signed: bool = False) -> str:
-    if value is None:
-        return "–"
-    sign = "+" if signed and value > 0 else ""
-    return f"{sign}{value:.{decimals}f}%"
 
 
 def _section(report: dict, name: str) -> dict | None:

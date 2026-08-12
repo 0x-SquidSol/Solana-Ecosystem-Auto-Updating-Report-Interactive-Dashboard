@@ -659,6 +659,31 @@ def _growth_panel(report: dict) -> str:
     ]
     for p in defi.get("rwa_top") or []:
         rows.append(_row(f"· {esc(p.get('name'))}", usd(p.get("tvl_usd"))))
+
+    site = _section(report, "solana_com")
+    if site:
+        for stat in site.get("stats") or []:
+            rows.append(
+                _row(
+                    esc(str(stat.get("label", "")).lower()),
+                    esc(stat.get("value")),
+                    title="as published on solana.com/data",
+                )
+            )
+
+    dune = _section(report, "dune")
+    if dune and dune.get("enabled") and dune.get("stats"):
+        for label, row in dune["stats"].items():
+            value = next(iter(row.values())) if row else None
+            rows.append(_row(esc(label), esc(value), title="via Dune Analytics"))
+    elif dune is not None and not dune.get("enabled"):
+        rows.append(
+            _row(
+                "daily active addresses",
+                '<span class="note">via optional Dune key</span>',
+                title=esc(dune.get("note")),
+            )
+        )
     return "".join(rows)
 
 
@@ -731,14 +756,18 @@ def _alert_log_panel(report: dict) -> str:
 
 def _footer(report: dict) -> str:
     sections = report.get("sections") or {}
+    sources = report.get("sources") or {}
     supply = _section(report, "supply") or {}
+    dots = {"ok": "ok", "failed": "bad", "off": "warn"}
     parts = []
     for name, envelope in sections.items():
-        status = "ok" if envelope.get("ok") else "failed"
-        dot = "ok" if envelope.get("ok") else "bad"
+        status = sources.get(
+            name, "ok" if envelope.get("ok") else "failed"
+        )
         parts.append(
             f'<span title="fetched {esc(envelope.get("fetched_at"))}">'
-            f'<span class="dot {dot}"></span>{esc(name)}: {status}</span>'
+            f'<span class="dot {dots.get(status, "warn")}"></span>'
+            f"{esc(name)}: {esc(status)}</span>"
         )
     incinerator = supply.get("incinerator_balance_sol")
     trivia = (

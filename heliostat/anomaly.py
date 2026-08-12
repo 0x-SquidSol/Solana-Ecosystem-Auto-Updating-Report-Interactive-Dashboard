@@ -128,7 +128,7 @@ def _rule_flags(report: dict, delinquent_alert_pct: float) -> list[dict]:
         )
 
     for name, status in (report.get("sources") or {}).items():
-        if status != "ok":
+        if status == "failed":
             flags.append(
                 {
                     "kind": "rule",

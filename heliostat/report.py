@@ -29,11 +29,29 @@ import time
 
 from heliostat import __version__
 from heliostat.config import Config
-from heliostat.collect import defillama, network, news, price, supply, validators
+from heliostat.collect import (
+    defillama,
+    dune,
+    network,
+    news,
+    price,
+    solana_site,
+    supply,
+    validators,
+)
 from heliostat.rpc import RpcClient
 from heliostat.util import now_iso
 
 log = logging.getLogger(__name__)
+
+
+def _status(name: str, envelope: dict) -> str:
+    """Per-source status: ok, failed, or off (optional source disabled)."""
+    if not envelope.get("ok"):
+        return "failed"
+    if name == "dune" and not (envelope.get("data") or {}).get("enabled", True):
+        return "off"
+    return "ok"
 
 
 def assemble(cfg: Config, rpc: RpcClient | None = None) -> dict:
@@ -60,6 +78,12 @@ def assemble(cfg: Config, rpc: RpcClient | None = None) -> dict:
     sections["price"] = price.collect(timeout=timeout)
     log.info("collecting news and releases")
     sections["news"] = news.collect(timeout=timeout)
+    log.info("collecting solana.com highlights")
+    sections["solana_com"] = solana_site.collect(timeout=timeout)
+    log.info("collecting dune enrichment")
+    sections["dune"] = dune.collect(
+        cfg.dune_api_key, cfg.dune_query_ids, timeout=timeout
+    )
 
     report = {
         "generated_at": now_iso(),
@@ -67,12 +91,11 @@ def assemble(cfg: Config, rpc: RpcClient | None = None) -> dict:
         "refresh_interval_minutes": cfg.refresh_interval_minutes,
         "rpc_endpoint": rpc.active_endpoint,
         "sources": {
-            name: ("ok" if envelope.get("ok") else "failed")
-            for name, envelope in sections.items()
+            name: _status(name, envelope) for name, envelope in sections.items()
         },
         "sections": sections,
     }
-    failed = [k for k, v in report["sources"].items() if v != "ok"]
+    failed = [k for k, v in report["sources"].items() if v == "failed"]
     if failed:
         log.warning("sections failed: %s", ", ".join(failed))
     return report

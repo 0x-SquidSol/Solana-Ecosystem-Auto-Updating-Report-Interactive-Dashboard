@@ -46,6 +46,9 @@ class Config:
             "Jupiter v6": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
         }
     )
+    # optional Dune enrichment: label -> public query id, used only
+    # when DUNE_API_KEY is set
+    dune_query_ids: dict[str, int] = field(default_factory=dict)
     dune_api_key: str | None = None
 
     @classmethod

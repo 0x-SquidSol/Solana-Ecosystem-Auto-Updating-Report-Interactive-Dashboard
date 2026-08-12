@@ -23,6 +23,8 @@ def patch_all_collectors(**overrides):
         "defillama": ok_envelope({"tvl_usd": 4.8e9}),
         "price": ok_envelope({"price_usd": 76.4}),
         "news": ok_envelope({"sections": {}}),
+        "solana_com": ok_envelope({"stats": []}),
+        "dune": ok_envelope({"enabled": False, "note": "no key"}),
     }
     defaults.update(overrides)
     patches = [
@@ -44,6 +46,13 @@ def patch_all_collectors(**overrides):
             "heliostat.report.price.collect", return_value=defaults["price"]
         ),
         mock.patch("heliostat.report.news.collect", return_value=defaults["news"]),
+        mock.patch(
+            "heliostat.report.solana_site.collect",
+            return_value=defaults["solana_com"],
+        ),
+        mock.patch(
+            "heliostat.report.dune.collect", return_value=defaults["dune"]
+        ),
     ]
     return patches
 
@@ -63,12 +72,30 @@ class AssembleTests(unittest.TestCase):
         report = self.assemble_with()
         self.assertEqual(
             set(report["sections"]),
-            {"network", "validators", "supply", "defillama", "price", "news"},
+            {
+                "network",
+                "validators",
+                "supply",
+                "defillama",
+                "price",
+                "news",
+                "solana_com",
+                "dune",
+            },
         )
-        self.assertEqual(set(report["sources"].values()), {"ok"})
+        # everything ok except the keyless-by-default dune module
+        self.assertEqual(report["sources"]["dune"], "off")
+        others = {v for k, v in report["sources"].items() if k != "dune"}
+        self.assertEqual(others, {"ok"})
         self.assertEqual(report["rpc_endpoint"], "https://rpc-a.example.com")
         self.assertTrue(report["generator"].startswith("heliostat "))
         self.assertRegex(report["generated_at"], r"^\d{4}-\d{2}-\d{2}T")
+
+    def test_dune_enabled_reports_ok(self) -> None:
+        from heliostat.util import ok_envelope as ok
+
+        report = self.assemble_with(dune=ok({"enabled": True, "stats": {}}))
+        self.assertEqual(report["sources"]["dune"], "ok")
 
     def test_failed_section_is_marked(self) -> None:
         report = self.assemble_with(price=error_envelope("both sources down"))

@@ -162,8 +162,23 @@ def _growth(report: dict) -> str:
             f"{_num(defi.get('rwa_protocol_count'))} protocols",
         )
     ]
-    out = _table(rows)
     top = defi.get("rwa_top") or []
+    site = _section(report, "solana_com")
+    if site:
+        for stat in site.get("stats") or []:
+            rows.append(
+                (f"{stat.get('label')} (solana.com)", str(stat.get("value")))
+            )
+    dune = _section(report, "dune")
+    if dune and dune.get("enabled") and dune.get("stats"):
+        for label, row in dune["stats"].items():
+            value = next(iter(row.values())) if row else "–"
+            rows.append((f"{label} (Dune)", str(value)))
+    elif dune is not None and not dune.get("enabled"):
+        rows.append(
+            ("Daily active addresses", "available via optional DUNE_API_KEY")
+        )
+    out = _table(rows)
     if top:
         out += "\n**Largest tokenized-asset protocols**\n\n"
         for p in top:
@@ -238,7 +253,13 @@ def render(report: dict, output_dir: str | Path) -> Path:
     md += "## Data Sources\n\n"
     md += "| Source | Status | Fetched |\n|---|---|---|\n"
     for name, envelope in (report.get("sections") or {}).items():
-        status = "ok" if envelope.get("ok") else f"failed: {envelope.get('error')}"
+        source_status = (report.get("sources") or {}).get(name)
+        if source_status == "off":
+            status = "off (optional)"
+        elif envelope.get("ok"):
+            status = "ok"
+        else:
+            status = f"failed: {envelope.get('error')}"
         md += f"| {name} | {status} | {envelope.get('fetched_at', '–')} |\n"
     md += f"\n_On-chain data served by `{report.get('rpc_endpoint')}`._\n"
 

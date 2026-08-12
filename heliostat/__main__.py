@@ -84,18 +84,22 @@ def run_once(cfg) -> tuple[int, int]:
     markdown.render(report, cfg.output_dir)
     html.render(report, cfg.output_dir)
 
-    failed = [k for k, v in report["sources"].items() if v != "ok"]
+    statuses = report["sources"]
+    failed = [k for k, v in statuses.items() if v == "failed"]
+    off = sum(1 for v in statuses.values() if v == "off")
     active = len(report["anomalies"].get("active") or [])
     log.info(
-        "report generated in %.1fs - %d/%d sources ok, %d active anomalies",
+        "report generated in %.1fs - %d ok, %d failed, %d off, "
+        "%d active anomalies",
         time.monotonic() - started,
-        len(report["sources"]) - len(failed),
-        len(report["sources"]),
+        sum(1 for v in statuses.values() if v == "ok"),
+        len(failed),
+        off,
         active,
     )
     if failed:
         log.warning("failed sources: %s", ", ".join(failed))
-    return len(failed), len(report["sources"])
+    return len(failed), len(statuses) - off
 
 
 def main(argv: list[str] | None = None) -> int:

@@ -173,8 +173,10 @@ h1 .sub { color: var(--muted); font-weight: 400; letter-spacing: .08em; }
   .strip .tile, .col .panel { animation: none; }
 }
 .alerts {
-  border: 1px solid var(--bad); background: #180f0e;
-  margin-top: 18px; padding: 10px 14px; font-size: 13px;
+  border: 1px solid #58201e; border-left: 4px solid var(--bad);
+  background: linear-gradient(90deg, #201012 0%, #170e10 40%);
+  box-shadow: 0 0 22px rgba(255, 92, 92, .10);
+  margin-top: 18px; padding: 12px 16px; font-size: 13px;
 }
 .alerts p { padding: 2px 0; }
 .alerts .sev-alert { color: var(--bad); }

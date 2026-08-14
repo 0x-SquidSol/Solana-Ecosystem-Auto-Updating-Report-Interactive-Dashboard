@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-08-14T00:42:47Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-08-14T03:12:18Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -19,13 +19,13 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,912 |
-| Total TPS (incl. votes) | 3,550 |
-| Peak true TPS (30 min) | 2,468 |
+| True TPS (non-vote) | 1,706 |
+| Total TPS (incl. votes) | 3,350 |
+| Peak true TPS (30 min) | 2,231 |
 | Mean slot time | 0.416 s |
-| Slot | 439,123,827 |
-| Block height | 417,175,282 |
-| Epoch | 1016 - 49.03% complete, ~25.4 h remaining |
+| Slot | 439,145,354 |
+| Block height | 417,196,790 |
+| Epoch | 1016 - 54.02% complete, ~23.0 h remaining |
 
 ## Validators
 
@@ -38,7 +38,7 @@
 | Top-10 stake share | 24.4% |
 | Top-20 stake share | 35.8% |
 | Client stake split | agave 88.6% / firedancer 11.4% / unknown 0.1% |
-| Stake-weighted commission | 27.12% |
+| Stake-weighted commission | 27.13% |
 
 **Top validators by stake**
 
@@ -59,16 +59,16 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $75.98 (+1.0% 24h, +4.9% 7d) |
-| Price sources | cross-checked, 0.029% apart |
-| Market cap | $44.27B |
-| TVL | $4.85B (0.0% 24h) |
-| Stablecoin supply | $15.52B |
-| DEX volume (24h) | $1.71B |
-| REV (24h) | $838.3K (network fees $708.5K + Jito tips $129.8K) |
-| App fees (24h) | $9.12M |
-| Median fee (user txs) | 5,200 lamports (~$0.000395) - about 2,531 transactions per $1 |
-| Circulating supply | 582,613,808 SOL |
+| SOL price | $75.78 (+0.6% 24h, +4.7% 7d) |
+| Price sources | cross-checked, 0.063% apart |
+| Market cap | $44.15B |
+| TVL | $4.83B (-0.0% 24h) |
+| Stablecoin supply | $15.51B |
+| DEX volume (24h) | $1.98B |
+| REV (24h) | $837.4K (network fees $709.8K + Jito tips $127.6K) |
+| App fees (24h) | $9.71M |
+| Median fee (user txs) | 5,584 lamports (~$0.000423) - about 2,363 transactions per $1 |
+| Circulating supply | 582,613,726 SOL |
 
 ## Ecosystem Growth
 
@@ -85,10 +85,10 @@
 **Largest tokenized-asset protocols**
 
 - BlackRock BUIDL: $740.89M
-- xStocks: $383.93M
-- OnRe: $258.55M
-- Ondo Yield Assets: $178.70M
-- Hastra: $173.47M
+- xStocks: $383.37M
+- OnRe: $258.72M
+- Ondo Yield Assets: $178.65M
+- Hastra: $172.97M
 
 ## News & Upgrades
 
@@ -127,13 +127,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-08-14T00:42:34Z |
-| validators | ok | 2026-08-14T00:42:45Z |
-| supply | ok | 2026-08-14T00:42:47Z |
-| defillama | ok | 2026-08-14T00:42:34Z |
-| price | ok | 2026-08-14T00:42:32Z |
-| news | ok | 2026-08-14T00:42:33Z |
-| solana_com | ok | 2026-08-14T00:42:33Z |
-| dune | off (optional) | 2026-08-14T00:42:32Z |
+| network | ok | 2026-08-14T03:12:02Z |
+| validators | ok | 2026-08-14T03:12:16Z |
+| supply | ok | 2026-08-14T03:12:18Z |
+| defillama | ok | 2026-08-14T03:12:01Z |
+| price | ok | 2026-08-14T03:12:00Z |
+| news | ok | 2026-08-14T03:12:02Z |
+| solana_com | ok | 2026-08-14T03:12:00Z |
+| dune | off (optional) | 2026-08-14T03:11:59Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

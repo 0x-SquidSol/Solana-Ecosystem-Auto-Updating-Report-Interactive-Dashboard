@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-08-15T11:54:43Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-08-15T12:15:52Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -19,20 +19,20 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,473 |
-| Total TPS (incl. votes) | 3,124 |
-| Peak true TPS (30 min) | 2,007 |
-| Mean slot time | 0.413 s |
-| Slot | 439,428,824 |
-| Block height | 417,479,503 |
-| Epoch | 1017 - 19.64% complete, ~39.8 h remaining |
+| True TPS (non-vote) | 1,329 |
+| Total TPS (incl. votes) | 2,972 |
+| Peak true TPS (30 min) | 1,660 |
+| Mean slot time | 0.416 s |
+| Slot | 439,431,866 |
+| Block height | 417,482,544 |
+| Epoch | 1017 - 20.34% complete, ~39.8 h remaining |
 
 ## Validators
 
 | Metric | Value |
 |---|---|
-| Active validators | 688 |
-| Delinquent | 9 (0.01% of stake) |
+| Active validators | 687 |
+| Delinquent | 10 (0.02% of stake) |
 | Total stake | 435,491,340 SOL |
 | Nakamoto coefficient | 18 |
 | Top-10 stake share | 24.4% |
@@ -59,16 +59,16 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $75.18 (-0.3% 24h, +0.5% 7d) |
-| Price sources | cross-checked, 0.026% apart |
-| Market cap | $43.81B |
-| TVL | $4.81B (-0.5% 24h) |
+| SOL price | $75.17 (-0.3% 24h, +0.2% 7d) |
+| Price sources | cross-checked, 0.055% apart |
+| Market cap | $43.80B |
+| TVL | $4.81B (-0.6% 24h) |
 | Stablecoin supply | $15.42B |
 | DEX volume (24h) | $1.61B |
 | REV (24h) | $695.6K (network fees $602.9K + Jito tips $92.7K) |
 | App fees (24h) | $7.97M |
-| Median fee (user txs) | 5,527 lamports (~$0.000416) - about 2,407 transactions per $1 |
-| Circulating supply | 582,728,219 SOL |
+| Median fee (user txs) | 5,463 lamports (~$0.000411) - about 2,435 transactions per $1 |
+| Circulating supply | 582,728,209 SOL |
 
 ## Ecosystem Growth
 
@@ -85,10 +85,10 @@
 **Largest tokenized-asset protocols**
 
 - BlackRock BUIDL: $740.96M
-- xStocks: $379.84M
+- xStocks: $379.82M
 - OnRe: $261.05M
 - Ondo Yield Assets: $178.85M
-- Hastra: $172.42M
+- Hastra: $172.41M
 
 ## News & Upgrades
 
@@ -127,13 +127,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-08-15T11:54:31Z |
-| validators | ok | 2026-08-15T11:54:41Z |
-| supply | ok | 2026-08-15T11:54:43Z |
-| defillama | ok | 2026-08-15T11:54:31Z |
-| price | ok | 2026-08-15T11:54:30Z |
-| news | ok | 2026-08-15T11:54:31Z |
-| solana_com | ok | 2026-08-15T11:54:30Z |
-| dune | off (optional) | 2026-08-15T11:54:29Z |
+| network | ok | 2026-08-15T12:15:41Z |
+| validators | ok | 2026-08-15T12:15:50Z |
+| supply | ok | 2026-08-15T12:15:52Z |
+| defillama | ok | 2026-08-15T12:15:40Z |
+| price | ok | 2026-08-15T12:15:39Z |
+| news | ok | 2026-08-15T12:15:40Z |
+| solana_com | ok | 2026-08-15T12:15:40Z |
+| dune | off (optional) | 2026-08-15T12:15:39Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

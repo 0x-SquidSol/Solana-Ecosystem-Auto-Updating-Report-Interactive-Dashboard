@@ -75,6 +75,13 @@ def collect(rpc: RpcClient, top_n: int = 25, delinquent_alert_pct: float = 5.0) 
         delinquent_stake_pct = (
             round(100.0 * delinquent_total / combined_total, 2) if combined_total else None
         )
+        # consensus halts if more than a third of stake stops voting;
+        # express current delinquency as consumption of that margin
+        stall_buffer_used_pct = (
+            round(min(100.0, delinquent_stake_pct * 3.0), 1)
+            if delinquent_stake_pct is not None
+            else None
+        )
 
         top_validators = sorted(
             current, key=lambda v: v.get("activatedStake", 0), reverse=True
@@ -151,6 +158,7 @@ def collect(rpc: RpcClient, top_n: int = 25, delinquent_alert_pct: float = 5.0) 
             "active_count": len(current),
             "delinquent_count": len(delinquent),
             "delinquent_stake_pct": delinquent_stake_pct,
+            "stall_buffer_used_pct": stall_buffer_used_pct,
             "delinquency_alert": (
                 delinquent_stake_pct is not None
                 and delinquent_stake_pct >= delinquent_alert_pct

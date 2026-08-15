@@ -136,6 +136,14 @@ Every alert is appended to a rolling 14-day log, so the dashboard
 shows recently *resolved* incidents alongside active ones — a
 detector whose work stays visible.
 
+This is not theoretical. On 2026-08-12 at 04:16 UTC the detector
+caught a delinquency spike to **21.2% of all stake** — roughly
+two-thirds of the way to the 33.3% threshold at which Solana halts —
+and recorded its recovery within the following half hour. The
+validators panel carries a dedicated **consensus stall buffer** gauge
+so events like this read at a glance: it shows how much of the halt
+margin current delinquency is consuming.
+
 ## Configuration
 
 Everything lives in `config.json`; environment variables override.

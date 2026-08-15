@@ -116,16 +116,20 @@ class RuleTests(unittest.TestCase):
             any(a["metric"] == "network.health" for a in result["active"])
         )
 
-    def test_delinquency_alert_fires(self) -> None:
+    def test_delinquency_alert_fires_with_halt_context(self) -> None:
         report = healthy_report()
         report["sections"]["validators"]["data"] = {
             "delinquency_alert": True,
-            "delinquent_stake_pct": 7.2,
+            "delinquent_stake_pct": 21.2,
+            "stall_buffer_used_pct": 63.6,
         }
         with tempfile.TemporaryDirectory() as tmp:
             result = anomaly.detect(report, SnapshotStore(tmp), 5.0, now=utc())
         messages = [a["message"] for a in result["active"]]
-        self.assertTrue(any("7.2" in m for m in messages))
+        self.assertTrue(any("21.2" in m for m in messages))
+        self.assertTrue(
+            any("63.6% of the way to the 33.3% consensus halt" in m for m in messages)
+        )
 
     def test_price_divergence_fires(self) -> None:
         report = healthy_report()

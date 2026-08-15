@@ -55,6 +55,8 @@ class ValidatorCollectorTests(unittest.TestCase):
         self.assertEqual(data["total_stake_sol"], 105)
         # 5 of 105 total stake is delinquent
         self.assertEqual(data["delinquent_stake_pct"], 4.76)
+        # 4.76% delinquent consumes 14.3% of the 33.3% halt margin
+        self.assertEqual(data["stall_buffer_used_pct"], 14.3)
         self.assertFalse(data["delinquency_alert"])
 
     def test_delinquency_alert_threshold(self) -> None:

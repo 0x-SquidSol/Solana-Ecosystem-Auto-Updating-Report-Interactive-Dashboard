@@ -70,6 +70,11 @@ def _validators(report: dict) -> str:
             f"{_num(data.get('delinquent_count'))} "
             f"({_pct(data.get('delinquent_stake_pct'))} of stake)",
         ),
+        (
+            "Consensus stall buffer",
+            f"{_pct(data.get('stall_buffer_used_pct'), 1)} of the 33.3% "
+            "halt threshold consumed",
+        ),
         ("Total stake", f"{_num(data.get('total_stake_sol'))} SOL"),
         ("Nakamoto coefficient", _num(data.get("nakamoto_coefficient"))),
         ("Top-10 stake share", _pct(data.get("top10_stake_pct"), 1)),

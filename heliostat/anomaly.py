@@ -111,15 +111,22 @@ def _rule_flags(report: dict, delinquent_alert_pct: float) -> list[dict]:
 
     validators = (sections.get("validators") or {}).get("data") or {}
     if validators.get("delinquency_alert"):
+        delinquent_pct = validators.get("delinquent_stake_pct")
+        buffer_used = validators.get("stall_buffer_used_pct")
+        context = (
+            f" - {buffer_used:g}% of the way to the 33.3% consensus "
+            "halt threshold"
+            if buffer_used is not None
+            else ""
+        )
         flags.append(
             {
                 "kind": "rule",
                 "severity": "alert",
                 "metric": "validators.delinquent_stake_pct",
                 "message": (
-                    f"delinquent stake at "
-                    f"{validators.get('delinquent_stake_pct')}% exceeds the "
-                    f"{delinquent_alert_pct}% limit"
+                    f"delinquent stake at {delinquent_pct}% exceeds the "
+                    f"{delinquent_alert_pct}% limit{context}"
                 ),
             }
         )

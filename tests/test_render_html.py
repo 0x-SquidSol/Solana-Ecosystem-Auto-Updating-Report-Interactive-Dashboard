@@ -195,6 +195,19 @@ class ChartTests(unittest.TestCase):
         self.assertIn('data-vals="[[', text)
         self.assertIn('aria-label="commission distribution"', text)
 
+    def test_stall_gauge_states(self) -> None:
+        report = full_report()
+        report["sections"]["validators"]["data"]["stall_buffer_used_pct"] = 0.2
+        text = render_to_text(report)
+        self.assertIn("consensus stall buffer", text)
+        self.assertIn('class="g-ok"', text)
+        self.assertIn("halts at 33.3%", text)
+
+        report["sections"]["validators"]["data"]["stall_buffer_used_pct"] = 63.6
+        text = render_to_text(report)
+        self.assertIn('class="g-bad"', text)
+        self.assertIn("63.6% of the halt threshold consumed", text)
+
     def test_skyline_hidden_with_few_validators(self) -> None:
         report = full_report()
         report["sections"]["validators"]["data"]["all_validators"] = [

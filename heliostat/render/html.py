@@ -274,6 +274,11 @@ a:focus-visible, summary:focus-visible {
   color: var(--muted); font-size: 11px; white-space: nowrap;
   font-variant-numeric: tabular-nums;
 }
+.gauge-wrap { margin-top: 10px; }
+.gauge { height: 8px; background: var(--dash); margin-top: 6px; }
+.gauge i { display: block; height: 100%; }
+.g-ok { background: var(--ok); } .g-warn { background: var(--warn); }
+.g-bad { background: var(--bad); }
 .chip-a { background: var(--brand-a); } .chip-f { background: var(--brand-b); }
 .hbar { display: flex; height: 8px; background: var(--dash); margin-top: 8px; }
 .hbar i { display: block; height: 100%; }
@@ -532,6 +537,33 @@ def _sparkline(label: str, points: list[tuple[str, float]], formatter) -> str:
 
 def _series(report: dict, path: str) -> list[tuple[str, float]]:
     return (report.get("series") or {}).get(path) or []
+
+
+def _stall_gauge(data: dict) -> str:
+    """How much of the consensus halt margin delinquency is consuming.
+
+    Solana stops producing finalized blocks if more than a third of
+    stake goes delinquent; the gauge shows current delinquency on a
+    0-to-threshold scale so a near-halt reads as a nearly full bar.
+    """
+    used = data.get("stall_buffer_used_pct")
+    if used is None:
+        return ""
+    delinquent = data.get("delinquent_stake_pct")
+    cls = "g-ok" if used < 25 else ("g-warn" if used < 60 else "g-bad")
+    width = max(0.5, min(100.0, float(used)))
+    return (
+        '<div class="gauge-wrap" title="the network halts if delinquent '
+        'stake exceeds one third of total stake">'
+        '<div class="spark-head"><span class="l">consensus stall buffer</span>'
+        f'<span class="sky-val">{pct(delinquent)} delinquent · halts at 33.3%'
+        "</span></div>"
+        f'<div class="gauge" role="img" aria-label="{pct(used, 1)} of the '
+        'consensus halt threshold consumed">'
+        f'<i class="{cls}" style="width:{width:.1f}%"></i></div>'
+        f'<div class="chips"><span>{pct(used, 1)} of the halt threshold '
+        "consumed</span></div></div>"
+    )
 
 
 SKYLINE_H = 96.0
@@ -847,6 +879,7 @@ def _validators_panel(report: dict, footnote: bool = True) -> str:
         lambda v: pct(v),
     )
     out += "".join(rows)
+    out += _stall_gauge(data)
     out += _skyline(data)
     out += _commission_strip(data)
     top = data.get("top_validators") or []

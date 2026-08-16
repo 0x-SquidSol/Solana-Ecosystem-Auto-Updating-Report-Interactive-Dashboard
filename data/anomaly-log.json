@@ -132,5 +132,15 @@
   "severity": "warning",
   "metric": "sources.supply",
   "message": "data source 'supply' failed this run"
+ },
+ {
+  "seen_at": "2026-08-16T21:54:15Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "price.price_usd",
+  "message": "SOL price is 2.8 standard deviations below its recent mean (74.45 vs 75.5406)",
+  "value": 74.45,
+  "baseline_mean": 75.5406,
+  "z_score": -2.77
  }
 ]

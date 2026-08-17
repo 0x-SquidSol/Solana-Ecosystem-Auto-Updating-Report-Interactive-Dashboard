@@ -1,10 +1,10 @@
 # Solana Ecosystem Report
 
-> Generated 2026-08-17T22:13:58Z - heliostat 0.1.0 - 6/8 sources ok - refreshes every 15 min
+> Generated 2026-08-17T22:39:57Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
-- 🟡 **WARNING**: data source 'supply' failed this run
+- ✅ No active anomalies.
 
 **Recently seen**
 
@@ -19,13 +19,13 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 2,251 |
-| Total TPS (incl. votes) | 3,916 |
-| Peak true TPS (30 min) | 2,982 |
-| Mean slot time | 0.411 s |
-| Slot | 439,933,821 |
-| Block height | 417,984,229 |
-| Epoch | 1018 - 36.53% complete, ~31.3 h remaining |
+| True TPS (non-vote) | 2,069 |
+| Total TPS (incl. votes) | 3,719 |
+| Peak true TPS (30 min) | 2,387 |
+| Mean slot time | 0.415 s |
+| Slot | 439,937,711 |
+| Block height | 417,988,115 |
+| Epoch | 1018 - 37.43% complete, ~31.2 h remaining |
 
 ## Validators
 
@@ -60,14 +60,16 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $75.84 (+1.3% 24h, -0.6% 7d) |
-| Price sources | cross-checked, 0.053% apart |
-| Market cap | $44.21B |
+| SOL price | $75.75 (+1.3% 24h, -0.6% 7d) |
+| Price sources | cross-checked, 0.024% apart |
+| Market cap | $44.15B |
 | TVL | $4.85B (+0.8% 24h) |
 | Stablecoin supply | $15.37B |
 | DEX volume (24h) | $1.06B |
-| REV (24h) | $581.8K (network fees $468.5K + Jito tips $113.3K) |
+| REV (24h) | $586.3K (network fees $468.5K + Jito tips $117.8K) |
 | App fees (24h) | $6.80M |
+| Median fee (user txs) | 5,100 lamports (~$0.000386) - about 2,588 transactions per $1 |
+| Circulating supply | 582,895,862 SOL |
 
 ## Ecosystem Growth
 
@@ -85,9 +87,9 @@
 
 - BlackRock BUIDL: $741.35M
 - xStocks: $388.22M
-- OnRe: $266.86M
-- Ondo Yield Assets: $178.78M
-- Hastra: $170.80M
+- OnRe: $267.26M
+- Ondo Yield Assets: $178.70M
+- Hastra: $170.28M
 
 ## News & Upgrades
 
@@ -126,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-08-17T22:12:49Z |
-| validators | ok | 2026-08-17T22:13:58Z |
-| supply | failed: getSupply: all endpoints failed (network error: The read operation timed out (https://api.mainnet-beta.solana.com); network error: The read operation timed out (https://solana-rpc.publicnode.com)) | 2026-08-17T22:13:57Z |
-| defillama | ok | 2026-08-17T22:12:49Z |
-| price | ok | 2026-08-17T22:12:47Z |
-| news | ok | 2026-08-17T22:12:49Z |
-| solana_com | ok | 2026-08-17T22:12:48Z |
-| dune | off (optional) | 2026-08-17T22:12:47Z |
+| network | ok | 2026-08-17T22:39:46Z |
+| validators | ok | 2026-08-17T22:39:54Z |
+| supply | ok | 2026-08-17T22:39:57Z |
+| defillama | ok | 2026-08-17T22:39:46Z |
+| price | ok | 2026-08-17T22:39:44Z |
+| news | ok | 2026-08-17T22:39:45Z |
+| solana_com | ok | 2026-08-17T22:39:45Z |
+| dune | off (optional) | 2026-08-17T22:39:44Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

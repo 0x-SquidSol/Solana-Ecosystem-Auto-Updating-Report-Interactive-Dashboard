@@ -1,31 +1,31 @@
 # Solana Ecosystem Report
 
-> Generated 2026-08-17T23:19:22Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-08-17T23:44:03Z - heliostat 0.1.0 - 6/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
-- ✅ No active anomalies.
+- 🟡 **WARNING**: data source 'supply' failed this run
 
 **Recently seen**
 
-- 2026-08-17T16:46Z slot time is 5.0 standard deviations above its recent mean (0.427 vs 0.416297)
 - 2026-08-17T19:58Z data source 'supply' failed this run
 - 2026-08-17T20:21Z data source 'supply' failed this run
 - 2026-08-17T21:16Z data source 'supply' failed this run
 - 2026-08-17T22:13Z data source 'supply' failed this run
+- 2026-08-17T23:44Z data source 'supply' failed this run
 
 ## Network
 
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,860 |
-| Total TPS (incl. votes) | 3,514 |
-| Peak true TPS (30 min) | 2,593 |
+| True TPS (non-vote) | 1,750 |
+| Total TPS (incl. votes) | 3,401 |
+| Peak true TPS (30 min) | 2,131 |
 | Mean slot time | 0.414 s |
-| Slot | 439,943,419 |
-| Block height | 417,993,823 |
-| Epoch | 1018 - 38.75% complete, ~30.4 h remaining |
+| Slot | 439,946,850 |
+| Block height | 417,997,249 |
+| Epoch | 1018 - 39.55% complete, ~30.0 h remaining |
 
 ## Validators
 
@@ -60,16 +60,14 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $75.79 (+2.0% 24h, -0.8% 7d) |
-| Price sources | cross-checked, 0.019% apart |
-| Market cap | $44.18B |
-| TVL | $4.85B (+0.8% 24h) |
+| SOL price | $75.93 (+2.0% 24h, -0.8% 7d) |
+| Price sources | cross-checked, 0.050% apart |
+| Market cap | $44.26B |
+| TVL | $4.85B (+0.9% 24h) |
 | Stablecoin supply | $15.37B |
 | DEX volume (24h) | $1.06B |
-| REV (24h) | $586.3K (network fees $468.5K + Jito tips $117.8K) |
+| REV (24h) | $588.6K (network fees $468.5K + Jito tips $120.1K) |
 | App fees (24h) | $6.80M |
-| Median fee (user txs) | 5,373 lamports (~$0.000407) - about 2,456 transactions per $1 |
-| Circulating supply | 582,895,840 SOL |
 
 ## Ecosystem Growth
 
@@ -88,7 +86,7 @@
 - BlackRock BUIDL: $741.35M
 - xStocks: $388.22M
 - OnRe: $267.26M
-- Ondo Yield Assets: $178.70M
+- Ondo Yield Assets: $178.73M
 - Hastra: $170.28M
 
 ## News & Upgrades
@@ -128,13 +126,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-08-17T23:19:11Z |
-| validators | ok | 2026-08-17T23:19:20Z |
-| supply | ok | 2026-08-17T23:19:22Z |
-| defillama | ok | 2026-08-17T23:19:10Z |
-| price | ok | 2026-08-17T23:19:09Z |
-| news | ok | 2026-08-17T23:19:10Z |
-| solana_com | ok | 2026-08-17T23:19:09Z |
-| dune | off (optional) | 2026-08-17T23:19:09Z |
+| network | ok | 2026-08-17T23:42:54Z |
+| validators | ok | 2026-08-17T23:44:03Z |
+| supply | failed: getSupply: all endpoints failed (network error: The read operation timed out (https://api.mainnet-beta.solana.com); network error: The read operation timed out (https://solana-rpc.publicnode.com)) | 2026-08-17T23:44:02Z |
+| defillama | ok | 2026-08-17T23:42:53Z |
+| price | ok | 2026-08-17T23:42:51Z |
+| news | ok | 2026-08-17T23:42:52Z |
+| solana_com | ok | 2026-08-17T23:42:52Z |
+| dune | off (optional) | 2026-08-17T23:42:50Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

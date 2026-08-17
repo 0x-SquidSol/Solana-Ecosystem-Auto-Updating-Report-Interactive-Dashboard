@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-08-16T23:53:55Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-08-17T00:36:22Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -19,13 +19,13 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,486 |
-| Total TPS (incl. votes) | 3,136 |
-| Peak true TPS (30 min) | 2,214 |
+| True TPS (non-vote) | 1,970 |
+| Total TPS (incl. votes) | 3,619 |
+| Peak true TPS (30 min) | 2,400 |
 | Mean slot time | 0.414 s |
-| Slot | 439,740,377 |
-| Block height | 417,790,943 |
-| Epoch | 1017 - 91.75% complete, ~4.1 h remaining |
+| Slot | 439,746,501 |
+| Block height | 417,797,064 |
+| Epoch | 1017 - 93.17% complete, ~3.4 h remaining |
 
 ## Validators
 
@@ -60,16 +60,16 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $74.57 (-1.5% 24h, -3.8% 7d) |
-| Price sources | cross-checked, 0.057% apart |
-| Market cap | $43.46B |
-| TVL | $4.78B (-0.7% 24h) |
-| Stablecoin supply | $15.39B |
+| SOL price | $74.46 (-1.3% 24h, -2.9% 7d) |
+| Price sources | cross-checked, 0.137% apart |
+| Market cap | $43.40B |
+| TVL | $4.78B (-0.8% 24h) |
+| Stablecoin supply | $15.42B |
 | DEX volume (24h) | $1.17B |
-| REV (24h) | $672.1K (network fees $593.8K + Jito tips $78.3K) |
-| App fees (24h) | $8.15M |
-| Median fee (user txs) | 5,379 lamports (~$0.000401) - about 2,493 transactions per $1 |
-| Circulating supply | 582,784,167 SOL |
+| REV (24h) | $672.4K (network fees $593.8K + Jito tips $78.6K) |
+| App fees (24h) | $8.25M |
+| Median fee (user txs) | 5,078 lamports (~$0.000378) - about 2,645 transactions per $1 |
+| Circulating supply | 582,784,144 SOL |
 
 ## Ecosystem Growth
 
@@ -86,9 +86,9 @@
 **Largest tokenized-asset protocols**
 
 - BlackRock BUIDL: $740.96M
-- xStocks: $383.94M
+- xStocks: $383.59M
 - OnRe: $262.23M
-- Ondo Yield Assets: $178.97M
+- Ondo Yield Assets: $179.01M
 - Hastra: $171.64M
 
 ## News & Upgrades
@@ -96,9 +96,9 @@
 
 **Solana News**
 
+- [Transaction v1 and the ALT Trade-off](https://solana.com/news/transaction-v1-and-the-alt-trade-off) - 2026-08-17
 - [Solana Changelog: August 13, 2026](https://solana.com/news/solana-changelog-august-13-2026) - 2026-08-13
 - [Why Asia Is Ahead on Stablecoins, According to Reap's Daren Guo](https://solana.com/news/bits-to-bricks-asia-ahead-stablecoins-daren-guo-reap) - 2026-08-12
-- [MoneyGram Ramps launches on Solana](https://solana.com/news/moneygram-ramps) - 2026-08-11
 
 **Solana Status**
 
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-08-16T23:53:44Z |
-| validators | ok | 2026-08-16T23:53:53Z |
-| supply | ok | 2026-08-16T23:53:55Z |
-| defillama | ok | 2026-08-16T23:53:44Z |
-| price | ok | 2026-08-16T23:53:42Z |
-| news | ok | 2026-08-16T23:53:44Z |
-| solana_com | ok | 2026-08-16T23:53:43Z |
-| dune | off (optional) | 2026-08-16T23:53:42Z |
+| network | ok | 2026-08-17T00:36:06Z |
+| validators | ok | 2026-08-17T00:36:20Z |
+| supply | ok | 2026-08-17T00:36:22Z |
+| defillama | ok | 2026-08-17T00:36:04Z |
+| price | ok | 2026-08-17T00:36:03Z |
+| news | ok | 2026-08-17T00:36:04Z |
+| solana_com | ok | 2026-08-17T00:36:03Z |
+| dune | off (optional) | 2026-08-17T00:36:03Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

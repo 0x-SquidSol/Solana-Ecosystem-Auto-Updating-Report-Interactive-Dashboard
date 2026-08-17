@@ -1,10 +1,10 @@
 # Solana Ecosystem Report
 
-> Generated 2026-08-17T20:21:33Z - heliostat 0.1.0 - 6/8 sources ok - refreshes every 15 min
+> Generated 2026-08-17T20:50:05Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
-- 🟡 **WARNING**: data source 'supply' failed this run
+- ✅ No active anomalies.
 
 **Recently seen**
 
@@ -19,20 +19,20 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 2,738 |
-| Total TPS (incl. votes) | 4,388 |
-| Peak true TPS (30 min) | 3,788 |
-| Mean slot time | 0.413 s |
-| Slot | 439,917,562 |
-| Block height | 417,967,996 |
-| Epoch | 1018 - 32.77% complete, ~33.3 h remaining |
+| True TPS (non-vote) | 2,602 |
+| Total TPS (incl. votes) | 4,242 |
+| Peak true TPS (30 min) | 3,147 |
+| Mean slot time | 0.416 s |
+| Slot | 439,921,819 |
+| Block height | 417,972,246 |
+| Epoch | 1018 - 33.75% complete, ~33.1 h remaining |
 
 ## Validators
 
 | Metric | Value |
 |---|---|
-| Active validators | 688 |
-| Delinquent | 7 (0.08% of stake) |
+| Active validators | 689 |
+| Delinquent | 6 (0.08% of stake) |
 | Consensus stall buffer | 0.2% of the 33.3% halt threshold consumed |
 | Total stake | 435,676,796 SOL |
 | Nakamoto coefficient | 18 |
@@ -60,14 +60,16 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $75.60 (+0.7% 24h, -0.1% 7d) |
-| Price sources | cross-checked, 0.012% apart |
-| Market cap | $44.07B |
-| TVL | $4.85B (+0.9% 24h) |
+| SOL price | $75.93 (+0.7% 24h, -0.1% 7d) |
+| Price sources | cross-checked, 0.090% apart |
+| Market cap | $44.26B |
+| TVL | $4.85B (+0.8% 24h) |
 | Stablecoin supply | $15.37B |
 | DEX volume (24h) | $1.06B |
-| REV (24h) | $575.0K (network fees $468.5K + Jito tips $106.5K) |
+| REV (24h) | $579.1K (network fees $468.5K + Jito tips $110.6K) |
 | App fees (24h) | $6.80M |
+| Median fee (user txs) | 5,612 lamports (~$0.000426) - about 2,347 transactions per $1 |
+| Circulating supply | 582,895,931 SOL |
 
 ## Ecosystem Growth
 
@@ -126,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-08-17T20:20:24Z |
-| validators | ok | 2026-08-17T20:21:33Z |
-| supply | failed: getSupply: all endpoints failed (network error: The read operation timed out (https://api.mainnet-beta.solana.com); network error: The read operation timed out (https://solana-rpc.publicnode.com)) | 2026-08-17T20:21:33Z |
-| defillama | ok | 2026-08-17T20:20:24Z |
-| price | ok | 2026-08-17T20:20:23Z |
-| news | ok | 2026-08-17T20:20:25Z |
-| solana_com | ok | 2026-08-17T20:20:23Z |
-| dune | off (optional) | 2026-08-17T20:20:22Z |
+| network | ok | 2026-08-17T20:49:54Z |
+| validators | ok | 2026-08-17T20:50:03Z |
+| supply | ok | 2026-08-17T20:50:05Z |
+| defillama | ok | 2026-08-17T20:49:53Z |
+| price | ok | 2026-08-17T20:49:52Z |
+| news | ok | 2026-08-17T20:49:53Z |
+| solana_com | ok | 2026-08-17T20:49:52Z |
+| dune | off (optional) | 2026-08-17T20:49:51Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-08-17T15:15:40Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-08-17T15:46:23Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -19,13 +19,13 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 2,300 |
-| Total TPS (incl. votes) | 3,958 |
-| Peak true TPS (30 min) | 2,762 |
-| Mean slot time | 0.413 s |
-| Slot | 439,873,803 |
-| Block height | 417,924,321 |
-| Epoch | 1018 - 22.64% complete, ~38.3 h remaining |
+| True TPS (non-vote) | 2,226 |
+| Total TPS (incl. votes) | 3,863 |
+| Peak true TPS (30 min) | 2,942 |
+| Mean slot time | 0.419 s |
+| Slot | 439,878,206 |
+| Block height | 417,928,724 |
+| Epoch | 1018 - 23.66% complete, ~38.4 h remaining |
 
 ## Validators
 
@@ -60,16 +60,16 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $75.86 (+0.9% 24h, -0.7% 7d) |
-| Price sources | cross-checked, 0.092% apart |
-| Market cap | $44.22B |
+| SOL price | $75.98 (+0.9% 24h, -0.7% 7d) |
+| Price sources | cross-checked, 0.027% apart |
+| Market cap | $44.29B |
 | TVL | $4.83B (+0.4% 24h) |
 | Stablecoin supply | $15.37B |
 | DEX volume (24h) | $1.06B |
-| REV (24h) | $552.2K (network fees $468.5K + Jito tips $83.7K) |
+| REV (24h) | $553.5K (network fees $468.5K + Jito tips $85.0K) |
 | App fees (24h) | $6.80M |
-| Median fee (user txs) | 5,400 lamports (~$0.000410) - about 2,441 transactions per $1 |
-| Circulating supply | 582,899,184 SOL |
+| Median fee (user txs) | 5,514 lamports (~$0.000419) - about 2,387 transactions per $1 |
+| Circulating supply | 582,899,166 SOL |
 
 ## Ecosystem Growth
 
@@ -109,7 +109,7 @@
 **Agave Releases**
 
 - [Release v4.2.1](https://github.com/anza-xyz/agave/releases/tag/v4.2.1) - 2026-08-14
-- [Release v4.3.0-beta.0](https://github.com/anza-xyz/agave/releases/tag/v4.3.0-beta.0) - 2026-08-14
+- [Release v4.3.0-beta.0](https://github.com/anza-xyz/agave/releases/tag/v4.3.0-beta.0) - 2026-08-17
 - [Release v4.2.0](https://github.com/anza-xyz/agave/releases/tag/v4.2.0) - 2026-08-11
 
 **Firedancer Releases**
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-08-17T15:15:28Z |
-| validators | ok | 2026-08-17T15:15:37Z |
-| supply | ok | 2026-08-17T15:15:40Z |
-| defillama | ok | 2026-08-17T15:15:28Z |
-| price | ok | 2026-08-17T15:15:30Z |
-| news | ok | 2026-08-17T15:15:27Z |
-| solana_com | ok | 2026-08-17T15:15:27Z |
-| dune | off (optional) | 2026-08-17T15:15:26Z |
+| network | ok | 2026-08-17T15:46:10Z |
+| validators | ok | 2026-08-17T15:46:21Z |
+| supply | ok | 2026-08-17T15:46:23Z |
+| defillama | ok | 2026-08-17T15:46:09Z |
+| price | ok | 2026-08-17T15:46:08Z |
+| news | ok | 2026-08-17T15:46:09Z |
+| solana_com | ok | 2026-08-17T15:46:09Z |
+| dune | off (optional) | 2026-08-17T15:46:08Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

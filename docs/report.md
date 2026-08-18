@@ -1,46 +1,47 @@
 # Solana Ecosystem Report
 
-> Generated 2026-08-18T14:03:47Z - heliostat 0.1.0 - 6/8 sources ok - refreshes every 15 min
+> Generated 2026-08-18T14:50:29Z - heliostat 0.1.0 - 6/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
-- 🟡 **WARNING**: true TPS is 2.6 standard deviations above its recent mean (3,282 vs 1,822)
+- 🟡 **WARNING**: true TPS is 2.8 standard deviations above its recent mean (3,421 vs 1,827)
+- 🟡 **WARNING**: SOL price is 2.9 standard deviations above its recent mean (76.76 vs 75.5492)
 - 🟡 **WARNING**: data source 'supply' failed this run
 
 **Recently seen**
 
-- 2026-08-18T09:01Z data source 'supply' failed this run
-- 2026-08-18T10:18Z data source 'supply' failed this run
-- 2026-08-18T11:16Z data source 'supply' failed this run
 - 2026-08-18T14:03Z true TPS is 2.6 standard deviations above its recent mean (3,282 vs 1,822)
 - 2026-08-18T14:03Z data source 'supply' failed this run
+- 2026-08-18T14:50Z true TPS is 2.8 standard deviations above its recent mean (3,421 vs 1,827)
+- 2026-08-18T14:50Z SOL price is 2.9 standard deviations above its recent mean (76.76 vs 75.5492)
+- 2026-08-18T14:50Z data source 'supply' failed this run
 
 ## Network
 
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 3,282 |
-| Total TPS (incl. votes) | 4,910 |
-| Peak true TPS (30 min) | 3,946 |
-| Mean slot time | 0.418 s |
-| Slot | 440,071,159 |
-| Block height | 418,121,470 |
-| Epoch | 1018 - 68.32% complete, ~15.9 h remaining |
+| True TPS (non-vote) | 3,421 |
+| Total TPS (incl. votes) | 5,060 |
+| Peak true TPS (30 min) | 4,093 |
+| Mean slot time | 0.415 s |
+| Slot | 440,077,899 |
+| Block height | 418,128,198 |
+| Epoch | 1018 - 69.88% complete, ~15.0 h remaining |
 
 ## Validators
 
 | Metric | Value |
 |---|---|
-| Active validators | 684 |
-| Delinquent | 11 (0.21% of stake) |
-| Consensus stall buffer | 0.6% of the 33.3% halt threshold consumed |
+| Active validators | 688 |
+| Delinquent | 7 (0.08% of stake) |
+| Consensus stall buffer | 0.2% of the 33.3% halt threshold consumed |
 | Total stake | 435,676,796 SOL |
 | Nakamoto coefficient | 18 |
 | Top-10 stake share | 24.4% |
-| Top-20 stake share | 35.8% |
-| Client stake split | agave 88.5% / firedancer 11.4% / unknown 0.1% |
-| Stake-weighted commission | 27.11% |
+| Top-20 stake share | 35.7% |
+| Client stake split | agave 88.6% / firedancer 11.4% / unknown 0.1% |
+| Stake-weighted commission | 27.09% |
 
 **Top validators by stake**
 
@@ -50,24 +51,24 @@
 | 2 | `he1i..uBtk` | 16,003,006 SOL | 3.68% | 0% |
 | 3 | `Catz..Diqb` | 12,495,360 SOL | 2.87% | 5% |
 | 4 | `3N7s..iD5g` | 12,259,520 SOL | 2.82% | 0% |
-| 5 | `26pV..3dJx` | 9,203,436 SOL | 2.12% | 7% |
+| 5 | `26pV..3dJx` | 9,203,436 SOL | 2.11% | 7% |
 | 6 | `51JB..UNAm` | 8,992,381 SOL | 2.07% | 10% |
 | 7 | `8Gbw..F8iD` | 8,305,834 SOL | 1.91% | 0% |
-| 8 | `9QU2..29mF` | 7,983,993 SOL | 1.84% | 7% |
+| 8 | `9QU2..29mF` | 7,983,993 SOL | 1.83% | 7% |
 | 9 | `CvSb..wycB` | 7,342,590 SOL | 1.69% | 5% |
-| 10 | `Dumi..Zk4a` | 6,588,037 SOL | 1.52% | 0% |
+| 10 | `Dumi..Zk4a` | 6,588,037 SOL | 1.51% | 0% |
 
 ## Economy
 
 | Metric | Value |
 |---|---|
-| SOL price | $76.13 (+1.0% 24h, +0.3% 7d) |
-| Price sources | cross-checked, 0.016% apart |
-| Market cap | $44.38B |
+| SOL price | $76.76 (+1.0% 24h, +0.3% 7d) |
+| Price sources | cross-checked, 0.087% apart |
+| Market cap | $44.76B |
 | TVL | $4.86B (+1.8% 24h) |
-| Stablecoin supply | $15.38B |
+| Stablecoin supply | $15.40B |
 | DEX volume (24h) | $1.47B |
-| REV (24h) | $860.6K (network fees $732.8K + Jito tips $127.8K) |
+| REV (24h) | $863.8K (network fees $732.8K + Jito tips $131.0K) |
 | App fees (24h) | $11.19M |
 
 ## Ecosystem Growth
@@ -86,7 +87,7 @@
 
 - BlackRock BUIDL: $741.35M
 - xStocks: $384.44M
-- OnRe: $268.11M
+- OnRe: $268.12M
 - Ondo Yield Assets: $178.62M
 - Hastra: $169.50M
 
@@ -127,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-08-18T14:02:38Z |
-| validators | ok | 2026-08-18T14:03:47Z |
-| supply | failed: getSupply: all endpoints failed (network error: The read operation timed out (https://api.mainnet-beta.solana.com); network error: The read operation timed out (https://solana-rpc.publicnode.com)) | 2026-08-18T14:03:46Z |
-| defillama | ok | 2026-08-18T14:02:38Z |
-| price | ok | 2026-08-18T14:02:36Z |
-| news | ok | 2026-08-18T14:02:38Z |
-| solana_com | ok | 2026-08-18T14:02:37Z |
-| dune | off (optional) | 2026-08-18T14:02:36Z |
+| network | ok | 2026-08-18T14:50:28Z |
+| validators | ok | 2026-08-18T14:50:29Z |
+| supply | failed: getSupply: all endpoints failed (network error: The read operation timed out (https://api.mainnet-beta.solana.com); network error: The read operation timed out (https://solana-rpc.publicnode.com)) | 2026-08-18T14:50:28Z |
+| defillama | ok | 2026-08-18T14:49:20Z |
+| price | ok | 2026-08-18T14:49:19Z |
+| news | ok | 2026-08-18T14:49:20Z |
+| solana_com | ok | 2026-08-18T14:49:19Z |
+| dune | off (optional) | 2026-08-18T14:49:18Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

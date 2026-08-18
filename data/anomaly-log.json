@@ -646,5 +646,25 @@
   "severity": "warning",
   "metric": "sources.supply",
   "message": "data source 'supply' failed this run"
+ },
+ {
+  "seen_at": "2026-08-18T22:20:06Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "defillama.tvl_usd",
+  "message": "TVL is 2.8 standard deviations above its recent mean (4.90B vs 4.83B)",
+  "value": 4895932566.0,
+  "baseline_mean": 4825387508.9436,
+  "z_score": 2.78
+ },
+ {
+  "seen_at": "2026-08-18T22:20:06Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "price.price_usd",
+  "message": "SOL price is 2.6 standard deviations above its recent mean (77.06 vs 75.6418)",
+  "value": 77.06,
+  "baseline_mean": 75.6418,
+  "z_score": 2.62
  }
 ]

@@ -359,5 +359,25 @@
   "severity": "warning",
   "metric": "sources.supply",
   "message": "data source 'supply' failed this run"
+ },
+ {
+  "seen_at": "2026-08-18T15:20:39Z",
+  "kind": "statistical",
+  "severity": "alert",
+  "metric": "network.tps_true",
+  "message": "true TPS is 3.6 standard deviations above its recent mean (3,868 vs 1,834)",
+  "value": 3867.7,
+  "baseline_mean": 1833.7896,
+  "z_score": 3.58
+ },
+ {
+  "seen_at": "2026-08-18T15:20:39Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "price.price_usd",
+  "message": "SOL price is 3.1 standard deviations above its recent mean (76.89 vs 75.554)",
+  "value": 76.89,
+  "baseline_mean": 75.554,
+  "z_score": 3.13
  }
 ]

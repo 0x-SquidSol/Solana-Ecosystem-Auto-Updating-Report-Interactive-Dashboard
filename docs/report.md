@@ -1,10 +1,10 @@
 # Solana Ecosystem Report
 
-> Generated 2026-08-18T11:16:22Z - heliostat 0.1.0 - 6/8 sources ok - refreshes every 15 min
+> Generated 2026-08-18T11:47:33Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
-- 🟡 **WARNING**: data source 'supply' failed this run
+- ✅ No active anomalies.
 
 **Recently seen**
 
@@ -19,38 +19,38 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,294 |
-| Total TPS (incl. votes) | 2,939 |
-| Peak true TPS (30 min) | 1,706 |
-| Mean slot time | 0.416 s |
-| Slot | 440,047,016 |
-| Block height | 418,097,371 |
-| Epoch | 1018 - 62.74% complete, ~18.6 h remaining |
+| True TPS (non-vote) | 1,891 |
+| Total TPS (incl. votes) | 3,546 |
+| Peak true TPS (30 min) | 2,671 |
+| Mean slot time | 0.414 s |
+| Slot | 440,051,676 |
+| Block height | 418,102,030 |
+| Epoch | 1018 - 63.81% complete, ~18.0 h remaining |
 
 ## Validators
 
 | Metric | Value |
 |---|---|
-| Active validators | 689 |
-| Delinquent | 6 (0.01% of stake) |
-| Consensus stall buffer | 0.0% of the 33.3% halt threshold consumed |
+| Active validators | 688 |
+| Delinquent | 7 (0.06% of stake) |
+| Consensus stall buffer | 0.2% of the 33.3% halt threshold consumed |
 | Total stake | 435,676,796 SOL |
 | Nakamoto coefficient | 18 |
 | Top-10 stake share | 24.4% |
 | Top-20 stake share | 35.7% |
-| Client stake split | agave 88.6% / firedancer 11.4% / unknown 0.1% |
-| Stake-weighted commission | 27.07% |
+| Client stake split | agave 88.6% / firedancer 11.4% |
+| Stake-weighted commission | 27.08% |
 
 **Top validators by stake**
 
 | # | Vote account | Stake | Share | Commission |
 |---|---|---|---|---|
-| 1 | `CcaH..oTN1` | 17,091,057 SOL | 3.92% | 7% |
-| 2 | `he1i..uBtk` | 16,003,006 SOL | 3.67% | 0% |
+| 1 | `CcaH..oTN1` | 17,091,057 SOL | 3.93% | 7% |
+| 2 | `he1i..uBtk` | 16,003,006 SOL | 3.68% | 0% |
 | 3 | `Catz..Diqb` | 12,495,360 SOL | 2.87% | 5% |
-| 4 | `3N7s..iD5g` | 12,259,520 SOL | 2.81% | 0% |
+| 4 | `3N7s..iD5g` | 12,259,520 SOL | 2.82% | 0% |
 | 5 | `26pV..3dJx` | 9,203,436 SOL | 2.11% | 7% |
-| 6 | `51JB..UNAm` | 8,992,381 SOL | 2.06% | 10% |
+| 6 | `51JB..UNAm` | 8,992,381 SOL | 2.07% | 10% |
 | 7 | `8Gbw..F8iD` | 8,305,834 SOL | 1.91% | 0% |
 | 8 | `9QU2..29mF` | 7,983,993 SOL | 1.83% | 7% |
 | 9 | `CvSb..wycB` | 7,342,590 SOL | 1.69% | 5% |
@@ -60,14 +60,16 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $75.97 (+0.7% 24h, -0.1% 7d) |
-| Price sources | cross-checked, 0.018% apart |
-| Market cap | $44.28B |
+| SOL price | $76.33 (+0.7% 24h, -0.1% 7d) |
+| Price sources | cross-checked, 0.126% apart |
+| Market cap | $44.48B |
 | TVL | $4.86B (+1.6% 24h) |
-| Stablecoin supply | $15.39B |
+| Stablecoin supply | $15.40B |
 | DEX volume (24h) | $1.47B |
 | REV (24h) | $860.4K (network fees $732.8K + Jito tips $127.6K) |
-| App fees (24h) | $11.05M |
+| App fees (24h) | $11.11M |
+| Median fee (user txs) | 7,696 lamports (~$0.000587) - about 1,702 transactions per $1 |
+| Circulating supply | 582,895,473 SOL |
 
 ## Ecosystem Growth
 
@@ -126,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-08-18T11:15:13Z |
-| validators | ok | 2026-08-18T11:16:22Z |
-| supply | failed: getSupply: all endpoints failed (network error: The read operation timed out (https://api.mainnet-beta.solana.com); network error: The read operation timed out (https://solana-rpc.publicnode.com)) | 2026-08-18T11:16:21Z |
-| defillama | ok | 2026-08-18T11:15:13Z |
-| price | ok | 2026-08-18T11:15:11Z |
-| news | ok | 2026-08-18T11:15:13Z |
-| solana_com | ok | 2026-08-18T11:15:12Z |
-| dune | off (optional) | 2026-08-18T11:15:11Z |
+| network | ok | 2026-08-18T11:47:22Z |
+| validators | ok | 2026-08-18T11:47:31Z |
+| supply | ok | 2026-08-18T11:47:33Z |
+| defillama | ok | 2026-08-18T11:47:22Z |
+| price | ok | 2026-08-18T11:47:20Z |
+| news | ok | 2026-08-18T11:47:21Z |
+| solana_com | ok | 2026-08-18T11:47:21Z |
+| dune | off (optional) | 2026-08-18T11:47:20Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

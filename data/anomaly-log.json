@@ -315,5 +315,22 @@
   "severity": "warning",
   "metric": "sources.supply",
   "message": "data source 'supply' failed this run"
+ },
+ {
+  "seen_at": "2026-08-18T14:03:47Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "network.tps_true",
+  "message": "true TPS is 2.6 standard deviations above its recent mean (3,282 vs 1,822)",
+  "value": 3282.3,
+  "baseline_mean": 1821.55,
+  "z_score": 2.64
+ },
+ {
+  "seen_at": "2026-08-18T14:03:47Z",
+  "kind": "rule",
+  "severity": "warning",
+  "metric": "sources.supply",
+  "message": "data source 'supply' failed this run"
  }
 ]

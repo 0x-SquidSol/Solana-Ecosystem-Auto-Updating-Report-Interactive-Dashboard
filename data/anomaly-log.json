@@ -753,5 +753,15 @@
   "severity": "warning",
   "metric": "sources.supply",
   "message": "data source 'supply' failed this run"
+ },
+ {
+  "seen_at": "2026-08-19T05:02:35Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "defillama.tvl_usd",
+  "message": "TVL is 2.5 standard deviations above its recent mean (4.90B vs 4.83B)",
+  "value": 4900008676.0,
+  "baseline_mean": 4827984975.6159,
+  "z_score": 2.54
  }
 ]

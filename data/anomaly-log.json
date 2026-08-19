@@ -973,5 +973,35 @@
   "value": 81.93,
   "baseline_mean": 75.8236,
   "z_score": 7.16
+ },
+ {
+  "seen_at": "2026-08-19T16:53:18Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "network.tps_true",
+  "message": "true TPS is 3.3 standard deviations above its recent mean (4,020 vs 1,910)",
+  "value": 4019.7,
+  "baseline_mean": 1910.3898,
+  "z_score": 3.33
+ },
+ {
+  "seen_at": "2026-08-19T16:53:18Z",
+  "kind": "statistical",
+  "severity": "alert",
+  "metric": "defillama.tvl_usd",
+  "message": "TVL is 6.4 standard deviations above its recent mean (5.05B vs 4.83B)",
+  "value": 5049396594.0,
+  "baseline_mean": 4833116894.6373,
+  "z_score": 6.38
+ },
+ {
+  "seen_at": "2026-08-19T16:53:18Z",
+  "kind": "statistical",
+  "severity": "alert",
+  "metric": "price.price_usd",
+  "message": "SOL price is 6.3 standard deviations above its recent mean (81.68 vs 75.8443)",
+  "value": 81.68,
+  "baseline_mean": 75.8443,
+  "z_score": 6.33
  }
 ]

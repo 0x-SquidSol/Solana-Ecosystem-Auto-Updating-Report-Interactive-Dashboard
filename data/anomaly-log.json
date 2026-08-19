@@ -1223,5 +1223,25 @@
   "value": 86.49,
   "baseline_mean": 76.058,
   "z_score": 6.98
+ },
+ {
+  "seen_at": "2026-08-19T22:13:49Z",
+  "kind": "statistical",
+  "severity": "alert",
+  "metric": "defillama.tvl_usd",
+  "message": "TVL is 4.6 standard deviations above its recent mean (5.10B vs 4.84B)",
+  "value": 5102430930.0,
+  "baseline_mean": 4841803873.4052,
+  "z_score": 4.64
+ },
+ {
+  "seen_at": "2026-08-19T22:13:49Z",
+  "kind": "statistical",
+  "severity": "alert",
+  "metric": "price.price_usd",
+  "message": "SOL price is 6.2 standard deviations above its recent mean (85.98 vs 76.0921)",
+  "value": 85.98,
+  "baseline_mean": 76.0921,
+  "z_score": 6.15
  }
 ]

@@ -1,40 +1,41 @@
 # Solana Ecosystem Report
 
-> Generated 2026-08-19T20:46:17Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-08-19T21:15:35Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
-- 🔴 **ALERT**: TVL is 4.9 standard deviations above its recent mean (5.09B vs 4.84B)
-- 🔴 **ALERT**: SOL price is 5.0 standard deviations above its recent mean (82.61 vs 76.0029)
+- 🟡 **WARNING**: true TPS is 3.5 standard deviations above its recent mean (4,286 vs 1,954)
+- 🔴 **ALERT**: TVL is 5.0 standard deviations above its recent mean (5.10B vs 4.84B)
+- 🔴 **ALERT**: SOL price is 7.4 standard deviations above its recent mean (86.2 vs 76.0247)
 
 **Recently seen**
 
-- 2026-08-19T19:47Z SOL price is 5.1 standard deviations above its recent mean (82.23 vs 75.9612)
-- 2026-08-19T20:14Z TVL is 5.0 standard deviations above its recent mean (5.08B vs 4.84B)
-- 2026-08-19T20:14Z SOL price is 5.0 standard deviations above its recent mean (82.35 vs 75.9819)
 - 2026-08-19T20:46Z TVL is 4.9 standard deviations above its recent mean (5.09B vs 4.84B)
 - 2026-08-19T20:46Z SOL price is 5.0 standard deviations above its recent mean (82.61 vs 76.0029)
+- 2026-08-19T21:15Z true TPS is 3.5 standard deviations above its recent mean (4,286 vs 1,954)
+- 2026-08-19T21:15Z TVL is 5.0 standard deviations above its recent mean (5.10B vs 4.84B)
+- 2026-08-19T21:15Z SOL price is 7.4 standard deviations above its recent mean (86.2 vs 76.0247)
 
 ## Network
 
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 2,907 |
-| Total TPS (incl. votes) | 4,537 |
-| Peak true TPS (30 min) | 3,441 |
-| Mean slot time | 0.417 s |
-| Slot | 440,336,967 |
-| Block height | 418,386,911 |
-| Epoch | 1019 - 29.85% complete, ~35.1 h remaining |
+| True TPS (non-vote) | 4,286 |
+| Total TPS (incl. votes) | 5,926 |
+| Peak true TPS (30 min) | 6,087 |
+| Mean slot time | 0.416 s |
+| Slot | 440,341,197 |
+| Block height | 418,391,137 |
+| Epoch | 1019 - 30.83% complete, ~34.5 h remaining |
 
 ## Validators
 
 | Metric | Value |
 |---|---|
-| Active validators | 688 |
-| Delinquent | 8 (0.02% of stake) |
-| Consensus stall buffer | 0.1% of the 33.3% halt threshold consumed |
+| Active validators | 687 |
+| Delinquent | 9 (0.06% of stake) |
+| Consensus stall buffer | 0.2% of the 33.3% halt threshold consumed |
 | Total stake | 435,241,268 SOL |
 | Nakamoto coefficient | 18 |
 | Top-10 stake share | 24.4% |
@@ -61,16 +62,16 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $82.61 (+6.7% 24h, +8.6% 7d) |
-| Price sources | cross-checked, 0.020% apart |
-| Market cap | $48.13B |
-| TVL | $5.09B (+4.9% 24h) |
+| SOL price | $86.20 (+8.8% 24h, +10.7% 7d) |
+| Price sources | cross-checked, 0.103% apart |
+| Market cap | $50.19B |
+| TVL | $5.10B (+5.2% 24h) |
 | Stablecoin supply | $15.66B |
 | DEX volume (24h) | $1.84B |
 | REV (24h) | $769.0K (network fees $649.2K + Jito tips $119.9K) |
 | App fees (24h) | $8.77M |
-| Median fee (user txs) | 6,021 lamports (~$0.000497) - about 2,010 transactions per $1 |
-| Circulating supply | 583,006,684 SOL |
+| Median fee (user txs) | 6,400 lamports (~$0.000552) - about 1,813 transactions per $1 |
+| Circulating supply | 583,006,632 SOL |
 
 ## Ecosystem Growth
 
@@ -129,13 +130,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-08-19T20:46:03Z |
-| validators | ok | 2026-08-19T20:46:15Z |
-| supply | ok | 2026-08-19T20:46:17Z |
-| defillama | ok | 2026-08-19T20:46:03Z |
-| price | ok | 2026-08-19T20:46:01Z |
-| news | ok | 2026-08-19T20:46:03Z |
-| solana_com | ok | 2026-08-19T20:46:02Z |
-| dune | off (optional) | 2026-08-19T20:46:01Z |
+| network | ok | 2026-08-19T21:15:23Z |
+| validators | ok | 2026-08-19T21:15:33Z |
+| supply | ok | 2026-08-19T21:15:35Z |
+| defillama | ok | 2026-08-19T21:15:23Z |
+| price | ok | 2026-08-19T21:15:21Z |
+| news | ok | 2026-08-19T21:15:23Z |
+| solana_com | ok | 2026-08-19T21:15:22Z |
+| dune | off (optional) | 2026-08-19T21:15:21Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

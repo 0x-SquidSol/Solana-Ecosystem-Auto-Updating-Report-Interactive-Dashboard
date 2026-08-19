@@ -1,32 +1,32 @@
 # Solana Ecosystem Report
 
-> Generated 2026-08-19T23:21:32Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-08-19T23:43:37Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
-- 🔴 **ALERT**: TVL is 5.8 standard deviations above its recent mean (5.21B vs 4.84B)
-- 🔴 **ALERT**: SOL price is 5.0 standard deviations above its recent mean (85.42 vs 76.1844)
+- 🔴 **ALERT**: TVL is 5.5 standard deviations above its recent mean (5.21B vs 4.85B)
+- 🔴 **ALERT**: SOL price is 4.8 standard deviations above its recent mean (85.47 vs 76.2142)
 
 **Recently seen**
 
-- 2026-08-19T22:41Z SOL price is 5.5 standard deviations above its recent mean (85.47 vs 76.1243)
-- 2026-08-19T22:59Z TVL is 5.4 standard deviations above its recent mean (5.17B vs 4.84B)
 - 2026-08-19T22:59Z SOL price is 5.2 standard deviations above its recent mean (85.35 vs 76.1547)
 - 2026-08-19T23:21Z TVL is 5.8 standard deviations above its recent mean (5.21B vs 4.84B)
 - 2026-08-19T23:21Z SOL price is 5.0 standard deviations above its recent mean (85.42 vs 76.1844)
+- 2026-08-19T23:43Z TVL is 5.5 standard deviations above its recent mean (5.21B vs 4.85B)
+- 2026-08-19T23:43Z SOL price is 4.8 standard deviations above its recent mean (85.47 vs 76.2142)
 
 ## Network
 
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 2,804 |
-| Total TPS (incl. votes) | 4,443 |
-| Peak true TPS (30 min) | 3,416 |
-| Mean slot time | 0.417 s |
-| Slot | 440,359,265 |
-| Block height | 418,409,202 |
-| Epoch | 1019 - 35.02% complete, ~32.5 h remaining |
+| True TPS (non-vote) | 2,761 |
+| Total TPS (incl. votes) | 4,393 |
+| Peak true TPS (30 min) | 3,738 |
+| Mean slot time | 0.419 s |
+| Slot | 440,362,439 |
+| Block height | 418,412,375 |
+| Epoch | 1019 - 35.75% complete, ~32.3 h remaining |
 
 ## Validators
 
@@ -61,16 +61,16 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $85.42 (+11.0% 24h, +13.2% 7d) |
-| Price sources | cross-checked, 0.148% apart |
-| Market cap | $49.80B |
+| SOL price | $85.47 (+11.0% 24h, +13.2% 7d) |
+| Price sources | cross-checked, 0.229% apart |
+| Market cap | $49.82B |
 | TVL | $5.21B (+7.3% 24h) |
-| Stablecoin supply | $15.68B |
+| Stablecoin supply | $15.77B |
 | DEX volume (24h) | $1.84B |
 | REV (24h) | $769.0K (network fees $649.2K + Jito tips $119.9K) |
 | App fees (24h) | $8.77M |
-| Median fee (user txs) | 5,838 lamports (~$0.000499) - about 2,005 transactions per $1 |
-| Circulating supply | 583,006,523 SOL |
+| Median fee (user txs) | 5,402 lamports (~$0.000462) - about 2,166 transactions per $1 |
+| Circulating supply | 583,006,508 SOL |
 
 ## Ecosystem Growth
 
@@ -129,13 +129,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-08-19T23:21:20Z |
-| validators | ok | 2026-08-19T23:21:31Z |
-| supply | ok | 2026-08-19T23:21:32Z |
-| defillama | ok | 2026-08-19T23:21:19Z |
-| price | ok | 2026-08-19T23:21:18Z |
-| news | ok | 2026-08-19T23:21:19Z |
-| solana_com | ok | 2026-08-19T23:21:18Z |
-| dune | off (optional) | 2026-08-19T23:21:17Z |
+| network | ok | 2026-08-19T23:43:25Z |
+| validators | ok | 2026-08-19T23:43:35Z |
+| supply | ok | 2026-08-19T23:43:37Z |
+| defillama | ok | 2026-08-19T23:43:24Z |
+| price | ok | 2026-08-19T23:43:23Z |
+| news | ok | 2026-08-19T23:43:24Z |
+| solana_com | ok | 2026-08-19T23:43:23Z |
+| dune | off (optional) | 2026-08-19T23:43:23Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

@@ -1,44 +1,44 @@
 # Solana Ecosystem Report
 
-> Generated 2026-08-19T17:47:09Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-08-19T18:18:07Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
-- 🔴 **ALERT**: TVL is 5.7 standard deviations above its recent mean (5.05B vs 4.83B)
-- 🔴 **ALERT**: SOL price is 5.3 standard deviations above its recent mean (81.37 vs 75.8825)
+- 🔴 **ALERT**: TVL is 5.6 standard deviations above its recent mean (5.06B vs 4.84B)
+- 🔴 **ALERT**: SOL price is 5.2 standard deviations above its recent mean (81.47 vs 75.9009)
 
 **Recently seen**
 
-- 2026-08-19T17:17Z true TPS is 2.6 standard deviations above its recent mean (3,606 vs 1,918)
-- 2026-08-19T17:17Z TVL is 6.1 standard deviations above its recent mean (5.05B vs 4.83B)
 - 2026-08-19T17:17Z SOL price is 5.6 standard deviations above its recent mean (81.35 vs 75.8641)
 - 2026-08-19T17:47Z TVL is 5.7 standard deviations above its recent mean (5.05B vs 4.83B)
 - 2026-08-19T17:47Z SOL price is 5.3 standard deviations above its recent mean (81.37 vs 75.8825)
+- 2026-08-19T18:18Z TVL is 5.6 standard deviations above its recent mean (5.06B vs 4.84B)
+- 2026-08-19T18:18Z SOL price is 5.2 standard deviations above its recent mean (81.47 vs 75.9009)
 
 ## Network
 
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 3,481 |
-| Total TPS (incl. votes) | 5,104 |
-| Peak true TPS (30 min) | 4,349 |
-| Mean slot time | 0.418 s |
-| Slot | 440,311,148 |
-| Block height | 418,361,156 |
-| Epoch | 1019 - 23.88% complete, ~38.2 h remaining |
+| True TPS (non-vote) | 3,395 |
+| Total TPS (incl. votes) | 5,034 |
+| Peak true TPS (30 min) | 4,303 |
+| Mean slot time | 0.416 s |
+| Slot | 440,315,611 |
+| Block height | 418,365,620 |
+| Epoch | 1019 - 24.91% complete, ~37.5 h remaining |
 
 ## Validators
 
 | Metric | Value |
 |---|---|
-| Active validators | 685 |
-| Delinquent | 10 (0.11% of stake) |
+| Active validators | 686 |
+| Delinquent | 9 (0.10% of stake) |
 | Consensus stall buffer | 0.3% of the 33.3% halt threshold consumed |
 | Total stake | 435,241,268 SOL |
 | Nakamoto coefficient | 18 |
 | Top-10 stake share | 24.4% |
-| Top-20 stake share | 35.8% |
+| Top-20 stake share | 35.7% |
 | Client stake split | agave 88.5% / firedancer 11.5% / unknown 0.1% |
 | Stake-weighted commission | 27.10% |
 
@@ -61,16 +61,16 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $81.37 (+5.6% 24h, +7.8% 7d) |
-| Price sources | cross-checked, 0.153% apart |
-| Market cap | $47.41B |
-| TVL | $5.05B (+4.2% 24h) |
-| Stablecoin supply | $15.50B |
+| SOL price | $81.47 (+6.1% 24h, +7.9% 7d) |
+| Price sources | cross-checked, 0.008% apart |
+| Market cap | $47.50B |
+| TVL | $5.06B (+4.3% 24h) |
+| Stablecoin supply | $15.58B |
 | DEX volume (24h) | $1.84B |
 | REV (24h) | $769.0K (network fees $649.2K + Jito tips $119.9K) |
 | App fees (24h) | $8.77M |
-| Median fee (user txs) | 8,716 lamports (~$0.000709) - about 1,410 transactions per $1 |
-| Circulating supply | 583,007,070 SOL |
+| Median fee (user txs) | 5,008 lamports (~$0.000408) - about 2,451 transactions per $1 |
+| Circulating supply | 583,007,046 SOL |
 
 ## Ecosystem Growth
 
@@ -87,10 +87,10 @@
 **Largest tokenized-asset protocols**
 
 - BlackRock BUIDL: $741.49M
-- xStocks: $399.43M
+- xStocks: $401.29M
 - OnRe: $272.01M
 - Ondo Yield Assets: $179.14M
-- Hastra: $172.00M
+- Hastra: $171.56M
 
 ## News & Upgrades
 
@@ -129,13 +129,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-08-19T17:46:55Z |
-| validators | ok | 2026-08-19T17:47:07Z |
-| supply | ok | 2026-08-19T17:47:09Z |
-| defillama | ok | 2026-08-19T17:46:54Z |
-| price | ok | 2026-08-19T17:46:53Z |
-| news | ok | 2026-08-19T17:46:54Z |
-| solana_com | ok | 2026-08-19T17:46:53Z |
-| dune | off (optional) | 2026-08-19T17:46:52Z |
+| network | ok | 2026-08-19T18:17:50Z |
+| validators | ok | 2026-08-19T18:18:05Z |
+| supply | ok | 2026-08-19T18:18:07Z |
+| defillama | ok | 2026-08-19T18:17:53Z |
+| price | ok | 2026-08-19T18:17:48Z |
+| news | ok | 2026-08-19T18:17:50Z |
+| solana_com | ok | 2026-08-19T18:17:48Z |
+| dune | off (optional) | 2026-08-19T18:17:47Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

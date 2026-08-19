@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-08-19T10:17:50Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-08-19T10:52:30Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -19,13 +19,13 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,522 |
-| Total TPS (incl. votes) | 3,155 |
-| Peak true TPS (30 min) | 1,835 |
-| Mean slot time | 0.416 s |
-| Slot | 440,246,486 |
-| Block height | 418,296,652 |
-| Epoch | 1019 - 8.91% complete, ~45.5 h remaining |
+| True TPS (non-vote) | 1,463 |
+| Total TPS (incl. votes) | 3,101 |
+| Peak true TPS (30 min) | 2,071 |
+| Mean slot time | 0.415 s |
+| Slot | 440,251,476 |
+| Block height | 418,301,635 |
+| Epoch | 1019 - 10.06% complete, ~44.8 h remaining |
 
 ## Validators
 
@@ -60,16 +60,16 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $77.19 (+1.6% 24h, +1.5% 7d) |
-| Price sources | cross-checked, 0.018% apart |
-| Market cap | $45.01B |
+| SOL price | $77.27 (+1.6% 24h, +1.5% 7d) |
+| Price sources | cross-checked, 0.035% apart |
+| Market cap | $45.06B |
 | TVL | $4.90B (+1.0% 24h) |
 | Stablecoin supply | $15.42B |
 | DEX volume (24h) | $1.82B |
 | REV (24h) | $771.9K (network fees $649.2K + Jito tips $122.7K) |
 | App fees (24h) | $8.71M |
-| Median fee (user txs) | 5,900 lamports (~$0.000455) - about 2,196 transactions per $1 |
-| Circulating supply | 583,007,398 SOL |
+| Median fee (user txs) | 5,125 lamports (~$0.000396) - about 2,525 transactions per $1 |
+| Circulating supply | 583,007,381 SOL |
 
 ## Ecosystem Growth
 
@@ -96,9 +96,9 @@
 
 **Solana News**
 
+- [Lowering Slot Time and Validators Economic](https://solana.com/news/lowering-slot-time-and-validators-economic) - 2026-08-19
 - [Transaction v1 and the ALT Trade-off](https://solana.com/news/transaction-v1-and-the-alt-trade-off) - 2026-08-17
 - [Solana Changelog: August 13, 2026](https://solana.com/news/solana-changelog-august-13-2026) - 2026-08-13
-- [How Meow Built Agentic Banking and Agent Payment Rails, with Brandon Arvanaghi](https://solana.com/news/how-meow-built-agentic-banking-and-agent-payment-rails-with-brandon-arvanaghi) - 2026-08-13
 
 **Solana Status**
 
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-08-19T10:17:40Z |
-| validators | ok | 2026-08-19T10:17:48Z |
-| supply | ok | 2026-08-19T10:17:50Z |
-| defillama | ok | 2026-08-19T10:17:40Z |
-| price | ok | 2026-08-19T10:17:39Z |
-| news | ok | 2026-08-19T10:17:40Z |
-| solana_com | ok | 2026-08-19T10:17:39Z |
-| dune | off (optional) | 2026-08-19T10:17:38Z |
+| network | ok | 2026-08-19T10:52:13Z |
+| validators | ok | 2026-08-19T10:52:28Z |
+| supply | ok | 2026-08-19T10:52:30Z |
+| defillama | ok | 2026-08-19T10:52:12Z |
+| price | ok | 2026-08-19T10:52:10Z |
+| news | ok | 2026-08-19T10:52:12Z |
+| solana_com | ok | 2026-08-19T10:52:11Z |
+| dune | off (optional) | 2026-08-19T10:52:10Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

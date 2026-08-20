@@ -1,32 +1,32 @@
 # Solana Ecosystem Report
 
-> Generated 2026-08-20T02:21:49Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-08-20T03:15:33Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
-- 🔴 **ALERT**: TVL is 4.9 standard deviations above its recent mean (5.23B vs 4.85B)
-- 🔴 **ALERT**: SOL price is 4.0 standard deviations above its recent mean (85.18 vs 76.3294)
+- 🔴 **ALERT**: TVL is 4.5 standard deviations above its recent mean (5.21B vs 4.85B)
+- 🟡 **WARNING**: SOL price is 3.4 standard deviations above its recent mean (84.2 vs 76.3607)
 
 **Recently seen**
 
-- 2026-08-19T23:58Z SOL price is 4.6 standard deviations above its recent mean (85.3 vs 76.244)
-- 2026-08-20T01:04Z TVL is 4.1 standard deviations above its recent mean (5.16B vs 4.85B)
 - 2026-08-20T01:04Z SOL price is 4.1 standard deviations above its recent mean (85.06 vs 76.2984)
 - 2026-08-20T02:21Z TVL is 4.9 standard deviations above its recent mean (5.23B vs 4.85B)
 - 2026-08-20T02:21Z SOL price is 4.0 standard deviations above its recent mean (85.18 vs 76.3294)
+- 2026-08-20T03:15Z TVL is 4.5 standard deviations above its recent mean (5.21B vs 4.85B)
+- 2026-08-20T03:15Z SOL price is 3.4 standard deviations above its recent mean (84.2 vs 76.3607)
 
 ## Network
 
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 2,108 |
-| Total TPS (incl. votes) | 3,746 |
-| Peak true TPS (30 min) | 2,694 |
-| Mean slot time | 0.417 s |
-| Slot | 440,385,281 |
-| Block height | 418,435,210 |
-| Epoch | 1019 - 41.04% complete, ~29.5 h remaining |
+| True TPS (non-vote) | 1,881 |
+| Total TPS (incl. votes) | 3,533 |
+| Peak true TPS (30 min) | 2,305 |
+| Mean slot time | 0.413 s |
+| Slot | 440,393,062 |
+| Block height | 418,442,983 |
+| Epoch | 1019 - 42.84% complete, ~28.3 h remaining |
 
 ## Validators
 
@@ -39,7 +39,7 @@
 | Nakamoto coefficient | 18 |
 | Top-10 stake share | 24.4% |
 | Top-20 stake share | 35.7% |
-| Client stake split | agave 88.8% / firedancer 11.2% / unknown 0.1% |
+| Client stake split | agave 88.4% / firedancer 11.5% / unknown 0.1% |
 | Stake-weighted commission | 27.08% |
 
 **Top validators by stake**
@@ -61,16 +61,16 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $85.18 (+10.9% 24h, +12.8% 7d) |
-| Price sources | cross-checked, 0.136% apart |
-| Market cap | $49.67B |
-| TVL | $5.23B (+3.4% 24h) |
+| SOL price | $84.20 (+10.5% 24h, +12.2% 7d) |
+| Price sources | cross-checked, 0.012% apart |
+| Market cap | $49.09B |
+| TVL | $5.21B (+6.2% 24h) |
 | Stablecoin supply | $15.74B |
-| DEX volume (24h) | $2.76B |
+| DEX volume (24h) | $2.79B |
 | REV (24h) | $769.0K (network fees $649.2K + Jito tips $119.9K) |
-| App fees (24h) | $10.60M |
-| Median fee (user txs) | 5,479 lamports (~$0.000467) - about 2,143 transactions per $1 |
-| Circulating supply | 583,006,408 SOL |
+| App fees (24h) | $12.50M |
+| Median fee (user txs) | 5,570 lamports (~$0.000469) - about 2,132 transactions per $1 |
+| Circulating supply | 583,006,378 SOL |
 
 ## Ecosystem Growth
 
@@ -88,8 +88,8 @@
 
 - BlackRock BUIDL: $740.49M
 - xStocks: $406.25M
-- OnRe: $272.16M
-- Ondo Yield Assets: $178.51M
+- OnRe: $272.17M
+- Ondo Yield Assets: $178.60M
 - Hastra: $171.46M
 
 ## News & Upgrades
@@ -129,13 +129,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-08-20T02:21:38Z |
-| validators | ok | 2026-08-20T02:21:47Z |
-| supply | ok | 2026-08-20T02:21:49Z |
-| defillama | ok | 2026-08-20T02:21:38Z |
-| price | ok | 2026-08-20T02:21:36Z |
-| news | ok | 2026-08-20T02:21:37Z |
-| solana_com | ok | 2026-08-20T02:21:37Z |
-| dune | off (optional) | 2026-08-20T02:21:36Z |
+| network | ok | 2026-08-20T03:15:20Z |
+| validators | ok | 2026-08-20T03:15:31Z |
+| supply | ok | 2026-08-20T03:15:33Z |
+| defillama | ok | 2026-08-20T03:15:20Z |
+| price | ok | 2026-08-20T03:15:18Z |
+| news | ok | 2026-08-20T03:15:19Z |
+| solana_com | ok | 2026-08-20T03:15:18Z |
+| dune | off (optional) | 2026-08-20T03:15:18Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

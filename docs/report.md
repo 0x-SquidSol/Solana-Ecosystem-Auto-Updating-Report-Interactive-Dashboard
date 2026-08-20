@@ -1,45 +1,45 @@
 # Solana Ecosystem Report
 
-> Generated 2026-08-20T11:17:20Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-08-20T11:49:56Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
-- 🔴 **ALERT**: TVL is 3.6 standard deviations above its recent mean (5.26B vs 4.87B)
-- 🟡 **WARNING**: SOL price is 3.5 standard deviations above its recent mean (87.08 vs 76.78)
+- 🔴 **ALERT**: TVL is 3.9 standard deviations above its recent mean (5.30B vs 4.87B)
+- 🔴 **ALERT**: SOL price is 3.6 standard deviations above its recent mean (87.74 vs 76.8147)
 
 **Recently seen**
 
-- 2026-08-20T10:19Z SOL price is 3.8 standard deviations above its recent mean (87.52 vs 76.7082)
-- 2026-08-20T10:54Z TVL is 4.1 standard deviations above its recent mean (5.30B vs 4.87B)
 - 2026-08-20T10:54Z SOL price is 3.6 standard deviations above its recent mean (87.16 vs 76.7448)
 - 2026-08-20T11:17Z TVL is 3.6 standard deviations above its recent mean (5.26B vs 4.87B)
 - 2026-08-20T11:17Z SOL price is 3.5 standard deviations above its recent mean (87.08 vs 76.78)
+- 2026-08-20T11:49Z TVL is 3.9 standard deviations above its recent mean (5.30B vs 4.87B)
+- 2026-08-20T11:49Z SOL price is 3.6 standard deviations above its recent mean (87.74 vs 76.8147)
 
 ## Network
 
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,842 |
-| Total TPS (incl. votes) | 3,499 |
-| Peak true TPS (30 min) | 2,252 |
-| Mean slot time | 0.414 s |
-| Slot | 440,462,649 |
-| Block height | 418,512,480 |
-| Epoch | 1019 - 58.95% complete, ~20.4 h remaining |
+| True TPS (non-vote) | 2,072 |
+| Total TPS (incl. votes) | 3,728 |
+| Peak true TPS (30 min) | 2,640 |
+| Mean slot time | 0.413 s |
+| Slot | 440,467,374 |
+| Block height | 418,517,206 |
+| Epoch | 1019 - 60.04% complete, ~19.8 h remaining |
 
 ## Validators
 
 | Metric | Value |
 |---|---|
-| Active validators | 690 |
-| Delinquent | 6 (0.00% of stake) |
+| Active validators | 689 |
+| Delinquent | 7 (0.01% of stake) |
 | Consensus stall buffer | 0.0% of the 33.3% halt threshold consumed |
 | Total stake | 435,241,268 SOL |
 | Nakamoto coefficient | 18 |
 | Top-10 stake share | 24.4% |
 | Top-20 stake share | 35.7% |
-| Client stake split | agave 88.6% / firedancer 11.4% / unknown 0.1% |
+| Client stake split | agave 88.5% / firedancer 11.4% / unknown 0.1% |
 | Stake-weighted commission | 27.09% |
 
 **Top validators by stake**
@@ -61,16 +61,16 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $87.08 (+13.1% 24h, +14.9% 7d) |
-| Price sources | cross-checked, 0.002% apart |
-| Market cap | $50.77B |
-| TVL | $5.26B (+7.4% 24h) |
-| Stablecoin supply | $15.78B |
+| SOL price | $87.74 (+13.1% 24h, +14.9% 7d) |
+| Price sources | cross-checked, 0.042% apart |
+| Market cap | $51.16B |
+| TVL | $5.30B (+8.3% 24h) |
+| Stablecoin supply | $15.76B |
 | DEX volume (24h) | $3.01B |
 | REV (24h) | $1.12M (network fees $925.8K + Jito tips $191.8K) |
 | App fees (24h) | $13.59M |
-| Median fee (user txs) | 5,236 lamports (~$0.000456) - about 2,193 transactions per $1 |
-| Circulating supply | 583,006,127 SOL |
+| Median fee (user txs) | 5,514 lamports (~$0.000484) - about 2,067 transactions per $1 |
+| Circulating supply | 583,006,108 SOL |
 
 ## Ecosystem Growth
 
@@ -129,13 +129,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-08-20T11:17:09Z |
-| validators | ok | 2026-08-20T11:17:19Z |
-| supply | ok | 2026-08-20T11:17:20Z |
-| defillama | ok | 2026-08-20T11:17:09Z |
-| price | ok | 2026-08-20T11:17:07Z |
-| news | ok | 2026-08-20T11:17:09Z |
-| solana_com | ok | 2026-08-20T11:17:08Z |
-| dune | off (optional) | 2026-08-20T11:17:07Z |
+| network | ok | 2026-08-20T11:49:45Z |
+| validators | ok | 2026-08-20T11:49:54Z |
+| supply | ok | 2026-08-20T11:49:56Z |
+| defillama | ok | 2026-08-20T11:49:44Z |
+| price | ok | 2026-08-20T11:49:43Z |
+| news | ok | 2026-08-20T11:49:44Z |
+| solana_com | ok | 2026-08-20T11:49:43Z |
+| dune | off (optional) | 2026-08-20T11:49:43Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

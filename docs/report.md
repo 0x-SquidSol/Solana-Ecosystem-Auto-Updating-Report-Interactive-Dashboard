@@ -1,32 +1,32 @@
 # Solana Ecosystem Report
 
-> Generated 2026-08-20T07:14:39Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-08-20T07:56:54Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
-- 🔴 **ALERT**: TVL is 3.6 standard deviations above its recent mean (5.20B vs 4.86B)
-- 🔴 **ALERT**: SOL price is 3.7 standard deviations above its recent mean (85.91 vs 76.5333)
+- 🔴 **ALERT**: TVL is 3.7 standard deviations above its recent mean (5.21B vs 4.86B)
+- 🔴 **ALERT**: SOL price is 3.6 standard deviations above its recent mean (86.03 vs 76.5656)
 
 **Recently seen**
 
-- 2026-08-20T05:53Z SOL price is 3.4 standard deviations above its recent mean (84.84 vs 76.4747)
-- 2026-08-20T06:25Z TVL is 3.7 standard deviations above its recent mean (5.20B vs 4.86B)
 - 2026-08-20T06:25Z SOL price is 3.4 standard deviations above its recent mean (85.03 vs 76.5038)
 - 2026-08-20T07:14Z TVL is 3.6 standard deviations above its recent mean (5.20B vs 4.86B)
 - 2026-08-20T07:14Z SOL price is 3.7 standard deviations above its recent mean (85.91 vs 76.5333)
+- 2026-08-20T07:56Z TVL is 3.7 standard deviations above its recent mean (5.21B vs 4.86B)
+- 2026-08-20T07:56Z SOL price is 3.6 standard deviations above its recent mean (86.03 vs 76.5656)
 
 ## Network
 
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,385 |
-| Total TPS (incl. votes) | 3,030 |
-| Peak true TPS (30 min) | 2,075 |
+| True TPS (non-vote) | 1,478 |
+| Total TPS (incl. votes) | 3,121 |
+| Peak true TPS (30 min) | 1,619 |
 | Mean slot time | 0.415 s |
-| Slot | 440,427,592 |
-| Block height | 418,477,496 |
-| Epoch | 1019 - 50.83% complete, ~24.5 h remaining |
+| Slot | 440,433,698 |
+| Block height | 418,483,593 |
+| Epoch | 1019 - 52.25% complete, ~23.8 h remaining |
 
 ## Validators
 
@@ -39,7 +39,7 @@
 | Nakamoto coefficient | 18 |
 | Top-10 stake share | 24.4% |
 | Top-20 stake share | 35.7% |
-| Client stake split | agave 88.2% / firedancer 11.5% / unknown 0.3% |
+| Client stake split | agave 88.4% / firedancer 11.5% / unknown 0.1% |
 | Stake-weighted commission | 27.08% |
 
 **Top validators by stake**
@@ -61,16 +61,16 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $85.91 (+11.9% 24h, +12.3% 7d) |
-| Price sources | cross-checked, 0.075% apart |
-| Market cap | $50.08B |
-| TVL | $5.20B (+6.2% 24h) |
+| SOL price | $86.03 (+11.9% 24h, +12.3% 7d) |
+| Price sources | cross-checked, 0.093% apart |
+| Market cap | $50.15B |
+| TVL | $5.21B (+6.5% 24h) |
 | Stablecoin supply | $15.79B |
 | DEX volume (24h) | $2.79B |
 | REV (24h) | $1.05M (network fees $925.8K + Jito tips $119.9K) |
-| App fees (24h) | $13.24M |
-| Median fee (user txs) | 5,352 lamports (~$0.000460) - about 2,175 transactions per $1 |
-| Circulating supply | 583,006,258 SOL |
+| App fees (24h) | $13.25M |
+| Median fee (user txs) | 5,235 lamports (~$0.000450) - about 2,220 transactions per $1 |
+| Circulating supply | 583,006,237 SOL |
 
 ## Ecosystem Growth
 
@@ -87,10 +87,10 @@
 **Largest tokenized-asset protocols**
 
 - BlackRock BUIDL: $740.49M
-- xStocks: $403.55M
-- OnRe: $272.16M
-- Ondo Yield Assets: $179.10M
-- Hastra: $170.97M
+- xStocks: $405.14M
+- OnRe: $272.20M
+- Ondo Yield Assets: $179.22M
+- Hastra: $170.96M
 
 ## News & Upgrades
 
@@ -129,13 +129,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-08-20T07:14:28Z |
-| validators | ok | 2026-08-20T07:14:37Z |
-| supply | ok | 2026-08-20T07:14:39Z |
-| defillama | ok | 2026-08-20T07:14:27Z |
-| price | ok | 2026-08-20T07:14:26Z |
-| news | ok | 2026-08-20T07:14:27Z |
-| solana_com | ok | 2026-08-20T07:14:26Z |
-| dune | off (optional) | 2026-08-20T07:14:25Z |
+| network | ok | 2026-08-20T07:56:41Z |
+| validators | ok | 2026-08-20T07:56:50Z |
+| supply | ok | 2026-08-20T07:56:54Z |
+| defillama | ok | 2026-08-20T07:56:40Z |
+| price | ok | 2026-08-20T07:56:38Z |
+| news | ok | 2026-08-20T07:56:40Z |
+| solana_com | ok | 2026-08-20T07:56:39Z |
+| dune | off (optional) | 2026-08-20T07:56:38Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

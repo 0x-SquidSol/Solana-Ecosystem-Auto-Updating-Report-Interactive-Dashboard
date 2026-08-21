@@ -2583,5 +2583,25 @@
   "value": 93.88,
   "baseline_mean": 79.149,
   "z_score": 2.58
+ },
+ {
+  "seen_at": "2026-08-21T22:58:35Z",
+  "kind": "statistical",
+  "severity": "alert",
+  "metric": "validators.delinquent_stake_pct",
+  "message": "delinquent stake is 4.0 standard deviations above its recent mean (0.37 vs 0.0391395)",
+  "value": 0.37,
+  "baseline_mean": 0.0391,
+  "z_score": 3.99
+ },
+ {
+  "seen_at": "2026-08-21T22:58:35Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "price.price_usd",
+  "message": "SOL price is 2.6 standard deviations above its recent mean (94.42 vs 79.1927)",
+  "value": 94.42,
+  "baseline_mean": 79.1927,
+  "z_score": 2.64
  }
 ]

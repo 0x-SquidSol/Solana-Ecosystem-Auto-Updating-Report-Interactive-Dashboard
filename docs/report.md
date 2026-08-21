@@ -1,45 +1,45 @@
 # Solana Ecosystem Report
 
-> Generated 2026-08-21T08:02:56Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-08-21T08:55:10Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
 - 🟡 **WARNING**: TVL is 2.7 standard deviations above its recent mean (5.39B vs 4.92B)
-- 🟡 **WARNING**: SOL price is 2.7 standard deviations above its recent mean (90.39 vs 78.0268)
+- 🟡 **WARNING**: SOL price is 3.2 standard deviations above its recent mean (92.73 vs 78.0668)
 
 **Recently seen**
 
-- 2026-08-21T06:26Z SOL price is 2.7 standard deviations above its recent mean (90.05 vs 77.9457)
-- 2026-08-21T07:22Z TVL is 2.8 standard deviations above its recent mean (5.38B vs 4.92B)
 - 2026-08-21T07:22Z SOL price is 2.9 standard deviations above its recent mean (90.82 vs 77.9851)
 - 2026-08-21T08:02Z TVL is 2.7 standard deviations above its recent mean (5.39B vs 4.92B)
 - 2026-08-21T08:02Z SOL price is 2.7 standard deviations above its recent mean (90.39 vs 78.0268)
+- 2026-08-21T08:55Z TVL is 2.7 standard deviations above its recent mean (5.39B vs 4.92B)
+- 2026-08-21T08:55Z SOL price is 3.2 standard deviations above its recent mean (92.73 vs 78.0668)
 
 ## Network
 
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 2,048 |
-| Total TPS (incl. votes) | 3,798 |
-| Peak true TPS (30 min) | 2,495 |
-| Mean slot time | 0.387 s |
-| Slot | 440,642,738 |
-| Block height | 418,692,438 |
-| Epoch | 1020 - 0.63% complete, ~46.1 h remaining |
+| True TPS (non-vote) | 2,856 |
+| Total TPS (incl. votes) | 4,690 |
+| Peak true TPS (30 min) | 3,334 |
+| Mean slot time | 0.368 s |
+| Slot | 440,651,279 |
+| Block height | 418,700,968 |
+| Epoch | 1020 - 2.61% complete, ~43.0 h remaining |
 
 ## Validators
 
 | Metric | Value |
 |---|---|
-| Active validators | 679 |
-| Delinquent | 15 (0.13% of stake) |
+| Active validators | 680 |
+| Delinquent | 14 (0.12% of stake) |
 | Consensus stall buffer | 0.4% of the 33.3% halt threshold consumed |
 | Total stake | 433,485,334 SOL |
 | Nakamoto coefficient | 18 |
 | Top-10 stake share | 24.4% |
 | Top-20 stake share | 35.7% |
-| Client stake split | agave 88.5% / firedancer 11.4% / unknown 0.1% |
+| Client stake split | agave 88.3% / firedancer 11.4% / unknown 0.3% |
 | Stake-weighted commission | 27.12% |
 
 **Top validators by stake**
@@ -61,16 +61,16 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $90.39 (+5.3% 24h, +19.7% 7d) |
-| Price sources | cross-checked, 0.182% apart |
-| Market cap | $52.69B |
-| TVL | $5.39B (+3.0% 24h) |
-| Stablecoin supply | $15.85B |
+| SOL price | $92.73 (+5.3% 24h, +19.7% 7d) |
+| Price sources | cross-checked, 0.035% apart |
+| Market cap | $54.05B |
+| TVL | $5.39B (+3.1% 24h) |
+| Stablecoin supply | $15.86B |
 | DEX volume (24h) | $2.78B |
 | REV (24h) | $927.6K (network fees $776.7K + Jito tips $150.9K) |
 | App fees (24h) | $11.03M |
-| Median fee (user txs) | 5,374 lamports (~$0.000486) - about 2,059 transactions per $1 |
-| Circulating supply | 583,178,525 SOL |
+| Median fee (user txs) | 5,412 lamports (~$0.000502) - about 1,993 transactions per $1 |
+| Circulating supply | 583,178,489 SOL |
 
 ## Ecosystem Growth
 
@@ -129,13 +129,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-08-21T08:02:44Z |
-| validators | ok | 2026-08-21T08:02:54Z |
-| supply | ok | 2026-08-21T08:02:56Z |
-| defillama | ok | 2026-08-21T08:02:46Z |
-| price | ok | 2026-08-21T08:02:42Z |
-| news | ok | 2026-08-21T08:02:43Z |
-| solana_com | ok | 2026-08-21T08:02:43Z |
-| dune | off (optional) | 2026-08-21T08:02:41Z |
+| network | ok | 2026-08-21T08:54:59Z |
+| validators | ok | 2026-08-21T08:55:08Z |
+| supply | ok | 2026-08-21T08:55:10Z |
+| defillama | ok | 2026-08-21T08:55:00Z |
+| price | ok | 2026-08-21T08:54:57Z |
+| news | ok | 2026-08-21T08:54:59Z |
+| solana_com | ok | 2026-08-21T08:54:58Z |
+| dune | off (optional) | 2026-08-21T08:54:57Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

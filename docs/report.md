@@ -1,10 +1,10 @@
 # Solana Ecosystem Report
 
-> Generated 2026-08-21T23:21:23Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-08-21T23:45:02Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
-- 🟡 **WARNING**: SOL price is 2.6 standard deviations above its recent mean (94.37 vs 79.2378)
+- ✅ No active anomalies.
 
 **Recently seen**
 
@@ -19,27 +19,27 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 2,288 |
-| Total TPS (incl. votes) | 4,128 |
-| Peak true TPS (30 min) | 3,028 |
-| Mean slot time | 0.367 s |
-| Slot | 440,793,120 |
-| Block height | 418,842,664 |
-| Epoch | 1020 - 35.44% complete, ~28.4 h remaining |
+| True TPS (non-vote) | 2,446 |
+| Total TPS (incl. votes) | 4,299 |
+| Peak true TPS (30 min) | 3,010 |
+| Mean slot time | 0.365 s |
+| Slot | 440,797,004 |
+| Block height | 418,846,543 |
+| Epoch | 1020 - 36.34% complete, ~27.9 h remaining |
 
 ## Validators
 
 | Metric | Value |
 |---|---|
-| Active validators | 680 |
-| Delinquent | 14 (0.19% of stake) |
-| Consensus stall buffer | 0.6% of the 33.3% halt threshold consumed |
+| Active validators | 681 |
+| Delinquent | 13 (0.15% of stake) |
+| Consensus stall buffer | 0.4% of the 33.3% halt threshold consumed |
 | Total stake | 433,485,334 SOL |
 | Nakamoto coefficient | 18 |
 | Top-10 stake share | 24.4% |
-| Top-20 stake share | 35.8% |
+| Top-20 stake share | 35.7% |
 | Client stake split | agave 88.6% / firedancer 11.3% / unknown 0.1% |
-| Stake-weighted commission | 27.19% |
+| Stake-weighted commission | 27.18% |
 
 **Top validators by stake**
 
@@ -60,16 +60,16 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $94.37 (+8.0% 24h, +25.6% 7d) |
-| Price sources | cross-checked, 0.157% apart |
-| Market cap | $55.03B |
+| SOL price | $93.75 (+8.0% 24h, +25.6% 7d) |
+| Price sources | cross-checked, 0.146% apart |
+| Market cap | $54.67B |
 | TVL | $5.50B (+5.2% 24h) |
 | Stablecoin supply | $15.88B |
 | DEX volume (24h) | $2.77B |
 | REV (24h) | $926.8K (network fees $776.7K + Jito tips $150.1K) |
 | App fees (24h) | $11.08M |
-| Median fee (user txs) | 5,281 lamports (~$0.000498) - about 2,007 transactions per $1 |
-| Circulating supply | 583,177,511 SOL |
+| Median fee (user txs) | 5,411 lamports (~$0.000507) - about 1,971 transactions per $1 |
+| Circulating supply | 583,177,494 SOL |
 
 ## Ecosystem Growth
 
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-08-21T23:21:11Z |
-| validators | ok | 2026-08-21T23:21:21Z |
-| supply | ok | 2026-08-21T23:21:23Z |
-| defillama | ok | 2026-08-21T23:21:10Z |
-| price | ok | 2026-08-21T23:21:09Z |
-| news | ok | 2026-08-21T23:21:10Z |
-| solana_com | ok | 2026-08-21T23:21:10Z |
-| dune | off (optional) | 2026-08-21T23:21:09Z |
+| network | ok | 2026-08-21T23:44:50Z |
+| validators | ok | 2026-08-21T23:45:00Z |
+| supply | ok | 2026-08-21T23:45:02Z |
+| defillama | ok | 2026-08-21T23:44:49Z |
+| price | ok | 2026-08-21T23:44:48Z |
+| news | ok | 2026-08-21T23:44:49Z |
+| solana_com | ok | 2026-08-21T23:44:48Z |
+| dune | off (optional) | 2026-08-21T23:44:48Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

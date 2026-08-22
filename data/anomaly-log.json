@@ -2657,5 +2657,15 @@
   "severity": "warning",
   "metric": "price.price_divergence_pct",
   "message": "price sources diverge by 1.844% (CoinGecko vs Jupiter)"
+ },
+ {
+  "seen_at": "2026-08-22T05:50:18Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "defillama.tvl_usd",
+  "message": "TVL is 2.6 standard deviations above its recent mean (5.63B vs 4.99B)",
+  "value": 5632382829.0,
+  "baseline_mean": 4992433400.8629,
+  "z_score": 2.65
  }
 ]

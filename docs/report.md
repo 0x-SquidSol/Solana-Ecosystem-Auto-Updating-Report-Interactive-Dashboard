@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-08-22T05:50:18Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-08-22T06:20:33Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -8,24 +8,24 @@
 
 **Recently seen**
 
-- 2026-08-22T04:01Z SOL price is 2.7 standard deviations above its recent mean (96.84 vs 79.8459)
 - 2026-08-22T04:46Z SOL price is 3.5 standard deviations above its recent mean (102.04 vs 79.8992)
 - 2026-08-22T04:46Z price sources diverge by 1.666% (CoinGecko vs Jupiter)
 - 2026-08-22T05:17Z price sources diverge by 1.844% (CoinGecko vs Jupiter)
 - 2026-08-22T05:50Z TVL is 2.6 standard deviations above its recent mean (5.63B vs 4.99B)
+- 2026-08-22T06:20Z TVL is 2.6 standard deviations above its recent mean (5.63B vs 4.99B)
 
 ## Network
 
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 3,245 |
-| Total TPS (incl. votes) | 5,099 |
-| Peak true TPS (30 min) | 5,029 |
+| True TPS (non-vote) | 2,115 |
+| Total TPS (incl. votes) | 3,971 |
+| Peak true TPS (30 min) | 2,569 |
 | Mean slot time | 0.366 s |
-| Slot | 440,856,709 |
-| Block height | 418,906,151 |
-| Epoch | 1020 - 50.16% complete, ~21.9 h remaining |
+| Slot | 440,861,668 |
+| Block height | 418,911,102 |
+| Epoch | 1020 - 51.31% complete, ~21.4 h remaining |
 
 ## Validators
 
@@ -60,16 +60,16 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $94.06 (+11.1% 24h, +31.6% 7d) |
-| Price sources | cross-checked, 0.498% apart |
-| Market cap | $54.85B |
+| SOL price | $93.75 (+5.6% 24h, +25.0% 7d) |
+| Price sources | cross-checked, 0.065% apart |
+| Market cap | $54.67B |
 | TVL | $5.63B (+5.6% 24h) |
-| Stablecoin supply | $15.86B |
+| Stablecoin supply | $15.89B |
 | DEX volume (24h) | $3.47B |
-| REV (24h) | $1.04M (network fees $898.9K + Jito tips $144.3K) |
+| REV (24h) | $1.04M (network fees $898.9K + Jito tips $145.7K) |
 | App fees (24h) | $13.20M |
-| Median fee (user txs) | 5,352 lamports (~$0.000503) - about 1,986 transactions per $1 |
-| Circulating supply | 583,177,258 SOL |
+| Median fee (user txs) | 5,617 lamports (~$0.000527) - about 1,899 transactions per $1 |
+| Circulating supply | 583,177,239 SOL |
 
 ## Ecosystem Growth
 
@@ -89,7 +89,7 @@
 - xStocks: $427.35M
 - OnRe: $273.27M
 - Ondo Yield Assets: $179.14M
-- Hastra: $169.01M
+- Hastra: $168.77M
 
 ## News & Upgrades
 
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-08-22T05:50:00Z |
-| validators | ok | 2026-08-22T05:50:15Z |
-| supply | ok | 2026-08-22T05:50:18Z |
-| defillama | ok | 2026-08-22T05:49:59Z |
-| price | ok | 2026-08-22T05:49:58Z |
-| news | ok | 2026-08-22T05:49:59Z |
-| solana_com | ok | 2026-08-22T05:49:58Z |
-| dune | off (optional) | 2026-08-22T05:49:57Z |
+| network | ok | 2026-08-22T06:20:17Z |
+| validators | ok | 2026-08-22T06:20:31Z |
+| supply | ok | 2026-08-22T06:20:33Z |
+| defillama | ok | 2026-08-22T06:20:16Z |
+| price | ok | 2026-08-22T06:20:15Z |
+| news | ok | 2026-08-22T06:20:16Z |
+| solana_com | ok | 2026-08-22T06:20:15Z |
+| dune | off (optional) | 2026-08-22T06:20:14Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

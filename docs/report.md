@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-08-22T07:43:09Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-08-22T08:00:21Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -19,13 +19,13 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,716 |
-| Total TPS (incl. votes) | 3,570 |
-| Peak true TPS (30 min) | 2,099 |
-| Mean slot time | 0.367 s |
-| Slot | 440,875,182 |
-| Block height | 418,924,600 |
-| Epoch | 1020 - 54.44% complete, ~20.1 h remaining |
+| True TPS (non-vote) | 1,618 |
+| Total TPS (incl. votes) | 3,477 |
+| Peak true TPS (30 min) | 2,132 |
+| Mean slot time | 0.365 s |
+| Slot | 440,878,008 |
+| Block height | 418,927,422 |
+| Epoch | 1020 - 55.09% complete, ~19.7 h remaining |
 
 ## Validators
 
@@ -38,7 +38,7 @@
 | Nakamoto coefficient | 18 |
 | Top-10 stake share | 24.3% |
 | Top-20 stake share | 35.7% |
-| Client stake split | agave 88.4% / firedancer 11.3% / unknown 0.3% |
+| Client stake split | agave 88.7% / firedancer 11.3% / unknown 0.1% |
 | Stake-weighted commission | 27.16% |
 
 **Top validators by stake**
@@ -60,16 +60,16 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $94.72 (+3.9% 24h, +25.2% 7d) |
-| Price sources | cross-checked, 0.089% apart |
-| Market cap | $55.24B |
+| SOL price | $94.48 (+3.9% 24h, +25.2% 7d) |
+| Price sources | cross-checked, 0.051% apart |
+| Market cap | $55.11B |
 | TVL | $5.57B (+4.4% 24h) |
 | Stablecoin supply | $15.90B |
 | DEX volume (24h) | $3.47B |
-| REV (24h) | $1.06M (network fees $898.9K + Jito tips $158.0K) |
+| REV (24h) | $1.09M (network fees $898.9K + Jito tips $194.3K) |
 | App fees (24h) | $13.20M |
-| Median fee (user txs) | 5,495 lamports (~$0.000520) - about 1,921 transactions per $1 |
-| Circulating supply | 583,177,192 SOL |
+| Median fee (user txs) | 5,398 lamports (~$0.000510) - about 1,961 transactions per $1 |
+| Circulating supply | 583,177,183 SOL |
 
 ## Ecosystem Growth
 
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-08-22T07:42:57Z |
-| validators | ok | 2026-08-22T07:43:07Z |
-| supply | ok | 2026-08-22T07:43:09Z |
-| defillama | ok | 2026-08-22T07:42:58Z |
-| price | ok | 2026-08-22T07:42:56Z |
-| news | ok | 2026-08-22T07:42:58Z |
-| solana_com | ok | 2026-08-22T07:42:56Z |
-| dune | off (optional) | 2026-08-22T07:42:55Z |
+| network | ok | 2026-08-22T08:00:10Z |
+| validators | ok | 2026-08-22T08:00:19Z |
+| supply | ok | 2026-08-22T08:00:21Z |
+| defillama | ok | 2026-08-22T08:00:12Z |
+| price | ok | 2026-08-22T08:00:10Z |
+| news | ok | 2026-08-22T08:00:10Z |
+| solana_com | ok | 2026-08-22T08:00:09Z |
+| dune | off (optional) | 2026-08-22T08:00:08Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

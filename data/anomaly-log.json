@@ -2633,5 +2633,22 @@
   "value": 96.84,
   "baseline_mean": 79.8459,
   "z_score": 2.73
+ },
+ {
+  "seen_at": "2026-08-22T04:46:26Z",
+  "kind": "statistical",
+  "severity": "alert",
+  "metric": "price.price_usd",
+  "message": "SOL price is 3.5 standard deviations above its recent mean (102.04 vs 79.8992)",
+  "value": 102.04,
+  "baseline_mean": 79.8992,
+  "z_score": 3.52
+ },
+ {
+  "seen_at": "2026-08-22T04:46:26Z",
+  "kind": "rule",
+  "severity": "warning",
+  "metric": "price.price_divergence_pct",
+  "message": "price sources diverge by 1.666% (CoinGecko vs Jupiter)"
  }
 ]

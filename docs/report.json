@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T23:32:58Z",
+  "generated_at": "2026-08-24T23:55:37Z",
   "generator": "heliostat 0.1.0",
   "refresh_interval_minutes": 15,
   "rpc_endpoint": "https://api.mainnet-beta.solana.com",
@@ -21,227 +21,227 @@
           "ok": true,
           "detail": "ok"
         },
-        "slot": 441503106,
-        "block_height": 419552011,
-        "block_time_unix": 1787614352,
-        "epoch": 1021,
-        "epoch_progress_pct": 99.79,
-        "epoch_slot_index": 431108,
+        "slot": 441506817,
+        "block_height": 419555678,
+        "block_time_unix": 1787615713,
+        "epoch": 1022,
+        "epoch_progress_pct": 0.65,
+        "epoch_slot_index": 2819,
         "epoch_slots_total": 432000,
-        "epoch_remaining_hours": 0.1,
+        "epoch_remaining_hours": 43.6,
         "tps_series": [
           [
             29,
-            1950.2
+            2276.6
           ],
           [
             28,
-            2173.6
+            2394.2
           ],
           [
             27,
-            2030.5
+            2402.6
           ],
           [
             26,
-            2086.4
+            2025.4
           ],
           [
             25,
-            2233.2
+            2029.7
           ],
           [
             24,
-            1943.8
+            2179.9
           ],
           [
             23,
-            1998.9
+            2179.3
           ],
           [
             22,
-            1800.9
+            1696.1
           ],
           [
             21,
-            1815.3
+            1796.1
           ],
           [
             20,
-            1753.2
+            1864.9
           ],
           [
             19,
-            1909.2
+            1520.2
           ],
           [
             18,
-            1900.7
+            1515.5
           ],
           [
             17,
-            1984.0
+            1871.1
           ],
           [
             16,
-            2063.4
+            1818.8
           ],
           [
             15,
-            1612.8
+            1852.7
           ],
           [
             14,
-            1936.0
+            1527.6
           ],
           [
             13,
-            2027.0
+            1586.8
           ],
           [
             12,
-            1919.8
+            1824.1
           ],
           [
             11,
-            2576.6
+            2438.1
           ],
           [
             10,
-            2367.8
+            2506.3
           ],
           [
             9,
-            2452.3
+            2266.6
           ],
           [
             8,
-            2225.5
+            2090.7
           ],
           [
             7,
-            2199.8
+            2081.2
           ],
           [
             6,
-            2256.7
+            2095.4
           ],
           [
             5,
-            2386.8
+            2364.9
           ],
           [
             4,
-            2333.9
+            1788.8
           ],
           [
             3,
-            2025.1
+            2015.3
           ],
           [
             2,
-            1977.2
+            1926.6
           ],
           [
             1,
-            2293.8
+            2507.7
           ],
           [
             0,
-            1885.6
+            2383.9
           ]
         ],
-        "tps_total": 3942.9,
-        "tps_true": 2070.7,
-        "tps_total_peak": 4467.6,
-        "tps_true_peak": 2576.6,
-        "mean_slot_time_secs": 0.364,
+        "tps_total": 3875.1,
+        "tps_true": 2027.6,
+        "tps_total_peak": 4390.4,
+        "tps_true_peak": 2507.7,
+        "mean_slot_time_secs": 0.366,
         "sample_window_minutes": 30
       },
       "error": null,
-      "fetched_at": "2026-08-24T23:32:46Z"
+      "fetched_at": "2026-08-24T23:55:27Z"
     },
     "validators": {
       "ok": true,
       "data": {
         "active_count": 686,
-        "delinquent_count": 9,
+        "delinquent_count": 8,
         "delinquent_stake_pct": 0.02,
         "stall_buffer_used_pct": 0.1,
         "delinquency_alert": false,
-        "total_stake_sol": 433436313,
+        "total_stake_sol": 435118104,
         "nakamoto_coefficient": 18,
         "top10_stake_pct": 24.3,
-        "top20_stake_pct": 35.7,
+        "top20_stake_pct": 35.6,
         "top_validators": [
           {
             "vote_pubkey": "CcaHc2L43ZWjwCHART3oZoJvHLAe9hzT2DJNUpBzoTN1",
             "node_pubkey": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
-            "stake_sol": 16984006,
+            "stake_sol": 17066966,
             "stake_pct": 3.92,
             "commission_pct": 7
           },
           {
             "vote_pubkey": "he1iusunGwqrNtafDtLdhsUQDFvo13z9sUa36PauBtk",
             "node_pubkey": "HEL1USMZKAL2odpNBj2oCjffnFGaYwmbGmyewGv1e2TU",
-            "stake_sol": 16032941,
-            "stake_pct": 3.7,
+            "stake_sol": 16035907,
+            "stake_pct": 3.69,
             "commission_pct": 0
           },
           {
             "vote_pubkey": "3N7s9zXMZ4QqvHQR15t5GNHyqc89KduzMP7423eWiD5g",
             "node_pubkey": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy",
-            "stake_sol": 12211671,
+            "stake_sol": 12268330,
             "stake_pct": 2.82,
             "commission_pct": 0
           },
           {
             "vote_pubkey": "CatzoSMUkTRidT5DwBxAC2pEtnwMBTpkCepHkFgZDiqb",
             "node_pubkey": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
-            "stake_sol": 11728738,
-            "stake_pct": 2.71,
+            "stake_sol": 11739871,
+            "stake_pct": 2.7,
             "commission_pct": 5
           },
           {
             "vote_pubkey": "26pV97Ce83ZQ6Kz9XT4td8tdoUFPTng8Fb8gPyc53dJx",
             "node_pubkey": "C8Bey3LKVJHVqN6xPTeW8WJfUgFQAeGNBpT4Rp99JP1k",
-            "stake_sol": 9165202,
-            "stake_pct": 2.11,
+            "stake_sol": 9202562,
+            "stake_pct": 2.12,
             "commission_pct": 7
           },
           {
             "vote_pubkey": "51JBzSTU5rAM8gLAVQKgp4WoZerQcSqWC7BitBzgUNAm",
             "node_pubkey": "CAo1dCGYrB6NhHh5xb1cGjUiu86iyCfMTENxgHumSve4",
-            "stake_sol": 8876408,
+            "stake_sol": 8924729,
             "stake_pct": 2.05,
             "commission_pct": 10
           },
           {
             "vote_pubkey": "8GbwASqdpw4dVcwbWUxbHXMrjyQx2aKkoBR5H1GJF8iD",
             "node_pubkey": "E1r4Psq84tHfQ6aPTvvDka4U3u8zPVD7gEUrH25RdxHL",
-            "stake_sol": 8480578,
-            "stake_pct": 1.96,
+            "stake_sol": 8579462,
+            "stake_pct": 1.97,
             "commission_pct": 0
           },
           {
             "vote_pubkey": "9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF",
             "node_pubkey": "EvnRmnMrd69kFdbLMxWkTn1icZ7DCceRhvmb2SJXqDo4",
-            "stake_sol": 7930731,
+            "stake_sol": 7953722,
             "stake_pct": 1.83,
             "commission_pct": 7
           },
           {
             "vote_pubkey": "CvSb7wdQAFpHuSpTYTJnX5SYH4hCfQ9VuGnqrKaKwycB",
             "node_pubkey": "9eGrDohdNTAo61DRHyfMuqKWXqYnA3i254Wiszxe8FoY",
-            "stake_sol": 7359446,
-            "stake_pct": 1.7,
+            "stake_sol": 7300009,
+            "stake_pct": 1.68,
             "commission_pct": 5
           },
           {
             "vote_pubkey": "DumiCKHVqoCQKD8roLApzR5Fit8qGV5fVQsJV9sTZk4a",
             "node_pubkey": "Awes4Tr6TX8JDzEhCZY2QVNimT6iD1zWHzf1vNyGvpLM",
-            "stake_sol": 6568551,
-            "stake_pct": 1.52,
+            "stake_sol": 6574676,
+            "stake_pct": 1.51,
             "commission_pct": 0
           },
           {
@@ -254,159 +254,159 @@
           {
             "vote_pubkey": "3JD3jMmnR6g88qff2WZ3cMHJRjJMUk9yVZtmYTYeFrXf",
             "node_pubkey": "JD549HsbJHeEKKUrKgg4Fj2iyv2RGjsV7NTZjZUrHybB",
-            "stake_sol": 6011956,
-            "stake_pct": 1.39,
+            "stake_sol": 6018407,
+            "stake_pct": 1.38,
             "commission_pct": 0
           },
           {
             "vote_pubkey": "DdCNGDpP7qMgoAy6paFzhhak2EeyCZcgjH7ak5u5v28m",
             "node_pubkey": "5pPRHniefFjkiaArbGX3Y8NUysJmQ9tMZg3FrFGwHzSm",
-            "stake_sol": 5919204,
-            "stake_pct": 1.37,
+            "stake_sol": 5932684,
+            "stake_pct": 1.36,
             "commission_pct": 5
           },
           {
             "vote_pubkey": "GHViLgbrJdZDPb6sphRbeuPNM9cmjsFuGWzrTF1sKF5n",
             "node_pubkey": "5Cchr1XGEg7dbBXByV5NY2ad8jfxAM7HA3x8D56rq9Ux",
-            "stake_sol": 5687980,
-            "stake_pct": 1.31,
+            "stake_sol": 5674980,
+            "stake_pct": 1.3,
             "commission_pct": 100
           },
           {
             "vote_pubkey": "FKsC411dik9ktS6xPADxs4Fk2SCENvAiuccQHLAPndvk",
             "node_pubkey": "GnC339vkyXRm1jRX69dt9mapPPu2LbzXfSDoxc91qta6",
-            "stake_sol": 4828051,
+            "stake_sol": 4830962,
             "stake_pct": 1.11,
             "commission_pct": 7
           },
           {
             "vote_pubkey": "HimWQUK61d9wxhw7EYu9jUje7xQiDs4jKexaTSvuCmXE",
             "node_pubkey": "9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ",
-            "stake_sol": 4664411,
-            "stake_pct": 1.08,
+            "stake_sol": 4665921,
+            "stake_pct": 1.07,
             "commission_pct": 8
           },
           {
             "vote_pubkey": "3ZYJxzCeweSoh2Jj7oCgencFs9y27iKmXJeqYapje1cj",
             "node_pubkey": "EkvdKhULbMFqjKBKotAzGi3kwMvMpYNDKJXXQQmi6C1f",
-            "stake_sol": 4094374,
+            "stake_sol": 4097796,
             "stake_pct": 0.94,
             "commission_pct": 100
           },
           {
             "vote_pubkey": "G9x1mqewTeVnXLmv3FamYD5tq1AdS395RHH3MLQPj6TY",
             "node_pubkey": "BtsmiEEvnSuUnKxqXj2PZRYpPJAc7C34mGz8gtJ1DAaH",
-            "stake_sol": 4026462,
+            "stake_sol": 4031047,
             "stake_pct": 0.93,
             "commission_pct": 100
           },
           {
             "vote_pubkey": "EcEowA4GKDsdVBF9PNAZa6c9M4WgYG8y4GnpZSUaqioS",
             "node_pubkey": "5ZqveVffQPiUbkjBg4KD9kib1MKHLqiFno4ke9jSq9qk",
-            "stake_sol": 4008707,
-            "stake_pct": 0.93,
+            "stake_sol": 4004008,
+            "stake_pct": 0.92,
             "commission_pct": 100
           },
           {
             "vote_pubkey": "AZoCYB4VgoM9DR9f1ZFcBn8xPSbtbqoxZnKJR7tkvEoX",
             "node_pubkey": "FBKFWadXZJahGtFitAsBvbqh5968gLY7dMBBJUoUjeNi",
-            "stake_sol": 3978674,
-            "stake_pct": 0.92,
-            "commission_pct": 100
-          },
-          {
-            "vote_pubkey": "H74qox1GASBWd94FWMyy6GVAbRVLf9SAMgbJ1tzSUAst",
-            "node_pubkey": "Hz5aLvpKScNWoe9YZWxBLrQA3qzHJivBGtfciMekk8m5",
-            "stake_sol": 3917921,
-            "stake_pct": 0.9,
+            "stake_sol": 3976788,
+            "stake_pct": 0.91,
             "commission_pct": 100
           },
           {
             "vote_pubkey": "HkFuE9NJahP7uA8RooXtp64UQb7XNUMVisWsJTgx3far",
             "node_pubkey": "A1vqhA2fS6K7CvHsJKX1ACcHJFEmyRg4KuR5pctHANy4",
-            "stake_sol": 3912103,
+            "stake_sol": 3934535,
+            "stake_pct": 0.9,
+            "commission_pct": 100
+          },
+          {
+            "vote_pubkey": "H74qox1GASBWd94FWMyy6GVAbRVLf9SAMgbJ1tzSUAst",
+            "node_pubkey": "Hz5aLvpKScNWoe9YZWxBLrQA3qzHJivBGtfciMekk8m5",
+            "stake_sol": 3932420,
             "stake_pct": 0.9,
             "commission_pct": 100
           },
           {
             "vote_pubkey": "8Pep3GmYiijRALqrMKpez92cxvF4YPTzoZg83uXh14pW",
             "node_pubkey": "J6etcxDdYjPHrtyvDXrbCkx3q9W1UjMj1vy1jBFPJEbK",
-            "stake_sol": 3896839,
+            "stake_sol": 3896335,
             "stake_pct": 0.9,
             "commission_pct": 0
           },
           {
             "vote_pubkey": "2tucttroqFNXsrYeMBQ8LfzKNfgwT2rHBzAF6RzbbHEp",
             "node_pubkey": "Fc6NNdS2j3EmrWbU6Uqt6wsKB5ef72NjaWfNxKYbULGD",
-            "stake_sol": 3797281,
+            "stake_sol": 3842691,
             "stake_pct": 0.88,
             "commission_pct": 5
           },
           {
             "vote_pubkey": "9jToNMWCLW1GeoLGPZNvEfuXE4AUwiRsrC1HMGmh3PTu",
             "node_pubkey": "9UM8wQ8F5oMiRcP5YdqD6Lr4krpBWCD8LtgQYoisJd9i",
-            "stake_sol": 3726859,
+            "stake_sol": 3727797,
             "stake_pct": 0.86,
             "commission_pct": 2
           }
         ],
         "all_validators": [
           [
-            16984006,
+            17066966,
             7,
             "CcaH..oTN1",
             "agave"
           ],
           [
-            16032941,
+            16035907,
             0,
             "he1i..uBtk",
             "agave"
           ],
           [
-            12211671,
+            12268330,
             0,
             "3N7s..iD5g",
             "agave"
           ],
           [
-            11728738,
+            11739871,
             5,
             "Catz..Diqb",
             "agave"
           ],
           [
-            9165202,
+            9202562,
             7,
             "26pV..3dJx",
             "agave"
           ],
           [
-            8876408,
+            8924729,
             10,
             "51JB..UNAm",
             "agave"
           ],
           [
-            8480578,
+            8579462,
             0,
             "8Gbw..F8iD",
             "agave"
           ],
           [
-            7930731,
+            7953722,
             7,
             "9QU2..29mF",
             "firedancer"
           ],
           [
-            7359446,
+            7300009,
             5,
             "CvSb..wycB",
             "firedancer"
           ],
           [
-            6568551,
+            6574676,
             0,
             "Dumi..Zk4a",
             "firedancer"
@@ -418,91 +418,91 @@
             "agave"
           ],
           [
-            6011956,
+            6018407,
             0,
             "3JD3..FrXf",
             "firedancer"
           ],
           [
-            5919204,
+            5932684,
             5,
             "DdCN..v28m",
             "agave"
           ],
           [
-            5687980,
+            5674980,
             100,
             "GHVi..KF5n",
             "agave"
           ],
           [
-            4828051,
+            4830962,
             7,
             "FKsC..ndvk",
             "agave"
           ],
           [
-            4664411,
+            4665921,
             8,
             "HimW..CmXE",
             "agave"
           ],
           [
-            4094374,
+            4097796,
             100,
             "3ZYJ..e1cj",
             "agave"
           ],
           [
-            4026462,
+            4031047,
             100,
             "G9x1..j6TY",
             "agave"
           ],
           [
-            4008707,
+            4004008,
             100,
             "EcEo..qioS",
             "agave"
           ],
           [
-            3978674,
+            3976788,
             100,
             "AZoC..vEoX",
             "agave"
           ],
           [
-            3917921,
-            100,
-            "H74q..UAst",
-            "agave"
-          ],
-          [
-            3912103,
+            3934535,
             100,
             "HkFu..3far",
             "agave"
           ],
           [
-            3896839,
+            3932420,
+            100,
+            "H74q..UAst",
+            "agave"
+          ],
+          [
+            3896335,
             0,
             "8Pep..14pW",
             "firedancer"
           ],
           [
-            3797281,
+            3842691,
             5,
             "2tuc..bHEp",
             "agave"
           ],
           [
-            3726859,
+            3727797,
             2,
             "9jTo..3PTu",
             "agave"
           ],
           [
-            3613180,
+            3610113,
             0,
             "shft..YCQ1",
             "agave"
@@ -514,19 +514,19 @@
             "agave"
           ],
           [
-            3277877,
+            3278635,
             10,
             "KRAK..2dag",
             "agave"
           ],
           [
-            3070883,
+            3022995,
             8,
             "AaVs..Wy1H",
             "agave"
           ],
           [
-            2986341,
+            2987128,
             5,
             "AuGw..zg9m",
             "agave"
@@ -538,25 +538,25 @@
             "agave"
           ],
           [
-            2877396,
+            2879168,
             10,
             "Ak5B..fiqR",
             "agave"
           ],
           [
-            2845313,
+            2842568,
             0,
             "DriF..HRpp",
             "firedancer"
           ],
           [
-            2600926,
+            2598639,
             5,
             "23Xq..QEFr",
             "agave"
           ],
           [
-            2521957,
+            2518909,
             0,
             "2NxE..GU9P",
             "agave"
@@ -612,17 +612,17 @@
           [
             2500000,
             100,
-            "33hu..BTRQ",
+            "BU3Z..rm4F",
             "agave"
           ],
           [
             2500000,
             100,
-            "BU3Z..rm4F",
+            "33hu..BTRQ",
             "agave"
           ],
           [
-            2431639,
+            2429829,
             0,
             "4AUE..UBBW",
             "agave"
@@ -640,13 +640,13 @@
             "agave"
           ],
           [
-            2299057,
+            2297008,
             10,
             "6aow..VGPs",
             "agave"
           ],
           [
-            2223824,
+            2221947,
             0,
             "JEJz..Hvmk",
             "agave"
@@ -664,7 +664,7 @@
             "agave"
           ],
           [
-            2057305,
+            2076069,
             0,
             "LSTm..Y6Ys",
             "agave"
@@ -688,19 +688,19 @@
             "agave"
           ],
           [
-            1904915,
+            1905399,
             1,
             "9Dia..T4dy",
             "agave"
           ],
           [
-            1901831,
+            1902315,
             1,
             "H43A..C25C",
             "agave"
           ],
           [
-            1898920,
+            1899368,
             8,
             "CKYF..EFHX",
             "agave"
@@ -730,19 +730,25 @@
             "agave"
           ],
           [
-            1670802,
+            1756978,
+            10,
+            "G83j..2Qys",
+            "agave"
+          ],
+          [
+            1688086,
             4,
             "BU5C..iPsE",
             "firedancer"
           ],
           [
-            1663550,
+            1673890,
             6,
             "EXhY..uhQw",
             "agave"
           ],
           [
-            1657864,
+            1654342,
             8,
             "Chor..Y5KE",
             "agave"
@@ -754,19 +760,13 @@
             "agave"
           ],
           [
-            1619344,
-            10,
-            "G83j..2Qys",
-            "agave"
-          ],
-          [
-            1615194,
+            1615276,
             8,
             "6D2j..cHx9",
             "agave"
           ],
           [
-            1533464,
+            1533826,
             8,
             "Gqcu..STWK",
             "agave"
@@ -778,55 +778,55 @@
             "agave"
           ],
           [
-            1453290,
+            1453634,
             8,
             "ERut..CtLi",
             "agave"
           ],
           [
-            1447218,
+            1445961,
             1,
             "71nn..tiDJ",
             "agave"
           ],
           [
-            1445205,
+            1439231,
             0,
             "HxRr..UVWH",
             "agave"
           ],
           [
-            1393807,
+            1393994,
             0,
             "BLAD..atZ2",
             "agave"
           ],
           [
-            1384930,
+            1385342,
             0,
             "g5kw..dzyn",
             "agave"
           ],
           [
-            1375877,
-            5,
-            "FsT8..966r",
-            "agave"
-          ],
-          [
-            1375727,
+            1374672,
             0,
             "EARN..BS72",
             "agave"
           ],
           [
-            1358036,
+            1374667,
+            5,
+            "FsT8..966r",
+            "agave"
+          ],
+          [
+            1357422,
             5,
             "8hPk..SFJH",
             "agave"
           ],
           [
-            1339522,
+            1339668,
             0,
             "GvZE..me1e",
             "agave"
@@ -844,7 +844,7 @@
             "agave"
           ],
           [
-            1272500,
+            1277500,
             100,
             "bith..c2da",
             "agave"
@@ -856,19 +856,19 @@
             "agave"
           ],
           [
-            1243606,
+            1243983,
             0,
             "7KVn..jQPN",
             "agave"
           ],
           [
-            1241993,
+            1242272,
             10,
             "CMPx..ZE68",
             "agave"
           ],
           [
-            1240259,
+            1240485,
             0,
             "Haz7..3ab6",
             "agave"
@@ -880,63 +880,63 @@
             "agave"
           ],
           [
-            1167817,
+            1168002,
             40,
             "Atvn..6AMF",
             "agave"
           ],
           [
-            1137984,
+            1138265,
             0,
             "5orR..Bkcv",
             "agave"
           ],
           [
-            1132222,
+            1131273,
             6,
             "FQwe..V571",
             "agave"
           ],
           [
-            1093336,
+            1093617,
             0,
             "3tUZ..DrxW",
             "agave"
           ],
           [
-            1074844,
+            1075380,
             5,
             "BbM5..mt2x",
             "agave"
           ],
           [
-            1067139,
+            1067413,
             0,
             "8uEg..KRYM",
             "agave"
           ],
           [
-            1018590,
-            0,
-            "5sMm..fxMx",
+            1032354,
+            5,
+            "A5ed..SdDw",
             "agave"
           ],
           [
-            1016310,
+            1021936,
             0,
             "F5b1..SEXK",
             "agave"
           ],
           [
-            1004109,
+            1018851,
             0,
-            "DsiG..LJjx",
+            "5sMm..fxMx",
             "agave"
           ],
           [
-            1001124,
-            5,
-            "A5ed..SdDw",
+            1003503,
+            0,
+            "DsiG..LJjx",
             "agave"
           ],
           [
@@ -946,109 +946,103 @@
             "agave"
           ],
           [
-            991201,
+            989315,
             0,
             "AS3n..yr1t",
             "agave"
           ],
           [
-            919066,
+            919386,
             0,
             "AiDo..PqFX",
             "agave"
           ],
           [
-            900038,
+            899371,
             5,
             "Ha1V..RPDQ",
             "agave"
           ],
           [
-            896416,
+            896411,
             5,
             "9jYF..vcRw",
             "agave"
           ],
           [
-            894468,
+            895641,
             5,
             "Dier..KevU",
             "agave"
           ],
           [
-            878491,
-            2,
-            "8tjR..EiQW",
-            "agave"
-          ],
-          [
-            855858,
-            10,
-            "Fiij..4BWS",
-            "agave"
-          ],
-          [
-            820061,
-            2,
-            "J21S..3bgP",
-            "agave"
-          ],
-          [
-            809188,
-            5,
-            "67qy..mVTh",
-            "agave"
-          ],
-          [
-            800672,
+            891492,
             0,
             "2iWX..EFMJ",
             "firedancer"
           ],
           [
-            799413,
-            0,
-            "CooL..jDzr",
+            878712,
+            2,
+            "8tjR..EiQW",
             "agave"
           ],
           [
-            796315,
+            853618,
+            10,
+            "Fiij..4BWS",
+            "agave"
+          ],
+          [
+            819322,
+            2,
+            "J21S..3bgP",
+            "agave"
+          ],
+          [
+            809385,
+            5,
+            "67qy..mVTh",
+            "agave"
+          ],
+          [
+            796970,
             10,
             "GEM1..DvpB",
             "agave"
           ],
           [
-            794918,
+            795080,
             10,
             "94qe..nX9m",
             "agave"
           ],
           [
-            789554,
+            794102,
             0,
             "6F5x..adfZ",
             "agave"
           ],
           [
-            786282,
+            785475,
             3,
             "C89g..eEx3",
             "agave"
           ],
           [
-            769686,
+            769881,
             0,
             "DqbR..PDMK",
             "agave"
           ],
           [
-            769558,
+            769746,
             5,
             "7opS..Dnjd",
             "agave"
           ],
           [
-            749509,
+            749910,
             0,
             "FKBP..5rSa",
             "agave"
@@ -1060,73 +1054,79 @@
             "agave"
           ],
           [
-            741246,
+            739525,
             0,
             "HMV1..fQLc",
             "agave"
           ],
           [
-            722540,
+            722263,
             8,
             "beef..uTar",
             "agave"
           ],
           [
-            716127,
-            5,
-            "hsdt..fsLT",
-            "agave"
-          ],
-          [
-            714701,
+            718064,
             0,
             "SKRu..MVVA",
             "agave"
           ],
           [
-            695908,
+            717020,
+            5,
+            "hsdt..fsLT",
+            "agave"
+          ],
+          [
+            716674,
+            0,
+            "CooL..jDzr",
+            "agave"
+          ],
+          [
+            696148,
             0,
             "2HQ5..emJB",
             "agave"
           ],
           [
-            682226,
+            681704,
             5,
             "4Psi..tmSN",
             "agave"
           ],
           [
-            652450,
-            3,
-            "6Xtf..ZLcy",
-            "firedancer"
-          ],
-          [
-            651490,
+            661473,
             0,
             "5s3v..YcYK",
             "agave"
           ],
           [
-            640740,
-            0,
-            "Majo..LkmE",
-            "agave"
-          ],
-          [
-            638205,
+            656506,
             100,
             "8zHJ..A92r",
             "agave"
           ],
           [
-            634158,
+            652365,
+            3,
+            "6Xtf..ZLcy",
+            "firedancer"
+          ],
+          [
+            640181,
+            0,
+            "Majo..LkmE",
+            "agave"
+          ],
+          [
+            633513,
             0,
             "Coge..PcBJ",
             "agave"
           ],
           [
-            632228,
+            632512,
             5,
             "HJmf..uRMU",
             "agave"
@@ -1138,159 +1138,153 @@
             "firedancer"
           ],
           [
-            615699,
+            615999,
             5,
             "Va1i..uYKj",
             "agave"
           ],
           [
-            613413,
-            5,
-            "BN6E..yuDW",
-            "agave"
-          ],
-          [
-            613295,
+            614949,
             0,
             "oRAn..ymSe",
             "agave"
           ],
           [
-            603271,
-            7,
-            "HCvn..Vzin",
+            614114,
+            5,
+            "BN6E..yuDW",
             "agave"
           ],
           [
-            602140,
+            611001,
             0,
             "Pond..q2u4",
             "agave"
           ],
           [
-            598865,
+            606198,
             5,
             "juic..e6Nx",
             "agave"
           ],
           [
-            592311,
+            601621,
+            7,
+            "HCvn..Vzin",
+            "agave"
+          ],
+          [
+            600141,
             5,
             "CAf8..PhNY",
             "firedancer"
           ],
           [
-            579540,
-            8,
-            "Beac..jDBo",
-            "agave"
-          ],
-          [
-            571520,
+            585831,
             0,
             "2hK2..vvPm",
             "firedancer"
           ],
           [
-            559250,
-            4,
-            "J1to..J9Qv",
+            579025,
+            8,
+            "Beac..jDBo",
             "agave"
           ],
           [
-            557390,
-            5,
-            "4jEH..kCft",
-            "agave"
-          ],
-          [
-            554143,
-            100,
-            "EcLP..Syr5",
-            "agave"
-          ],
-          [
-            546195,
+            577614,
             5,
             "6q1V..sW23",
             "agave"
           ],
           [
-            546078,
-            0,
-            "GREE..ixMv",
+            570400,
+            5,
+            "4jEH..kCft",
             "agave"
           ],
           [
-            538753,
-            10,
-            "xBLp..BwmC",
-            "agave"
-          ],
-          [
-            536679,
+            568919,
             0,
             "528h..qMg5",
             "agave"
           ],
           [
-            535613,
+            559244,
+            4,
+            "J1to..J9Qv",
+            "agave"
+          ],
+          [
+            554186,
+            100,
+            "EcLP..Syr5",
+            "agave"
+          ],
+          [
+            545780,
+            0,
+            "GREE..ixMv",
+            "agave"
+          ],
+          [
+            539027,
+            10,
+            "xBLp..BwmC",
+            "agave"
+          ],
+          [
+            535807,
             1,
             "8UHn..iRjD",
             "agave"
           ],
           [
-            520172,
+            522036,
             7,
             "Cpfv..t9Sr",
             "agave"
           ],
           [
-            519304,
+            519432,
             4,
             "Eeit..EHxj",
             "agave"
           ],
           [
-            517468,
+            517583,
             10,
             "FpTQ..CjKh",
             "firedancer"
           ],
           [
-            514620,
+            515409,
             0,
             "bkpk..cwDx",
             "agave"
           ],
           [
-            509658,
-            5,
-            "7VGU..rxNk",
-            "agave"
-          ],
-          [
-            505142,
+            509968,
             0,
             "hy1o..EufW",
             "agave"
           ],
           [
-            494214,
+            509366,
+            5,
+            "7VGU..rxNk",
+            "agave"
+          ],
+          [
+            493778,
             5,
             "RNXp..Rohq",
             "agave"
           ],
           [
-            490955,
+            491203,
             5,
             "FRTc..rk8X",
-            "agave"
-          ],
-          [
-            488408,
-            0,
-            "Ec55..7r9B",
             "agave"
           ],
           [
@@ -1300,297 +1294,297 @@
             "agave"
           ],
           [
-            473317,
+            484028,
+            0,
+            "Ec55..7r9B",
+            "agave"
+          ],
+          [
+            478037,
             0,
             "anza..LmGz",
             "agave"
           ],
           [
-            472591,
+            474064,
             0,
             "5iJD..EP9z",
             "agave"
           ],
           [
-            454157,
-            3,
-            "3RGS..hN8y",
-            "firedancer"
-          ],
-          [
-            453339,
+            459994,
             5,
             "4tuM..JHNM",
             "agave"
           ],
           [
-            440425,
-            0,
-            "7sBY..Sxo5",
-            "agave"
-          ],
-          [
-            439180,
-            0,
-            "HHLM..ubgq",
-            "agave"
-          ],
-          [
-            438529,
+            457370,
             0,
             "D3ws..7rdm",
             "agave"
           ],
           [
-            437771,
+            454270,
+            3,
+            "3RGS..hN8y",
+            "firedancer"
+          ],
+          [
+            451480,
+            0,
+            "7sBY..Sxo5",
+            "agave"
+          ],
+          [
+            445693,
+            0,
+            "HHLM..ubgq",
+            "agave"
+          ],
+          [
+            437363,
             5,
             "Cert..hvLu",
             "firedancer"
           ],
           [
-            418550,
-            4,
-            "J2nU..sYRp",
-            "agave"
-          ],
-          [
-            416109,
-            5,
-            "7kqp..ht4N",
-            "agave"
-          ],
-          [
-            402597,
-            0,
-            "BxFf..MotU",
-            "agave"
-          ],
-          [
-            401369,
-            5,
-            "GE6a..cAiL",
-            "agave"
-          ],
-          [
-            399200,
-            5,
-            "ANCV..6jch",
-            "agave"
-          ],
-          [
-            388139,
-            0,
-            "DgPH..GGq9",
-            "agave"
-          ],
-          [
-            386788,
-            5,
-            "A9mz..dysh",
-            "agave"
-          ],
-          [
-            371474,
-            0,
-            "DMSu..4Qt5",
-            "agave"
-          ],
-          [
-            371230,
-            0,
-            "ADoJ..nwKt",
-            "firedancer"
-          ],
-          [
-            360047,
-            0,
-            "Aurs..4hHJ",
-            "agave"
-          ],
-          [
-            358644,
-            5,
-            "47hz..sNqG",
-            "agave"
-          ],
-          [
-            357289,
-            0,
-            "oPaL..SeX4",
-            "agave"
-          ],
-          [
-            356793,
-            0,
-            "AVD6..kbta",
-            "agave"
-          ],
-          [
-            354754,
-            4,
-            "J1to..QKdB",
-            "agave"
-          ],
-          [
-            350164,
-            0,
-            "vote..UJjd",
-            "agave"
-          ],
-          [
-            349742,
-            0,
-            "AGJm..JBsy",
-            "agave"
-          ],
-          [
-            349097,
-            0,
-            "1Dad..usbE",
-            "agave"
-          ],
-          [
-            345648,
-            0,
-            "7tKW..cNHZ",
-            "agave"
-          ],
-          [
-            343594,
-            5,
-            "stea..cTVr",
-            "agave"
-          ],
-          [
-            342184,
-            5,
-            "mint..96iR",
-            "agave"
-          ],
-          [
-            339568,
-            10,
-            "GLCr..gSZX",
-            "agave"
-          ],
-          [
-            337917,
-            8,
-            "6x9u..kQPx",
-            "agave"
-          ],
-          [
-            336466,
-            5,
-            "8VXS..FkE2",
-            "agave"
-          ],
-          [
-            333804,
-            0,
-            "9sWY..N5rk",
-            "agave"
-          ],
-          [
-            324730,
-            0,
-            "BULK..ZmB2",
-            "agave"
-          ],
-          [
-            322311,
+            433982,
             0,
             "inQR..PVDL",
             "agave"
           ],
           [
-            319001,
+            425968,
+            7,
+            "AX6v..YGC8",
+            "agave"
+          ],
+          [
+            417576,
+            4,
+            "J2nU..sYRp",
+            "agave"
+          ],
+          [
+            416211,
+            5,
+            "7kqp..ht4N",
+            "agave"
+          ],
+          [
+            402015,
+            0,
+            "BxFf..MotU",
+            "agave"
+          ],
+          [
+            401030,
+            5,
+            "GE6a..cAiL",
+            "agave"
+          ],
+          [
+            398981,
+            5,
+            "ANCV..6jch",
+            "agave"
+          ],
+          [
+            388239,
+            0,
+            "DgPH..GGq9",
+            "agave"
+          ],
+          [
+            386882,
+            5,
+            "A9mz..dysh",
+            "agave"
+          ],
+          [
+            371721,
+            0,
+            "DMSu..4Qt5",
+            "agave"
+          ],
+          [
+            371316,
+            0,
+            "ADoJ..nwKt",
+            "firedancer"
+          ],
+          [
+            360313,
+            0,
+            "Aurs..4hHJ",
+            "agave"
+          ],
+          [
+            358731,
+            5,
+            "47hz..sNqG",
+            "agave"
+          ],
+          [
+            357167,
+            0,
+            "oPaL..SeX4",
+            "agave"
+          ],
+          [
+            355813,
+            0,
+            "AVD6..kbta",
+            "agave"
+          ],
+          [
+            354876,
+            4,
+            "J1to..QKdB",
+            "agave"
+          ],
+          [
+            350347,
+            0,
+            "vote..UJjd",
+            "agave"
+          ],
+          [
+            349832,
+            0,
+            "AGJm..JBsy",
+            "agave"
+          ],
+          [
+            349297,
             5,
             "3Gzm..mw3X",
             "agave"
           ],
           [
-            317722,
+            349226,
+            0,
+            "1Dad..usbE",
+            "agave"
+          ],
+          [
+            344337,
+            5,
+            "stea..cTVr",
+            "agave"
+          ],
+          [
+            342293,
+            0,
+            "7tKW..cNHZ",
+            "agave"
+          ],
+          [
+            339646,
+            10,
+            "GLCr..gSZX",
+            "agave"
+          ],
+          [
+            339050,
+            5,
+            "8VXS..FkE2",
+            "agave"
+          ],
+          [
+            338981,
+            5,
+            "mint..96iR",
+            "agave"
+          ],
+          [
+            337997,
+            8,
+            "6x9u..kQPx",
+            "agave"
+          ],
+          [
+            333040,
+            0,
+            "9sWY..N5rk",
+            "agave"
+          ],
+          [
+            323086,
+            0,
+            "BULK..ZmB2",
+            "agave"
+          ],
+          [
+            317799,
             5,
             "GMeW..kdBP",
             "firedancer"
           ],
           [
-            315743,
+            315950,
             5,
             "78Qv..kX6E",
             "agave"
           ],
           [
-            315209,
+            314935,
             0,
             "gfR2..hTNC",
             "agave"
           ],
           [
-            314464,
+            314276,
             0,
             "A9jR..iRQc",
             "agave"
           ],
           [
-            309529,
+            309382,
             5,
             "CCxS..ChGr",
             "agave"
           ],
           [
-            307931,
+            308068,
             1,
             "46mw..LmEK",
             "agave"
           ],
           [
-            307016,
+            306745,
             6,
             "RBFv..m12Y",
             "agave"
           ],
           [
-            306047,
+            306126,
             0,
             "685N..FiTd",
             "agave"
           ],
           [
-            303868,
-            0,
-            "BoNK..Bdim",
-            "agave"
-          ],
-          [
-            300875,
-            0,
-            "538i..BaGu",
-            "agave"
-          ],
-          [
-            300526,
-            0,
-            "2NXw..k4ht",
-            "agave"
-          ],
-          [
-            300237,
+            301291,
             2,
             "edu1..HRNT",
             "agave"
           ],
           [
-            300205,
+            300672,
             0,
-            "FrtC..yfKP",
+            "538i..BaGu",
             "agave"
           ],
           [
-            300152,
-            5,
-            "EBVj..Ph81",
+            300324,
+            0,
+            "2NXw..k4ht",
+            "agave"
+          ],
+          [
+            300003,
+            0,
+            "FrtC..yfKP",
             "agave"
           ],
           [
@@ -1606,43 +1600,73 @@
             "firedancer"
           ],
           [
-            298116,
+            298669,
+            5,
+            "EBVj..Ph81",
+            "agave"
+          ],
+          [
+            298650,
+            0,
+            "BoNK..Bdim",
+            "agave"
+          ],
+          [
+            298039,
             5,
             "86Sw..8sXo",
             "agave"
           ],
           [
-            294831,
-            8,
-            "A9V5..kCMo",
-            "agave"
-          ],
-          [
-            292305,
-            5,
-            "Rayd..otrV",
-            "agave"
-          ],
-          [
-            291999,
+            297507,
             0,
             "8zuM..9xBc",
             "agave"
           ],
           [
-            291386,
+            296920,
+            5,
+            "JnGG..DmuM",
+            "agave"
+          ],
+          [
+            295711,
+            5,
+            "2s2K..VqtA",
+            "agave"
+          ],
+          [
+            294900,
+            8,
+            "A9V5..kCMo",
+            "agave"
+          ],
+          [
+            292376,
+            5,
+            "Rayd..otrV",
+            "agave"
+          ],
+          [
+            290584,
             0,
             "48ox..QNuf",
             "agave"
           ],
           [
-            281477,
+            283973,
+            0,
+            "9G19..WEuW",
+            "agave"
+          ],
+          [
+            281595,
             100,
             "MARv..zwVn",
             "agave"
           ],
           [
-            280881,
+            281209,
             4,
             "FACq..v8QJ",
             "agave"
@@ -1654,381 +1678,369 @@
             "agave"
           ],
           [
-            280015,
+            280192,
             0,
             "DPms..Qcao",
             "agave"
           ],
           [
-            279723,
-            5,
-            "punK..feyP",
-            "firedancer"
-          ],
-          [
-            279616,
+            279824,
             5,
             "R4sp..AdRy",
             "agave"
           ],
           [
-            279048,
+            279600,
+            5,
+            "punK..feyP",
+            "firedancer"
+          ],
+          [
+            278927,
             5,
             "2ZP7..VPa5",
             "firedancer"
           ],
           [
-            278177,
-            0,
-            "BDn3..qd5g",
-            "agave"
-          ],
-          [
-            276929,
-            0,
-            "Eajf..sqyd",
-            "agave"
-          ],
-          [
-            275740,
-            3,
-            "9J7a..sv8a",
-            "agave"
-          ],
-          [
-            275510,
-            8,
-            "HjQu..5q3n",
-            "agave"
-          ],
-          [
-            272648,
-            0,
-            "9wQQ..RsHK",
-            "agave"
-          ],
-          [
-            271222,
-            5,
-            "grid..o7BM",
-            "agave"
-          ],
-          [
-            271108,
-            5,
-            "NDf9..SnQH",
-            "agave"
-          ],
-          [
-            269495,
-            5,
-            "purP..g3uX",
-            "agave"
-          ],
-          [
-            269163,
-            8,
-            "XzML..chho",
-            "agave"
-          ],
-          [
-            268404,
-            7,
-            "AX6v..YGC8",
-            "agave"
-          ],
-          [
-            265184,
-            5,
-            "adra..1gbP",
-            "agave"
-          ],
-          [
-            265160,
-            5,
-            "vote..JAaj",
-            "agave"
-          ],
-          [
-            265127,
-            3,
-            "2Bgb..v3Ez",
-            "agave"
-          ],
-          [
-            264487,
-            5,
-            "2s2K..VqtA",
-            "agave"
-          ],
-          [
-            261604,
-            5,
-            "radY..udQz",
-            "agave"
-          ],
-          [
-            260651,
-            5,
-            "phz3..TQk8",
-            "agave"
-          ],
-          [
-            260447,
-            0,
-            "ALPH..tFVT",
-            "agave"
-          ],
-          [
-            259975,
-            5,
-            "fVot..BazH",
-            "agave"
-          ],
-          [
-            259593,
-            5,
-            "8n9Z..GEcE",
-            "agave"
-          ],
-          [
-            259153,
-            0,
-            "CTDG..4Hu2",
-            "agave"
-          ],
-          [
-            254596,
-            5,
-            "JnGG..DmuM",
-            "agave"
-          ],
-          [
-            253897,
-            5,
-            "5iZ5..uaVM",
-            "agave"
-          ],
-          [
-            253351,
-            0,
-            "9G19..WEuW",
-            "agave"
-          ],
-          [
-            252531,
-            5,
-            "9f7d..VwG7",
-            "agave"
-          ],
-          [
-            252289,
-            0,
-            "DQ7D..wo1f",
-            "agave"
-          ],
-          [
-            251900,
-            0,
-            "mnvk..Wwqe",
-            "firedancer"
-          ],
-          [
-            249599,
-            5,
-            "tri1..VQeT",
-            "agave"
-          ],
-          [
-            249468,
-            5,
-            "HMk1..F9ib",
-            "agave"
-          ],
-          [
-            248557,
-            8,
-            "55L7..dFRo",
-            "agave"
-          ],
-          [
-            247865,
-            0,
-            "C616..zMX6",
-            "agave"
-          ],
-          [
-            247774,
-            1,
-            "8LMa..u4Qi",
-            "agave"
-          ],
-          [
-            247365,
+            278438,
             5,
             "LAKE..VxPV",
             "agave"
           ],
           [
-            246237,
+            278007,
             0,
-            "6JfB..wFtQ",
+            "BDn3..qd5g",
             "agave"
           ],
           [
-            245334,
+            277000,
             0,
-            "49DJ..dHru",
+            "Eajf..sqyd",
             "agave"
           ],
           [
-            244590,
+            275809,
+            3,
+            "9J7a..sv8a",
+            "agave"
+          ],
+          [
+            275574,
+            8,
+            "HjQu..5q3n",
+            "agave"
+          ],
+          [
+            272835,
+            0,
+            "9wQQ..RsHK",
+            "agave"
+          ],
+          [
+            271165,
             5,
-            "4vqw..srxb",
+            "grid..o7BM",
             "agave"
           ],
           [
-            242713,
+            270869,
             5,
-            "J4pH..4LwN",
+            "NDf9..SnQH",
             "agave"
           ],
           [
-            242629,
-            0,
-            "3Xn3..98f7",
-            "agave"
-          ],
-          [
-            242364,
-            4,
-            "6TBd..JsE8",
-            "agave"
-          ],
-          [
-            241411,
-            0,
-            "D3QP..Rxuj",
-            "agave"
-          ],
-          [
-            241302,
-            10,
-            "7qTw..jK9d",
-            "agave"
-          ],
-          [
-            238560,
+            269691,
             5,
-            "ErvM..ocnx",
+            "purP..g3uX",
             "agave"
           ],
           [
-            238438,
-            0,
-            "EdGe..4H2x",
+            269227,
+            8,
+            "XzML..chho",
             "agave"
           ],
           [
-            237792,
-            4,
-            "gaTo..HFWF",
-            "agave"
-          ],
-          [
-            232027,
-            0,
-            "GVYt..iotL",
-            "unknown"
-          ],
-          [
-            228231,
-            4,
-            "GA2t..PPsT",
-            "firedancer"
-          ],
-          [
-            226559,
-            0,
-            "BeSo..LkcV",
-            "agave"
-          ],
-          [
-            226400,
+            265723,
             5,
-            "76nw..Q857",
+            "radY..udQz",
             "agave"
           ],
           [
-            225995,
+            265275,
             5,
-            "VotE..PxXq",
+            "adra..1gbP",
             "agave"
           ],
           [
-            225677,
-            0,
-            "3ZUQ..8JkQ",
+            265193,
+            3,
+            "2Bgb..v3Ez",
             "agave"
           ],
           [
-            223956,
+            264095,
             5,
-            "i6PZ..Pjxb",
+            "vote..JAaj",
             "agave"
           ],
           [
-            223219,
+            261278,
+            5,
+            "fVot..BazH",
+            "agave"
+          ],
+          [
+            260604,
+            5,
+            "phz3..TQk8",
+            "agave"
+          ],
+          [
+            260389,
             0,
-            "HeTy..GPNS",
+            "ALPH..tFVT",
             "agave"
           ],
           [
-            221816,
+            259420,
+            5,
+            "8n9Z..GEcE",
+            "agave"
+          ],
+          [
+            259337,
             0,
-            "Mxv1..6ox2",
+            "CTDG..4Hu2",
             "agave"
           ],
           [
-            220342,
+            252831,
+            5,
+            "tri1..VQeT",
+            "agave"
+          ],
+          [
+            252489,
+            5,
+            "9f7d..VwG7",
+            "agave"
+          ],
+          [
+            252354,
+            0,
+            "DQ7D..wo1f",
+            "agave"
+          ],
+          [
+            251679,
             5,
             "SLND..cjWy",
             "agave"
           ],
           [
-            219968,
+            251384,
             5,
-            "D9Bc..aHeh",
+            "5iZ5..uaVM",
             "agave"
           ],
           [
-            218951,
-            1,
-            "GB44..bFJr",
+            249430,
+            5,
+            "HMk1..F9ib",
             "agave"
           ],
           [
-            218838,
+            248616,
+            8,
+            "55L7..dFRo",
+            "agave"
+          ],
+          [
+            248481,
             0,
-            "6anB..H9LZ",
+            "mnvk..Wwqe",
+            "firedancer"
+          ],
+          [
+            247868,
+            0,
+            "C616..zMX6",
             "agave"
           ],
           [
-            218760,
+            245510,
+            0,
+            "6JfB..wFtQ",
+            "agave"
+          ],
+          [
+            243907,
+            5,
+            "4vqw..srxb",
+            "agave"
+          ],
+          [
+            243166,
+            0,
+            "49DJ..dHru",
+            "agave"
+          ],
+          [
+            242903,
+            5,
+            "J4pH..4LwN",
+            "agave"
+          ],
+          [
+            242423,
+            4,
+            "6TBd..JsE8",
+            "agave"
+          ],
+          [
+            241905,
+            4,
+            "gaTo..HFWF",
+            "agave"
+          ],
+          [
+            241660,
+            0,
+            "3Xn3..98f7",
+            "agave"
+          ],
+          [
+            241361,
+            10,
+            "7qTw..jK9d",
+            "agave"
+          ],
+          [
+            241352,
+            0,
+            "D3QP..Rxuj",
+            "agave"
+          ],
+          [
+            238881,
+            5,
+            "unRg..Trdk",
+            "agave"
+          ],
+          [
+            238486,
+            0,
+            "EdGe..4H2x",
+            "agave"
+          ],
+          [
+            232622,
+            0,
+            "GVYt..iotL",
+            "unknown"
+          ],
+          [
+            228150,
+            4,
+            "GA2t..PPsT",
+            "firedancer"
+          ],
+          [
+            227011,
+            0,
+            "3ZUQ..8JkQ",
+            "agave"
+          ],
+          [
+            226825,
+            5,
+            "i6PZ..Pjxb",
+            "agave"
+          ],
+          [
+            226583,
+            5,
+            "76nw..Q857",
+            "agave"
+          ],
+          [
+            226286,
+            1,
+            "8LMa..u4Qi",
+            "agave"
+          ],
+          [
+            226085,
+            5,
+            "VotE..PxXq",
+            "agave"
+          ],
+          [
+            224287,
+            0,
+            "BeSo..LkcV",
+            "agave"
+          ],
+          [
+            223131,
+            0,
+            "HeTy..GPNS",
+            "agave"
+          ],
+          [
+            222081,
+            0,
+            "Mxv1..6ox2",
+            "agave"
+          ],
+          [
+            220354,
             5,
             "5BAi..uBPZ",
             "firedancer"
           ],
           [
-            218743,
+            220209,
+            5,
+            "D9Bc..aHeh",
+            "agave"
+          ],
+          [
+            219805,
+            5,
+            "ErvM..ocnx",
+            "agave"
+          ],
+          [
+            219217,
+            5,
+            "DFQj..fgyP",
+            "agave"
+          ],
+          [
+            219137,
+            1,
+            "GB44..bFJr",
+            "agave"
+          ],
+          [
+            218224,
             5,
             "Pine..AHe3",
             "agave"
           ],
           [
-            218060,
+            218052,
             5,
             "MkyL..shrk",
+            "agave"
+          ],
+          [
+            217985,
+            0,
+            "6anB..H9LZ",
             "agave"
           ],
           [
@@ -2038,1641 +2050,1695 @@
             "agave"
           ],
           [
-            215728,
-            0,
-            "FahW..BSwb",
-            "agave"
-          ],
-          [
-            213380,
+            213421,
             5,
             "4PL2..uQPg",
             "agave"
           ],
           [
-            210503,
-            0,
-            "3iPu..MhCD",
-            "agave"
-          ],
-          [
-            209790,
-            0,
-            "PUFF..Qqwp",
-            "firedancer"
-          ],
-          [
-            209196,
-            5,
-            "Step..2LJp",
-            "agave"
-          ],
-          [
-            208729,
-            5,
-            "masv..pSYR",
-            "firedancer"
-          ],
-          [
-            208074,
-            5,
-            "abc1..VNkY",
-            "agave"
-          ],
-          [
-            207580,
-            5,
-            "unRg..Trdk",
-            "agave"
-          ],
-          [
-            207181,
+            212953,
             0,
             "B1w6..RKE9",
             "agave"
           ],
           [
-            206762,
-            5,
-            "TREE..GagK",
+            210668,
+            0,
+            "PUFF..Qqwp",
             "firedancer"
           ],
           [
-            206399,
+            210015,
+            0,
+            "3iPu..MhCD",
+            "agave"
+          ],
+          [
+            209967,
+            5,
+            "Step..2LJp",
+            "agave"
+          ],
+          [
+            209531,
+            5,
+            "masv..pSYR",
+            "firedancer"
+          ],
+          [
+            208255,
+            5,
+            "abc1..VNkY",
+            "agave"
+          ],
+          [
+            206739,
             5,
             "dcnt..w6Cb",
             "agave"
           ],
           [
-            205744,
+            206336,
             0,
             "soLS..rHrz",
             "agave"
           ],
           [
-            205467,
-            0,
-            "4Yyk..C6wf",
-            "agave"
-          ],
-          [
-            204534,
-            0,
-            "2g2Q..8sCq",
-            "agave"
-          ],
-          [
-            204359,
+            205999,
             5,
             "H6rb..fyBE",
             "agave"
           ],
           [
-            202698,
+            204928,
+            0,
+            "4Yyk..C6wf",
+            "agave"
+          ],
+          [
+            204104,
+            0,
+            "2g2Q..8sCq",
+            "agave"
+          ],
+          [
+            203441,
+            0,
+            "FahW..BSwb",
+            "agave"
+          ],
+          [
+            201925,
             5,
             "Ac1b..vyfc",
             "agave"
           ],
           [
-            201164,
-            0,
-            "BH2P..J2gQ",
-            "agave"
-          ],
-          [
-            200807,
+            200516,
             5,
             "6AAe..ZxLN",
             "agave"
           ],
           [
-            200010,
-            5,
-            "STea..yDgx",
+            200033,
+            0,
+            "BH2P..J2gQ",
             "agave"
           ],
           [
-            199575,
+            199729,
             5,
             "6hZL..oeWP",
             "agave"
           ],
           [
-            198562,
-            5,
-            "Ehdn..T7RS",
-            "firedancer"
-          ],
-          [
-            198217,
+            198626,
             5,
             "57GU..qAum",
             "firedancer"
           ],
           [
-            198049,
+            198512,
+            5,
+            "Ehdn..T7RS",
+            "firedancer"
+          ],
+          [
+            197875,
             4,
             "57Qg..gaHp",
             "agave"
           ],
           [
-            197053,
-            5,
-            "EZCQ..XzhX",
-            "firedancer"
-          ],
-          [
-            196406,
+            197288,
             5,
             "F3sc..Bo6o",
             "agave"
           ],
           [
-            196316,
+            197231,
+            5,
+            "EZCQ..XzhX",
+            "firedancer"
+          ],
+          [
+            196494,
             5,
             "Stak..4dFp",
             "agave"
           ],
           [
-            194918,
+            195566,
+            5,
+            "STea..yDgx",
+            "agave"
+          ],
+          [
+            195096,
             5,
             "8xG2..MYbN",
             "agave"
           ],
           [
-            194764,
+            194844,
             3,
             "H2tJ..uydk",
             "agave"
           ],
           [
-            194320,
+            193247,
             5,
             "9Gko..u25x",
             "agave"
           ],
           [
-            191065,
-            5,
-            "Dfpd..Vmrq",
-            "agave"
-          ],
-          [
-            190388,
-            5,
-            "fdvt..Jtfm",
-            "firedancer"
-          ],
-          [
-            190215,
-            0,
-            "SBLZ..AA2E",
-            "agave"
-          ],
-          [
-            190130,
-            2,
-            "GNZ1..kkVt",
-            "agave"
-          ],
-          [
-            189957,
-            5,
-            "9bb6..bkna",
-            "agave"
-          ],
-          [
-            189408,
-            4,
-            "2het..S3tf",
-            "agave"
-          ],
-          [
-            188855,
-            5,
-            "FCvN..KTHa",
-            "agave"
-          ],
-          [
-            188100,
-            5,
-            "DFQj..fgyP",
-            "agave"
-          ],
-          [
-            187434,
-            5,
-            "FzUN..AmMk",
-            "agave"
-          ],
-          [
-            187407,
-            5,
-            "7MKU..D98h",
-            "agave"
-          ],
-          [
-            186959,
-            0,
-            "NoRD..tY4m",
-            "agave"
-          ],
-          [
-            186861,
-            0,
-            "cove..mVZj",
-            "agave"
-          ],
-          [
-            186750,
-            5,
-            "SLaY..F7xY",
-            "agave"
-          ],
-          [
-            186725,
-            5,
-            "1KXz..aHkm",
-            "agave"
-          ],
-          [
-            186527,
-            5,
-            "Gvt8..PonS",
-            "agave"
-          ],
-          [
-            186270,
-            0,
-            "CiTY..qMVe",
-            "agave"
-          ],
-          [
-            186080,
-            5,
-            "4QhN..8Zg2",
-            "firedancer"
-          ],
-          [
-            185833,
-            5,
-            "Dyjo..Nx9u",
-            "agave"
-          ],
-          [
-            184748,
-            0,
-            "GFXV..ATuP",
-            "agave"
-          ],
-          [
-            184336,
-            5,
-            "SFun..1Gow",
-            "firedancer"
-          ],
-          [
-            183937,
-            5,
-            "Neod..hZNk",
-            "agave"
-          ],
-          [
-            183776,
-            5,
-            "b1ue..Ex8p",
-            "agave"
-          ],
-          [
-            183591,
-            0,
-            "HLM6..E2CU",
-            "agave"
-          ],
-          [
-            183542,
-            5,
-            "nova..wQxz",
-            "agave"
-          ],
-          [
-            183129,
-            5,
-            "76Da..5ir1",
-            "agave"
-          ],
-          [
-            181951,
-            10,
-            "GFWt..A113",
-            "agave"
-          ],
-          [
-            181350,
-            5,
-            "QWme..joie",
-            "agave"
-          ],
-          [
-            181141,
-            5,
-            "3vws..bASy",
-            "agave"
-          ],
-          [
-            180980,
-            5,
-            "4ibf..mAob",
-            "agave"
-          ],
-          [
-            180385,
-            5,
-            "2DNG..fN46",
-            "agave"
-          ],
-          [
-            179806,
-            5,
-            "1ggy..kaFh",
-            "agave"
-          ],
-          [
-            178444,
-            4,
-            "1234..ghJ5",
-            "agave"
-          ],
-          [
-            178245,
-            5,
-            "6hkf..krf1",
-            "agave"
-          ],
-          [
-            178167,
-            5,
-            "9KgZ..2gqa",
-            "agave"
-          ],
-          [
-            177678,
-            5,
-            "GMpK..Jjbh",
-            "agave"
-          ],
-          [
-            177600,
-            5,
-            "uTnZ..Rk34",
-            "agave"
-          ],
-          [
-            177418,
-            0,
-            "8xV7..iWpf",
-            "agave"
-          ],
-          [
-            176026,
-            5,
-            "BdM7..SvMS",
-            "firedancer"
-          ],
-          [
-            175403,
-            5,
-            "Cer1..VvYZ",
-            "firedancer"
-          ],
-          [
-            173170,
-            0,
-            "THWf..TD1x",
-            "agave"
-          ],
-          [
-            171807,
-            0,
-            "voEs..Z5vo",
-            "agave"
-          ],
-          [
-            171079,
-            0,
-            "5cwx..ubm3",
-            "agave"
-          ],
-          [
-            170183,
-            5,
-            "DPsW..1T2j",
-            "agave"
-          ],
-          [
-            170047,
-            5,
-            "AAAA..621j",
-            "firedancer"
-          ],
-          [
-            169737,
-            5,
-            "PKvG..WxuA",
-            "firedancer"
-          ],
-          [
-            168517,
-            5,
-            "FN2B..xZDw",
-            "agave"
-          ],
-          [
-            168348,
-            0,
-            "8yPi..LTrZ",
-            "agave"
-          ],
-          [
-            168227,
-            0,
-            "644K..J8h7",
-            "agave"
-          ],
-          [
-            168002,
-            0,
-            "pt1L..inft",
-            "agave"
-          ],
-          [
-            166577,
-            0,
-            "7S9d..m3hm",
-            "agave"
-          ],
-          [
-            166373,
-            10,
-            "GiJj..c2o9",
-            "agave"
-          ],
-          [
-            166320,
-            0,
-            "7emL..5FN8",
-            "agave"
-          ],
-          [
-            165823,
-            0,
-            "vahV..jtGt",
-            "agave"
-          ],
-          [
-            163612,
-            5,
-            "5daP..KuuZ",
-            "agave"
-          ],
-          [
-            163489,
-            3,
-            "Cat8..XvEP",
-            "agave"
-          ],
-          [
-            163081,
-            5,
-            "capy..5z7n",
-            "agave"
-          ],
-          [
-            162941,
-            0,
-            "7PmW..aA8o",
-            "agave"
-          ],
-          [
-            162146,
-            5,
-            "Simp..D1hp",
-            "agave"
-          ],
-          [
-            161963,
-            4,
-            "H4QV..Z3sb",
-            "agave"
-          ],
-          [
-            161608,
-            0,
-            "53RJ..nfvR",
-            "agave"
-          ],
-          [
-            160494,
+            191873,
             5,
             "686J..H4bu",
             "agave"
           ],
           [
-            159637,
-            0,
-            "CV7u..Uae9",
-            "agave"
-          ],
-          [
-            158402,
+            191687,
             5,
-            "BSGM..zJVd",
+            "9bb6..bkna",
             "agave"
           ],
           [
-            157710,
+            190720,
+            0,
+            "SBLZ..AA2E",
+            "agave"
+          ],
+          [
+            190492,
             5,
-            "7K8D..pECh",
+            "Dfpd..Vmrq",
             "agave"
           ],
           [
-            157334,
-            2,
-            "9GJm..D1Bs",
-            "agave"
-          ],
-          [
-            156357,
-            0,
-            "HLXk..hZ1t",
-            "agave"
-          ],
-          [
-            155525,
-            0,
-            "3VZH..ooYM",
+            190397,
+            5,
+            "fdvt..Jtfm",
             "firedancer"
           ],
           [
-            155484,
-            5,
-            "jag7..BUUf",
-            "agave"
-          ],
-          [
-            155376,
-            0,
-            "magi..4oFp",
-            "agave"
-          ],
-          [
-            155017,
-            0,
-            "8EVa..VDae",
-            "agave"
-          ],
-          [
-            155011,
-            0,
-            "9141..JwGR",
-            "agave"
-          ],
-          [
-            154670,
-            0,
-            "so1a..wXbu",
-            "agave"
-          ],
-          [
-            151676,
-            5,
-            "EJHf..53SV",
-            "agave"
-          ],
-          [
-            150223,
-            0,
-            "F1wB..ycP7",
-            "agave"
-          ],
-          [
-            149827,
-            5,
-            "5afR..f574",
-            "agave"
-          ],
-          [
-            149484,
-            0,
-            "H9p8..YAtL",
-            "agave"
-          ],
-          [
-            147746,
-            0,
-            "BmMV..wE7D",
-            "agave"
-          ],
-          [
-            147511,
-            0,
-            "Luna..rYkv",
-            "agave"
-          ],
-          [
-            146355,
-            0,
-            "9ted..uXLL",
-            "agave"
-          ],
-          [
-            145815,
+            189352,
             4,
-            "34yv..pZRs",
+            "2het..S3tf",
             "agave"
           ],
           [
-            145471,
+            189350,
+            2,
+            "GNZ1..kkVt",
+            "agave"
+          ],
+          [
+            188504,
             5,
-            "book..3CNN",
+            "FCvN..KTHa",
             "agave"
           ],
           [
-            143907,
+            188095,
             0,
-            "SyNd..evLH",
+            "CiTY..qMVe",
             "agave"
           ],
           [
-            143756,
+            187631,
             5,
-            "saga..45aw",
+            "FzUN..AmMk",
             "agave"
           ],
           [
-            143018,
+            187542,
             0,
-            "Ev3g..HfLf",
+            "NoRD..tY4m",
             "agave"
           ],
           [
-            142642,
+            187367,
+            5,
+            "7MKU..D98h",
+            "agave"
+          ],
+          [
+            186763,
+            5,
+            "SLaY..F7xY",
+            "agave"
+          ],
+          [
+            186607,
+            5,
+            "1KXz..aHkm",
+            "agave"
+          ],
+          [
+            186542,
+            5,
+            "Gvt8..PonS",
+            "agave"
+          ],
+          [
+            186256,
+            5,
+            "4QhN..8Zg2",
+            "firedancer"
+          ],
+          [
+            185841,
+            5,
+            "76Da..5ir1",
+            "agave"
+          ],
+          [
+            185572,
+            5,
+            "SFun..1Gow",
+            "firedancer"
+          ],
+          [
+            185456,
+            10,
+            "GFWt..A113",
+            "agave"
+          ],
+          [
+            185396,
+            0,
+            "cove..mVZj",
+            "agave"
+          ],
+          [
+            184569,
+            5,
+            "Neod..hZNk",
+            "agave"
+          ],
+          [
+            184017,
+            5,
+            "b1ue..Ex8p",
+            "agave"
+          ],
+          [
+            183611,
+            0,
+            "GFXV..ATuP",
+            "agave"
+          ],
+          [
+            183525,
+            0,
+            "HLM6..E2CU",
+            "agave"
+          ],
+          [
+            182129,
+            5,
+            "nova..wQxz",
+            "agave"
+          ],
+          [
+            181732,
+            5,
+            "QWme..joie",
+            "agave"
+          ],
+          [
+            181488,
+            5,
+            "4ibf..mAob",
+            "agave"
+          ],
+          [
+            181108,
+            5,
+            "3vws..bASy",
+            "agave"
+          ],
+          [
+            180782,
+            5,
+            "2DNG..fN46",
+            "agave"
+          ],
+          [
+            179523,
+            5,
+            "1ggy..kaFh",
+            "agave"
+          ],
+          [
+            178374,
+            5,
+            "9KgZ..2gqa",
+            "agave"
+          ],
+          [
+            177803,
+            5,
+            "GMpK..Jjbh",
+            "agave"
+          ],
+          [
+            177792,
+            5,
+            "uTnZ..Rk34",
+            "agave"
+          ],
+          [
+            177076,
+            5,
+            "6hkf..krf1",
+            "agave"
+          ],
+          [
+            176752,
+            4,
+            "1234..ghJ5",
+            "agave"
+          ],
+          [
+            176221,
+            5,
+            "BdM7..SvMS",
+            "firedancer"
+          ],
+          [
+            175384,
+            0,
+            "5cwx..ubm3",
+            "agave"
+          ],
+          [
+            175361,
+            5,
+            "Cer1..VvYZ",
+            "firedancer"
+          ],
+          [
+            175270,
+            0,
+            "8xV7..iWpf",
+            "agave"
+          ],
+          [
+            174153,
+            0,
+            "THWf..TD1x",
+            "agave"
+          ],
+          [
+            173972,
             5,
             "Ecjt..ALT4",
             "agave"
           ],
           [
-            142412,
-            0,
-            "HwcV..aSVC",
-            "agave"
-          ],
-          [
-            142189,
-            0,
-            "ENVa..VcgB",
-            "firedancer"
-          ],
-          [
-            141979,
+            173310,
             5,
             "GptP..6uN1",
             "agave"
           ],
           [
-            141878,
+            171724,
             5,
-            "8vyu..ePkE",
+            "DPsW..1T2j",
             "agave"
           ],
           [
-            140403,
+            170846,
             5,
-            "6osc..88Vf",
+            "Dyjo..Nx9u",
             "agave"
           ],
           [
-            140299,
+            170257,
             5,
-            "EnRc..bh2P",
-            "agave"
-          ],
-          [
-            140220,
-            0,
-            "5szs..7yNh",
-            "agave"
-          ],
-          [
-            139846,
-            5,
-            "9gX9..nr5t",
+            "AAAA..621j",
             "firedancer"
           ],
           [
-            139510,
+            169783,
             5,
-            "ReFi..9NUx",
-            "agave"
+            "PKvG..WxuA",
+            "firedancer"
           ],
           [
-            139141,
-            0,
-            "9gAN..t7mq",
-            "agave"
-          ],
-          [
-            139090,
-            0,
-            "G8hv..9Kk2",
-            "agave"
-          ],
-          [
-            138645,
-            0,
-            "Fhks..6bub",
-            "agave"
-          ],
-          [
-            138113,
-            0,
-            "26RG..naxR",
-            "agave"
-          ],
-          [
-            137824,
-            0,
-            "o27r..MU5h",
-            "agave"
-          ],
-          [
-            136321,
-            0,
-            "6hcG..m7UY",
-            "agave"
-          ],
-          [
-            135198,
-            0,
-            "NikG..5EXn",
-            "agave"
-          ],
-          [
-            134943,
-            0,
-            "AY27..YgCG",
-            "agave"
-          ],
-          [
-            134721,
+            168839,
             5,
-            "avnu..UptF",
+            "FN2B..xZDw",
             "agave"
           ],
           [
-            134446,
+            168314,
             0,
-            "nebu..9CRE",
+            "644K..J8h7",
             "agave"
           ],
           [
-            134254,
+            168176,
             0,
-            "DTwE..1cG3",
+            "pt1L..inft",
             "agave"
           ],
           [
-            134058,
+            166806,
             0,
-            "7obi..GvVr",
+            "voEs..Z5vo",
             "agave"
           ],
           [
-            132643,
+            166685,
             0,
-            "FGts..UiVH",
+            "8yPi..LTrZ",
             "agave"
           ],
           [
-            132640,
+            166619,
             0,
-            "2ayM..d58z",
+            "7S9d..m3hm",
             "agave"
           ],
           [
-            132601,
+            166407,
+            10,
+            "GiJj..c2o9",
+            "agave"
+          ],
+          [
+            166363,
+            0,
+            "7emL..5FN8",
+            "agave"
+          ],
+          [
+            166115,
+            0,
+            "vahV..jtGt",
+            "agave"
+          ],
+          [
+            163894,
             5,
-            "axyQ..NYcF",
+            "5daP..KuuZ",
             "agave"
           ],
           [
-            132526,
+            163511,
+            3,
+            "Cat8..XvEP",
+            "agave"
+          ],
+          [
+            163317,
+            5,
+            "capy..5z7n",
+            "agave"
+          ],
+          [
+            163044,
+            5,
+            "Simp..D1hp",
+            "agave"
+          ],
+          [
+            162925,
             0,
-            "9FZW..QCM1",
+            "7PmW..aA8o",
             "agave"
           ],
           [
-            132007,
+            162456,
+            2,
+            "9GJm..D1Bs",
+            "agave"
+          ],
+          [
+            160637,
+            0,
+            "CV7u..Uae9",
+            "agave"
+          ],
+          [
+            160348,
+            5,
+            "BSGM..zJVd",
+            "agave"
+          ],
+          [
+            158505,
             4,
-            "SQDS..i68w",
+            "H4QV..Z3sb",
             "agave"
           ],
           [
-            132000,
-            0,
-            "Lime..WPiq",
-            "agave"
-          ],
-          [
-            131631,
-            0,
-            "B6nD..2bXv",
-            "agave"
-          ],
-          [
-            131100,
+            157978,
             5,
-            "4qvF..hyvu",
+            "7K8D..pECh",
             "agave"
           ],
           [
-            129527,
+            157860,
             0,
-            "Ste1..3u2k",
+            "F1wB..ycP7",
             "agave"
           ],
           [
-            127946,
-            5,
-            "3r5Z..etTk",
-            "agave"
-          ],
-          [
-            127482,
+            157425,
             0,
-            "3QPG..ho8K",
+            "HLXk..hZ1t",
             "agave"
           ],
           [
-            127452,
-            0,
-            "3jkJ..Zhkk",
-            "agave"
-          ],
-          [
-            127443,
-            5,
-            "3Z1N..f8cj",
-            "agave"
-          ],
-          [
-            126457,
-            5,
-            "SWDV..WqjY",
-            "agave"
-          ],
-          [
-            126289,
-            5,
-            "6cvB..rryR",
-            "agave"
-          ],
-          [
-            125861,
-            5,
-            "DG6f..9ACP",
-            "agave"
-          ],
-          [
-            125560,
-            0,
-            "DPhz..4TPh",
-            "agave"
-          ],
-          [
-            124999,
+            156197,
             5,
             "74y2..DW59",
             "agave"
           ],
           [
-            124464,
-            5,
-            "hxVj..uDow",
-            "agave"
-          ],
-          [
-            123756,
-            5,
-            "bXr9..tFh8",
-            "agave"
-          ],
-          [
-            123181,
+            155679,
             0,
-            "8D8X..123P",
+            "magi..4oFp",
             "agave"
           ],
           [
-            122870,
-            5,
-            "vanF..sZ4K",
-            "agave"
-          ],
-          [
-            122631,
+            155621,
             0,
-            "GK9M..pfxC",
-            "agave"
+            "3VZH..ooYM",
+            "firedancer"
           ],
           [
-            122570,
+            155370,
             0,
-            "A7uq..cxtg",
+            "8EVa..VDae",
             "agave"
           ],
           [
-            121758,
-            5,
-            "7Eg4..qxCy",
-            "agave"
-          ],
-          [
-            121093,
-            5,
-            "CtzN..dSKb",
-            "agave"
-          ],
-          [
-            120676,
-            7,
-            "2Y2o..f2NH",
-            "agave"
-          ],
-          [
-            120526,
-            5,
-            "dedx..Ndhk",
-            "agave"
-          ],
-          [
-            120000,
-            5,
-            "CHia..eLAo",
-            "agave"
-          ],
-          [
-            119885,
+            155195,
             0,
-            "4EsJ..jcUv",
+            "9141..JwGR",
             "agave"
           ],
           [
-            117879,
+            155095,
             0,
-            "VaCd..7c76",
+            "so1a..wXbu",
             "agave"
           ],
           [
-            117066,
-            5,
-            "R2D2..UWNj",
-            "agave"
-          ],
-          [
-            117042,
-            5,
-            "fuyu..HpVD",
-            "agave"
-          ],
-          [
-            116873,
-            5,
-            "YE11..vKQH",
-            "agave"
-          ],
-          [
-            116851,
+            153499,
             0,
-            "HEYb..W2pQ",
+            "Luna..rYkv",
             "agave"
           ],
           [
-            116510,
+            153165,
             5,
-            "odc2..hpE3",
+            "EJHf..53SV",
             "agave"
           ],
           [
-            115474,
+            152557,
+            5,
+            "jag7..BUUf",
+            "agave"
+          ],
+          [
+            151579,
+            0,
+            "53RJ..nfvR",
+            "agave"
+          ],
+          [
+            150401,
+            5,
+            "5afR..f574",
+            "agave"
+          ],
+          [
+            149713,
+            0,
+            "H9p8..YAtL",
+            "agave"
+          ],
+          [
+            148349,
+            0,
+            "BmMV..wE7D",
+            "agave"
+          ],
+          [
+            146862,
             5,
             "Luna..LXdK",
             "agave"
           ],
           [
-            115142,
+            146534,
             0,
-            "FLCr..A4U4",
+            "9ted..uXLL",
             "agave"
           ],
           [
-            115130,
-            5,
-            "chrt..NPFr",
-            "agave"
-          ],
-          [
-            114636,
-            5,
-            "goJi..EBXb",
-            "agave"
-          ],
-          [
-            114542,
-            0,
-            "9ymU..zuC1",
-            "agave"
-          ],
-          [
-            114407,
+            146065,
             4,
-            "G1ju..af4V",
+            "34yv..pZRs",
             "agave"
           ],
           [
-            114354,
+            145435,
             5,
-            "Ha8d..JCxN",
+            "book..3CNN",
             "agave"
           ],
           [
-            114038,
+            144076,
+            5,
+            "saga..45aw",
+            "agave"
+          ],
+          [
+            143953,
             0,
-            "FnAP..pD4v",
+            "SyNd..evLH",
             "agave"
           ],
           [
-            113636,
+            143816,
             5,
-            "21oU..yyrG",
+            "8vyu..ePkE",
             "agave"
           ],
           [
-            112541,
+            143789,
             5,
-            "STBR..ukaW",
+            "EnRc..bh2P",
             "agave"
           ],
           [
-            112212,
-            5,
-            "HZDt..FSvT",
-            "agave"
-          ],
-          [
-            112144,
+            143656,
             0,
-            "CSBi..4ueD",
+            "nebu..9CRE",
             "agave"
           ],
           [
-            112102,
-            5,
-            "eyeV..uAKS",
-            "agave"
-          ],
-          [
-            112043,
-            10,
-            "B1rs..oiFj",
-            "agave"
-          ],
-          [
-            111816,
-            5,
-            "EUiP..ctzd",
-            "agave"
-          ],
-          [
-            111466,
-            5,
-            "mesh..PqPY",
-            "agave"
-          ],
-          [
-            111090,
+            143012,
             0,
-            "1oH9..sSqy",
+            "Ev3g..HfLf",
             "agave"
           ],
           [
-            111082,
+            142835,
             0,
-            "5XGM..9q8u",
+            "26RG..naxR",
             "agave"
           ],
           [
-            110692,
-            5,
-            "EtMS..KvSV",
-            "agave"
-          ],
-          [
-            110374,
-            5,
-            "DzQH..31yb",
-            "agave"
-          ],
-          [
-            109647,
+            142264,
             0,
-            "pENg..8wzX",
+            "HwcV..aSVC",
+            "agave"
+          ],
+          [
+            142226,
+            0,
+            "ENVa..VcgB",
             "firedancer"
           ],
           [
-            109623,
-            5,
-            "DyDj..gqyY",
+            141763,
+            0,
+            "NikG..5EXn",
             "agave"
           ],
           [
-            109045,
+            141754,
             5,
-            "G1EA..3akg",
+            "6osc..88Vf",
             "agave"
           ],
           [
-            109006,
+            141186,
+            0,
+            "5szs..7yNh",
+            "agave"
+          ],
+          [
+            140519,
             5,
             "Ec37..ahSf",
             "agave"
           ],
           [
-            108442,
-            0,
-            "89DX..vYGt",
-            "agave"
-          ],
-          [
-            108387,
-            0,
-            "5CBk..Ke1B",
-            "agave"
-          ],
-          [
-            108160,
+            140504,
             5,
-            "vnd1..nMke",
+            "ReFi..9NUx",
             "agave"
           ],
           [
-            108109,
+            140127,
+            5,
+            "9gX9..nr5t",
+            "firedancer"
+          ],
+          [
+            139125,
             0,
-            "9RXD..9dxS",
+            "G8hv..9Kk2",
             "agave"
           ],
           [
-            108099,
-            5,
-            "adre..3Drz",
-            "agave"
-          ],
-          [
-            107801,
-            5,
-            "4udP..mdaj",
-            "agave"
-          ],
-          [
-            107765,
-            5,
-            "3a2o..vWeA",
-            "agave"
-          ],
-          [
-            107759,
-            5,
-            "nate..Kjn1",
-            "agave"
-          ],
-          [
-            107367,
+            138613,
             0,
-            "Hmq1..cB4n",
+            "Fhks..6bub",
             "agave"
           ],
           [
-            106543,
+            136624,
             0,
-            "HYUU..FXpu",
+            "6hcG..m7UY",
             "agave"
           ],
           [
-            106463,
+            135918,
+            0,
+            "9FZW..QCM1",
+            "agave"
+          ],
+          [
+            135795,
+            0,
+            "Ste1..3u2k",
+            "agave"
+          ],
+          [
+            135586,
+            0,
+            "o27r..MU5h",
+            "agave"
+          ],
+          [
+            134373,
+            0,
+            "AY27..YgCG",
+            "agave"
+          ],
+          [
+            134354,
+            0,
+            "7obi..GvVr",
+            "agave"
+          ],
+          [
+            134280,
+            5,
+            "avnu..UptF",
+            "agave"
+          ],
+          [
+            134205,
+            0,
+            "DTwE..1cG3",
+            "agave"
+          ],
+          [
+            132884,
+            0,
+            "9gAN..t7mq",
+            "agave"
+          ],
+          [
+            132514,
+            4,
+            "SQDS..i68w",
+            "agave"
+          ],
+          [
+            132098,
+            0,
+            "Lime..WPiq",
+            "agave"
+          ],
+          [
+            132055,
+            5,
+            "axyQ..NYcF",
+            "agave"
+          ],
+          [
+            131698,
+            0,
+            "2ayM..d58z",
+            "agave"
+          ],
+          [
+            131653,
+            0,
+            "B6nD..2bXv",
+            "agave"
+          ],
+          [
+            130469,
+            0,
+            "DPhz..4TPh",
+            "agave"
+          ],
+          [
+            130262,
+            5,
+            "4qvF..hyvu",
+            "agave"
+          ],
+          [
+            128918,
+            0,
+            "3jkJ..Zhkk",
+            "agave"
+          ],
+          [
+            128463,
+            0,
+            "3QPG..ho8K",
+            "agave"
+          ],
+          [
+            127977,
+            5,
+            "3r5Z..etTk",
+            "agave"
+          ],
+          [
+            127846,
+            5,
+            "3Z1N..f8cj",
+            "agave"
+          ],
+          [
+            126582,
+            5,
+            "6cvB..rryR",
+            "agave"
+          ],
+          [
+            126488,
+            5,
+            "SWDV..WqjY",
+            "agave"
+          ],
+          [
+            126030,
+            5,
+            "DG6f..9ACP",
+            "agave"
+          ],
+          [
+            125490,
+            5,
+            "vanF..sZ4K",
+            "agave"
+          ],
+          [
+            124834,
+            5,
+            "hxVj..uDow",
+            "agave"
+          ],
+          [
+            124551,
+            5,
+            "TREE..GagK",
+            "firedancer"
+          ],
+          [
+            124019,
+            5,
+            "bXr9..tFh8",
+            "agave"
+          ],
+          [
+            123887,
+            5,
+            "STBR..ukaW",
+            "agave"
+          ],
+          [
+            122938,
+            0,
+            "GK9M..pfxC",
+            "agave"
+          ],
+          [
+            121273,
+            5,
+            "7Eg4..qxCy",
+            "agave"
+          ],
+          [
+            121271,
+            5,
+            "Ha8d..JCxN",
+            "agave"
+          ],
+          [
+            121058,
+            5,
+            "goJi..EBXb",
+            "agave"
+          ],
+          [
+            120992,
+            5,
+            "dedx..Ndhk",
+            "agave"
+          ],
+          [
+            120717,
+            5,
+            "CtzN..dSKb",
+            "agave"
+          ],
+          [
+            120548,
+            5,
+            "R2D2..UWNj",
+            "agave"
+          ],
+          [
+            120268,
+            5,
+            "CHia..eLAo",
+            "agave"
+          ],
+          [
+            118870,
+            7,
+            "2Y2o..f2NH",
+            "agave"
+          ],
+          [
+            118827,
+            5,
+            "odc2..hpE3",
+            "agave"
+          ],
+          [
+            117985,
+            0,
+            "4EsJ..jcUv",
+            "agave"
+          ],
+          [
+            117328,
+            5,
+            "YE11..vKQH",
+            "agave"
+          ],
+          [
+            117291,
+            5,
+            "fuyu..HpVD",
+            "agave"
+          ],
+          [
+            116881,
+            0,
+            "HEYb..W2pQ",
+            "agave"
+          ],
+          [
+            116748,
+            5,
+            "chrt..NPFr",
+            "agave"
+          ],
+          [
+            116697,
             0,
             "HcbE..PyAP",
             "agave"
           ],
           [
-            106319,
-            6,
-            "spur..oxKd",
-            "agave"
-          ],
-          [
-            105646,
-            5,
-            "2wUh..acLc",
-            "agave"
-          ],
-          [
-            104859,
+            115469,
             0,
-            "4MU6..8Q2Q",
+            "FLCr..A4U4",
             "agave"
           ],
           [
-            104782,
+            115405,
             0,
-            "GakA..MEBm",
+            "9ymU..zuC1",
             "agave"
           ],
           [
-            104696,
-            5,
-            "chop..imWa",
-            "agave"
-          ],
-          [
-            104546,
+            114756,
             4,
-            "Gref..og6s",
+            "G1ju..af4V",
             "agave"
           ],
           [
-            104057,
-            5,
-            "21wU..2TUB",
-            "agave"
-          ],
-          [
-            103996,
-            5,
-            "rapx..hiCy",
-            "agave"
-          ],
-          [
-            103190,
-            5,
-            "te1e..oi3K",
-            "agave"
-          ],
-          [
-            102818,
+            114361,
             0,
-            "bay3..y64H",
+            "FnAP..pD4v",
             "agave"
           ],
           [
-            102111,
-            1,
-            "Lode..65gq",
-            "agave"
-          ],
-          [
-            101594,
-            5,
-            "GdVB..SXm9",
-            "agave"
-          ],
-          [
-            101577,
-            5,
-            "Azc2..PCNN",
-            "agave"
-          ],
-          [
-            101251,
-            5,
-            "DCKY..qDxU",
-            "agave"
-          ],
-          [
-            101003,
+            114295,
             0,
-            "Mico..wZC5",
+            "FGts..UiVH",
             "agave"
           ],
           [
-            100946,
-            5,
-            "roYL..k77r",
-            "agave"
-          ],
-          [
-            100783,
-            5,
-            "4269..mQmh",
-            "agave"
-          ],
-          [
-            100769,
-            5,
-            "chdv..HPNb",
-            "agave"
-          ],
-          [
-            100769,
-            5,
-            "hnhx..ArSu",
-            "agave"
-          ],
-          [
-            100670,
-            5,
-            "jntr..2pXf",
-            "agave"
-          ],
-          [
-            100626,
-            5,
-            "dstq..fuPd",
-            "agave"
-          ],
-          [
-            100450,
-            5,
-            "STev..ufwb",
-            "agave"
-          ],
-          [
-            100449,
+            114283,
             0,
-            "77i1..D6Qe",
+            "8D8X..123P",
             "agave"
           ],
           [
-            100194,
+            113612,
+            0,
+            "A7uq..cxtg",
+            "agave"
+          ],
+          [
+            113051,
             5,
-            "1i1y..JePP",
+            "21oU..yyrG",
             "agave"
           ],
           [
-            100041,
+            112519,
             5,
-            "Lua2..f6tJ",
+            "eyeV..uAKS",
             "agave"
           ],
           [
-            99930,
-            0,
-            "5K8q..VKVv",
-            "agave"
-          ],
-          [
-            99832,
-            0,
-            "FwLs..NTmv",
-            "agave"
-          ],
-          [
-            99503,
-            0,
-            "ViKL..nLVi",
-            "agave"
-          ],
-          [
-            99053,
-            0,
-            "D3Df..9xk4",
-            "agave"
-          ],
-          [
-            98333,
-            0,
-            "HdQ1..cotn",
-            "agave"
-          ],
-          [
-            98312,
+            112240,
             5,
-            "Ebm1..mXmR",
+            "HZDt..FSvT",
             "agave"
           ],
           [
-            97510,
-            3,
-            "sfo5..NPjJ",
-            "agave"
-          ],
-          [
-            97391,
-            5,
-            "EATz..nQiV",
-            "agave"
-          ],
-          [
-            97168,
-            5,
-            "6n8t..yHfW",
-            "agave"
-          ],
-          [
-            96272,
-            5,
-            "LiFi..TvWk",
-            "agave"
-          ],
-          [
-            96181,
-            4,
-            "CP6m..kHH7",
-            "agave"
-          ],
-          [
-            95952,
+            112231,
             0,
-            "647e..WA5X",
+            "CSBi..4ueD",
             "agave"
           ],
           [
-            95358,
+            112139,
             5,
-            "Abac..FnDF",
+            "EUiP..ctzd",
             "agave"
           ],
           [
-            94291,
-            3,
-            "2ve7..PyC8",
+            112077,
+            10,
+            "B1rs..oiFj",
             "agave"
           ],
           [
-            93625,
+            111770,
             0,
-            "94Eh..R35z",
+            "1oH9..sSqy",
             "agave"
           ],
           [
-            93469,
+            111541,
+            5,
+            "EtMS..KvSV",
+            "agave"
+          ],
+          [
+            111375,
             0,
-            "1Lin..apyR",
+            "89DX..vYGt",
             "agave"
           ],
           [
-            93324,
+            110931,
+            5,
+            "mesh..PqPY",
+            "agave"
+          ],
+          [
+            110654,
+            0,
+            "5XGM..9q8u",
+            "agave"
+          ],
+          [
+            110401,
+            5,
+            "DzQH..31yb",
+            "agave"
+          ],
+          [
+            110278,
             0,
             "9rwC..8hLa",
             "firedancer"
           ],
           [
-            92680,
+            110077,
+            0,
+            "pENg..8wzX",
+            "firedancer"
+          ],
+          [
+            110026,
+            5,
+            "DyDj..gqyY",
+            "agave"
+          ],
+          [
+            109175,
+            5,
+            "3a2o..vWeA",
+            "agave"
+          ],
+          [
+            108646,
+            5,
+            "G1EA..3akg",
+            "agave"
+          ],
+          [
+            108569,
+            5,
+            "vnd1..nMke",
+            "agave"
+          ],
+          [
+            108513,
+            5,
+            "adre..3Drz",
+            "agave"
+          ],
+          [
+            108410,
+            0,
+            "bay3..y64H",
+            "agave"
+          ],
+          [
+            108171,
+            5,
+            "nate..Kjn1",
+            "agave"
+          ],
+          [
+            108097,
+            0,
+            "ViKL..nLVi",
+            "agave"
+          ],
+          [
+            108034,
+            0,
+            "9RXD..9dxS",
+            "agave"
+          ],
+          [
+            107758,
+            0,
+            "Hmq1..cB4n",
+            "agave"
+          ],
+          [
+            107438,
+            5,
+            "2wUh..acLc",
+            "agave"
+          ],
+          [
+            107437,
+            5,
+            "4udP..mdaj",
+            "agave"
+          ],
+          [
+            106936,
+            0,
+            "HYUU..FXpu",
+            "agave"
+          ],
+          [
+            106352,
+            6,
+            "spur..oxKd",
+            "agave"
+          ],
+          [
+            106288,
+            0,
+            "VaCd..7c76",
+            "agave"
+          ],
+          [
+            105540,
+            5,
+            "myth..vY7w",
+            "agave"
+          ],
+          [
+            105181,
+            0,
+            "GakA..MEBm",
+            "agave"
+          ],
+          [
+            104859,
+            5,
+            "vvvv..eNHx",
+            "agave"
+          ],
+          [
+            104308,
+            4,
+            "Gref..og6s",
+            "agave"
+          ],
+          [
+            104197,
+            5,
+            "rapx..hiCy",
+            "agave"
+          ],
+          [
+            103817,
+            5,
+            "chop..imWa",
+            "agave"
+          ],
+          [
+            103715,
+            5,
+            "21wU..2TUB",
+            "agave"
+          ],
+          [
+            103617,
+            5,
+            "te1e..oi3K",
+            "agave"
+          ],
+          [
+            102420,
+            1,
+            "Lode..65gq",
+            "agave"
+          ],
+          [
+            101914,
+            5,
+            "GdVB..SXm9",
+            "agave"
+          ],
+          [
+            101685,
+            5,
+            "DCKY..qDxU",
+            "agave"
+          ],
+          [
+            101223,
+            5,
+            "4269..mQmh",
+            "agave"
+          ],
+          [
+            101196,
+            5,
+            "chdv..HPNb",
+            "agave"
+          ],
+          [
+            101173,
+            5,
+            "Azc2..PCNN",
+            "agave"
+          ],
+          [
+            101116,
+            5,
+            "jntr..2pXf",
+            "agave"
+          ],
+          [
+            101053,
+            5,
+            "dstq..fuPd",
+            "agave"
+          ],
+          [
+            101049,
+            5,
+            "hnhx..ArSu",
+            "agave"
+          ],
+          [
+            100878,
+            5,
+            "STev..ufwb",
+            "agave"
+          ],
+          [
+            100866,
+            0,
+            "77i1..D6Qe",
+            "agave"
+          ],
+          [
+            100505,
+            5,
+            "roYL..k77r",
+            "agave"
+          ],
+          [
+            100449,
+            5,
+            "1i1y..JePP",
+            "agave"
+          ],
+          [
+            99961,
+            0,
+            "5K8q..VKVv",
+            "agave"
+          ],
+          [
+            99418,
+            0,
+            "D3Df..9xk4",
+            "agave"
+          ],
+          [
+            99337,
+            0,
+            "Mico..wZC5",
+            "agave"
+          ],
+          [
+            99235,
+            5,
+            "TKMA..wq7e",
+            "agave"
+          ],
+          [
+            98818,
+            5,
+            "Lua2..f6tJ",
+            "agave"
+          ],
+          [
+            98581,
+            5,
+            "Ebm1..mXmR",
+            "agave"
+          ],
+          [
+            98373,
+            0,
+            "HdQ1..cotn",
+            "agave"
+          ],
+          [
+            97741,
+            3,
+            "sfo5..NPjJ",
+            "agave"
+          ],
+          [
+            97665,
+            5,
+            "EATz..nQiV",
+            "agave"
+          ],
+          [
+            97393,
+            0,
+            "1Lin..apyR",
+            "agave"
+          ],
+          [
+            97274,
+            8,
+            "ARf5..EmKT",
+            "agave"
+          ],
+          [
+            97191,
+            5,
+            "6n8t..yHfW",
+            "agave"
+          ],
+          [
+            96703,
+            5,
+            "LiFi..TvWk",
+            "agave"
+          ],
+          [
+            96335,
+            0,
+            "647e..WA5X",
+            "agave"
+          ],
+          [
+            95846,
+            0,
+            "FwLs..NTmv",
+            "agave"
+          ],
+          [
+            95592,
+            5,
+            "Abac..FnDF",
+            "agave"
+          ],
+          [
+            93980,
+            5,
+            "prt1..iCfj",
+            "agave"
+          ],
+          [
+            93906,
+            0,
+            "94Eh..R35z",
+            "agave"
+          ],
+          [
+            93700,
+            0,
+            "4MU6..8Q2Q",
+            "agave"
+          ],
+          [
+            93545,
+            3,
+            "2ve7..PyC8",
+            "agave"
+          ],
+          [
+            93490,
+            5,
+            "kyvv..ircP",
+            "agave"
+          ],
+          [
+            92909,
             5,
             "Gaxx..C2Xi",
             "agave"
           ],
           [
-            92460,
-            0,
-            "QXms..joK1",
-            "agave"
-          ],
-          [
-            92106,
+            92697,
             5,
             "Anod..cmEc",
             "agave"
           ],
           [
-            92075,
-            0,
-            "H1ky..au3b",
-            "agave"
-          ],
-          [
-            91908,
-            0,
-            "nyms..mYaQ",
-            "agave"
-          ],
-          [
-            91316,
+            92525,
             5,
             "mALL..ZNd6",
             "agave"
           ],
           [
-            91232,
+            92495,
             0,
-            "mrgn..VwPn",
+            "2ZiM..wgKP",
             "agave"
           ],
           [
-            91089,
+            92306,
+            0,
+            "H1ky..au3b",
+            "agave"
+          ],
+          [
+            92152,
+            5,
+            "ExCH..zEdN",
+            "agave"
+          ],
+          [
+            91865,
+            0,
+            "5CBk..Ke1B",
+            "agave"
+          ],
+          [
+            91852,
+            0,
+            "nyms..mYaQ",
+            "agave"
+          ],
+          [
+            91334,
             5,
             "FH9x..ndt6",
             "agave"
           ],
           [
-            88958,
+            91110,
             0,
-            "68Lq..WEVV",
+            "mrgn..VwPn",
             "agave"
           ],
           [
-            88287,
-            0,
-            "Dcoj..8XDw",
-            "agave"
-          ],
-          [
-            87093,
-            5,
-            "Defi..2v9g",
-            "agave"
-          ],
-          [
-            86869,
-            5,
-            "gVot..Enx8",
-            "agave"
-          ],
-          [
-            86728,
-            0,
-            "5DnW..2prJ",
-            "agave"
-          ],
-          [
-            85204,
-            0,
-            "6W8y..3d4v",
-            "agave"
-          ],
-          [
-            85084,
-            5,
-            "9YQX..UStz",
-            "agave"
-          ],
-          [
-            84879,
-            0,
-            "42Xz..W1JB",
-            "agave"
-          ],
-          [
-            84755,
-            0,
-            "41Hg..yLDR",
-            "agave"
-          ],
-          [
-            84398,
+            90313,
             5,
             "Efny..Q1SV",
             "agave"
           ],
           [
-            84344,
+            90222,
             0,
-            "ExYX..1wtj",
+            "41Hg..yLDR",
             "agave"
           ],
           [
-            83967,
+            90150,
+            4,
+            "CP6m..kHH7",
+            "agave"
+          ],
+          [
+            89038,
+            0,
+            "68Lq..WEVV",
+            "agave"
+          ],
+          [
+            88540,
+            0,
+            "Dcoj..8XDw",
+            "agave"
+          ],
+          [
+            88257,
+            5,
+            "Defi..2v9g",
+            "agave"
+          ],
+          [
+            87592,
+            5,
+            "gVot..Enx8",
+            "agave"
+          ],
+          [
+            86471,
+            5,
+            "P1TC..REee",
+            "agave"
+          ],
+          [
+            85295,
+            0,
+            "D7Wo..ropd",
+            "agave"
+          ],
+          [
+            85131,
             5,
             "Gota..zkFX",
             "agave"
           ],
           [
-            83735,
+            85105,
             5,
-            "xLab..kjcb",
-            "firedancer"
-          ],
-          [
-            83673,
-            0,
-            "7miZ..btvZ",
+            "9YQX..UStz",
             "agave"
           ],
           [
-            83652,
+            84868,
+            0,
+            "42Xz..W1JB",
+            "agave"
+          ],
+          [
+            84720,
             5,
             "Carb..Muw2",
             "agave"
           ],
           [
-            83499,
+            84685,
+            0,
+            "ExYX..1wtj",
+            "agave"
+          ],
+          [
+            84625,
+            0,
+            "6W8y..3d4v",
+            "agave"
+          ],
+          [
+            84583,
+            5,
+            "xLab..kjcb",
+            "firedancer"
+          ],
+          [
+            83939,
+            0,
+            "7miZ..btvZ",
+            "agave"
+          ],
+          [
+            83493,
             0,
             "53AN..o4wU",
             "agave"
           ],
           [
-            83243,
+            83470,
+            0,
+            "QXms..joK1",
+            "agave"
+          ],
+          [
+            83313,
             0,
             "AYSv..rTwH",
+            "agave"
+          ],
+          [
+            83073,
+            0,
+            "Node..pbKb",
+            "agave"
+          ],
+          [
+            83011,
+            0,
+            "3R4e..w4B6",
             "agave"
           ],
           [
@@ -3682,115 +3748,103 @@
             "agave"
           ],
           [
-            82743,
-            0,
-            "3R4e..w4B6",
-            "agave"
-          ],
-          [
-            82262,
+            82532,
             0,
             "5HSc..mdyG",
             "agave"
           ],
           [
-            82057,
-            0,
-            "Node..pbKb",
-            "agave"
-          ],
-          [
-            81969,
+            82320,
             0,
             "B8Ju..DF7F",
             "agave"
           ],
           [
-            81755,
-            5,
-            "9NZ1..SAKr",
-            "agave"
-          ],
-          [
-            81616,
+            81798,
             5,
             "3xjf..f9xE",
             "agave"
           ],
           [
-            81145,
+            81526,
             5,
             "kaos..5NwA",
             "agave"
           ],
           [
-            80673,
-            5,
-            "kawi..DADf",
-            "agave"
-          ],
-          [
-            80573,
-            5,
-            "GzjM..EFnp",
-            "agave"
-          ],
-          [
-            80309,
+            81462,
             5,
             "FoXy..5dmB",
             "agave"
           ],
           [
-            80014,
+            81286,
+            5,
+            "8mu3..rDFo",
+            "agave"
+          ],
+          [
+            81034,
+            5,
+            "kawi..DADf",
+            "agave"
+          ],
+          [
+            80368,
             0,
             "4Q1k..iJdv",
             "agave"
           ],
           [
-            79816,
+            80174,
             0,
             "B48p..q4iv",
             "agave"
           ],
           [
-            79756,
+            80150,
             0,
             "GZgV..Jesa",
             "agave"
           ],
           [
-            79709,
+            79989,
             0,
             "qjUu..7fRb",
             "agave"
           ],
           [
-            78592,
+            79816,
+            5,
+            "GzjM..EFnp",
+            "agave"
+          ],
+          [
+            78909,
+            5,
+            "4m1P..w7Xx",
+            "agave"
+          ],
+          [
+            78871,
             0,
             "FSDK..Pf3k",
             "agave"
           ],
           [
-            78049,
+            78509,
             0,
-            "D7Wo..ropd",
+            "SWiz..sWXU",
             "agave"
           ],
           [
-            77097,
-            0,
-            "2ZiM..wgKP",
-            "agave"
-          ],
-          [
-            76458,
+            77648,
             5,
             "MFLK..dFXB",
             "agave"
           ],
           [
-            75694,
+            76768,
             5,
             "ABRE..JLae",
             "agave"
@@ -3802,111 +3856,69 @@
             "agave"
           ],
           [
-            74938,
+            74908,
             0,
             "DKeL..7TqE",
             "agave"
           ],
           [
-            74054,
-            5,
-            "myth..vY7w",
-            "agave"
-          ],
-          [
-            73591,
+            74095,
             0,
-            "SWiz..sWXU",
+            "5DnW..2prJ",
             "agave"
           ],
           [
-            73213,
-            5,
-            "vvvv..eNHx",
-            "agave"
-          ],
-          [
-            73179,
+            73181,
             90,
             "Smit..DghV",
             "agave"
           ],
           [
-            69637,
-            0,
-            "5Syh..QmYK",
-            "agave"
-          ],
-          [
-            69437,
+            69797,
             5,
             "pine..vxcX",
             "agave"
           ],
           [
-            68584,
+            69655,
+            0,
+            "5Syh..QmYK",
+            "agave"
+          ],
+          [
+            68576,
             5,
             "FdGc..cdV9",
             "agave"
           ],
           [
-            67725,
-            5,
-            "TKMA..wq7e",
-            "agave"
-          ],
-          [
-            66573,
-            5,
-            "prt1..iCfj",
-            "agave"
-          ],
-          [
-            66239,
+            66313,
             5,
             "4QQq..tjQU",
             "agave"
           ],
           [
-            65390,
-            8,
-            "ARf5..EmKT",
-            "agave"
-          ],
-          [
-            64877,
-            3,
-            "ACCR..dddF",
-            "firedancer"
-          ],
-          [
-            63882,
+            64250,
             5,
             "C8ML..Xrhd",
             "agave"
           ],
           [
-            62179,
+            61796,
             5,
-            "SAND..iwuc",
+            "Sa1H..JsCz",
             "agave"
           ],
           [
-            61756,
+            61772,
             0,
             "Czmq..SPAc",
             "agave"
           ],
           [
-            61302,
+            61623,
             5,
-            "kyvv..ircP",
-            "agave"
-          ],
-          [
-            60916,
-            5,
-            "Sa1H..JsCz",
+            "SAND..iwuc",
             "agave"
           ],
           [
@@ -3916,69 +3928,63 @@
             "agave"
           ],
           [
-            60614,
-            5,
-            "ExCH..zEdN",
-            "agave"
-          ],
-          [
-            60537,
+            60551,
             7,
             "DkZe..b4UV",
             "agave"
           ],
           [
-            60389,
+            60526,
             0,
             "D4Em..LdcZ",
             "agave"
           ],
           [
-            59576,
+            59961,
             5,
             "BH7a..wDhg",
             "agave"
           ],
           [
-            59277,
-            5,
-            "sT34..JpYX",
-            "agave"
-          ],
-          [
-            59092,
+            58994,
             5,
             "AuBB..bzdA",
             "agave"
           ],
           [
-            58584,
+            58598,
             10,
             "9BSZ..nBvz",
             "agave"
           ],
           [
-            58557,
+            58571,
             10,
             "95Kg..N5PL",
             "agave"
           ],
           [
-            58537,
+            58550,
             10,
             "BRrg..cF9q",
             "agave"
           ],
           [
-            58466,
+            58480,
             10,
             "FWwn..poUp",
             "agave"
           ],
           [
-            58459,
+            58473,
             10,
             "BjRE..Vc2e",
+            "agave"
+          ],
+          [
+            58329,
+            10,
+            "2zxo..sCaN",
             "agave"
           ],
           [
@@ -3988,99 +3994,87 @@
             "agave"
           ],
           [
-            58315,
-            10,
-            "2zxo..sCaN",
-            "agave"
-          ],
-          [
-            58198,
+            58211,
             10,
             "6Csc..2T7G",
             "agave"
           ],
           [
-            57863,
+            57878,
             0,
             "CzGL..H89M",
             "agave"
           ],
           [
-            57464,
+            57477,
             10,
             "5cJy..bgtr",
             "agave"
           ],
           [
-            57364,
+            57378,
             10,
             "6zzA..N37Q",
             "agave"
           ],
           [
-            56970,
+            57043,
             0,
             "6frB..WeWV",
             "agave"
           ],
           [
-            56399,
+            56412,
             10,
             "ASif..M4Uf",
             "agave"
           ],
           [
-            54893,
-            5,
-            "P1TC..REee",
-            "agave"
-          ],
-          [
-            54109,
+            55002,
             2,
             "LNRm..oa1T",
             "agave"
           ],
           [
-            53843,
+            54083,
             0,
             "DeEp..TpL5",
             "agave"
           ],
           [
-            53764,
+            53825,
             0,
             "Epic..7MQD",
             "agave"
           ],
           [
-            52298,
+            52264,
             0,
             "Fgit..3rTJ",
             "agave"
           ],
           [
-            51944,
-            5,
-            "GW8G..XRz3",
-            "agave"
-          ],
-          [
-            51360,
-            5,
-            "4m1P..w7Xx",
-            "agave"
-          ],
-          [
-            51082,
+            51834,
             0,
             "4KfA..NiEh",
             "agave"
           ],
           [
-            49831,
+            51271,
+            0,
+            "6SF5..LLPX",
+            "agave"
+          ],
+          [
+            50934,
             5,
-            "8mu3..rDFo",
+            "9NZ1..SAKr",
+            "agave"
+          ],
+          [
+            50688,
+            5,
+            "sT34..JpYX",
             "agave"
           ],
           [
@@ -4090,213 +4084,231 @@
             "agave"
           ],
           [
-            47323,
-            0,
-            "sSho..NC77",
-            "agave"
-          ],
-          [
-            46982,
-            0,
-            "6SF5..LLPX",
-            "agave"
-          ],
-          [
-            44516,
+            47046,
             5,
             "3hhE..k3iX",
             "agave"
           ],
           [
-            43961,
-            0,
-            "EogK..AMpK",
-            "agave"
-          ],
-          [
-            43843,
-            0,
-            "59k9..bj8x",
-            "agave"
-          ],
-          [
-            43555,
-            0,
-            "Gmmj..zB9Q",
-            "firedancer"
-          ],
-          [
-            42806,
-            0,
-            "A11p..KtS5",
-            "agave"
-          ],
-          [
-            42073,
-            100,
-            "reyY..9Ayq",
-            "agave"
-          ],
-          [
-            41342,
+            44730,
             5,
             "J6Ka..siAD",
             "agave"
           ],
           [
-            40316,
+            43838,
+            0,
+            "59k9..bj8x",
+            "agave"
+          ],
+          [
+            43790,
+            0,
+            "EogK..AMpK",
+            "agave"
+          ],
+          [
+            43776,
+            0,
+            "A11p..KtS5",
+            "agave"
+          ],
+          [
+            43573,
+            0,
+            "Gmmj..zB9Q",
+            "firedancer"
+          ],
+          [
+            42084,
+            100,
+            "reyY..9Ayq",
+            "agave"
+          ],
+          [
+            40334,
             0,
             "RSSA..5NUq",
             "agave"
           ],
           [
-            38725,
+            38854,
             0,
             "D4mL..U9Fz",
             "agave"
           ],
           [
-            36752,
+            38412,
+            5,
+            "GW8G..XRz3",
+            "agave"
+          ],
+          [
+            36761,
             5,
             "6yg4..B6wT",
             "agave"
           ],
           [
-            36077,
+            36559,
             5,
             "777V..v777",
             "agave"
           ],
           [
-            34904,
-            5,
-            "4BVY..PUGg",
-            "agave"
-          ],
-          [
-            34081,
-            0,
-            "GdSJ..Z56r",
-            "agave"
-          ],
-          [
-            33387,
-            0,
-            "H1Sz..tXnD",
-            "agave"
-          ],
-          [
-            32619,
-            5,
-            "DHoZ..Aj6M",
-            "agave"
-          ],
-          [
-            32421,
-            0,
-            "9QFv..SsZ1",
-            "agave"
-          ],
-          [
-            31834,
-            10,
-            "E5Y8..ezbn",
-            "agave"
-          ],
-          [
-            31630,
-            0,
-            "Fy6z..uxjT",
-            "agave"
-          ],
-          [
-            31487,
+            36337,
             5,
             "TAPE..N5D3",
             "agave"
           ],
           [
-            26673,
+            34856,
+            5,
+            "4BVY..PUGg",
+            "agave"
+          ],
+          [
+            34050,
+            0,
+            "GdSJ..Z56r",
+            "agave"
+          ],
+          [
+            33411,
+            0,
+            "H1Sz..tXnD",
+            "agave"
+          ],
+          [
+            32586,
+            5,
+            "DHoZ..Aj6M",
+            "agave"
+          ],
+          [
+            32449,
+            0,
+            "9QFv..SsZ1",
+            "agave"
+          ],
+          [
+            32339,
+            10,
+            "E5Y8..ezbn",
+            "agave"
+          ],
+          [
+            31583,
+            0,
+            "Fy6z..uxjT",
+            "agave"
+          ],
+          [
+            31340,
             5,
             "8sdF..taX8",
             "agave"
           ],
           [
-            26622,
-            0,
-            "mrgn..MQsQ",
-            "agave"
-          ],
-          [
-            26479,
-            5,
-            "FEjc..Svjm",
-            "agave"
-          ],
-          [
-            24838,
-            80,
-            "QUAN..wnGJ",
-            "agave"
-          ],
-          [
-            23548,
-            100,
-            "Qodi..YfPi",
-            "agave"
-          ],
-          [
-            22655,
+            28653,
             5,
             "GAoC..x3WR",
             "firedancer"
           ],
           [
-            22543,
+            26483,
+            5,
+            "FEjc..Svjm",
+            "agave"
+          ],
+          [
+            26113,
+            0,
+            "mrgn..MQsQ",
+            "agave"
+          ],
+          [
+            25860,
+            0,
+            "sSho..NC77",
+            "agave"
+          ],
+          [
+            24839,
+            80,
+            "QUAN..wnGJ",
+            "agave"
+          ],
+          [
+            23577,
+            0,
+            "Qodi..YfPi",
+            "agave"
+          ],
+          [
+            22910,
             0,
             "mNyQ..ZaUr",
             "agave"
           ],
           [
-            20832,
-            10,
-            "H3Gh..Zykc",
-            "agave"
+            22043,
+            3,
+            "ACCR..dddF",
+            "firedancer"
           ],
           [
-            20283,
+            20289,
             0,
             "Fe5z..4iiX",
             "agave"
           ],
           [
-            19836,
+            19827,
             100,
             "2PEy..GMru",
             "agave"
           ],
           [
-            18181,
+            19487,
+            10,
+            "H3Gh..Zykc",
+            "agave"
+          ],
+          [
+            19291,
+            0,
+            "Nodi..sbFB",
+            "agave"
+          ],
+          [
+            18185,
             5,
             "dzuf..j36Y",
             "agave"
           ],
           [
-            17853,
+            17699,
             0,
             "8B2Z..JLC1",
             "agave"
           ],
           [
-            16579,
+            16119,
             5,
             "DrKH..GsDE",
             "agave"
           ],
           [
-            15983,
+            15987,
             5,
             "FXcZ..n655",
+            "agave"
+          ],
+          [
+            15880,
+            5,
+            "5Dut..xk6H",
             "agave"
           ],
           [
@@ -4306,13 +4318,13 @@
             "agave"
           ],
           [
-            15250,
+            15254,
             0,
             "Frkd..z9uk",
             "agave"
           ],
           [
-            15207,
+            15212,
             5,
             "tbox..oZif",
             "agave"
@@ -4324,55 +4336,61 @@
             "agave"
           ],
           [
-            13613,
-            5,
-            "5Dut..xk6H",
-            "agave"
-          ],
-          [
-            13260,
+            13989,
             0,
             "VoUV..2i6K",
             "agave"
           ],
           [
-            12733,
+            13022,
+            0,
+            "EMVm..BAW6",
+            "agave"
+          ],
+          [
+            12736,
             3,
             "8jxS..uphp",
             "agave"
           ],
           [
-            11573,
+            12239,
+            0,
+            "DhNX..2ZWV",
+            "agave"
+          ],
+          [
+            11730,
+            0,
+            "5AC6..v1xU",
+            "agave"
+          ],
+          [
+            11575,
             5,
             "FXRu..c2NU",
             "agave"
           ],
           [
-            10861,
-            100,
-            "5AC6..v1xU",
-            "agave"
-          ],
-          [
-            10786,
+            10789,
             0,
             "AfyT..Nb37",
             "agave"
           ],
           [
-            10739,
+            10742,
             3,
             "HwYT..16W7",
             "agave"
           ],
           [
-            10640,
+            10583,
             100,
             "TRAM..NsEq",
             "agave"
           ],
           [
-            10190,
+            10193,
             0,
             "DzPT..DAGR",
             "agave"
@@ -4384,49 +4402,37 @@
             "agave"
           ],
           [
-            7738,
+            7740,
             0,
             "6XiV..mate",
             "firedancer"
           ],
           [
-            6767,
-            0,
-            "DhNX..2ZWV",
-            "agave"
-          ],
-          [
-            5711,
-            0,
-            "Nodi..sbFB",
-            "agave"
-          ],
-          [
-            4380,
+            5135,
             0,
             "EwgQ..1dUS",
             "agave"
           ],
           [
-            2376,
+            2377,
             7,
             "6jf9..zPYc",
             "agave"
           ],
           [
-            1416,
+            1417,
             0,
             "Chao..6Tta",
             "agave"
           ],
           [
-            740,
+            743,
             3,
             "2mxW..UnPL",
             "agave"
           ],
           [
-            637,
+            638,
             10,
             "6ANz..YVMJ",
             "agave"
@@ -4444,13 +4450,7 @@
             "agave"
           ],
           [
-            122,
-            0,
-            "EMVm..BAW6",
-            "agave"
-          ],
-          [
-            1,
+            21,
             0,
             "2WUC..dvzv",
             "agave"
@@ -4469,33 +4469,33 @@
           ]
         ],
         "commission_histogram": {
-          "0%": 255,
+          "0%": 257,
           "1-5%": 307,
           "6-10%": 59,
-          ">10%": 65
+          ">10%": 63
         },
-        "weighted_mean_commission_pct": 27.11,
+        "weighted_mean_commission_pct": 27.03,
         "client_stake_split_pct": {
-          "agave": 89.2,
+          "agave": 89.3,
           "firedancer": 10.7,
           "unknown": 0.1
         }
       },
       "error": null,
-      "fetched_at": "2026-08-24T23:32:56Z"
+      "fetched_at": "2026-08-24T23:55:36Z"
     },
     "supply": {
       "ok": true,
       "data": {
-        "total_supply_sol": 632748818,
-        "circulating_supply_sol": 583275709,
-        "non_circulating_supply_sol": 49473109,
+        "total_supply_sol": 632860355,
+        "circulating_supply_sol": 583376767,
+        "non_circulating_supply_sol": 49483587,
         "fees": {
-          "sampled_slot": 441503035,
-          "block_tx_count": 1366,
-          "block_vote_tx_count": 686,
-          "median_fee_lamports": 5668,
-          "mean_fee_lamports": 92380
+          "sampled_slot": 441506739,
+          "block_tx_count": 1509,
+          "block_vote_tx_count": 678,
+          "median_fee_lamports": 5300,
+          "mean_fee_lamports": 31642
         },
         "median_priority_fee_microlamports": 0,
         "max_priority_fee_microlamports": 0,
@@ -4504,26 +4504,26 @@
           {
             "label": "USDC mint",
             "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
-            "last_activity_unix": 1787614365,
-            "seconds_since_activity": 0
+            "last_activity_unix": 1787615724,
+            "seconds_since_activity": 1
           },
           {
             "label": "Jupiter v6",
             "address": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
-            "last_activity_unix": 1787614365,
-            "seconds_since_activity": 0
+            "last_activity_unix": 1787615724,
+            "seconds_since_activity": 1
           }
         ]
       },
       "error": null,
-      "fetched_at": "2026-08-24T23:32:58Z"
+      "fetched_at": "2026-08-24T23:55:37Z"
     },
     "defillama": {
       "ok": true,
       "data": {
-        "tvl_usd": 5607200169,
-        "tvl_change_24h_pct": 0.89,
-        "tvl_change_7d_pct": 17.38,
+        "tvl_usd": 5630247911,
+        "tvl_change_24h_pct": 1.31,
+        "tvl_change_7d_pct": 17.86,
         "tvl_series": [
           {
             "date": 1785024000,
@@ -4643,7 +4643,7 @@
           },
           {
             "date": 1787529600,
-            "tvl_usd": 5607200169
+            "tvl_usd": 5630247911
           }
         ],
         "stablecoin_supply_usd": 15901989377,
@@ -4651,11 +4651,11 @@
         "dex_volume_7d_usd": 19361707972.850002,
         "dex_volume_change_24h_pct": -21.27,
         "network_fees_24h_usd": 696891,
-        "jito_tips_24h_usd": 160576,
-        "rev_24h_usd": 857467,
+        "jito_tips_24h_usd": 164054,
+        "rev_24h_usd": 860945,
         "rev_includes_tips": true,
         "app_fees_24h_usd": 12654048.7,
-        "rwa_tvl_usd": 2002642055,
+        "rwa_tvl_usd": 2003460624,
         "rwa_protocol_count": 24,
         "rwa_top": [
           {
@@ -4664,11 +4664,11 @@
           },
           {
             "name": "xStocks",
-            "tvl_usd": 421360132
+            "tvl_usd": 421995893
           },
           {
             "name": "OnRe",
-            "tvl_usd": 276030547
+            "tvl_usd": 276114902
           },
           {
             "name": "Ondo Yield Assets",
@@ -4676,31 +4676,31 @@
           },
           {
             "name": "Hastra",
-            "tvl_usd": 166781387
+            "tvl_usd": 166792608
           }
         ]
       },
       "error": null,
-      "fetched_at": "2026-08-24T23:32:45Z"
+      "fetched_at": "2026-08-24T23:55:27Z"
     },
     "price": {
       "ok": true,
       "data": {
-        "price_usd": 98.25,
-        "market_cap_usd": 57303049040,
+        "price_usd": 98.29,
+        "market_cap_usd": 57362430559,
         "market_cap_rank": 7,
-        "volume_24h_usd": 5608657292,
-        "change_24h_pct": 2.59941,
+        "volume_24h_usd": 5671444839,
+        "change_24h_pct": 3.09486,
         "change_7d_pct": 28.7,
         "ath_usd": 293.31,
-        "from_ath_pct": -66.50154,
+        "from_ath_pct": -66.48858,
         "price_source": "coingecko",
-        "jupiter_price_usd": 98.23903696482908,
-        "price_divergence_pct": 0.011,
+        "jupiter_price_usd": 98.31674345119269,
+        "price_divergence_pct": 0.027,
         "price_sources_agree": true
       },
       "error": null,
-      "fetched_at": "2026-08-24T23:32:44Z"
+      "fetched_at": "2026-08-24T23:55:25Z"
     },
     "news": {
       "ok": true,
@@ -4864,7 +4864,7 @@
         }
       },
       "error": null,
-      "fetched_at": "2026-08-24T23:32:45Z"
+      "fetched_at": "2026-08-24T23:55:27Z"
     },
     "solana_com": {
       "ok": true,
@@ -4894,7 +4894,7 @@
         "note": "headline figures as published on solana.com/data"
       },
       "error": null,
-      "fetched_at": "2026-08-24T23:32:45Z"
+      "fetched_at": "2026-08-24T23:55:26Z"
     },
     "dune": {
       "ok": true,
@@ -4903,7 +4903,7 @@
         "note": "set DUNE_API_KEY and add dune_query_ids to config.json to enrich the report with Dune dashboard data"
       },
       "error": null,
-      "fetched_at": "2026-08-24T23:32:44Z"
+      "fetched_at": "2026-08-24T23:55:25Z"
     }
   },
   "anomalies": {
@@ -6485,6 +6485,10 @@
       [
         "2026-08-24T23:32:58Z",
         2070.7
+      ],
+      [
+        "2026-08-24T23:55:37Z",
+        2027.6
       ]
     ],
     "price.price_usd": [
@@ -7859,6 +7863,10 @@
       [
         "2026-08-24T23:32:58Z",
         98.25
+      ],
+      [
+        "2026-08-24T23:55:37Z",
+        98.29
       ]
     ],
     "validators.delinquent_stake_pct": [
@@ -9232,6 +9240,10 @@
       ],
       [
         "2026-08-24T23:32:58Z",
+        0.02
+      ],
+      [
+        "2026-08-24T23:55:37Z",
         0.02
       ]
     ]

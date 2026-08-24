@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T04:58:41Z",
+  "generated_at": "2026-08-24T05:36:48Z",
   "generator": "heliostat 0.1.0",
   "refresh_interval_minutes": 15,
   "rpc_endpoint": "https://api.mainnet-beta.solana.com",
@@ -21,153 +21,153 @@
           "ok": true,
           "detail": "ok"
         },
-        "slot": 441320205,
-        "block_height": 419369206,
-        "block_time_unix": 1787547496,
+        "slot": 441326464,
+        "block_height": 419375465,
+        "block_time_unix": 1787549781,
         "epoch": 1021,
-        "epoch_progress_pct": 57.46,
-        "epoch_slot_index": 248206,
+        "epoch_progress_pct": 58.9,
+        "epoch_slot_index": 254465,
         "epoch_slots_total": 432000,
-        "epoch_remaining_hours": 18.6,
+        "epoch_remaining_hours": 18.0,
         "tps_series": [
           [
             29,
-            1378.4
+            1662.4
           ],
           [
             28,
-            1534.2
+            2092.2
           ],
           [
             27,
-            1416.1
+            1727.3
           ],
           [
             26,
-            1573.2
+            2146.2
           ],
           [
             25,
-            1561.2
+            1944.3
           ],
           [
             24,
-            1517.8
+            2193.7
           ],
           [
             23,
-            1616.2
+            1767.9
           ],
           [
             22,
-            1641.2
+            1664.0
           ],
           [
             21,
-            1648.0
+            2048.7
           ],
           [
             20,
-            1490.8
+            1927.1
           ],
           [
             19,
-            1464.3
+            1387.8
           ],
           [
             18,
-            1396.6
+            1585.6
           ],
           [
             17,
-            1706.0
+            1525.9
           ],
           [
             16,
-            1658.5
+            1717.0
           ],
           [
             15,
-            1243.9
+            1583.3
           ],
           [
             14,
-            1335.5
+            1578.2
           ],
           [
             13,
-            1240.5
+            1638.7
           ],
           [
             12,
-            1460.8
+            1681.7
           ],
           [
             11,
-            1543.5
+            1543.7
           ],
           [
             10,
-            1444.7
+            1649.8
           ],
           [
             9,
-            1542.5
+            1490.5
           ],
           [
             8,
-            1465.3
+            1604.6
           ],
           [
             7,
-            1413.2
+            1665.9
           ],
           [
             6,
-            1620.8
+            1557.0
           ],
           [
             5,
-            1998.2
+            1687.3
           ],
           [
             4,
-            2164.6
+            1688.6
           ],
           [
             3,
-            1930.1
+            1539.8
           ],
           [
             2,
-            1666.3
+            1319.0
           ],
           [
             1,
-            1635.7
+            1750.5
           ],
           [
             0,
-            1948.2
+            1423.4
           ]
         ],
-        "tps_total": 3436.3,
-        "tps_true": 1575.2,
-        "tps_total_peak": 4045.6,
-        "tps_true_peak": 2164.6,
+        "tps_total": 3555.2,
+        "tps_true": 1693.1,
+        "tps_total_peak": 4019.2,
+        "tps_true_peak": 2193.7,
         "mean_slot_time_secs": 0.365,
         "sample_window_minutes": 30
       },
       "error": null,
-      "fetched_at": "2026-08-24T04:58:30Z"
+      "fetched_at": "2026-08-24T05:36:35Z"
     },
     "validators": {
       "ok": true,
       "data": {
-        "active_count": 684,
-        "delinquent_count": 11,
-        "delinquent_stake_pct": 0.16,
-        "stall_buffer_used_pct": 0.5,
+        "active_count": 685,
+        "delinquent_count": 10,
+        "delinquent_stake_pct": 0.04,
+        "stall_buffer_used_pct": 0.1,
         "delinquency_alert": false,
         "total_stake_sol": 433436313,
         "nakamoto_coefficient": 18,
@@ -276,7 +276,7 @@
             "vote_pubkey": "FKsC411dik9ktS6xPADxs4Fk2SCENvAiuccQHLAPndvk",
             "node_pubkey": "GnC339vkyXRm1jRX69dt9mapPPu2LbzXfSDoxc91qta6",
             "stake_sol": 4828051,
-            "stake_pct": 1.12,
+            "stake_pct": 1.11,
             "commission_pct": 7
           },
           {
@@ -290,7 +290,7 @@
             "vote_pubkey": "3ZYJxzCeweSoh2Jj7oCgencFs9y27iKmXJeqYapje1cj",
             "node_pubkey": "EkvdKhULbMFqjKBKotAzGi3kwMvMpYNDKJXXQQmi6C1f",
             "stake_sol": 4094374,
-            "stake_pct": 0.95,
+            "stake_pct": 0.94,
             "commission_pct": 100
           },
           {
@@ -318,7 +318,7 @@
             "vote_pubkey": "H74qox1GASBWd94FWMyy6GVAbRVLf9SAMgbJ1tzSUAst",
             "node_pubkey": "Hz5aLvpKScNWoe9YZWxBLrQA3qzHJivBGtfciMekk8m5",
             "stake_sol": 3917921,
-            "stake_pct": 0.91,
+            "stake_pct": 0.9,
             "commission_pct": 100
           },
           {
@@ -1250,6 +1250,12 @@
             4,
             "Eeit..EHxj",
             "agave"
+          ],
+          [
+            517468,
+            10,
+            "FpTQ..CjKh",
+            "firedancer"
           ],
           [
             514620,
@@ -4459,31 +4465,31 @@
         "commission_histogram": {
           "0%": 255,
           "1-5%": 306,
-          "6-10%": 58,
+          "6-10%": 59,
           ">10%": 65
         },
-        "weighted_mean_commission_pct": 27.14,
+        "weighted_mean_commission_pct": 27.12,
         "client_stake_split_pct": {
-          "agave": 90.0,
-          "firedancer": 10.0,
+          "agave": 89.9,
+          "firedancer": 10.1,
           "unknown": 0.1
         }
       },
       "error": null,
-      "fetched_at": "2026-08-24T04:58:39Z"
+      "fetched_at": "2026-08-24T05:36:46Z"
     },
     "supply": {
       "ok": true,
       "data": {
-        "total_supply_sol": 632749521,
-        "circulating_supply_sol": 583276412,
+        "total_supply_sol": 632749500,
+        "circulating_supply_sol": 583276390,
         "non_circulating_supply_sol": 49473109,
         "fees": {
-          "sampled_slot": 441320130,
-          "block_tx_count": 1012,
-          "block_vote_tx_count": 681,
-          "median_fee_lamports": 5500,
-          "mean_fee_lamports": 14660
+          "sampled_slot": 441326391,
+          "block_tx_count": 1176,
+          "block_vote_tx_count": 612,
+          "median_fee_lamports": 6046,
+          "mean_fee_lamports": 24995
         },
         "median_priority_fee_microlamports": 0,
         "max_priority_fee_microlamports": 0,
@@ -4492,26 +4498,26 @@
           {
             "label": "USDC mint",
             "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
-            "last_activity_unix": 1787547508,
+            "last_activity_unix": 1787549794,
             "seconds_since_activity": 0
           },
           {
             "label": "Jupiter v6",
             "address": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
-            "last_activity_unix": 1787547508,
+            "last_activity_unix": 1787549795,
             "seconds_since_activity": 0
           }
         ]
       },
       "error": null,
-      "fetched_at": "2026-08-24T04:58:41Z"
+      "fetched_at": "2026-08-24T05:36:48Z"
     },
     "defillama": {
       "ok": true,
       "data": {
-        "tvl_usd": 5556675508,
-        "tvl_change_24h_pct": 0.08,
-        "tvl_change_7d_pct": 16.32,
+        "tvl_usd": 5532811946,
+        "tvl_change_24h_pct": -0.45,
+        "tvl_change_7d_pct": 15.82,
         "tvl_series": [
           {
             "date": 1785024000,
@@ -4627,14 +4633,14 @@
           },
           {
             "date": 1787443200,
-            "tvl_usd": 5552367240
+            "tvl_usd": 5557661974
           },
           {
             "date": 1787529600,
-            "tvl_usd": 5556675508
+            "tvl_usd": 5532811946
           }
         ],
-        "stablecoin_supply_usd": 15942068648,
+        "stablecoin_supply_usd": 15900837725,
         "dex_volume_24h_usd": 3119842862.16,
         "dex_volume_7d_usd": 18977039045.06,
         "dex_volume_change_24h_pct": -16.41,
@@ -4643,7 +4649,7 @@
         "rev_24h_usd": 854120,
         "rev_includes_tips": true,
         "app_fees_24h_usd": 12446989.7,
-        "rwa_tvl_usd": 1951256233,
+        "rwa_tvl_usd": 1948299843,
         "rwa_protocol_count": 24,
         "rwa_top": [
           {
@@ -4652,43 +4658,43 @@
           },
           {
             "name": "xStocks",
-            "tvl_usd": 419648741
+            "tvl_usd": 417431855
           },
           {
             "name": "OnRe",
-            "tvl_usd": 275380329
+            "tvl_usd": 275383336
           },
           {
             "name": "Ondo Yield Assets",
-            "tvl_usd": 179092281
+            "tvl_usd": 178627570
           },
           {
             "name": "Hastra",
-            "tvl_usd": 168408618
+            "tvl_usd": 168192357
           }
         ]
       },
       "error": null,
-      "fetched_at": "2026-08-24T04:58:30Z"
+      "fetched_at": "2026-08-24T05:36:36Z"
     },
     "price": {
       "ok": true,
       "data": {
-        "price_usd": 93.87,
-        "market_cap_usd": 54780881804,
+        "price_usd": 93.75,
+        "market_cap_usd": 54706743384,
         "market_cap_rank": 7,
-        "volume_24h_usd": 3725129653,
-        "change_24h_pct": 1.21743,
-        "change_7d_pct": 24.3,
+        "volume_24h_usd": 3553848744,
+        "change_24h_pct": 0.88778,
+        "change_7d_pct": 24.5,
         "ath_usd": 293.31,
-        "from_ath_pct": -67.99516,
+        "from_ath_pct": -68.03592,
         "price_source": "coingecko",
-        "jupiter_price_usd": 94.0414931554881,
-        "price_divergence_pct": 0.183,
+        "jupiter_price_usd": 93.48480696622643,
+        "price_divergence_pct": 0.283,
         "price_sources_agree": true
       },
       "error": null,
-      "fetched_at": "2026-08-24T04:58:28Z"
+      "fetched_at": "2026-08-24T05:36:34Z"
     },
     "news": {
       "ok": true,
@@ -4852,7 +4858,7 @@
         }
       },
       "error": null,
-      "fetched_at": "2026-08-24T04:58:30Z"
+      "fetched_at": "2026-08-24T05:36:35Z"
     },
     "solana_com": {
       "ok": true,
@@ -4882,7 +4888,7 @@
         "note": "headline figures as published on solana.com/data"
       },
       "error": null,
-      "fetched_at": "2026-08-24T04:58:29Z"
+      "fetched_at": "2026-08-24T05:36:34Z"
     },
     "dune": {
       "ok": true,
@@ -4891,7 +4897,7 @@
         "note": "set DUNE_API_KEY and add dune_query_ids to config.json to enrich the report with Dune dashboard data"
       },
       "error": null,
-      "fetched_at": "2026-08-24T04:58:28Z"
+      "fetched_at": "2026-08-24T05:36:33Z"
     }
   },
   "anomalies": {
@@ -6357,6 +6363,10 @@
       [
         "2026-08-24T04:58:41Z",
         1575.2
+      ],
+      [
+        "2026-08-24T05:36:48Z",
+        1693.1
       ]
     ],
     "price.price_usd": [
@@ -7615,6 +7625,10 @@
       [
         "2026-08-24T04:58:41Z",
         93.87
+      ],
+      [
+        "2026-08-24T05:36:48Z",
+        93.75
       ]
     ],
     "validators.delinquent_stake_pct": [
@@ -8873,6 +8887,10 @@
       [
         "2026-08-24T04:58:41Z",
         0.16
+      ],
+      [
+        "2026-08-24T05:36:48Z",
+        0.04
       ]
     ]
   }

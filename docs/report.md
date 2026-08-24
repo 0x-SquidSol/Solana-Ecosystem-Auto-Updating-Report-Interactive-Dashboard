@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-08-24T15:34:50Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-08-24T16:08:32Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -19,27 +19,27 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 2,902 |
-| Total TPS (incl. votes) | 4,745 |
-| Peak true TPS (30 min) | 4,039 |
-| Mean slot time | 0.368 s |
-| Slot | 441,424,759 |
-| Block height | 419,473,716 |
-| Epoch | 1021 - 81.66% complete, ~8.1 h remaining |
+| True TPS (non-vote) | 2,685 |
+| Total TPS (incl. votes) | 4,540 |
+| Peak true TPS (30 min) | 3,077 |
+| Mean slot time | 0.366 s |
+| Slot | 441,430,326 |
+| Block height | 419,479,275 |
+| Epoch | 1021 - 82.95% complete, ~7.5 h remaining |
 
 ## Validators
 
 | Metric | Value |
 |---|---|
-| Active validators | 685 |
-| Delinquent | 10 (0.40% of stake) |
-| Consensus stall buffer | 1.2% of the 33.3% halt threshold consumed |
+| Active validators | 684 |
+| Delinquent | 11 (0.29% of stake) |
+| Consensus stall buffer | 0.9% of the 33.3% halt threshold consumed |
 | Total stake | 433,436,313 SOL |
 | Nakamoto coefficient | 18 |
 | Top-10 stake share | 24.4% |
 | Top-20 stake share | 35.8% |
-| Client stake split | agave 89.6% / firedancer 10.3% / unknown 0.1% |
-| Stake-weighted commission | 27.20% |
+| Client stake split | agave 91.0% / firedancer 8.9% / unknown 0.1% |
+| Stake-weighted commission | 27.19% |
 
 **Top validators by stake**
 
@@ -48,9 +48,9 @@
 | 1 | `CcaH..oTN1` | 16,984,006 SOL | 3.93% | 7% |
 | 2 | `he1i..uBtk` | 16,032,941 SOL | 3.71% | 0% |
 | 3 | `3N7s..iD5g` | 12,211,671 SOL | 2.83% | 0% |
-| 4 | `Catz..Diqb` | 11,728,738 SOL | 2.72% | 5% |
+| 4 | `Catz..Diqb` | 11,728,738 SOL | 2.71% | 5% |
 | 5 | `26pV..3dJx` | 9,165,202 SOL | 2.12% | 7% |
-| 6 | `51JB..UNAm` | 8,876,408 SOL | 2.06% | 10% |
+| 6 | `51JB..UNAm` | 8,876,408 SOL | 2.05% | 10% |
 | 7 | `8Gbw..F8iD` | 8,480,578 SOL | 1.96% | 0% |
 | 8 | `9QU2..29mF` | 7,930,731 SOL | 1.84% | 7% |
 | 9 | `CvSb..wycB` | 7,359,446 SOL | 1.70% | 5% |
@@ -60,16 +60,16 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $97.23 (+1.7% 24h, +27.2% 7d) |
-| Price sources | cross-checked, 0.001% apart |
-| Market cap | $56.69B |
-| TVL | $5.58B (+0.5% 24h) |
+| SOL price | $96.96 (+1.7% 24h, +26.9% 7d) |
+| Price sources | cross-checked, 0.041% apart |
+| Market cap | $56.52B |
+| TVL | $5.59B (+0.6% 24h) |
 | Stablecoin supply | $15.84B |
 | DEX volume (24h) | $2.94B |
-| REV (24h) | – (network fees – + Jito tips –) |
-| App fees (24h) | – |
-| Median fee (user txs) | 5,250 lamports (~$0.000510) - about 1,959 transactions per $1 |
-| Circulating supply | 583,276,035 SOL |
+| REV (24h) | $825.7K (network fees $696.9K + Jito tips $128.8K) |
+| App fees (24h) | $12.65M |
+| Median fee (user txs) | 5,823 lamports (~$0.000565) - about 1,771 transactions per $1 |
+| Circulating supply | 583,276,011 SOL |
 
 ## Ecosystem Growth
 
@@ -88,7 +88,7 @@
 - BlackRock BUIDL: $777.14M
 - xStocks: $421.65M
 - OnRe: $275.72M
-- Ondo Yield Assets: $178.67M
+- Ondo Yield Assets: $178.57M
 - Hastra: $167.19M
 
 ## News & Upgrades
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-08-24T15:34:18Z |
-| validators | ok | 2026-08-24T15:34:29Z |
-| supply | ok | 2026-08-24T15:34:31Z |
-| defillama | ok | 2026-08-24T15:34:50Z |
-| price | ok | 2026-08-24T15:34:16Z |
-| news | ok | 2026-08-24T15:34:17Z |
-| solana_com | ok | 2026-08-24T15:34:17Z |
-| dune | off (optional) | 2026-08-24T15:34:16Z |
+| network | ok | 2026-08-24T16:08:19Z |
+| validators | ok | 2026-08-24T16:08:28Z |
+| supply | ok | 2026-08-24T16:08:30Z |
+| defillama | ok | 2026-08-24T16:08:32Z |
+| price | ok | 2026-08-24T16:08:17Z |
+| news | ok | 2026-08-24T16:08:19Z |
+| solana_com | ok | 2026-08-24T16:08:18Z |
+| dune | off (optional) | 2026-08-24T16:08:17Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

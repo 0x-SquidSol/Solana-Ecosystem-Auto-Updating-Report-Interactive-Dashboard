@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-08-24T11:17:42Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-08-24T11:50:08Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -19,13 +19,13 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,582 |
-| Total TPS (incl. votes) | 3,451 |
-| Peak true TPS (30 min) | 2,209 |
-| Mean slot time | 0.364 s |
-| Slot | 441,382,539 |
-| Block height | 419,431,529 |
-| Epoch | 1021 - 71.88% complete, ~12.3 h remaining |
+| True TPS (non-vote) | 1,989 |
+| Total TPS (incl. votes) | 3,861 |
+| Peak true TPS (30 min) | 2,683 |
+| Mean slot time | 0.363 s |
+| Slot | 441,387,907 |
+| Block height | 419,436,897 |
+| Epoch | 1021 - 73.13% complete, ~11.7 h remaining |
 
 ## Validators
 
@@ -60,16 +60,16 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $94.61 (+0.9% 24h, +25.7% 7d) |
-| Price sources | cross-checked, 0.054% apart |
-| Market cap | $55.19B |
-| TVL | $5.54B (-0.2% 24h) |
-| Stablecoin supply | $15.86B |
+| SOL price | $95.76 (+1.3% 24h, +25.7% 7d) |
+| Price sources | cross-checked, 0.177% apart |
+| Market cap | $55.90B |
+| TVL | $5.55B (-0.2% 24h) |
+| Stablecoin supply | $15.83B |
 | DEX volume (24h) | $2.94B |
-| REV (24h) | $820.0K (network fees $696.9K + Jito tips $123.1K) |
+| REV (24h) | $826.2K (network fees $696.9K + Jito tips $129.3K) |
 | App fees (24h) | $12.56M |
-| Median fee (user txs) | 5,277 lamports (~$0.000499) - about 2,003 transactions per $1 |
-| Circulating supply | 583,276,207 SOL |
+| Median fee (user txs) | 5,120 lamports (~$0.000490) - about 2,040 transactions per $1 |
+| Circulating supply | 583,276,187 SOL |
 
 ## Ecosystem Growth
 
@@ -86,9 +86,9 @@
 **Largest tokenized-asset protocols**
 
 - BlackRock BUIDL: $777.14M
-- xStocks: $417.94M
-- OnRe: $275.36M
-- Ondo Yield Assets: $179.25M
+- xStocks: $419.57M
+- OnRe: $275.35M
+- Ondo Yield Assets: $178.22M
 - Hastra: $167.85M
 
 ## News & Upgrades
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-08-24T11:17:25Z |
-| validators | ok | 2026-08-24T11:17:39Z |
-| supply | ok | 2026-08-24T11:17:42Z |
-| defillama | ok | 2026-08-24T11:17:23Z |
-| price | ok | 2026-08-24T11:17:22Z |
-| news | ok | 2026-08-24T11:17:24Z |
-| solana_com | ok | 2026-08-24T11:17:22Z |
-| dune | off (optional) | 2026-08-24T11:17:22Z |
+| network | ok | 2026-08-24T11:49:55Z |
+| validators | ok | 2026-08-24T11:50:06Z |
+| supply | ok | 2026-08-24T11:50:08Z |
+| defillama | ok | 2026-08-24T11:49:54Z |
+| price | ok | 2026-08-24T11:49:53Z |
+| news | ok | 2026-08-24T11:49:54Z |
+| solana_com | ok | 2026-08-24T11:49:53Z |
+| dune | off (optional) | 2026-08-24T11:49:53Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

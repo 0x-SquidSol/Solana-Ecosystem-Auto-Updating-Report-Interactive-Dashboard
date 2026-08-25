@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-08-25T17:05:10Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-08-25T17:43:49Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -19,13 +19,13 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 2,550 |
-| Total TPS (incl. votes) | 4,409 |
-| Peak true TPS (30 min) | 3,322 |
+| True TPS (non-vote) | 2,753 |
+| Total TPS (incl. votes) | 4,613 |
+| Peak true TPS (30 min) | 3,210 |
 | Mean slot time | 0.366 s |
-| Slot | 441,675,686 |
-| Block height | 419,724,393 |
-| Epoch | 1022 - 39.74% complete, ~26.5 h remaining |
+| Slot | 441,681,998 |
+| Block height | 419,730,694 |
+| Epoch | 1022 - 41.20% complete, ~25.8 h remaining |
 
 ## Validators
 
@@ -60,16 +60,16 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $98.13 (+2.8% 24h, +27.1% 7d) |
-| Price sources | cross-checked, 0.246% apart |
-| Market cap | $57.27B |
-| TVL | $5.65B (+1.6% 24h) |
-| Stablecoin supply | $15.76B |
+| SOL price | $97.95 (+2.9% 24h, +27.1% 7d) |
+| Price sources | cross-checked, 0.064% apart |
+| Market cap | $57.13B |
+| TVL | $5.64B (+1.3% 24h) |
+| Stablecoin supply | $15.87B |
 | DEX volume (24h) | $3.00B |
-| REV (24h) | $1.13M (network fees $928.7K + Jito tips $204.3K) |
+| REV (24h) | $1.13M (network fees $928.7K + Jito tips $204.1K) |
 | App fees (24h) | $14.49M |
-| Median fee (user txs) | 7,305 lamports (~$0.000717) - about 1,395 transactions per $1 |
-| Circulating supply | 583,375,858 SOL |
+| Median fee (user txs) | 5,527 lamports (~$0.000541) - about 1,847 transactions per $1 |
+| Circulating supply | 583,375,830 SOL |
 
 ## Ecosystem Growth
 
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-08-25T17:04:59Z |
-| validators | ok | 2026-08-25T17:05:09Z |
-| supply | ok | 2026-08-25T17:05:10Z |
-| defillama | ok | 2026-08-25T17:04:58Z |
-| price | ok | 2026-08-25T17:04:57Z |
-| news | ok | 2026-08-25T17:04:58Z |
-| solana_com | ok | 2026-08-25T17:04:57Z |
-| dune | off (optional) | 2026-08-25T17:04:56Z |
+| network | ok | 2026-08-25T17:43:34Z |
+| validators | ok | 2026-08-25T17:43:47Z |
+| supply | ok | 2026-08-25T17:43:49Z |
+| defillama | ok | 2026-08-25T17:43:33Z |
+| price | ok | 2026-08-25T17:43:32Z |
+| news | ok | 2026-08-25T17:43:33Z |
+| solana_com | ok | 2026-08-25T17:43:32Z |
+| dune | off (optional) | 2026-08-25T17:43:31Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

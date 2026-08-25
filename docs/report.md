@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-08-25T19:22:58Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-08-25T19:52:38Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -19,13 +19,13 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 2,235 |
-| Total TPS (incl. votes) | 4,106 |
-| Peak true TPS (30 min) | 3,080 |
-| Mean slot time | 0.365 s |
-| Slot | 441,698,289 |
-| Block height | 419,746,960 |
-| Epoch | 1022 - 44.97% complete, ~24.1 h remaining |
+| True TPS (non-vote) | 2,223 |
+| Total TPS (incl. votes) | 4,099 |
+| Peak true TPS (30 min) | 2,864 |
+| Mean slot time | 0.364 s |
+| Slot | 441,703,170 |
+| Block height | 419,751,841 |
+| Epoch | 1022 - 46.10% complete, ~23.5 h remaining |
 
 ## Validators
 
@@ -60,16 +60,16 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $98.49 (+2.9% 24h, +28.1% 7d) |
-| Price sources | cross-checked, 0.059% apart |
-| Market cap | $57.46B |
+| SOL price | $97.64 (+1.4% 24h, +28.1% 7d) |
+| Price sources | cross-checked, 0.185% apart |
+| Market cap | $56.95B |
 | TVL | $5.64B (+1.3% 24h) |
-| Stablecoin supply | $15.85B |
+| Stablecoin supply | $15.89B |
 | DEX volume (24h) | $3.00B |
-| REV (24h) | $1.13M (network fees $928.7K + Jito tips $198.6K) |
+| REV (24h) | $1.13M (network fees $928.7K + Jito tips $203.4K) |
 | App fees (24h) | $14.49M |
-| Median fee (user txs) | 5,282 lamports (~$0.000520) - about 1,922 transactions per $1 |
-| Circulating supply | 583,375,762 SOL |
+| Median fee (user txs) | 5,527 lamports (~$0.000540) - about 1,853 transactions per $1 |
+| Circulating supply | 583,375,743 SOL |
 
 ## Ecosystem Growth
 
@@ -114,9 +114,9 @@
 
 **Firedancer Releases**
 
+- [v26.08.2](https://github.com/firedancer-io/firedancer/releases/tag/v26.08.2) - 2026-08-25
 - [Firedancer Testnet v26.08.1](https://github.com/firedancer-io/firedancer/releases/tag/v26.08.1) - 2026-08-21
 - [Frankendancer Mainnet v0.1106.40201](https://github.com/firedancer-io/firedancer/releases/tag/v0.1106.40201) - 2026-08-19
-- [Firedancer Testnet v26.08.0](https://github.com/firedancer-io/firedancer/releases/tag/v26.08.0) - 2026-08-12
 
 **SIMD Activity**
 
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-08-25T19:22:47Z |
-| validators | ok | 2026-08-25T19:22:57Z |
-| supply | ok | 2026-08-25T19:22:58Z |
-| defillama | ok | 2026-08-25T19:22:50Z |
-| price | ok | 2026-08-25T19:22:45Z |
-| news | ok | 2026-08-25T19:22:47Z |
-| solana_com | ok | 2026-08-25T19:22:46Z |
-| dune | off (optional) | 2026-08-25T19:22:45Z |
+| network | ok | 2026-08-25T19:52:22Z |
+| validators | ok | 2026-08-25T19:52:31Z |
+| supply | ok | 2026-08-25T19:52:38Z |
+| defillama | ok | 2026-08-25T19:52:22Z |
+| price | ok | 2026-08-25T19:52:21Z |
+| news | ok | 2026-08-25T19:52:22Z |
+| solana_com | ok | 2026-08-25T19:52:21Z |
+| dune | off (optional) | 2026-08-25T19:52:20Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

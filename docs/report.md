@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-08-26T09:55:07Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-08-26T10:23:34Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -19,27 +19,27 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,673 |
-| Total TPS (incl. votes) | 3,547 |
-| Peak true TPS (30 min) | 2,290 |
+| True TPS (non-vote) | 1,766 |
+| Total TPS (incl. votes) | 3,632 |
+| Peak true TPS (30 min) | 2,020 |
 | Mean slot time | 0.365 s |
-| Slot | 441,841,657 |
-| Block height | 419,890,180 |
-| Epoch | 1022 - 78.16% complete, ~9.6 h remaining |
+| Slot | 441,846,351 |
+| Block height | 419,894,873 |
+| Epoch | 1022 - 79.25% complete, ~9.1 h remaining |
 
 ## Validators
 
 | Metric | Value |
 |---|---|
 | Active validators | 685 |
-| Delinquent | 10 (0.10% of stake) |
+| Delinquent | 10 (0.09% of stake) |
 | Consensus stall buffer | 0.3% of the 33.3% halt threshold consumed |
 | Total stake | 435,118,104 SOL |
 | Nakamoto coefficient | 18 |
 | Top-10 stake share | 24.3% |
 | Top-20 stake share | 35.7% |
 | Client stake split | agave 90.7% / firedancer 9.2% / unknown 0.1% |
-| Stake-weighted commission | 27.05% |
+| Stake-weighted commission | 27.06% |
 
 **Top validators by stake**
 
@@ -60,16 +60,16 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $96.13 (-3.6% 24h, +25.8% 7d) |
-| Price sources | cross-checked, 0.102% apart |
-| Market cap | $56.10B |
+| SOL price | $96.44 (-3.0% 24h, +24.3% 7d) |
+| Price sources | cross-checked, 0.000% apart |
+| Market cap | $56.26B |
 | TVL | $5.60B (-2.4% 24h) |
-| Stablecoin supply | $15.95B |
+| Stablecoin supply | $15.93B |
 | DEX volume (24h) | $2.95B |
 | REV (24h) | $1.10M (network fees $889.2K + Jito tips $208.9K) |
 | App fees (24h) | $13.06M |
-| Median fee (user txs) | 6,037 lamports (~$0.000580) - about 1,723 transactions per $1 |
-| Circulating supply | 583,375,237 SOL |
+| Median fee (user txs) | 6,920 lamports (~$0.000667) - about 1,498 transactions per $1 |
+| Circulating supply | 583,375,221 SOL |
 
 ## Ecosystem Growth
 
@@ -89,7 +89,7 @@
 - xStocks: $429.19M
 - OnRe: $277.42M
 - Ondo Yield Assets: $179.28M
-- Hastra: $162.66M
+- Hastra: $162.55M
 
 ## News & Upgrades
 
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-08-26T09:54:50Z |
-| validators | ok | 2026-08-26T09:55:05Z |
-| supply | ok | 2026-08-26T09:55:07Z |
-| defillama | ok | 2026-08-26T09:54:49Z |
-| price | ok | 2026-08-26T09:54:47Z |
-| news | ok | 2026-08-26T09:54:49Z |
-| solana_com | ok | 2026-08-26T09:54:48Z |
-| dune | off (optional) | 2026-08-26T09:54:47Z |
+| network | ok | 2026-08-26T10:23:24Z |
+| validators | ok | 2026-08-26T10:23:33Z |
+| supply | ok | 2026-08-26T10:23:34Z |
+| defillama | ok | 2026-08-26T10:23:24Z |
+| price | ok | 2026-08-26T10:23:22Z |
+| news | ok | 2026-08-26T10:23:24Z |
+| solana_com | ok | 2026-08-26T10:23:23Z |
+| dune | off (optional) | 2026-08-26T10:23:22Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

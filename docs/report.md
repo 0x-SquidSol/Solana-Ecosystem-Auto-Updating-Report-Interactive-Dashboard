@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-08-26T07:30:39Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-08-26T08:22:21Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -19,57 +19,57 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,285 |
-| Total TPS (incl. votes) | 3,158 |
-| Peak true TPS (30 min) | 1,600 |
-| Mean slot time | 0.364 s |
-| Slot | 441,817,871 |
-| Block height | 419,866,398 |
-| Epoch | 1022 - 72.66% complete, ~11.9 h remaining |
+| True TPS (non-vote) | 1,472 |
+| Total TPS (incl. votes) | 3,340 |
+| Peak true TPS (30 min) | 1,777 |
+| Mean slot time | 0.365 s |
+| Slot | 441,826,409 |
+| Block height | 419,874,936 |
+| Epoch | 1022 - 74.63% complete, ~11.1 h remaining |
 
 ## Validators
 
 | Metric | Value |
 |---|---|
-| Active validators | 684 |
-| Delinquent | 11 (0.28% of stake) |
-| Consensus stall buffer | 0.8% of the 33.3% halt threshold consumed |
+| Active validators | 685 |
+| Delinquent | 10 (0.04% of stake) |
+| Consensus stall buffer | 0.1% of the 33.3% halt threshold consumed |
 | Total stake | 435,118,104 SOL |
 | Nakamoto coefficient | 18 |
 | Top-10 stake share | 24.3% |
-| Top-20 stake share | 35.7% |
+| Top-20 stake share | 35.6% |
 | Client stake split | agave 89.2% / firedancer 10.7% / unknown 0.1% |
-| Stake-weighted commission | 27.10% |
+| Stake-weighted commission | 27.04% |
 
 **Top validators by stake**
 
 | # | Vote account | Stake | Share | Commission |
 |---|---|---|---|---|
-| 1 | `CcaH..oTN1` | 17,066,966 SOL | 3.93% | 7% |
-| 2 | `he1i..uBtk` | 16,035,907 SOL | 3.70% | 0% |
-| 3 | `3N7s..iD5g` | 12,268,330 SOL | 2.83% | 0% |
-| 4 | `Catz..Diqb` | 11,739,871 SOL | 2.71% | 5% |
+| 1 | `CcaH..oTN1` | 17,066,966 SOL | 3.92% | 7% |
+| 2 | `he1i..uBtk` | 16,035,907 SOL | 3.69% | 0% |
+| 3 | `3N7s..iD5g` | 12,268,330 SOL | 2.82% | 0% |
+| 4 | `Catz..Diqb` | 11,739,871 SOL | 2.70% | 5% |
 | 5 | `26pV..3dJx` | 9,202,562 SOL | 2.12% | 7% |
-| 6 | `51JB..UNAm` | 8,924,729 SOL | 2.06% | 10% |
-| 7 | `8Gbw..F8iD` | 8,579,462 SOL | 1.98% | 0% |
+| 6 | `51JB..UNAm` | 8,924,729 SOL | 2.05% | 10% |
+| 7 | `8Gbw..F8iD` | 8,579,462 SOL | 1.97% | 0% |
 | 8 | `9QU2..29mF` | 7,953,722 SOL | 1.83% | 7% |
 | 9 | `CvSb..wycB` | 7,300,009 SOL | 1.68% | 5% |
-| 10 | `Dumi..Zk4a` | 6,574,676 SOL | 1.52% | 0% |
+| 10 | `Dumi..Zk4a` | 6,574,676 SOL | 1.51% | 0% |
 
 ## Economy
 
 | Metric | Value |
 |---|---|
-| SOL price | $97.06 (-4.6% 24h, +26.1% 7d) |
-| Price sources | cross-checked, 0.130% apart |
-| Market cap | $56.64B |
+| SOL price | $97.13 (-3.4% 24h, +25.9% 7d) |
+| Price sources | cross-checked, 0.046% apart |
+| Market cap | $56.67B |
 | TVL | $5.60B (-2.4% 24h) |
 | Stablecoin supply | $15.98B |
 | DEX volume (24h) | $2.95B |
-| REV (24h) | $1.10M (network fees $889.2K + Jito tips $208.3K) |
+| REV (24h) | $1.10M (network fees $889.2K + Jito tips $207.9K) |
 | App fees (24h) | $13.03M |
-| Median fee (user txs) | 5,047 lamports (~$0.000490) - about 2,041 transactions per $1 |
-| Circulating supply | 583,375,314 SOL |
+| Median fee (user txs) | 5,800 lamports (~$0.000563) - about 1,775 transactions per $1 |
+| Circulating supply | 583,375,287 SOL |
 
 ## Ecosystem Growth
 
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-08-26T07:30:20Z |
-| validators | ok | 2026-08-26T07:30:36Z |
-| supply | ok | 2026-08-26T07:30:39Z |
-| defillama | ok | 2026-08-26T07:30:20Z |
-| price | ok | 2026-08-26T07:30:17Z |
-| news | ok | 2026-08-26T07:30:18Z |
-| solana_com | ok | 2026-08-26T07:30:17Z |
-| dune | off (optional) | 2026-08-26T07:30:17Z |
+| network | ok | 2026-08-26T08:22:11Z |
+| validators | ok | 2026-08-26T08:22:19Z |
+| supply | ok | 2026-08-26T08:22:21Z |
+| defillama | ok | 2026-08-26T08:22:14Z |
+| price | ok | 2026-08-26T08:22:09Z |
+| news | ok | 2026-08-26T08:22:11Z |
+| solana_com | ok | 2026-08-26T08:22:10Z |
+| dune | off (optional) | 2026-08-26T08:22:09Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

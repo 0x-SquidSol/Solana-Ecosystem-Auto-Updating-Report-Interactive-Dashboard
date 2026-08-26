@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-08-26T14:24:06Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-08-26T15:57:17Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -19,33 +19,33 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 2,732 |
-| Total TPS (incl. votes) | 4,582 |
-| Peak true TPS (30 min) | 3,602 |
-| Mean slot time | 0.368 s |
-| Slot | 441,885,783 |
-| Block height | 419,934,289 |
-| Epoch | 1022 - 88.38% complete, ~5.1 h remaining |
+| True TPS (non-vote) | 2,830 |
+| Total TPS (incl. votes) | 4,687 |
+| Peak true TPS (30 min) | 3,368 |
+| Mean slot time | 0.365 s |
+| Slot | 441,901,016 |
+| Block height | 419,949,494 |
+| Epoch | 1022 - 91.90% complete, ~3.5 h remaining |
 
 ## Validators
 
 | Metric | Value |
 |---|---|
-| Active validators | 685 |
-| Delinquent | 10 (0.06% of stake) |
-| Consensus stall buffer | 0.2% of the 33.3% halt threshold consumed |
+| Active validators | 684 |
+| Delinquent | 11 (0.09% of stake) |
+| Consensus stall buffer | 0.3% of the 33.3% halt threshold consumed |
 | Total stake | 435,118,104 SOL |
 | Nakamoto coefficient | 18 |
 | Top-10 stake share | 24.3% |
-| Top-20 stake share | 35.6% |
-| Client stake split | agave 90.8% / firedancer 9.1% / unknown 0.1% |
+| Top-20 stake share | 35.7% |
+| Client stake split | agave 89.4% / firedancer 10.6% / unknown 0.1% |
 | Stake-weighted commission | 27.05% |
 
 **Top validators by stake**
 
 | # | Vote account | Stake | Share | Commission |
 |---|---|---|---|---|
-| 1 | `CcaH..oTN1` | 17,066,966 SOL | 3.92% | 7% |
+| 1 | `CcaH..oTN1` | 17,066,966 SOL | 3.93% | 7% |
 | 2 | `he1i..uBtk` | 16,035,907 SOL | 3.69% | 0% |
 | 3 | `3N7s..iD5g` | 12,268,330 SOL | 2.82% | 0% |
 | 4 | `Catz..Diqb` | 11,739,871 SOL | 2.70% | 5% |
@@ -60,22 +60,22 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $96.72 (-1.0% 24h, +23.2% 7d) |
-| Price sources | cross-checked, 0.055% apart |
-| Market cap | $56.42B |
-| TVL | $5.59B (-2.5% 24h) |
-| Stablecoin supply | $15.87B |
+| SOL price | $96.07 (-2.1% 24h, +21.9% 7d) |
+| Price sources | cross-checked, 0.070% apart |
+| Market cap | $56.05B |
+| TVL | $5.58B (-2.7% 24h) |
+| Stablecoin supply | $15.85B |
 | DEX volume (24h) | $2.93B |
-| REV (24h) | $1.10M (network fees $889.2K + Jito tips $209.1K) |
+| REV (24h) | $1.10M (network fees $889.2K + Jito tips $210.5K) |
 | App fees (24h) | $13.24M |
-| Median fee (user txs) | 6,890 lamports (~$0.000666) - about 1,501 transactions per $1 |
-| Circulating supply | 583,375,072 SOL |
+| Median fee (user txs) | 5,344 lamports (~$0.000513) - about 1,948 transactions per $1 |
+| Circulating supply | 583,375,005 SOL |
 
 ## Ecosystem Growth
 
 | Metric | Value |
 |---|---|
-| Tokenized assets (RWA) on Solana | $2.06B across 24 protocols |
+| Tokenized assets (RWA) on Solana | $2.05B across 24 protocols |
 | Monthly active addresses (solana.com) | 50M |
 | Quarterly active wallets (solana.com) | 100m+ |
 | Daily transactions (solana.com) | 100M+ |
@@ -86,9 +86,9 @@
 **Largest tokenized-asset protocols**
 
 - BlackRock BUIDL: $876.38M
-- xStocks: $427.37M
-- OnRe: $277.70M
-- Ondo Yield Assets: $179.28M
+- xStocks: $426.36M
+- OnRe: $277.76M
+- Ondo Yield Assets: $179.21M
 - Hastra: $162.55M
 
 ## News & Upgrades
@@ -115,7 +115,7 @@
 **Firedancer Releases**
 
 - [Firedancer Mainnet v26.08.2](https://github.com/firedancer-io/firedancer/releases/tag/v26.08.2) - 2026-08-25
-- [v0.1202.40302](https://github.com/firedancer-io/firedancer/releases/tag/v0.1202.40302) - 2026-08-25
+- [Frankendancer Testnet v0.1202.40302](https://github.com/firedancer-io/firedancer/releases/tag/v0.1202.40302) - 2026-08-26
 - [Firedancer Testnet v26.08.1](https://github.com/firedancer-io/firedancer/releases/tag/v26.08.1) - 2026-08-21
 
 **SIMD Activity**
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-08-26T14:23:56Z |
-| validators | ok | 2026-08-26T14:24:04Z |
-| supply | ok | 2026-08-26T14:24:06Z |
-| defillama | ok | 2026-08-26T14:23:55Z |
-| price | ok | 2026-08-26T14:23:54Z |
-| news | ok | 2026-08-26T14:23:56Z |
-| solana_com | ok | 2026-08-26T14:23:55Z |
-| dune | off (optional) | 2026-08-26T14:23:54Z |
+| network | ok | 2026-08-26T15:57:05Z |
+| validators | ok | 2026-08-26T15:57:15Z |
+| supply | ok | 2026-08-26T15:57:17Z |
+| defillama | ok | 2026-08-26T15:57:06Z |
+| price | ok | 2026-08-26T15:57:03Z |
+| news | ok | 2026-08-26T15:57:05Z |
+| solana_com | ok | 2026-08-26T15:57:04Z |
+| dune | off (optional) | 2026-08-26T15:57:03Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

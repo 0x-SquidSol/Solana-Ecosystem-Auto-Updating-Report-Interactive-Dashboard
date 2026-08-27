@@ -2820,5 +2820,35 @@
   "value": 0.82,
   "baseline_mean": 0.0966,
   "z_score": 4.63
+ },
+ {
+  "seen_at": "2026-08-27T16:47:54Z",
+  "kind": "statistical",
+  "severity": "alert",
+  "metric": "validators.delinquent_stake_pct",
+  "message": "delinquent stake is 4.9 standard deviations above its recent mean (0.93 vs 0.108897)",
+  "value": 0.93,
+  "baseline_mean": 0.1089,
+  "z_score": 4.9
+ },
+ {
+  "seen_at": "2026-08-27T16:47:54Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "defillama.tvl_usd",
+  "message": "TVL is 3.4 standard deviations above its recent mean (5.97B vs 5.52B)",
+  "value": 5971292984.0,
+  "baseline_mean": 5516940695.1246,
+  "z_score": 3.39
+ },
+ {
+  "seen_at": "2026-08-27T16:47:54Z",
+  "kind": "statistical",
+  "severity": "alert",
+  "metric": "price.price_usd",
+  "message": "SOL price is 3.9 standard deviations above its recent mean (108.76 vs 93.8435)",
+  "value": 108.76,
+  "baseline_mean": 93.8435,
+  "z_score": 3.9
  }
 ]

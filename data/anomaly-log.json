@@ -1,15 +1,5 @@
 [
  {
-  "seen_at": "2026-08-14T19:11:11Z",
-  "kind": "statistical",
-  "severity": "warning",
-  "metric": "price.price_usd",
-  "message": "SOL price is 3.1 standard deviations below its recent mean (74.72 vs 75.9128)",
-  "value": 74.72,
-  "baseline_mean": 75.9128,
-  "z_score": -3.1
- },
- {
   "seen_at": "2026-08-16T21:34:37Z",
   "kind": "rule",
   "severity": "warning",
@@ -2890,5 +2880,25 @@
   "value": 105.03,
   "baseline_mean": 95.1064,
   "z_score": 3.35
+ },
+ {
+  "seen_at": "2026-08-28T22:47:14Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "defillama.tvl_usd",
+  "message": "TVL is 2.6 standard deviations above its recent mean (5.83B vs 5.56B)",
+  "value": 5825918362.0,
+  "baseline_mean": 5562662281.5347,
+  "z_score": 2.56
+ },
+ {
+  "seen_at": "2026-08-28T22:47:14Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "price.price_usd",
+  "message": "SOL price is 2.9 standard deviations above its recent mean (104.05 vs 95.1469)",
+  "value": 104.05,
+  "baseline_mean": 95.1469,
+  "z_score": 2.94
  }
 ]

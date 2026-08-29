@@ -1,39 +1,39 @@
 # Solana Ecosystem Report
 
-> Generated 2026-08-29T21:14:01Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-08-29T23:19:47Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
-- 🟡 **WARNING**: TVL is 3.3 standard deviations above its recent mean (5.90B vs 5.60B)
-- 🟡 **WARNING**: SOL price is 3.1 standard deviations above its recent mean (105.24 vs 96.1156)
+- 🟡 **WARNING**: TVL is 3.2 standard deviations above its recent mean (5.91B vs 5.60B)
+- 🟡 **WARNING**: SOL price is 3.2 standard deviations above its recent mean (105.74 vs 96.159)
 
 **Recently seen**
 
-- 2026-08-29T15:19Z SOL price is 3.2 standard deviations above its recent mean (105.08 vs 96.029)
-- 2026-08-29T18:42Z TVL is 3.3 standard deviations above its recent mean (5.90B vs 5.60B)
 - 2026-08-29T18:42Z SOL price is 3.1 standard deviations above its recent mean (105.07 vs 96.0725)
 - 2026-08-29T21:14Z TVL is 3.3 standard deviations above its recent mean (5.90B vs 5.60B)
 - 2026-08-29T21:14Z SOL price is 3.1 standard deviations above its recent mean (105.24 vs 96.1156)
+- 2026-08-29T23:19Z TVL is 3.2 standard deviations above its recent mean (5.91B vs 5.60B)
+- 2026-08-29T23:19Z SOL price is 3.2 standard deviations above its recent mean (105.74 vs 96.159)
 
 ## Network
 
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,891 |
-| Total TPS (incl. votes) | 4,055 |
-| Peak true TPS (30 min) | 2,480 |
+| True TPS (non-vote) | 1,809 |
+| Total TPS (incl. votes) | 3,967 |
+| Peak true TPS (30 min) | 2,396 |
 | Mean slot time | 0.317 s |
-| Slot | 442,705,999 |
-| Block height | 420,753,835 |
-| Epoch | 1024 - 78.24% complete, ~8.3 h remaining |
+| Slot | 442,729,841 |
+| Block height | 420,777,661 |
+| Epoch | 1024 - 83.76% complete, ~6.2 h remaining |
 
 ## Validators
 
 | Metric | Value |
 |---|---|
-| Active validators | 689 |
-| Delinquent | 8 (0.00% of stake) |
+| Active validators | 687 |
+| Delinquent | 10 (0.01% of stake) |
 | Consensus stall buffer | 0.0% of the 33.3% halt threshold consumed |
 | Total stake | 436,134,289 SOL |
 | Nakamoto coefficient | 18 |
@@ -61,16 +61,16 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $105.24 (+1.5% 24h, +11.4% 7d) |
-| Price sources | cross-checked, 0.118% apart |
-| Market cap | $61.48B |
-| TVL | $5.90B (-1.8% 24h) |
-| Stablecoin supply | $15.95B |
+| SOL price | $105.74 (+1.5% 24h, +13.6% 7d) |
+| Price sources | cross-checked, 0.057% apart |
+| Market cap | $61.75B |
+| TVL | $5.91B (-1.8% 24h) |
+| Stablecoin supply | $15.97B |
 | DEX volume (24h) | $2.59B |
-| REV (24h) | $1.13M (network fees $946.0K + Jito tips $179.5K) |
+| REV (24h) | $1.12M (network fees $946.0K + Jito tips $170.6K) |
 | App fees (24h) | $15.73M |
-| Median fee (user txs) | 6,062 lamports (~$0.000638) - about 1,567 transactions per $1 |
-| Circulating supply | 584,161,240 SOL |
+| Median fee (user txs) | 5,301 lamports (~$0.000561) - about 1,784 transactions per $1 |
+| Circulating supply | 584,161,159 SOL |
 
 ## Ecosystem Growth
 
@@ -87,10 +87,10 @@
 **Largest tokenized-asset protocols**
 
 - BlackRock BUIDL: $886.54M
-- xStocks: $433.46M
+- xStocks: $433.38M
 - OnRe: $284.65M
-- Ondo Yield Assets: $179.91M
-- Hastra: $157.92M
+- Ondo Yield Assets: $179.04M
+- Hastra: $157.91M
 
 ## News & Upgrades
 
@@ -129,13 +129,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-08-29T21:13:49Z |
-| validators | ok | 2026-08-29T21:13:59Z |
-| supply | ok | 2026-08-29T21:14:01Z |
-| defillama | ok | 2026-08-29T21:13:49Z |
-| price | ok | 2026-08-29T21:13:48Z |
-| news | ok | 2026-08-29T21:13:49Z |
-| solana_com | ok | 2026-08-29T21:13:48Z |
-| dune | off (optional) | 2026-08-29T21:13:47Z |
+| network | ok | 2026-08-29T23:19:30Z |
+| validators | ok | 2026-08-29T23:19:45Z |
+| supply | ok | 2026-08-29T23:19:47Z |
+| defillama | ok | 2026-08-29T23:19:29Z |
+| price | ok | 2026-08-29T23:19:27Z |
+| news | ok | 2026-08-29T23:19:29Z |
+| solana_com | ok | 2026-08-29T23:19:28Z |
+| dune | off (optional) | 2026-08-29T23:19:27Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

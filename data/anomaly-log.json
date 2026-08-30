@@ -1,22 +1,5 @@
 [
  {
-  "seen_at": "2026-08-16T21:34:37Z",
-  "kind": "rule",
-  "severity": "warning",
-  "metric": "sources.supply",
-  "message": "data source 'supply' failed this run"
- },
- {
-  "seen_at": "2026-08-16T21:54:15Z",
-  "kind": "statistical",
-  "severity": "warning",
-  "metric": "price.price_usd",
-  "message": "SOL price is 2.8 standard deviations below its recent mean (74.45 vs 75.5406)",
-  "value": 74.45,
-  "baseline_mean": 75.5406,
-  "z_score": -2.77
- },
- {
   "seen_at": "2026-08-16T22:09:58Z",
   "kind": "statistical",
   "severity": "warning",
@@ -3120,5 +3103,15 @@
   "value": 106.34,
   "baseline_mean": 97.1453,
   "z_score": 2.72
+ },
+ {
+  "seen_at": "2026-08-30T22:04:11Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "defillama.tvl_usd",
+  "message": "TVL is 2.6 standard deviations above its recent mean (5.93B vs 5.63B)",
+  "value": 5930219828.0,
+  "baseline_mean": 5629077191.1975,
+  "z_score": 2.6
  }
 ]

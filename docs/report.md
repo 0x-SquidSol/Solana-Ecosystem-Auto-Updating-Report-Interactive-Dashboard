@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-09-02T13:03:25Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-09-02T17:07:54Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -19,13 +19,13 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,303 |
-| Total TPS (incl. votes) | 3,446 |
-| Peak true TPS (30 min) | 1,584 |
-| Mean slot time | 0.314 s |
-| Slot | 443,703,436 |
-| Block height | 421,750,848 |
-| Epoch | 1027 - 9.13% complete, ~34.2 h remaining |
+| True TPS (non-vote) | 1,989 |
+| Total TPS (incl. votes) | 4,117 |
+| Peak true TPS (30 min) | 2,731 |
+| Mean slot time | 0.316 s |
+| Slot | 443,749,899 |
+| Block height | 421,797,279 |
+| Epoch | 1027 - 19.88% complete, ~30.4 h remaining |
 
 ## Validators
 
@@ -60,16 +60,16 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $97.79 (-3.9% 24h, +0.6% 7d) |
-| Price sources | cross-checked, 0.171% apart |
-| Market cap | $57.23B |
-| TVL | $5.62B (-6.1% 24h) |
-| Stablecoin supply | $15.66B |
+| SOL price | $98.68 (-2.2% 24h, +3.0% 7d) |
+| Price sources | cross-checked, 0.235% apart |
+| Market cap | $57.77B |
+| TVL | $5.67B (-5.2% 24h) |
+| Stablecoin supply | $15.65B |
 | DEX volume (24h) | $2.17B |
-| REV (24h) | $1.07M (network fees $899.8K + Jito tips $174.4K) |
-| App fees (24h) | $12.53M |
-| Median fee (user txs) | 5,410 lamports (~$0.000529) - about 1,890 transactions per $1 |
-| Circulating supply | 585,292,367 SOL |
+| REV (24h) | $1.06M (network fees $899.8K + Jito tips $158.6K) |
+| App fees (24h) | $12.64M |
+| Median fee (user txs) | 5,514 lamports (~$0.000544) - about 1,838 transactions per $1 |
+| Circulating supply | 585,275,703 SOL |
 
 ## Ecosystem Growth
 
@@ -85,11 +85,11 @@
 
 **Largest tokenized-asset protocols**
 
-- BlackRock BUIDL: $887.01M
-- xStocks: $427.18M
-- OnRe: $288.20M
-- Ondo Yield Assets: $179.85M
-- Hastra: $153.93M
+- BlackRock BUIDL: $887.09M
+- xStocks: $431.94M
+- OnRe: $288.63M
+- Ondo Yield Assets: $179.83M
+- Hastra: $153.75M
 
 ## News & Upgrades
 
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-09-02T13:03:16Z |
-| validators | ok | 2026-09-02T13:03:24Z |
-| supply | ok | 2026-09-02T13:03:25Z |
-| defillama | ok | 2026-09-02T13:03:16Z |
-| price | ok | 2026-09-02T13:03:14Z |
-| news | ok | 2026-09-02T13:03:16Z |
-| solana_com | ok | 2026-09-02T13:03:15Z |
-| dune | off (optional) | 2026-09-02T13:03:14Z |
+| network | ok | 2026-09-02T17:07:52Z |
+| validators | ok | 2026-09-02T17:07:53Z |
+| supply | ok | 2026-09-02T17:07:54Z |
+| defillama | ok | 2026-09-02T17:07:45Z |
+| price | ok | 2026-09-02T17:07:43Z |
+| news | ok | 2026-09-02T17:07:44Z |
+| solana_com | ok | 2026-09-02T17:07:44Z |
+| dune | off (optional) | 2026-09-02T17:07:43Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

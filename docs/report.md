@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-09-03T17:11:53Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-09-03T19:48:47Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -19,13 +19,13 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 2,132 |
-| Total TPS (incl. votes) | 4,261 |
-| Peak true TPS (30 min) | 2,601 |
-| Mean slot time | 0.315 s |
-| Slot | 444,025,060 |
-| Block height | 422,071,926 |
-| Epoch | 1027 - 83.58% complete, ~6.2 h remaining |
+| True TPS (non-vote) | 2,358 |
+| Total TPS (incl. votes) | 4,478 |
+| Peak true TPS (30 min) | 2,863 |
+| Mean slot time | 0.316 s |
+| Slot | 444,054,907 |
+| Block height | 422,101,644 |
+| Epoch | 1027 - 90.49% complete, ~3.6 h remaining |
 
 ## Validators
 
@@ -60,16 +60,16 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $104.67 (+6.3% 24h, -2.5% 7d) |
-| Price sources | cross-checked, 0.042% apart |
-| Market cap | $61.23B |
-| TVL | $5.89B (+4.2% 24h) |
-| Stablecoin supply | $15.94B |
+| SOL price | $105.43 (+6.2% 24h, -2.8% 7d) |
+| Price sources | cross-checked, 0.154% apart |
+| Market cap | $61.70B |
+| TVL | $5.96B (+5.5% 24h) |
+| Stablecoin supply | $16.04B |
 | DEX volume (24h) | $2.29B |
-| REV (24h) | $711.8K (network fees $612.6K + Jito tips $99.3K) |
+| REV (24h) | $715.3K (network fees $612.6K + Jito tips $102.7K) |
 | App fees (24h) | $10.54M |
-| Median fee (user txs) | 5,120 lamports (~$0.000536) - about 1,866 transactions per $1 |
-| Circulating supply | 585,274,679 SOL |
+| Median fee (user txs) | 5,415 lamports (~$0.000571) - about 1,752 transactions per $1 |
+| Circulating supply | 585,274,577 SOL |
 
 ## Ecosystem Growth
 
@@ -86,19 +86,19 @@
 **Largest tokenized-asset protocols**
 
 - BlackRock BUIDL: $890.78M
-- xStocks: $460.53M
-- OnRe: $295.38M
-- Ondo Yield Assets: $179.97M
-- Hastra: $150.90M
+- xStocks: $462.82M
+- OnRe: $295.53M
+- Ondo Yield Assets: $179.25M
+- Hastra: $150.50M
 
 ## News & Upgrades
 
 
 **Solana News**
 
+- [Payment Channels: 1 Million Payments Per Second](https://solana.com/news/payment-channels-1-million-payments-per-second) - 2026-09-03
 - [The Token Supercycle: Everything of Value is Becoming Programmable](https://solana.com/news/the-token-supercycle-oped) - 2026-09-02
 - [Webinar Recap: Cross-Border Payments in Latin America](https://solana.com/news/webinar-recap-cross-border-payments-in-latin-america) - 2026-09-01
-- [Solana Changelog: August 27, 2026](https://solana.com/news/solana-changelog-august-27-2026) - 2026-08-28
 
 **Solana Status**
 
@@ -108,9 +108,9 @@
 
 **Agave Releases**
 
+- [Release v4.4.0-alpha.3](https://github.com/anza-xyz/agave/releases/tag/v4.4.0-alpha.3) - 2026-09-03
 - [Release v4.4.0-alpha.2](https://github.com/anza-xyz/agave/releases/tag/v4.4.0-alpha.2) - 2026-08-28
 - [Release v4.3.0-beta.3](https://github.com/anza-xyz/agave/releases/tag/v4.3.0-beta.3) - 2026-08-31
-- [Release v4.2.2](https://github.com/anza-xyz/agave/releases/tag/v4.2.2) - 2026-08-31
 
 **Firedancer Releases**
 
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-09-03T17:11:36Z |
-| validators | ok | 2026-09-03T17:11:50Z |
-| supply | ok | 2026-09-03T17:11:53Z |
-| defillama | ok | 2026-09-03T17:11:35Z |
-| price | ok | 2026-09-03T17:11:34Z |
-| news | ok | 2026-09-03T17:11:35Z |
-| solana_com | ok | 2026-09-03T17:11:34Z |
-| dune | off (optional) | 2026-09-03T17:11:33Z |
+| network | ok | 2026-09-03T19:48:36Z |
+| validators | ok | 2026-09-03T19:48:45Z |
+| supply | ok | 2026-09-03T19:48:47Z |
+| defillama | ok | 2026-09-03T19:48:36Z |
+| price | ok | 2026-09-03T19:48:35Z |
+| news | ok | 2026-09-03T19:48:36Z |
+| solana_com | ok | 2026-09-03T19:48:35Z |
+| dune | off (optional) | 2026-09-03T19:48:34Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

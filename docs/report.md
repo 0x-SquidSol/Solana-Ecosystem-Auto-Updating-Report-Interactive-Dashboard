@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-09-03T09:02:25Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-09-03T13:32:27Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -19,20 +19,20 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,244 |
-| Total TPS (incl. votes) | 3,384 |
-| Peak true TPS (30 min) | 1,407 |
+| True TPS (non-vote) | 1,465 |
+| Total TPS (incl. votes) | 3,594 |
+| Peak true TPS (30 min) | 2,717 |
 | Mean slot time | 0.315 s |
-| Slot | 443,931,865 |
-| Block height | 421,979,096 |
-| Epoch | 1027 - 62.01% complete, ~14.4 h remaining |
+| Slot | 443,983,369 |
+| Block height | 422,030,439 |
+| Epoch | 1027 - 73.93% complete, ~9.9 h remaining |
 
 ## Validators
 
 | Metric | Value |
 |---|---|
-| Active validators | 677 |
-| Delinquent | 18 (0.05% of stake) |
+| Active validators | 675 |
+| Delinquent | 20 (0.06% of stake) |
 | Consensus stall buffer | 0.2% of the 33.3% halt threshold consumed |
 | Total stake | 438,422,357 SOL |
 | Nakamoto coefficient | 18 |
@@ -60,22 +60,22 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $100.57 (+1.4% 24h, -1.2% 7d) |
-| Price sources | cross-checked, 0.069% apart |
-| Market cap | $58.86B |
-| TVL | $5.76B (+1.9% 24h) |
-| Stablecoin supply | $15.75B |
-| DEX volume (24h) | $2.33B |
-| REV (24h) | $710.5K (network fees $612.6K + Jito tips $97.9K) |
-| App fees (24h) | $11.21M |
-| Median fee (user txs) | 5,801 lamports (~$0.000583) - about 1,714 transactions per $1 |
-| Circulating supply | 585,274,977 SOL |
+| SOL price | $101.41 (+3.3% 24h, -2.2% 7d) |
+| Price sources | cross-checked, 0.066% apart |
+| Market cap | $59.35B |
+| TVL | $5.78B (+2.3% 24h) |
+| Stablecoin supply | $15.91B |
+| DEX volume (24h) | $2.29B |
+| REV (24h) | $709.7K (network fees $612.6K + Jito tips $97.1K) |
+| App fees (24h) | $10.44M |
+| Median fee (user txs) | 10,007,132 lamports (~$1.014823) - about 1 transactions per $1 |
+| Circulating supply | 585,274,828 SOL |
 
 ## Ecosystem Growth
 
 | Metric | Value |
 |---|---|
-| Tokenized assets (RWA) on Solana | $2.08B across 24 protocols |
+| Tokenized assets (RWA) on Solana | $2.09B across 24 protocols |
 | Monthly active addresses (solana.com) | 50M |
 | Quarterly active wallets (solana.com) | 100m+ |
 | Daily transactions (solana.com) | 100M+ |
@@ -86,10 +86,10 @@
 **Largest tokenized-asset protocols**
 
 - BlackRock BUIDL: $890.69M
-- xStocks: $435.06M
-- OnRe: $289.00M
-- Ondo Yield Assets: $179.14M
-- Hastra: $153.70M
+- xStocks: $436.04M
+- OnRe: $293.04M
+- Ondo Yield Assets: $179.96M
+- Hastra: $153.53M
 
 ## News & Upgrades
 
@@ -97,8 +97,8 @@
 **Solana News**
 
 - [The Token Supercycle: Everything of Value is Becoming Programmable](https://solana.com/news/the-token-supercycle-oped) - 2026-09-02
+- [Webinar Recap: Cross-Border Payments in Latin America](https://solana.com/news/webinar-recap-cross-border-payments-in-latin-america) - 2026-09-01
 - [Solana Changelog: August 27, 2026](https://solana.com/news/solana-changelog-august-27-2026) - 2026-08-28
-- [The Token Supercycle Is Here: Solana Brings Breakpoint 2026 to London](https://solana.com/news/breakpoint-2026-london-speakers) - 2026-08-27
 
 **Solana Status**
 
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-09-03T09:02:15Z |
-| validators | ok | 2026-09-03T09:02:24Z |
-| supply | ok | 2026-09-03T09:02:25Z |
-| defillama | ok | 2026-09-03T09:02:14Z |
-| price | ok | 2026-09-03T09:02:13Z |
-| news | ok | 2026-09-03T09:02:15Z |
-| solana_com | ok | 2026-09-03T09:02:13Z |
-| dune | off (optional) | 2026-09-03T09:02:12Z |
+| network | ok | 2026-09-03T13:32:16Z |
+| validators | ok | 2026-09-03T13:32:25Z |
+| supply | ok | 2026-09-03T13:32:27Z |
+| defillama | ok | 2026-09-03T13:32:16Z |
+| price | ok | 2026-09-03T13:32:14Z |
+| news | ok | 2026-09-03T13:32:15Z |
+| solana_com | ok | 2026-09-03T13:32:22Z |
+| dune | off (optional) | 2026-09-03T13:32:13Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

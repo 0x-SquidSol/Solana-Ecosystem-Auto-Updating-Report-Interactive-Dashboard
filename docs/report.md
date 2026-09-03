@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-09-03T21:59:00Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-09-03T23:47:41Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -19,57 +19,57 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,528 |
-| Total TPS (incl. votes) | 3,637 |
-| Peak true TPS (30 min) | 1,926 |
-| Mean slot time | 0.317 s |
-| Slot | 444,079,599 |
-| Block height | 422,126,198 |
-| Epoch | 1027 - 96.20% complete, ~1.4 h remaining |
+| True TPS (non-vote) | 1,530 |
+| Total TPS (incl. votes) | 3,650 |
+| Peak true TPS (30 min) | 2,119 |
+| Mean slot time | 0.315 s |
+| Slot | 444,100,301 |
+| Block height | 422,146,825 |
+| Epoch | 1028 - 1.00% complete, ~37.4 h remaining |
 
 ## Validators
 
 | Metric | Value |
 |---|---|
-| Active validators | 675 |
+| Active validators | 674 |
 | Delinquent | 20 (0.14% of stake) |
 | Consensus stall buffer | 0.4% of the 33.3% halt threshold consumed |
-| Total stake | 438,422,357 SOL |
+| Total stake | 436,898,866 SOL |
 | Nakamoto coefficient | 18 |
-| Top-10 stake share | 24.3% |
-| Top-20 stake share | 35.6% |
-| Client stake split | agave 91.0% / firedancer 8.9% / unknown 0.1% |
-| Stake-weighted commission | 26.84% |
+| Top-10 stake share | 24.4% |
+| Top-20 stake share | 35.8% |
+| Client stake split | agave 91.3% / firedancer 8.7% / unknown 0.1% |
+| Stake-weighted commission | 26.92% |
 
 **Top validators by stake**
 
 | # | Vote account | Stake | Share | Commission |
 |---|---|---|---|---|
-| 1 | `CcaH..oTN1` | 17,348,904 SOL | 3.96% | 7% |
-| 2 | `he1i..uBtk` | 16,325,737 SOL | 3.73% | 0% |
-| 3 | `3N7s..iD5g` | 12,462,274 SOL | 2.85% | 0% |
-| 4 | `Catz..Diqb` | 11,304,498 SOL | 2.58% | 5% |
-| 5 | `8Gbw..F8iD` | 9,565,273 SOL | 2.18% | 0% |
-| 6 | `26pV..3dJx` | 9,285,486 SOL | 2.12% | 7% |
-| 7 | `51JB..UNAm` | 9,040,435 SOL | 2.06% | 10% |
-| 8 | `9QU2..29mF` | 7,220,140 SOL | 1.65% | 7% |
-| 9 | `CvSb..wycB` | 7,125,475 SOL | 1.63% | 5% |
-| 10 | `Dumi..Zk4a` | 6,590,653 SOL | 1.51% | 0% |
+| 1 | `CcaH..oTN1` | 17,393,318 SOL | 3.99% | 7% |
+| 2 | `he1i..uBtk` | 16,324,259 SOL | 3.74% | 0% |
+| 3 | `3N7s..iD5g` | 12,459,602 SOL | 2.86% | 0% |
+| 4 | `Catz..Diqb` | 11,379,843 SOL | 2.61% | 5% |
+| 5 | `8Gbw..F8iD` | 9,567,623 SOL | 2.19% | 0% |
+| 6 | `26pV..3dJx` | 9,278,151 SOL | 2.13% | 7% |
+| 7 | `51JB..UNAm` | 9,042,760 SOL | 2.07% | 10% |
+| 8 | `9QU2..29mF` | 7,376,879 SOL | 1.69% | 7% |
+| 9 | `CvSb..wycB` | 7,127,366 SOL | 1.63% | 5% |
+| 10 | `Dumi..Zk4a` | 6,593,517 SOL | 1.51% | 0% |
 
 ## Economy
 
 | Metric | Value |
 |---|---|
-| SOL price | $105.19 (+5.5% 24h, -3.9% 7d) |
-| Price sources | cross-checked, 0.122% apart |
-| Market cap | $61.58B |
-| TVL | $5.97B (+5.8% 24h) |
-| Stablecoin supply | $16.06B |
+| SOL price | $104.03 (+4.1% 24h, -4.2% 7d) |
+| Price sources | cross-checked, 0.071% apart |
+| Market cap | $60.87B |
+| TVL | $5.97B (+5.6% 24h) |
+| Stablecoin supply | $16.22B |
 | DEX volume (24h) | $2.29B |
-| REV (24h) | $718.6K (network fees $612.6K + Jito tips $106.0K) |
+| REV (24h) | $721.9K (network fees $612.6K + Jito tips $109.3K) |
 | App fees (24h) | $10.54M |
-| Median fee (user txs) | 5,131 lamports (~$0.000540) - about 1,853 transactions per $1 |
-| Circulating supply | 585,274,495 SOL |
+| Median fee (user txs) | 5,700 lamports (~$0.000593) - about 1,686 transactions per $1 |
+| Circulating supply | 585,360,885 SOL |
 
 ## Ecosystem Growth
 
@@ -86,10 +86,10 @@
 **Largest tokenized-asset protocols**
 
 - BlackRock BUIDL: $937.81M
-- xStocks: $462.50M
-- OnRe: $295.60M
-- Ondo Yield Assets: $179.95M
-- Hastra: $152.28M
+- xStocks: $461.62M
+- OnRe: $296.55M
+- Ondo Yield Assets: $179.50M
+- Hastra: $150.43M
 
 ## News & Upgrades
 
@@ -97,8 +97,8 @@
 **Solana News**
 
 - [Payment Channels: 1 Million Payments Per Second](https://solana.com/news/payment-channels-1-million-payments-per-second) - 2026-09-03
+- [How to Reclaim Excess SOL After Rent Reduction](https://solana.com/news/how-to-reclaim-excess-sol-after-rent-reduction) - 2026-09-03
 - [The Token Supercycle: Everything of Value is Becoming Programmable](https://solana.com/news/the-token-supercycle-oped) - 2026-09-02
-- [Webinar Recap: Cross-Border Payments in Latin America](https://solana.com/news/webinar-recap-cross-border-payments-in-latin-america) - 2026-09-01
 
 **Solana Status**
 
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-09-03T21:58:49Z |
-| validators | ok | 2026-09-03T21:58:58Z |
-| supply | ok | 2026-09-03T21:59:00Z |
-| defillama | ok | 2026-09-03T21:58:49Z |
-| price | ok | 2026-09-03T21:58:48Z |
-| news | ok | 2026-09-03T21:58:49Z |
-| solana_com | ok | 2026-09-03T21:58:48Z |
-| dune | off (optional) | 2026-09-03T21:58:47Z |
+| network | ok | 2026-09-03T23:47:30Z |
+| validators | ok | 2026-09-03T23:47:40Z |
+| supply | ok | 2026-09-03T23:47:41Z |
+| defillama | ok | 2026-09-03T23:47:29Z |
+| price | ok | 2026-09-03T23:47:28Z |
+| news | ok | 2026-09-03T23:47:29Z |
+| solana_com | ok | 2026-09-03T23:47:28Z |
+| dune | off (optional) | 2026-09-03T23:47:28Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

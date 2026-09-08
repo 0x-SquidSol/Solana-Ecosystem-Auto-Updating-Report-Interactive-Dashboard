@@ -1,45 +1,45 @@
 # Solana Ecosystem Report
 
-> Generated 2026-09-08T05:12:53Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-09-08T09:39:51Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
-- ✅ No active anomalies.
+- 🟡 **WARNING**: delinquent stake is 2.6 standard deviations above its recent mean (0.12 vs 0.04)
 
 **Recently seen**
 
-- 2026-08-30T19:33Z TVL is 2.9 standard deviations above its recent mean (5.96B vs 5.63B)
 - 2026-08-30T19:33Z SOL price is 2.7 standard deviations above its recent mean (106.34 vs 97.1453)
 - 2026-08-30T22:04Z TVL is 2.6 standard deviations above its recent mean (5.93B vs 5.63B)
 - 2026-08-31T23:22Z TVL is 2.6 standard deviations above its recent mean (5.99B vs 5.67B)
 - 2026-09-03T04:21Z data source 'validators' failed this run
+- 2026-09-08T09:39Z delinquent stake is 2.6 standard deviations above its recent mean (0.12 vs 0.04)
 
 ## Network
 
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,559 |
-| Total TPS (incl. votes) | 3,683 |
-| Peak true TPS (30 min) | 1,873 |
-| Mean slot time | 0.317 s |
-| Slot | 445,255,690 |
-| Block height | 423,299,840 |
-| Epoch | 1030 - 68.45% complete, ~12.0 h remaining |
+| True TPS (non-vote) | 1,384 |
+| Total TPS (incl. votes) | 3,507 |
+| Peak true TPS (30 min) | 1,650 |
+| Mean slot time | 0.316 s |
+| Slot | 445,306,328 |
+| Block height | 423,350,438 |
+| Epoch | 1030 - 80.17% complete, ~7.5 h remaining |
 
 ## Validators
 
 | Metric | Value |
 |---|---|
-| Active validators | 676 |
-| Delinquent | 12 (0.01% of stake) |
-| Consensus stall buffer | 0.0% of the 33.3% halt threshold consumed |
+| Active validators | 675 |
+| Delinquent | 13 (0.12% of stake) |
+| Consensus stall buffer | 0.4% of the 33.3% halt threshold consumed |
 | Total stake | 439,477,988 SOL |
 | Nakamoto coefficient | 18 |
 | Top-10 stake share | 24.2% |
 | Top-20 stake share | 35.5% |
-| Client stake split | agave 91.3% / firedancer 8.4% / unknown 0.3% |
-| Stake-weighted commission | 26.82% |
+| Client stake split | agave 91.7% / firedancer 8.2% / unknown 0.1% |
+| Stake-weighted commission | 26.84% |
 
 **Top validators by stake**
 
@@ -48,7 +48,7 @@
 | 1 | `CcaH..oTN1` | 17,438,541 SOL | 3.97% | 7% |
 | 2 | `he1i..uBtk` | 16,336,964 SOL | 3.72% | 0% |
 | 3 | `3N7s..iD5g` | 12,517,399 SOL | 2.85% | 0% |
-| 4 | `Catz..Diqb` | 11,397,824 SOL | 2.59% | 5% |
+| 4 | `Catz..Diqb` | 11,397,824 SOL | 2.60% | 5% |
 | 5 | `8Gbw..F8iD` | 9,564,412 SOL | 2.18% | 0% |
 | 6 | `26pV..3dJx` | 9,181,909 SOL | 2.09% | 7% |
 | 7 | `51JB..UNAm` | 9,038,443 SOL | 2.06% | 10% |
@@ -60,22 +60,22 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $103.17 (-2.0% 24h, -0.6% 7d) |
-| Price sources | cross-checked, 0.071% apart |
-| Market cap | $60.47B |
-| TVL | $5.90B (-1.6% 24h) |
-| Stablecoin supply | $16.36B |
+| SOL price | $103.55 (-1.3% 24h, -0.1% 7d) |
+| Price sources | cross-checked, 0.042% apart |
+| Market cap | $60.69B |
+| TVL | $5.87B (-2.1% 24h) |
+| Stablecoin supply | $16.32B |
 | DEX volume (24h) | $2.87B |
-| REV (24h) | $872.7K (network fees $750.7K + Jito tips $122.0K) |
+| REV (24h) | $869.3K (network fees $750.7K + Jito tips $118.6K) |
 | App fees (24h) | $16.00M |
-| Median fee (user txs) | 5,261 lamports (~$0.000543) - about 1,842 transactions per $1 |
-| Circulating supply | 586,165,488 SOL |
+| Median fee (user txs) | 5,193 lamports (~$0.000538) - about 1,860 transactions per $1 |
+| Circulating supply | 586,165,340 SOL |
 
 ## Ecosystem Growth
 
 | Metric | Value |
 |---|---|
-| Tokenized assets (RWA) on Solana | $2.36B across 23 protocols |
+| Tokenized assets (RWA) on Solana | $2.35B across 23 protocols |
 | Monthly active addresses (solana.com) | 50M |
 | Quarterly active wallets (solana.com) | 100m+ |
 | Daily transactions (solana.com) | 100M+ |
@@ -86,10 +86,10 @@
 **Largest tokenized-asset protocols**
 
 - BlackRock BUIDL: $977.90M
-- xStocks: $446.07M
-- OnRe: $302.80M
+- xStocks: $441.65M
+- OnRe: $302.84M
 - Huma Finance V2: $186.50M
-- Ondo Yield Assets: $180.06M
+- Ondo Yield Assets: $179.63M
 
 ## News & Upgrades
 
@@ -120,21 +120,21 @@
 
 **SIMD Activity**
 
+- [SIMD-0608: `DeactivateDelinquent` for Closed Vote Accounts (#608)](https://github.com/solana-foundation/solana-improvement-documents/commit/18e2b3626a9339e7726ea5c1b5b07338bbaf1f52) - 2026-09-08
 - [Remove floating point arithmetic from Runtime critical inflation and …](https://github.com/solana-foundation/solana-improvement-documents/commit/4828b2dd994c98032af401acfa20d37688878003) - 2026-09-01
 - [SIMD-0599: Remove inactive stakes from partitioned epoch rewards (#599)](https://github.com/solana-foundation/solana-improvement-documents/commit/175a3638ce3e587de4a60ff5beeec0c94abf0761) - 2026-08-27
-- [re-amend SIMD-0340: additional inter- and intra- validation (#551)](https://github.com/solana-foundation/solana-improvement-documents/commit/fc519fb3d1ef0f7624b6232bda958438feba09ce) - 2026-07-31
 
 ## Data Sources
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-09-08T05:12:42Z |
-| validators | ok | 2026-09-08T05:12:51Z |
-| supply | ok | 2026-09-08T05:12:53Z |
-| defillama | ok | 2026-09-08T05:12:42Z |
-| price | ok | 2026-09-08T05:12:40Z |
-| news | ok | 2026-09-08T05:12:41Z |
-| solana_com | ok | 2026-09-08T05:12:41Z |
-| dune | off (optional) | 2026-09-08T05:12:40Z |
+| network | ok | 2026-09-08T09:39:34Z |
+| validators | ok | 2026-09-08T09:39:48Z |
+| supply | ok | 2026-09-08T09:39:51Z |
+| defillama | ok | 2026-09-08T09:39:32Z |
+| price | ok | 2026-09-08T09:39:31Z |
+| news | ok | 2026-09-08T09:39:32Z |
+| solana_com | ok | 2026-09-08T09:39:31Z |
+| dune | off (optional) | 2026-09-08T09:39:30Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

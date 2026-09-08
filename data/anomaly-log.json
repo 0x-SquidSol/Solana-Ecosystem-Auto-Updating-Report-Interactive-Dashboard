@@ -345,5 +345,15 @@
   "severity": "warning",
   "metric": "sources.validators",
   "message": "data source 'validators' failed this run"
+ },
+ {
+  "seen_at": "2026-09-08T09:39:51Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "validators.delinquent_stake_pct",
+  "message": "delinquent stake is 2.6 standard deviations above its recent mean (0.12 vs 0.04)",
+  "value": 0.12,
+  "baseline_mean": 0.04,
+  "z_score": 2.63
  }
 ]

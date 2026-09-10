@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-09-10T19:53:33Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-09-10T22:03:01Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -19,13 +19,13 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,888 |
-| Total TPS (incl. votes) | 4,021 |
-| Peak true TPS (30 min) | 2,589 |
-| Mean slot time | 0.315 s |
-| Slot | 445,968,284 |
-| Block height | 424,011,632 |
-| Epoch | 1032 - 33.40% complete, ~25.2 h remaining |
+| True TPS (non-vote) | 1,749 |
+| Total TPS (incl. votes) | 3,877 |
+| Peak true TPS (30 min) | 2,245 |
+| Mean slot time | 0.317 s |
+| Slot | 445,992,812 |
+| Block height | 424,036,141 |
+| Epoch | 1032 - 39.08% complete, ~23.2 h remaining |
 
 ## Validators
 
@@ -60,16 +60,16 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $99.73 (-2.7% 24h, -5.0% 7d) |
-| Price sources | cross-checked, 0.066% apart |
-| Market cap | $58.41B |
-| TVL | $5.78B (-2.8% 24h) |
-| Stablecoin supply | $15.99B |
+| SOL price | $99.73 (-2.3% 24h, -4.9% 7d) |
+| Price sources | cross-checked, 0.020% apart |
+| Market cap | $58.47B |
+| TVL | $5.79B (-2.8% 24h) |
+| Stablecoin supply | $16.02B |
 | DEX volume (24h) | $3.00B |
-| REV (24h) | $1.15M (network fees $978.5K + Jito tips $176.0K) |
+| REV (24h) | $1.15M (network fees $978.5K + Jito tips $171.0K) |
 | App fees (24h) | $15.72M |
-| Median fee (user txs) | 5,819 lamports (~$0.000580) - about 1,723 transactions per $1 |
-| Circulating supply | 586,335,354 SOL |
+| Median fee (user txs) | 5,514 lamports (~$0.000550) - about 1,818 transactions per $1 |
+| Circulating supply | 586,335,271 SOL |
 
 ## Ecosystem Growth
 
@@ -85,11 +85,11 @@
 
 **Largest tokenized-asset protocols**
 
-- BlackRock BUIDL: $992.27M
-- OnRe: $308.49M
-- Ondo Yield Assets: $180.12M
-- Huma Finance V2: $169.50M
-- Hastra: $152.88M
+- BlackRock BUIDL: $992.51M
+- OnRe: $308.52M
+- Ondo Yield Assets: $180.03M
+- Huma Finance V2: $169.23M
+- Hastra: $152.87M
 
 ## News & Upgrades
 
@@ -114,7 +114,7 @@
 
 **Firedancer Releases**
 
-- [v26.09.2](https://github.com/firedancer-io/firedancer/releases/tag/v26.09.2) - 2026-09-10
+- [Firedancer Testnet Release v26.09.2](https://github.com/firedancer-io/firedancer/releases/tag/v26.09.2) - 2026-09-10
 - [Firedancer Testnet v26.09.1](https://github.com/firedancer-io/firedancer/releases/tag/v26.09.1) - 2026-09-10
 - [Firedancer Mainnet Release v26.08.4](https://github.com/firedancer-io/firedancer/releases/tag/v26.08.4) - 2026-09-10
 
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-09-10T19:53:20Z |
-| validators | ok | 2026-09-10T19:53:31Z |
-| supply | ok | 2026-09-10T19:53:33Z |
-| defillama | ok | 2026-09-10T19:53:20Z |
-| price | ok | 2026-09-10T19:53:18Z |
-| news | ok | 2026-09-10T19:53:20Z |
-| solana_com | ok | 2026-09-10T19:53:19Z |
-| dune | off (optional) | 2026-09-10T19:53:18Z |
+| network | ok | 2026-09-10T22:02:45Z |
+| validators | ok | 2026-09-10T22:02:58Z |
+| supply | ok | 2026-09-10T22:03:01Z |
+| defillama | ok | 2026-09-10T22:02:45Z |
+| price | ok | 2026-09-10T22:02:42Z |
+| news | ok | 2026-09-10T22:02:43Z |
+| solana_com | ok | 2026-09-10T22:02:43Z |
+| dune | off (optional) | 2026-09-10T22:02:41Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

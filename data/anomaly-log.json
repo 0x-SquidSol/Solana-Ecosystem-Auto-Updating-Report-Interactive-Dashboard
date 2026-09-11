@@ -1,25 +1,5 @@
 [
  {
-  "seen_at": "2026-08-28T22:47:14Z",
-  "kind": "statistical",
-  "severity": "warning",
-  "metric": "defillama.tvl_usd",
-  "message": "TVL is 2.6 standard deviations above its recent mean (5.83B vs 5.56B)",
-  "value": 5825918362.0,
-  "baseline_mean": 5562662281.5347,
-  "z_score": 2.56
- },
- {
-  "seen_at": "2026-08-28T22:47:14Z",
-  "kind": "statistical",
-  "severity": "warning",
-  "metric": "price.price_usd",
-  "message": "SOL price is 2.9 standard deviations above its recent mean (104.05 vs 95.1469)",
-  "value": 104.05,
-  "baseline_mean": 95.1469,
-  "z_score": 2.94
- },
- {
   "seen_at": "2026-08-29T03:57:17Z",
   "kind": "statistical",
   "severity": "warning",
@@ -365,5 +345,15 @@
   "value": 0.75,
   "baseline_mean": 0.0645,
   "z_score": 5.97
+ },
+ {
+  "seen_at": "2026-09-11T23:40:37Z",
+  "kind": "statistical",
+  "severity": "alert",
+  "metric": "validators.delinquent_stake_pct",
+  "message": "delinquent stake is 4.2 standard deviations above its recent mean (0.68 vs 0.0761017)",
+  "value": 0.68,
+  "baseline_mean": 0.0761,
+  "z_score": 4.18
  }
 ]

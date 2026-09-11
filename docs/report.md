@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-09-11T00:06:28Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-09-11T04:33:19Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -19,27 +19,27 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,652 |
-| Total TPS (incl. votes) | 3,768 |
-| Peak true TPS (30 min) | 2,121 |
-| Mean slot time | 0.317 s |
-| Slot | 446,016,242 |
-| Block height | 424,059,562 |
-| Epoch | 1032 - 44.50% complete, ~21.1 h remaining |
+| True TPS (non-vote) | 1,642 |
+| Total TPS (incl. votes) | 3,770 |
+| Peak true TPS (30 min) | 1,968 |
+| Mean slot time | 0.316 s |
+| Slot | 446,066,870 |
+| Block height | 424,110,162 |
+| Epoch | 1032 - 56.22% complete, ~16.6 h remaining |
 
 ## Validators
 
 | Metric | Value |
 |---|---|
-| Active validators | 676 |
-| Delinquent | 13 (0.04% of stake) |
+| Active validators | 677 |
+| Delinquent | 12 (0.02% of stake) |
 | Consensus stall buffer | 0.1% of the 33.3% halt threshold consumed |
 | Total stake | 439,188,213 SOL |
 | Nakamoto coefficient | 18 |
 | Top-10 stake share | 24.2% |
 | Top-20 stake share | 35.5% |
-| Client stake split | agave 91.8% / firedancer 8.1% / unknown 0.1% |
-| Stake-weighted commission | 26.84% |
+| Client stake split | agave 91.8% / firedancer 8.2% / unknown 0.1% |
+| Stake-weighted commission | 26.85% |
 
 **Top validators by stake**
 
@@ -60,16 +60,16 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $98.91 (-2.6% 24h, -5.3% 7d) |
-| Price sources | cross-checked, 0.033% apart |
-| Market cap | $58.01B |
-| TVL | $5.79B (-2.6% 24h) |
-| Stablecoin supply | $16.03B |
-| DEX volume (24h) | $3.00B |
-| REV (24h) | $1.11M (network fees $978.5K + Jito tips $131.7K) |
-| App fees (24h) | $15.72M |
-| Median fee (user txs) | 5,510 lamports (~$0.000545) - about 1,835 transactions per $1 |
-| Circulating supply | 586,537,903 SOL |
+| SOL price | $99.89 (-2.2% 24h, -4.3% 7d) |
+| Price sources | cross-checked, 0.023% apart |
+| Market cap | $58.59B |
+| TVL | $5.78B (-1.3% 24h) |
+| Stablecoin supply | $16.05B |
+| DEX volume (24h) | $2.95B |
+| REV (24h) | $833.1K (network fees $709.3K + Jito tips $123.7K) |
+| App fees (24h) | $14.81M |
+| Median fee (user txs) | 5,405 lamports (~$0.000540) - about 1,852 transactions per $1 |
+| Circulating supply | 586,537,740 SOL |
 
 ## Ecosystem Growth
 
@@ -86,10 +86,10 @@
 **Largest tokenized-asset protocols**
 
 - BlackRock BUIDL: $992.51M
-- OnRe: $308.53M
-- Ondo Yield Assets: $180.02M
-- Huma Finance V2: $169.24M
-- Hastra: $152.88M
+- OnRe: $309.56M
+- Ondo Yield Assets: $180.12M
+- Huma Finance V2: $168.94M
+- Hastra: $152.86M
 
 ## News & Upgrades
 
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-09-11T00:06:16Z |
-| validators | ok | 2026-09-11T00:06:26Z |
-| supply | ok | 2026-09-11T00:06:28Z |
-| defillama | ok | 2026-09-11T00:06:17Z |
-| price | ok | 2026-09-11T00:06:14Z |
-| news | ok | 2026-09-11T00:06:15Z |
-| solana_com | ok | 2026-09-11T00:06:14Z |
-| dune | off (optional) | 2026-09-11T00:06:14Z |
+| network | ok | 2026-09-11T04:33:08Z |
+| validators | ok | 2026-09-11T04:33:18Z |
+| supply | ok | 2026-09-11T04:33:19Z |
+| defillama | ok | 2026-09-11T04:33:08Z |
+| price | ok | 2026-09-11T04:33:06Z |
+| news | ok | 2026-09-11T04:33:07Z |
+| solana_com | ok | 2026-09-11T04:33:06Z |
+| dune | off (optional) | 2026-09-11T04:33:05Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

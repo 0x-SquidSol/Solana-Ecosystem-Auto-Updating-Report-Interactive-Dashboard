@@ -1,44 +1,44 @@
 # Solana Ecosystem Report
 
-> Generated 2026-09-11T13:31:41Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-09-11T17:12:33Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
-- 🔴 **ALERT**: delinquent stake is 5.1 standard deviations above its recent mean (0.45 vs 0.0449091)
+- 🔴 **ALERT**: delinquent stake is 3.7 standard deviations above its recent mean (0.41 vs 0.0521429)
 
 **Recently seen**
 
-- 2026-09-09T14:32Z delinquent stake is 10.4 standard deviations above its recent mean (0.38 vs 0.04)
 - 2026-09-09T20:22Z slot time is 3.0 standard deviations above its recent mean (0.32 vs 0.315914)
 - 2026-09-09T20:22Z delinquent stake is 3.3 standard deviations above its recent mean (0.23 vs 0.0454386)
 - 2026-09-11T09:07Z delinquent stake is 6.8 standard deviations above its recent mean (0.44 vs 0.0375926)
 - 2026-09-11T13:31Z delinquent stake is 5.1 standard deviations above its recent mean (0.45 vs 0.0449091)
+- 2026-09-11T17:12Z delinquent stake is 3.7 standard deviations above its recent mean (0.41 vs 0.0521429)
 
 ## Network
 
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 2,093 |
-| Total TPS (incl. votes) | 4,189 |
-| Peak true TPS (30 min) | 2,957 |
-| Mean slot time | 0.319 s |
-| Slot | 446,168,948 |
-| Block height | 424,212,144 |
-| Epoch | 1032 - 79.85% complete, ~7.7 h remaining |
+| True TPS (non-vote) | 2,218 |
+| Total TPS (incl. votes) | 4,344 |
+| Peak true TPS (30 min) | 2,746 |
+| Mean slot time | 0.316 s |
+| Slot | 446,210,665 |
+| Block height | 424,253,733 |
+| Epoch | 1032 - 89.51% complete, ~4.0 h remaining |
 
 ## Validators
 
 | Metric | Value |
 |---|---|
-| Active validators | 673 |
-| Delinquent | 16 (0.45% of stake) |
-| Consensus stall buffer | 1.4% of the 33.3% halt threshold consumed |
+| Active validators | 676 |
+| Delinquent | 14 (0.41% of stake) |
+| Consensus stall buffer | 1.2% of the 33.3% halt threshold consumed |
 | Total stake | 439,188,213 SOL |
 | Nakamoto coefficient | 18 |
 | Top-10 stake share | 24.3% |
 | Top-20 stake share | 35.6% |
-| Client stake split | agave 91.7% / firedancer 8.2% / unknown 0.1% |
+| Client stake split | agave 91.6% / firedancer 8.3% / unknown 0.1% |
 | Stake-weighted commission | 26.94% |
 
 **Top validators by stake**
@@ -60,22 +60,22 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $101.17 (+1.9% 24h, -2.6% 7d) |
-| Price sources | cross-checked, 0.097% apart |
-| Market cap | $59.35B |
-| TVL | $5.79B (-1.1% 24h) |
-| Stablecoin supply | $16.04B |
+| SOL price | $102.20 (+2.4% 24h, +0.9% 7d) |
+| Price sources | cross-checked, 0.075% apart |
+| Market cap | $59.95B |
+| TVL | $5.88B (+0.4% 24h) |
+| Stablecoin supply | $16.21B |
 | DEX volume (24h) | $2.92B |
-| REV (24h) | $836.5K (network fees $709.3K + Jito tips $127.1K) |
+| REV (24h) | $844.0K (network fees $709.3K + Jito tips $134.6K) |
 | App fees (24h) | $14.61M |
-| Median fee (user txs) | 5,188 lamports (~$0.000525) - about 1,905 transactions per $1 |
-| Circulating supply | 586,537,422 SOL |
+| Median fee (user txs) | 5,100 lamports (~$0.000521) - about 1,919 transactions per $1 |
+| Circulating supply | 586,537,262 SOL |
 
 ## Ecosystem Growth
 
 | Metric | Value |
 |---|---|
-| Tokenized assets (RWA) on Solana | $1.92B across 25 protocols |
+| Tokenized assets (RWA) on Solana | $1.90B across 25 protocols |
 | Monthly active addresses (solana.com) | 50M |
 | Quarterly active wallets (solana.com) | 100m+ |
 | Daily transactions (solana.com) | 100M+ |
@@ -85,11 +85,11 @@
 
 **Largest tokenized-asset protocols**
 
-- BlackRock BUIDL: $992.51M
-- OnRe: $309.48M
-- Ondo Yield Assets: $180.03M
-- Huma Finance V2: $169.60M
-- Hastra: $150.77M
+- BlackRock BUIDL: $992.60M
+- OnRe: $294.72M
+- Ondo Yield Assets: $180.05M
+- Huma Finance V2: $170.16M
+- Hastra: $150.67M
 
 ## News & Upgrades
 
@@ -108,9 +108,9 @@
 
 **Agave Releases**
 
+- [Release v4.3.0-rc.1](https://github.com/anza-xyz/agave/releases/tag/v4.3.0-rc.1) - 2026-09-11
 - [Release v4.4.0-alpha.4](https://github.com/anza-xyz/agave/releases/tag/v4.4.0-alpha.4) - 2026-09-10
 - [Release v4.3.0-rc.0](https://github.com/anza-xyz/agave/releases/tag/v4.3.0-rc.0) - 2026-09-08
-- [Release v4.4.0-alpha.3](https://github.com/anza-xyz/agave/releases/tag/v4.4.0-alpha.3) - 2026-09-03
 
 **Firedancer Releases**
 
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-09-11T13:31:25Z |
-| validators | ok | 2026-09-11T13:31:39Z |
-| supply | ok | 2026-09-11T13:31:41Z |
-| defillama | ok | 2026-09-11T13:31:24Z |
-| price | ok | 2026-09-11T13:31:22Z |
-| news | ok | 2026-09-11T13:31:24Z |
-| solana_com | ok | 2026-09-11T13:31:23Z |
-| dune | off (optional) | 2026-09-11T13:31:22Z |
+| network | ok | 2026-09-11T17:12:23Z |
+| validators | ok | 2026-09-11T17:12:31Z |
+| supply | ok | 2026-09-11T17:12:33Z |
+| defillama | ok | 2026-09-11T17:12:24Z |
+| price | ok | 2026-09-11T17:12:21Z |
+| news | ok | 2026-09-11T17:12:22Z |
+| solana_com | ok | 2026-09-11T17:12:22Z |
+| dune | off (optional) | 2026-09-11T17:12:20Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

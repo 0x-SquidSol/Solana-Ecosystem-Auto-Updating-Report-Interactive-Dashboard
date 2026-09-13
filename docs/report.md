@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-09-13T15:15:20Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-09-13T18:13:01Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -19,19 +19,19 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,740 |
-| Total TPS (incl. votes) | 3,859 |
-| Peak true TPS (30 min) | 2,108 |
-| Mean slot time | 0.318 s |
-| Slot | 446,734,518 |
-| Block height | 424,777,162 |
-| Epoch | 1034 - 10.77% complete, ~34.1 h remaining |
+| True TPS (non-vote) | 1,966 |
+| Total TPS (incl. votes) | 4,102 |
+| Peak true TPS (30 min) | 2,413 |
+| Mean slot time | 0.316 s |
+| Slot | 446,768,305 |
+| Block height | 424,810,920 |
+| Epoch | 1034 - 18.59% complete, ~30.9 h remaining |
 
 ## Validators
 
 | Metric | Value |
 |---|---|
-| Active validators | 677 |
+| Active validators | 678 |
 | Delinquent | 12 (0.41% of stake) |
 | Consensus stall buffer | 1.2% of the 33.3% halt threshold consumed |
 | Total stake | 438,740,367 SOL |
@@ -60,16 +60,16 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $100.36 (-1.6% 24h, -6.0% 7d) |
-| Price sources | cross-checked, 0.017% apart |
-| Market cap | $58.88B |
-| TVL | $5.83B (-1.2% 24h) |
-| Stablecoin supply | $16.17B |
+| SOL price | $101.01 (-0.8% 24h, -4.8% 7d) |
+| Price sources | cross-checked, 0.000% apart |
+| Market cap | $59.26B |
+| TVL | $5.85B (-0.8% 24h) |
+| Stablecoin supply | $16.11B |
 | DEX volume (24h) | $1.69B |
-| REV (24h) | $813.5K (network fees $708.8K + Jito tips $104.6K) |
+| REV (24h) | $813.8K (network fees $708.8K + Jito tips $105.0K) |
 | App fees (24h) | $13.52M |
-| Median fee (user txs) | 5,460 lamports (~$0.000548) - about 1,825 transactions per $1 |
-| Circulating supply | 586,731,023 SOL |
+| Median fee (user txs) | 5,745 lamports (~$0.000580) - about 1,723 transactions per $1 |
+| Circulating supply | 586,730,910 SOL |
 
 ## Ecosystem Growth
 
@@ -86,10 +86,10 @@
 **Largest tokenized-asset protocols**
 
 - BlackRock BUIDL: $992.60M
-- OnRe: $299.02M
-- Huma Finance V2: $192.40M
-- Ondo Yield Assets: $179.69M
-- Hastra: $148.77M
+- OnRe: $299.27M
+- Huma Finance V2: $192.63M
+- Ondo Yield Assets: $180.02M
+- Hastra: $148.78M
 
 ## News & Upgrades
 
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-09-13T15:15:04Z |
-| validators | ok | 2026-09-13T15:15:18Z |
-| supply | ok | 2026-09-13T15:15:20Z |
-| defillama | ok | 2026-09-13T15:15:09Z |
-| price | ok | 2026-09-13T15:15:02Z |
-| news | ok | 2026-09-13T15:15:03Z |
-| solana_com | ok | 2026-09-13T15:15:02Z |
-| dune | off (optional) | 2026-09-13T15:15:00Z |
+| network | ok | 2026-09-13T18:12:51Z |
+| validators | ok | 2026-09-13T18:12:59Z |
+| supply | ok | 2026-09-13T18:13:01Z |
+| defillama | ok | 2026-09-13T18:12:51Z |
+| price | ok | 2026-09-13T18:12:49Z |
+| news | ok | 2026-09-13T18:12:50Z |
+| solana_com | ok | 2026-09-13T18:12:49Z |
+| dune | off (optional) | 2026-09-13T18:12:49Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

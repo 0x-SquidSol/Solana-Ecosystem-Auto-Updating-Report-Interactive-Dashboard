@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-09-14T10:38:29Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-09-14T16:33:29Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -19,57 +19,57 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,284 |
-| Total TPS (incl. votes) | 3,411 |
-| Peak true TPS (30 min) | 1,742 |
-| Mean slot time | 0.315 s |
-| Slot | 446,955,640 |
-| Block height | 424,998,138 |
-| Epoch | 1034 - 61.95% complete, ~14.4 h remaining |
+| True TPS (non-vote) | 2,135 |
+| Total TPS (incl. votes) | 4,271 |
+| Peak true TPS (30 min) | 2,780 |
+| Mean slot time | 0.317 s |
+| Slot | 447,023,086 |
+| Block height | 425,065,509 |
+| Epoch | 1034 - 77.57% complete, ~8.5 h remaining |
 
 ## Validators
 
 | Metric | Value |
 |---|---|
-| Active validators | 677 |
-| Delinquent | 13 (0.41% of stake) |
-| Consensus stall buffer | 1.2% of the 33.3% halt threshold consumed |
+| Active validators | 679 |
+| Delinquent | 11 (0.06% of stake) |
+| Consensus stall buffer | 0.2% of the 33.3% halt threshold consumed |
 | Total stake | 438,740,367 SOL |
 | Nakamoto coefficient | 18 |
-| Top-10 stake share | 24.4% |
-| Top-20 stake share | 35.7% |
-| Client stake split | agave 92.1% / firedancer 7.8% / unknown 0.1% |
-| Stake-weighted commission | 26.96% |
+| Top-10 stake share | 24.3% |
+| Top-20 stake share | 35.5% |
+| Client stake split | agave 92.2% / firedancer 7.8% / unknown 0.1% |
+| Stake-weighted commission | 26.88% |
 
 **Top validators by stake**
 
 | # | Vote account | Stake | Share | Commission |
 |---|---|---|---|---|
-| 1 | `CcaH..oTN1` | 17,568,189 SOL | 4.02% | 7% |
-| 2 | `he1i..uBtk` | 16,361,599 SOL | 3.74% | 0% |
-| 3 | `3N7s..iD5g` | 12,501,349 SOL | 2.86% | 0% |
-| 4 | `Catz..Diqb` | 11,372,391 SOL | 2.60% | 5% |
-| 5 | `8Gbw..F8iD` | 9,619,665 SOL | 2.20% | 0% |
-| 6 | `26pV..3dJx` | 9,252,712 SOL | 2.12% | 7% |
-| 7 | `51JB..UNAm` | 9,025,175 SOL | 2.07% | 10% |
-| 8 | `9QU2..29mF` | 7,367,885 SOL | 1.69% | 7% |
-| 9 | `CvSb..wycB` | 6,943,003 SOL | 1.59% | 5% |
-| 10 | `Dumi..Zk4a` | 6,552,506 SOL | 1.50% | 0% |
+| 1 | `CcaH..oTN1` | 17,568,189 SOL | 4.01% | 7% |
+| 2 | `he1i..uBtk` | 16,361,599 SOL | 3.73% | 0% |
+| 3 | `3N7s..iD5g` | 12,501,349 SOL | 2.85% | 0% |
+| 4 | `Catz..Diqb` | 11,372,391 SOL | 2.59% | 5% |
+| 5 | `8Gbw..F8iD` | 9,619,665 SOL | 2.19% | 0% |
+| 6 | `26pV..3dJx` | 9,252,712 SOL | 2.11% | 7% |
+| 7 | `51JB..UNAm` | 9,025,175 SOL | 2.06% | 10% |
+| 8 | `9QU2..29mF` | 7,367,885 SOL | 1.68% | 7% |
+| 9 | `CvSb..wycB` | 6,943,003 SOL | 1.58% | 5% |
+| 10 | `Dumi..Zk4a` | 6,552,506 SOL | 1.49% | 0% |
 
 ## Economy
 
 | Metric | Value |
 |---|---|
-| SOL price | $101.88 (+2.2% 24h, -2.5% 7d) |
-| Price sources | cross-checked, 0.043% apart |
-| Market cap | $59.78B |
-| TVL | $5.89B (-0.3% 24h) |
-| Stablecoin supply | $16.03B |
-| DEX volume (24h) | $1.64B |
-| REV (24h) | $703.3K (network fees $608.1K + Jito tips $95.2K) |
-| App fees (24h) | $14.26M |
-| Median fee (user txs) | 5,180 lamports (~$0.000528) - about 1,895 transactions per $1 |
-| Circulating supply | 586,892,825 SOL |
+| SOL price | $102.57 (+1.8% 24h, -2.6% 7d) |
+| Price sources | cross-checked, 0.036% apart |
+| Market cap | $60.15B |
+| TVL | $5.89B (-0.2% 24h) |
+| Stablecoin supply | $16.04B |
+| DEX volume (24h) | $1.79B |
+| REV (24h) | $703.8K (network fees $608.1K + Jito tips $95.7K) |
+| App fees (24h) | $14.04M |
+| Median fee (user txs) | 5,500 lamports (~$0.000564) - about 1,773 transactions per $1 |
+| Circulating supply | 586,892,604 SOL |
 
 ## Ecosystem Growth
 
@@ -86,19 +86,19 @@
 **Largest tokenized-asset protocols**
 
 - BlackRock BUIDL: $992.60M
-- OnRe: $299.58M
-- Huma Finance V2: $192.60M
-- Ondo Yield Assets: $180.11M
-- Hastra: $144.97M
+- OnRe: $299.59M
+- Huma Finance V2: $194.11M
+- Ondo Yield Assets: $179.63M
+- Hastra: $142.86M
 
 ## News & Upgrades
 
 
 **Solana News**
 
+- [Solana: Building, Proving and Earning Trust in Public](https://solana.com/news/solana-building-trust-in-public) - 2026-09-14
 - [Report: Stablecoins Are Reshaping Remittances](https://solana.com/news/report-stablecoins-are-reshaping-remittances) - 2026-09-08
 - [How BitRobot Crowdsources Real-World Data for Embodied AI, with Jonathan Victor](https://solana.com/news/bits-to-bricks-bitrobot-jonathan-victor) - 2026-09-07
-- [Solana Ecosystem Roundup: August 2026](https://solana.com/news/solana-ecosystem-roundup-august-2026) - 2026-09-04
 
 **Solana Status**
 
@@ -108,8 +108,8 @@
 
 **Agave Releases**
 
-- [Release v4.3.0-rc.1](https://github.com/anza-xyz/agave/releases/tag/v4.3.0-rc.1) - 2026-09-11
-- [Release v4.4.0-alpha.4](https://github.com/anza-xyz/agave/releases/tag/v4.4.0-alpha.4) - 2026-09-10
+- [Release v4.3.0-rc.1](https://github.com/anza-xyz/agave/releases/tag/v4.3.0-rc.1) - 2026-09-14
+- [Release v4.4.0-alpha.4](https://github.com/anza-xyz/agave/releases/tag/v4.4.0-alpha.4) - 2026-09-14
 - [Release v4.3.0-rc.0](https://github.com/anza-xyz/agave/releases/tag/v4.3.0-rc.0) - 2026-09-08
 
 **Firedancer Releases**
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-09-14T10:38:17Z |
-| validators | ok | 2026-09-14T10:38:27Z |
-| supply | ok | 2026-09-14T10:38:29Z |
-| defillama | ok | 2026-09-14T10:38:17Z |
-| price | ok | 2026-09-14T10:38:16Z |
-| news | ok | 2026-09-14T10:38:17Z |
-| solana_com | ok | 2026-09-14T10:38:16Z |
-| dune | off (optional) | 2026-09-14T10:38:15Z |
+| network | ok | 2026-09-14T16:33:16Z |
+| validators | ok | 2026-09-14T16:33:27Z |
+| supply | ok | 2026-09-14T16:33:29Z |
+| defillama | ok | 2026-09-14T16:33:15Z |
+| price | ok | 2026-09-14T16:33:13Z |
+| news | ok | 2026-09-14T16:33:15Z |
+| solana_com | ok | 2026-09-14T16:33:14Z |
+| dune | off (optional) | 2026-09-14T16:33:13Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

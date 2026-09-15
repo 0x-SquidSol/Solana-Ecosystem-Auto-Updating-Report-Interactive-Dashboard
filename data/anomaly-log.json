@@ -145,5 +145,45 @@
   "value": 97.68,
   "baseline_mean": 101.7407,
   "z_score": -2.82
+ },
+ {
+  "seen_at": "2026-09-15T22:31:37Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "network.tps_true",
+  "message": "true TPS is 2.9 standard deviations above its recent mean (3,031 vs 1,822)",
+  "value": 3031.0,
+  "baseline_mean": 1822.3636,
+  "z_score": 2.95
+ },
+ {
+  "seen_at": "2026-09-15T22:31:37Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "network.mean_slot_time_secs",
+  "message": "slot time is 2.6 standard deviations above its recent mean (0.32 vs 0.316655)",
+  "value": 0.32,
+  "baseline_mean": 0.3167,
+  "z_score": 2.64
+ },
+ {
+  "seen_at": "2026-09-15T22:31:37Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "defillama.tvl_usd",
+  "message": "TVL is 2.6 standard deviations below its recent mean (5.74B vs 5.88B)",
+  "value": 5742920167.0,
+  "baseline_mean": 5878705748.2364,
+  "z_score": -2.58
+ },
+ {
+  "seen_at": "2026-09-15T22:31:37Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "price.price_usd",
+  "message": "SOL price is 3.2 standard deviations below its recent mean (96.78 vs 101.667)",
+  "value": 96.78,
+  "baseline_mean": 101.6669,
+  "z_score": -3.2
  }
 ]

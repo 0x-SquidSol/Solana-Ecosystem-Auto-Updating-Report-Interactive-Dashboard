@@ -1,39 +1,39 @@
 # Solana Ecosystem Report
 
-> Generated 2026-09-15T16:54:49Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-09-15T19:54:37Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
-- ✅ No active anomalies.
+- 🟡 **WARNING**: SOL price is 2.8 standard deviations below its recent mean (97.68 vs 101.741)
 
 **Recently seen**
 
-- 2026-09-11T19:41Z delinquent stake is 3.3 standard deviations above its recent mean (0.41 vs 0.0584211)
 - 2026-09-11T21:55Z delinquent stake is 6.0 standard deviations above its recent mean (0.75 vs 0.0644828)
 - 2026-09-11T23:40Z delinquent stake is 4.2 standard deviations above its recent mean (0.68 vs 0.0761017)
 - 2026-09-12T01:32Z delinquent stake is 3.4 standard deviations above its recent mean (0.68 vs 0.0928302)
 - 2026-09-15T01:39Z delinquent stake is 6.7 standard deviations above its recent mean (1.75 vs 0.241)
+- 2026-09-15T19:54Z SOL price is 2.8 standard deviations below its recent mean (97.68 vs 101.741)
 
 ## Network
 
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,892 |
-| Total TPS (incl. votes) | 4,018 |
-| Peak true TPS (30 min) | 2,129 |
+| True TPS (non-vote) | 2,718 |
+| Total TPS (incl. votes) | 4,850 |
+| Peak true TPS (30 min) | 3,193 |
 | Mean slot time | 0.317 s |
-| Slot | 447,300,501 |
-| Block height | 425,342,318 |
-| Epoch | 1035 - 41.78% complete, ~22.1 h remaining |
+| Slot | 447,334,509 |
+| Block height | 425,376,271 |
+| Epoch | 1035 - 49.66% complete, ~19.2 h remaining |
 
 ## Validators
 
 | Metric | Value |
 |---|---|
-| Active validators | 678 |
-| Delinquent | 11 (0.06% of stake) |
-| Consensus stall buffer | 0.2% of the 33.3% halt threshold consumed |
+| Active validators | 679 |
+| Delinquent | 10 (0.04% of stake) |
+| Consensus stall buffer | 0.1% of the 33.3% halt threshold consumed |
 | Total stake | 439,248,639 SOL |
 | Nakamoto coefficient | 18 |
 | Top-10 stake share | 24.3% |
@@ -60,22 +60,22 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $99.18 (-3.4% 24h, -3.8% 7d) |
-| Price sources | cross-checked, 0.046% apart |
-| Market cap | $58.22B |
-| TVL | $5.81B (-0.5% 24h) |
-| Stablecoin supply | $15.88B |
+| SOL price | $97.68 (-5.2% 24h, -5.4% 7d) |
+| Price sources | cross-checked, 0.061% apart |
+| Market cap | $57.36B |
+| TVL | $5.80B (-0.7% 24h) |
+| Stablecoin supply | $15.75B |
 | DEX volume (24h) | $2.53B |
-| REV (24h) | $772.9K (network fees $647.0K + Jito tips $125.9K) |
+| REV (24h) | $778.7K (network fees $647.0K + Jito tips $131.7K) |
 | App fees (24h) | $13.58M |
 | Median fee (user txs) | – lamports |
-| Circulating supply | 587,027,858 SOL |
+| Circulating supply | 587,027,722 SOL |
 
 ## Ecosystem Growth
 
 | Metric | Value |
 |---|---|
-| Tokenized assets (RWA) on Solana | $1.92B across 25 protocols |
+| Tokenized assets (RWA) on Solana | $546.51M across 17 protocols |
 | Monthly active addresses (solana.com) | 50M |
 | Quarterly active wallets (solana.com) | 100m+ |
 | Daily transactions (solana.com) | 100M+ |
@@ -85,11 +85,11 @@
 
 **Largest tokenized-asset protocols**
 
-- BlackRock BUIDL: $992.98M
 - OnRe: $300.57M
-- Huma Finance V2: $187.53M
-- Ondo Yield Assets: $179.87M
-- Hastra: $141.77M
+- Huma Finance V2: $188.30M
+- Plume Vaults: $28.06M
+- MatrixDock XAUM: $6.76M
+- Midas RWA: $5.64M
 
 ## News & Upgrades
 
@@ -120,21 +120,21 @@
 
 **SIMD Activity**
 
+- [SIMD-0377: fix JMP32 register opcodes, JSGE32 condition and callx opc…](https://github.com/solana-foundation/solana-improvement-documents/commit/31406c06ad6abb28576bca29b58c2c8179b1569d) - 2026-09-15
 - [SIMD-0609: Prohibit Vote Account Self-Withdrawals (#609)](https://github.com/solana-foundation/solana-improvement-documents/commit/74fec38613b6a54df5062766cbbb637b17669c41) - 2026-09-15
 - [SIMD-0610: Prohibit Nonce Account Self-Withdrawals (#610)](https://github.com/solana-foundation/solana-improvement-documents/commit/d40327f187afe4e57de73dabae8fcf1213d8544e) - 2026-09-15
-- [SIMD-0558 - Leader Info Syscall (#621)](https://github.com/solana-foundation/solana-improvement-documents/commit/0616093b2952ed6de52c4a27d66aadd11d48d4f9) - 2026-09-09
 
 ## Data Sources
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-09-15T16:54:38Z |
-| validators | ok | 2026-09-15T16:54:48Z |
-| supply | ok | 2026-09-15T16:54:49Z |
-| defillama | ok | 2026-09-15T16:54:38Z |
-| price | ok | 2026-09-15T16:54:36Z |
-| news | ok | 2026-09-15T16:54:38Z |
-| solana_com | ok | 2026-09-15T16:54:37Z |
-| dune | off (optional) | 2026-09-15T16:54:36Z |
+| network | ok | 2026-09-15T19:54:25Z |
+| validators | ok | 2026-09-15T19:54:36Z |
+| supply | ok | 2026-09-15T19:54:36Z |
+| defillama | ok | 2026-09-15T19:54:25Z |
+| price | ok | 2026-09-15T19:54:24Z |
+| news | ok | 2026-09-15T19:54:25Z |
+| solana_com | ok | 2026-09-15T19:54:24Z |
+| dune | off (optional) | 2026-09-15T19:54:23Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

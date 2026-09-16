@@ -1,10 +1,10 @@
 # Solana Ecosystem Report
 
-> Generated 2026-09-16T18:34:03Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-09-16T21:42:05Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
-- 🔴 **ALERT**: true TPS is 4.0 standard deviations above its recent mean (3,561 vs 1,816)
+- ✅ No active anomalies.
 
 **Recently seen**
 
@@ -19,13 +19,13 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 3,561 |
-| Total TPS (incl. votes) | 5,667 |
-| Peak true TPS (30 min) | 4,893 |
-| Mean slot time | 0.319 s |
-| Slot | 447,591,748 |
-| Block height | 425,633,160 |
-| Epoch | 1036 - 9.20% complete, ~34.8 h remaining |
+| True TPS (non-vote) | 2,124 |
+| Total TPS (incl. votes) | 4,248 |
+| Peak true TPS (30 min) | 2,915 |
+| Mean slot time | 0.317 s |
+| Slot | 447,627,207 |
+| Block height | 425,668,547 |
+| Epoch | 1036 - 17.41% complete, ~31.4 h remaining |
 
 ## Validators
 
@@ -60,22 +60,22 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $97.94 (-1.7% 24h, -6.1% 7d) |
-| Price sources | cross-checked, 0.409% apart |
-| Market cap | $57.61B |
-| TVL | $5.71B (-3.6% 24h) |
-| Stablecoin supply | $15.48B |
+| SOL price | $98.14 (+1.3% 24h, -3.6% 7d) |
+| Price sources | cross-checked, 0.091% apart |
+| Market cap | $57.64B |
+| TVL | $5.74B (-3.0% 24h) |
+| Stablecoin supply | $15.43B |
 | DEX volume (24h) | $2.70B |
-| REV (24h) | $855.7K (network fees $693.2K + Jito tips $162.5K) |
+| REV (24h) | $855.3K (network fees $693.2K + Jito tips $162.1K) |
 | App fees (24h) | $14.08M |
 | Median fee (user txs) | – lamports |
-| Circulating supply | 587,150,472 SOL |
+| Circulating supply | 587,150,235 SOL |
 
 ## Ecosystem Growth
 
 | Metric | Value |
 |---|---|
-| Tokenized assets (RWA) on Solana | $561.51M across 18 protocols |
+| Tokenized assets (RWA) on Solana | $571.35M across 18 protocols |
 | Monthly active addresses (solana.com) | 50M |
 | Quarterly active wallets (solana.com) | 100m+ |
 | Daily transactions (solana.com) | 100M+ |
@@ -85,11 +85,11 @@
 
 **Largest tokenized-asset protocols**
 
-- OnRe: $302.28M
-- Huma Finance V2: $173.94M
+- OnRe: $302.27M
+- Huma Finance V2: $184.11M
 - Plume Vaults: $28.34M
-- Ondo Global Markets: $27.31M
-- MatrixDock XAUM: $6.83M
+- Ondo Global Markets: $27.12M
+- MatrixDock XAUM: $6.71M
 
 ## News & Upgrades
 
@@ -114,9 +114,9 @@
 
 **Firedancer Releases**
 
+- [Firedancer Testnet Release v26.09.3](https://github.com/firedancer-io/firedancer/releases/tag/v26.09.3) - 2026-09-16
 - [Firedancer Mainnet Release v26.08.5](https://github.com/firedancer-io/firedancer/releases/tag/v26.08.5) - 2026-09-15
 - [Firedancer Testnet Release v26.09.2](https://github.com/firedancer-io/firedancer/releases/tag/v26.09.2) - 2026-09-10
-- [Firedancer Testnet v26.09.1](https://github.com/firedancer-io/firedancer/releases/tag/v26.09.1) - 2026-09-10
 
 **SIMD Activity**
 
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-09-16T18:33:52Z |
-| validators | ok | 2026-09-16T18:34:02Z |
-| supply | ok | 2026-09-16T18:34:03Z |
-| defillama | ok | 2026-09-16T18:33:52Z |
-| price | ok | 2026-09-16T18:33:50Z |
-| news | ok | 2026-09-16T18:33:52Z |
-| solana_com | ok | 2026-09-16T18:33:51Z |
-| dune | off (optional) | 2026-09-16T18:33:50Z |
+| network | ok | 2026-09-16T21:41:55Z |
+| validators | ok | 2026-09-16T21:42:05Z |
+| supply | ok | 2026-09-16T21:42:05Z |
+| defillama | ok | 2026-09-16T21:41:55Z |
+| price | ok | 2026-09-16T21:41:53Z |
+| news | ok | 2026-09-16T21:41:54Z |
+| solana_com | ok | 2026-09-16T21:41:54Z |
+| dune | off (optional) | 2026-09-16T21:41:53Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

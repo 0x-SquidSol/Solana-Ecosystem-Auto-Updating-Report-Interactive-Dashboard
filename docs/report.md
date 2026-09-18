@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-09-17T22:57:11Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-09-18T00:57:45Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -19,13 +19,13 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,948 |
-| Total TPS (incl. votes) | 4,078 |
-| Peak true TPS (30 min) | 2,441 |
+| True TPS (non-vote) | 1,923 |
+| Total TPS (incl. votes) | 4,049 |
+| Peak true TPS (30 min) | 2,323 |
 | Mean slot time | 0.316 s |
-| Slot | 447,914,060 |
-| Block height | 425,955,162 |
-| Epoch | 1036 - 83.81% complete, ~6.1 h remaining |
+| Slot | 447,936,858 |
+| Block height | 425,977,944 |
+| Epoch | 1036 - 89.09% complete, ~4.1 h remaining |
 
 ## Validators
 
@@ -60,22 +60,22 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $101.23 (+3.9% 24h, +1.1% 7d) |
-| Price sources | cross-checked, 0.112% apart |
-| Market cap | $59.45B |
-| TVL | $5.86B (+2.3% 24h) |
-| Stablecoin supply | $15.41B |
-| DEX volume (24h) | $2.80B |
-| REV (24h) | $925.8K (network fees $750.6K + Jito tips $175.2K) |
-| App fees (24h) | $14.07M |
+| SOL price | $101.38 (+2.7% 24h, +2.4% 7d) |
+| Price sources | cross-checked, 0.021% apart |
+| Market cap | $59.54B |
+| TVL | $5.88B (+2.6% 24h) |
+| Stablecoin supply | $15.40B |
+| DEX volume (24h) | $2.70B |
+| REV (24h) | $922.8K (network fees $750.6K + Jito tips $172.2K) |
+| App fees (24h) | $14.21M |
 | Median fee (user txs) | – lamports |
-| Circulating supply | 587,211,734 SOL |
+| Circulating supply | 587,211,653 SOL |
 
 ## Ecosystem Growth
 
 | Metric | Value |
 |---|---|
-| Tokenized assets (RWA) on Solana | $576.46M across 18 protocols |
+| Tokenized assets (RWA) on Solana | $572.95M across 17 protocols |
 | Monthly active addresses (solana.com) | 50M |
 | Quarterly active wallets (solana.com) | 100m+ |
 | Daily transactions (solana.com) | 100M+ |
@@ -86,10 +86,10 @@
 **Largest tokenized-asset protocols**
 
 - OnRe: $302.98M
-- Huma Finance V2: $188.37M
-- Plume Vaults: $27.88M
-- Ondo Global Markets: $27.54M
-- MatrixDock XAUM: $6.83M
+- Huma Finance V2: $191.87M
+- Plume Vaults: $27.91M
+- Ondo Global Markets: $27.30M
+- Midas RWA: $5.64M
 
 ## News & Upgrades
 
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-09-17T22:57:01Z |
-| validators | ok | 2026-09-17T22:57:10Z |
-| supply | ok | 2026-09-17T22:57:11Z |
-| defillama | ok | 2026-09-17T22:57:02Z |
-| price | ok | 2026-09-17T22:57:00Z |
-| news | ok | 2026-09-17T22:57:01Z |
-| solana_com | ok | 2026-09-17T22:57:00Z |
-| dune | off (optional) | 2026-09-17T22:56:59Z |
+| network | ok | 2026-09-18T00:57:31Z |
+| validators | ok | 2026-09-18T00:57:44Z |
+| supply | ok | 2026-09-18T00:57:45Z |
+| defillama | ok | 2026-09-18T00:57:30Z |
+| price | ok | 2026-09-18T00:57:28Z |
+| news | ok | 2026-09-18T00:57:30Z |
+| solana_com | ok | 2026-09-18T00:57:29Z |
+| dune | off (optional) | 2026-09-18T00:57:28Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

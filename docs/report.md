@@ -1,32 +1,32 @@
 # Solana Ecosystem Report
 
-> Generated 2026-09-19T00:17:00Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-09-19T04:47:50Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
-- 🟡 **WARNING**: TVL is 3.4 standard deviations above its recent mean (6.29B vs 5.88B)
-- 🟡 **WARNING**: SOL price is 2.9 standard deviations above its recent mean (112.78 vs 101.668)
+- 🟡 **WARNING**: TVL is 3.1 standard deviations above its recent mean (6.30B vs 5.89B)
+- 🟡 **WARNING**: SOL price is 2.5 standard deviations above its recent mean (112.3 vs 101.899)
 
 **Recently seen**
 
-- 2026-09-18T19:56Z SOL price is 4.6 standard deviations above its recent mean (113.79 vs 101.126)
-- 2026-09-18T22:07Z TVL is 4.2 standard deviations above its recent mean (6.28B vs 5.86B)
 - 2026-09-18T22:07Z SOL price is 3.7 standard deviations above its recent mean (113.23 vs 101.36)
 - 2026-09-19T00:17Z TVL is 3.4 standard deviations above its recent mean (6.29B vs 5.88B)
 - 2026-09-19T00:17Z SOL price is 2.9 standard deviations above its recent mean (112.78 vs 101.668)
+- 2026-09-19T04:47Z TVL is 3.1 standard deviations above its recent mean (6.30B vs 5.89B)
+- 2026-09-19T04:47Z SOL price is 2.5 standard deviations above its recent mean (112.3 vs 101.899)
 
 ## Network
 
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 2,029 |
-| Total TPS (incl. votes) | 4,549 |
-| Peak true TPS (30 min) | 2,472 |
-| Mean slot time | 0.268 s |
-| Slot | 448,242,640 |
-| Block height | 426,283,526 |
-| Epoch | 1037 - 59.87% complete, ~12.9 h remaining |
+| True TPS (non-vote) | 1,710 |
+| Total TPS (incl. votes) | 4,252 |
+| Peak true TPS (30 min) | 2,031 |
+| Mean slot time | 0.265 s |
+| Slot | 448,303,663 |
+| Block height | 426,344,524 |
+| Epoch | 1037 - 74.00% complete, ~8.3 h remaining |
 
 ## Validators
 
@@ -61,22 +61,22 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $112.78 (+11.3% 24h, +10.6% 7d) |
-| Price sources | cross-checked, 0.166% apart |
-| Market cap | $66.22B |
-| TVL | $6.29B (+8.8% 24h) |
-| Stablecoin supply | $15.56B |
-| DEX volume (24h) | $2.59B |
-| REV (24h) | $1.01M (network fees $813.1K + Jito tips $193.7K) |
-| App fees (24h) | $14.68M |
+| SOL price | $112.30 (+6.9% 24h, +11.3% 7d) |
+| Price sources | cross-checked, 0.174% apart |
+| Market cap | $65.95B |
+| TVL | $6.30B (+4.4% 24h) |
+| Stablecoin supply | $15.54B |
+| DEX volume (24h) | $3.26B |
+| REV (24h) | $1.01M (network fees $813.1K + Jito tips $192.7K) |
+| App fees (24h) | $17.88M |
 | Median fee (user txs) | – lamports |
-| Circulating supply | 587,296,693 SOL |
+| Circulating supply | 587,296,506 SOL |
 
 ## Ecosystem Growth
 
 | Metric | Value |
 |---|---|
-| Tokenized assets (RWA) on Solana | $576.94M across 16 protocols |
+| Tokenized assets (RWA) on Solana | $577.35M across 16 protocols |
 | Monthly active addresses (solana.com) | 50M |
 | Quarterly active wallets (solana.com) | 100m+ |
 | Daily transactions (solana.com) | 100M+ |
@@ -86,10 +86,10 @@
 
 **Largest tokenized-asset protocols**
 
-- OnRe: $303.97M
-- Huma Finance V2: $200.55M
+- OnRe: $304.05M
+- Huma Finance V2: $200.83M
 - Plume Vaults: $28.12M
-- Ondo Global Markets: $26.91M
+- Ondo Global Markets: $26.88M
 - Invesco USTB: $3.91M
 
 ## News & Upgrades
@@ -129,13 +129,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-09-19T00:16:46Z |
-| validators | ok | 2026-09-19T00:16:59Z |
-| supply | ok | 2026-09-19T00:17:00Z |
-| defillama | ok | 2026-09-19T00:16:44Z |
-| price | ok | 2026-09-19T00:16:43Z |
-| news | ok | 2026-09-19T00:16:44Z |
-| solana_com | ok | 2026-09-19T00:16:43Z |
-| dune | off (optional) | 2026-09-19T00:16:42Z |
+| network | ok | 2026-09-19T04:47:40Z |
+| validators | ok | 2026-09-19T04:47:48Z |
+| supply | ok | 2026-09-19T04:47:50Z |
+| defillama | ok | 2026-09-19T04:47:39Z |
+| price | ok | 2026-09-19T04:47:38Z |
+| news | ok | 2026-09-19T04:47:39Z |
+| solana_com | ok | 2026-09-19T04:47:38Z |
+| dune | off (optional) | 2026-09-19T04:47:38Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-09-20T21:42:22Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-09-20T23:31:38Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -19,13 +19,13 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 2,526 |
-| Total TPS (incl. votes) | 5,045 |
-| Peak true TPS (30 min) | 3,137 |
+| True TPS (non-vote) | 1,943 |
+| Total TPS (incl. votes) | 4,468 |
+| Peak true TPS (30 min) | 2,416 |
 | Mean slot time | 0.267 s |
-| Slot | 448,855,992 |
-| Block height | 426,896,654 |
-| Epoch | 1039 - 1.85% complete, ~31.4 h remaining |
+| Slot | 448,880,513 |
+| Block height | 426,921,161 |
+| Epoch | 1039 - 7.53% complete, ~29.6 h remaining |
 
 ## Validators
 
@@ -60,22 +60,22 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $109.85 (-0.4% 24h, +9.1% 7d) |
-| Price sources | cross-checked, 0.155% apart |
-| Market cap | $64.54B |
-| TVL | $6.20B (-1.6% 24h) |
-| Stablecoin supply | $15.57B |
+| SOL price | $110.70 (-0.1% 24h, +9.6% 7d) |
+| Price sources | cross-checked, 0.026% apart |
+| Market cap | $65.03B |
+| TVL | $6.21B (-1.5% 24h) |
+| Stablecoin supply | $15.60B |
 | DEX volume (24h) | $2.88B |
-| REV (24h) | $965.6K (network fees $826.3K + Jito tips $139.3K) |
+| REV (24h) | $971.9K (network fees $826.3K + Jito tips $145.7K) |
 | App fees (24h) | $15.28M |
 | Median fee (user txs) | – lamports |
-| Circulating supply | 587,438,187 SOL |
+| Circulating supply | 587,437,916 SOL |
 
 ## Ecosystem Growth
 
 | Metric | Value |
 |---|---|
-| Tokenized assets (RWA) on Solana | $581.10M across 16 protocols |
+| Tokenized assets (RWA) on Solana | $581.20M across 16 protocols |
 | Monthly active addresses (solana.com) | 50M |
 | Quarterly active wallets (solana.com) | 100m+ |
 | Daily transactions (solana.com) | 100M+ |
@@ -88,7 +88,7 @@
 - OnRe: $304.14M
 - Huma Finance V2: $202.30M
 - Plume Vaults: $28.13M
-- Ondo Global Markets: $26.86M
+- Ondo Global Markets: $26.90M
 - Invesco USTB: $3.91M
 
 ## News & Upgrades
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-09-20T21:42:13Z |
-| validators | ok | 2026-09-20T21:42:22Z |
-| supply | ok | 2026-09-20T21:42:21Z |
-| defillama | ok | 2026-09-20T21:42:12Z |
-| price | ok | 2026-09-20T21:42:11Z |
-| news | ok | 2026-09-20T21:42:12Z |
-| solana_com | ok | 2026-09-20T21:42:11Z |
-| dune | off (optional) | 2026-09-20T21:42:10Z |
+| network | ok | 2026-09-20T23:31:28Z |
+| validators | ok | 2026-09-20T23:31:37Z |
+| supply | ok | 2026-09-20T23:31:38Z |
+| defillama | ok | 2026-09-20T23:31:27Z |
+| price | ok | 2026-09-20T23:31:26Z |
+| news | ok | 2026-09-20T23:31:27Z |
+| solana_com | ok | 2026-09-20T23:31:27Z |
+| dune | off (optional) | 2026-09-20T23:31:26Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

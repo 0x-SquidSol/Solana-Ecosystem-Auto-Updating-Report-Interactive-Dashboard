@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-09-22T15:40:32Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-09-22T19:08:30Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -19,34 +19,34 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 2,429 |
-| Total TPS (incl. votes) | 4,921 |
-| Peak true TPS (30 min) | 2,690 |
-| Mean slot time | 0.269 s |
-| Slot | 449,421,916 |
-| Block height | 427,462,284 |
-| Epoch | 1040 - 32.85% complete, ~21.7 h remaining |
+| True TPS (non-vote) | 2,414 |
+| Total TPS (incl. votes) | 4,931 |
+| Peak true TPS (30 min) | 2,969 |
+| Mean slot time | 0.267 s |
+| Slot | 449,468,396 |
+| Block height | 427,508,731 |
+| Epoch | 1040 - 43.61% complete, ~18.1 h remaining |
 
 ## Validators
 
 | Metric | Value |
 |---|---|
-| Active validators | 676 |
-| Delinquent | 13 (0.12% of stake) |
-| Consensus stall buffer | 0.4% of the 33.3% halt threshold consumed |
+| Active validators | 677 |
+| Delinquent | 12 (0.05% of stake) |
+| Consensus stall buffer | 0.2% of the 33.3% halt threshold consumed |
 | Total stake | 439,861,749 SOL |
 | Nakamoto coefficient | 18 |
 | Top-10 stake share | 24.3% |
-| Top-20 stake share | 35.7% |
-| Client stake split | agave 93.1% / firedancer 6.9% / unknown 0.1% |
-| Stake-weighted commission | 26.71% |
+| Top-20 stake share | 35.6% |
+| Client stake split | agave 93.0% / firedancer 6.9% / unknown 0.1% |
+| Stake-weighted commission | 26.70% |
 
 **Top validators by stake**
 
 | # | Vote account | Stake | Share | Commission |
 |---|---|---|---|---|
-| 1 | `CcaH..oTN1` | 17,826,722 SOL | 4.06% | 7% |
-| 2 | `he1i..uBtk` | 15,840,698 SOL | 3.61% | 0% |
+| 1 | `CcaH..oTN1` | 17,826,722 SOL | 4.05% | 7% |
+| 2 | `he1i..uBtk` | 15,840,698 SOL | 3.60% | 0% |
 | 3 | `3N7s..iD5g` | 12,354,353 SOL | 2.81% | 0% |
 | 4 | `Catz..Diqb` | 11,265,429 SOL | 2.56% | 5% |
 | 5 | `8Gbw..F8iD` | 10,210,832 SOL | 2.32% | 0% |
@@ -60,22 +60,22 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $117.17 (-0.3% 24h, +16.3% 7d) |
-| Price sources | cross-checked, 0.123% apart |
-| Market cap | $68.89B |
-| TVL | $6.47B (+4.2% 24h) |
-| Stablecoin supply | $15.84B |
+| SOL price | $118.37 (+0.7% 24h, +17.9% 7d) |
+| Price sources | cross-checked, 0.029% apart |
+| Market cap | $69.45B |
+| TVL | $6.48B (+4.4% 24h) |
+| Stablecoin supply | $15.97B |
 | DEX volume (24h) | $3.43B |
-| REV (24h) | $1.33M (network fees $1.10M + Jito tips $237.7K) |
+| REV (24h) | $1.34M (network fees $1.10M + Jito tips $243.4K) |
 | App fees (24h) | $18.64M |
 | Median fee (user txs) | – lamports |
-| Circulating supply | 587,507,642 SOL |
+| Circulating supply | 587,507,482 SOL |
 
 ## Ecosystem Growth
 
 | Metric | Value |
 |---|---|
-| Tokenized assets (RWA) on Solana | $525.76M across 15 protocols |
+| Tokenized assets (RWA) on Solana | $525.80M across 15 protocols |
 | Monthly active addresses (solana.com) | 50M |
 | Quarterly active wallets (solana.com) | 100m+ |
 | Daily transactions (solana.com) | 100M+ |
@@ -85,8 +85,8 @@
 
 **Largest tokenized-asset protocols**
 
-- OnRe: $302.62M
-- Huma Finance V2: $177.65M
+- OnRe: $302.68M
+- Huma Finance V2: $177.68M
 - Plume Vaults: $28.21M
 - Invesco USTB: $3.91M
 - Mansory: $3.01M
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-09-22T15:40:22Z |
-| validators | ok | 2026-09-22T15:40:31Z |
-| supply | ok | 2026-09-22T15:40:32Z |
-| defillama | ok | 2026-09-22T15:40:21Z |
-| price | ok | 2026-09-22T15:40:20Z |
-| news | ok | 2026-09-22T15:40:21Z |
-| solana_com | ok | 2026-09-22T15:40:21Z |
-| dune | off (optional) | 2026-09-22T15:40:20Z |
+| network | ok | 2026-09-22T19:08:20Z |
+| validators | ok | 2026-09-22T19:08:29Z |
+| supply | ok | 2026-09-22T19:08:30Z |
+| defillama | ok | 2026-09-22T19:08:20Z |
+| price | ok | 2026-09-22T19:08:18Z |
+| news | ok | 2026-09-22T19:08:19Z |
+| solana_com | ok | 2026-09-22T19:08:19Z |
+| dune | off (optional) | 2026-09-22T19:08:18Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

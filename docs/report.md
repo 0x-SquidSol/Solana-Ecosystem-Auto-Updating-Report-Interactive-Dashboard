@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-09-23T14:26:48Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-09-23T18:29:38Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -19,20 +19,20 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 2,616 |
-| Total TPS (incl. votes) | 5,128 |
-| Peak true TPS (30 min) | 4,342 |
-| Mean slot time | 0.267 s |
-| Slot | 449,730,099 |
-| Block height | 427,770,334 |
-| Epoch | 1041 - 4.19% complete, ~30.7 h remaining |
+| True TPS (non-vote) | 2,274 |
+| Total TPS (incl. votes) | 4,805 |
+| Peak true TPS (30 min) | 2,668 |
+| Mean slot time | 0.266 s |
+| Slot | 449,784,732 |
+| Block height | 427,824,940 |
+| Epoch | 1041 - 16.84% complete, ~26.5 h remaining |
 
 ## Validators
 
 | Metric | Value |
 |---|---|
 | Active validators | 675 |
-| Delinquent | 12 (0.07% of stake) |
+| Delinquent | 12 (0.05% of stake) |
 | Consensus stall buffer | 0.2% of the 33.3% halt threshold consumed |
 | Total stake | 439,964,137 SOL |
 | Nakamoto coefficient | 18 |
@@ -60,22 +60,22 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $113.50 (-3.2% 24h, +19.7% 7d) |
-| Price sources | cross-checked, 0.217% apart |
-| Market cap | $66.69B |
-| TVL | $6.48B (+0.4% 24h) |
+| SOL price | $114.14 (-3.0% 24h, +17.8% 7d) |
+| Price sources | cross-checked, 0.006% apart |
+| Market cap | $67.08B |
+| TVL | $6.39B (-1.0% 24h) |
 | Stablecoin supply | $15.92B |
 | DEX volume (24h) | $3.20B |
-| REV (24h) | $1.35M (network fees $1.10M + Jito tips $252.9K) |
-| App fees (24h) | $17.78M |
+| REV (24h) | $1.35M (network fees $1.10M + Jito tips $255.9K) |
+| App fees (24h) | $17.87M |
 | Median fee (user txs) | – lamports |
-| Circulating supply | 587,578,197 SOL |
+| Circulating supply | 587,577,926 SOL |
 
 ## Ecosystem Growth
 
 | Metric | Value |
 |---|---|
-| Tokenized assets (RWA) on Solana | $543.77M across 15 protocols |
+| Tokenized assets (RWA) on Solana | $545.47M across 15 protocols |
 | Monthly active addresses (solana.com) | 50M |
 | Quarterly active wallets (solana.com) | 100m+ |
 | Daily transactions (solana.com) | 100M+ |
@@ -86,19 +86,19 @@
 **Largest tokenized-asset protocols**
 
 - OnRe: $303.05M
-- Huma Finance V2: $195.31M
+- Huma Finance V2: $197.03M
 - Plume Vaults: $28.20M
 - Invesco USTB: $3.91M
-- Mansory: $3.01M
+- Mansory: $2.99M
 
 ## News & Upgrades
 
 
 **Solana News**
 
+- [Stocks Go Onchain: What the SEC's Innovation Exemption Means for Solana](https://solana.com/news/stocks-sec-innovation-exemption) - 2026-09-23
 - [Solana Changelog: September 18, 2026](https://solana.com/news/solana-changelog-september-18-2026) - 2026-09-19
 - [How AI Is Reshaping Crypto Security, with Michael Coates](https://solana.com/news/bits-to-bricks-crypto-security-michael-coates) - 2026-09-19
-- [Project Harmonia Brings Institutional Tokenized Funds to Solana](https://solana.com/news/project-harmonia-brings-institutional-tokenized-funds-to-solana) - 2026-09-16
 
 **Solana Status**
 
@@ -120,21 +120,21 @@
 
 **SIMD Activity**
 
+- [SIMD-0558: Describe pointer validation & update CU cost (#651)](https://github.com/solana-foundation/solana-improvement-documents/commit/8b157e1def5fb3b3779f0935ec71cd7cae271207) - 2026-09-23
 - [Increase TxV1 Account Lock Limit to 96 (#596)](https://github.com/solana-foundation/solana-improvement-documents/commit/b7ca332f0aabe11ecc6cf36143462d4487d59a39) - 2026-09-21
 - [SIMD-0582: Early detection of instruction trace overflow (#582)](https://github.com/solana-foundation/solana-improvement-documents/commit/2df3442ef8fca03a48999a9ce525f69224368ebb) - 2026-09-16
-- [SIMD-0377: fix JMP32 register opcodes, JSGE32 condition and callx opc…](https://github.com/solana-foundation/solana-improvement-documents/commit/31406c06ad6abb28576bca29b58c2c8179b1569d) - 2026-09-15
 
 ## Data Sources
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-09-23T14:26:35Z |
-| validators | ok | 2026-09-23T14:26:47Z |
-| supply | ok | 2026-09-23T14:26:48Z |
-| defillama | ok | 2026-09-23T14:26:34Z |
-| price | ok | 2026-09-23T14:26:33Z |
-| news | ok | 2026-09-23T14:26:34Z |
-| solana_com | ok | 2026-09-23T14:26:33Z |
-| dune | off (optional) | 2026-09-23T14:26:32Z |
+| network | ok | 2026-09-23T18:29:27Z |
+| validators | ok | 2026-09-23T18:29:37Z |
+| supply | ok | 2026-09-23T18:29:38Z |
+| defillama | ok | 2026-09-23T18:29:26Z |
+| price | ok | 2026-09-23T18:29:25Z |
+| news | ok | 2026-09-23T18:29:26Z |
+| solana_com | ok | 2026-09-23T18:29:26Z |
+| dune | off (optional) | 2026-09-23T18:29:25Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

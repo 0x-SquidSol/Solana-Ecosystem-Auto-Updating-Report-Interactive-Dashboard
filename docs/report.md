@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-09-25T12:24:18Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-09-25T17:23:22Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -19,13 +19,13 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,977 |
-| Total TPS (incl. votes) | 4,487 |
-| Peak true TPS (30 min) | 2,862 |
-| Mean slot time | 0.268 s |
-| Slot | 450,351,740 |
-| Block height | 428,391,646 |
-| Epoch | 1042 - 48.09% complete, ~16.7 h remaining |
+| True TPS (non-vote) | 2,504 |
+| Total TPS (incl. votes) | 5,018 |
+| Peak true TPS (30 min) | 2,976 |
+| Mean slot time | 0.267 s |
+| Slot | 450,418,662 |
+| Block height | 428,458,547 |
+| Epoch | 1042 - 63.58% complete, ~11.7 h remaining |
 
 ## Validators
 
@@ -39,7 +39,7 @@
 | Top-10 stake share | 24.4% |
 | Top-20 stake share | 35.6% |
 | Client stake split | agave 94.8% / firedancer 5.2% / unknown 0.1% |
-| Stake-weighted commission | 26.63% |
+| Stake-weighted commission | 26.64% |
 
 **Top validators by stake**
 
@@ -60,22 +60,22 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $119.32 (+5.1% 24h, +13.8% 7d) |
-| Price sources | cross-checked, 0.340% apart |
-| Market cap | $70.09B |
-| TVL | $6.51B (+1.9% 24h) |
-| Stablecoin supply | $16.61B |
+| SOL price | $121.22 (+3.6% 24h, +8.7% 7d) |
+| Price sources | cross-checked, 0.191% apart |
+| Market cap | $71.23B |
+| TVL | $6.56B (+2.6% 24h) |
+| Stablecoin supply | $17.32B |
 | DEX volume (24h) | $2.45B |
-| REV (24h) | $1.17M (network fees $952.7K + Jito tips $220.6K) |
+| REV (24h) | $1.16M (network fees $952.7K + Jito tips $212.1K) |
 | App fees (24h) | $15.98M |
 | Median fee (user txs) | – lamports |
-| Circulating supply | 587,647,638 SOL |
+| Circulating supply | 587,653,357 SOL |
 
 ## Ecosystem Growth
 
 | Metric | Value |
 |---|---|
-| Tokenized assets (RWA) on Solana | $544.07M across 15 protocols |
+| Tokenized assets (RWA) on Solana | $543.60M across 15 protocols |
 | Monthly active addresses (solana.com) | 50M |
 | Quarterly active wallets (solana.com) | 100m+ |
 | Daily transactions (solana.com) | 100M+ |
@@ -85,11 +85,11 @@
 
 **Largest tokenized-asset protocols**
 
-- OnRe: $299.23M
-- Huma: $199.38M
-- Plume Vaults: $28.26M
+- OnRe: $298.23M
+- Huma: $200.00M
+- Plume Vaults: $28.17M
 - Invesco USTB: $3.91M
-- Mansory: $3.02M
+- Mansory: $3.04M
 
 ## News & Upgrades
 
@@ -120,21 +120,21 @@
 
 **SIMD Activity**
 
+- [Amend simd 0376 ed25519-zebra verification (#616)](https://github.com/solana-foundation/solana-improvement-documents/commit/4b643ca8746742183a469681765e694b385bb315) - 2026-09-25
 - [SIMD-0215: clarify LtHash security considerations (#669)](https://github.com/solana-foundation/solana-improvement-documents/commit/f1afd941b9fa5061ea80a5401feb72172121ebb5) - 2026-09-25
 - [SIMD-0558: Describe pointer validation & update CU cost (#651)](https://github.com/solana-foundation/solana-improvement-documents/commit/8b157e1def5fb3b3779f0935ec71cd7cae271207) - 2026-09-23
-- [Increase TxV1 Account Lock Limit to 96 (#596)](https://github.com/solana-foundation/solana-improvement-documents/commit/b7ca332f0aabe11ecc6cf36143462d4487d59a39) - 2026-09-21
 
 ## Data Sources
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-09-25T12:24:08Z |
-| validators | ok | 2026-09-25T12:24:18Z |
-| supply | ok | 2026-09-25T12:24:18Z |
-| defillama | ok | 2026-09-25T12:24:09Z |
-| price | ok | 2026-09-25T12:24:07Z |
-| news | ok | 2026-09-25T12:24:08Z |
-| solana_com | ok | 2026-09-25T12:24:07Z |
-| dune | off (optional) | 2026-09-25T12:24:06Z |
+| network | ok | 2026-09-25T17:23:12Z |
+| validators | ok | 2026-09-25T17:23:21Z |
+| supply | ok | 2026-09-25T17:23:22Z |
+| defillama | ok | 2026-09-25T17:23:14Z |
+| price | ok | 2026-09-25T17:23:10Z |
+| news | ok | 2026-09-25T17:23:11Z |
+| solana_com | ok | 2026-09-25T17:23:11Z |
+| dune | off (optional) | 2026-09-25T17:23:10Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

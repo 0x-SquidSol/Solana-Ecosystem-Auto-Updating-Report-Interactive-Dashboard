@@ -1,25 +1,5 @@
 [
  {
-  "seen_at": "2026-09-11T23:40:37Z",
-  "kind": "statistical",
-  "severity": "alert",
-  "metric": "validators.delinquent_stake_pct",
-  "message": "delinquent stake is 4.2 standard deviations above its recent mean (0.68 vs 0.0761017)",
-  "value": 0.68,
-  "baseline_mean": 0.0761,
-  "z_score": 4.18
- },
- {
-  "seen_at": "2026-09-12T01:32:35Z",
-  "kind": "statistical",
-  "severity": "warning",
-  "metric": "validators.delinquent_stake_pct",
-  "message": "delinquent stake is 3.4 standard deviations above its recent mean (0.68 vs 0.0928302)",
-  "value": 0.68,
-  "baseline_mean": 0.0928,
-  "z_score": 3.4
- },
- {
   "seen_at": "2026-09-15T01:39:34Z",
   "kind": "statistical",
   "severity": "alert",
@@ -258,5 +238,15 @@
   "value": 112.3,
   "baseline_mean": 101.8994,
   "z_score": 2.52
+ },
+ {
+  "seen_at": "2026-09-26T01:58:09Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "network.mean_slot_time_secs",
+  "message": "slot time is 3.2 standard deviations above its recent mean (0.27 vs 0.266587)",
+  "value": 0.27,
+  "baseline_mean": 0.2666,
+  "z_score": 3.2
  }
 ]

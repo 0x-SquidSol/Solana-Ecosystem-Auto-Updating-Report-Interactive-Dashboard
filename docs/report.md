@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-09-28T12:17:10Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-09-28T19:45:08Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -19,13 +19,13 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,806 |
-| Total TPS (incl. votes) | 4,314 |
-| Peak true TPS (30 min) | 2,724 |
-| Mean slot time | 0.268 s |
-| Slot | 451,316,501 |
-| Block height | 429,356,141 |
-| Epoch | 1044 - 71.41% complete, ~9.2 h remaining |
+| True TPS (non-vote) | 2,392 |
+| Total TPS (incl. votes) | 4,897 |
+| Peak true TPS (30 min) | 2,830 |
+| Mean slot time | 0.269 s |
+| Slot | 451,416,665 |
+| Block height | 429,456,297 |
+| Epoch | 1044 - 94.60% complete, ~1.7 h remaining |
 
 ## Validators
 
@@ -60,22 +60,22 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $119.43 (-3.8% 24h, +2.4% 7d) |
-| Price sources | cross-checked, 0.037% apart |
-| Market cap | $70.19B |
-| TVL | $6.51B (-1.8% 24h) |
-| Stablecoin supply | $16.59B |
+| SOL price | $118.17 (-3.9% 24h, +2.4% 7d) |
+| Price sources | cross-checked, 0.101% apart |
+| Market cap | $69.46B |
+| TVL | $6.58B (-0.7% 24h) |
+| Stablecoin supply | $16.45B |
 | DEX volume (24h) | $1.93B |
-| REV (24h) | $1.18M (network fees $949.1K + Jito tips $228.4K) |
-| App fees (24h) | $15.31M |
+| REV (24h) | $1.19M (network fees $949.1K + Jito tips $239.8K) |
+| App fees (24h) | $15.42M |
 | Median fee (user txs) | – lamports |
-| Circulating supply | 587,782,059 SOL |
+| Circulating supply | 587,781,683 SOL |
 
 ## Ecosystem Growth
 
 | Metric | Value |
 |---|---|
-| Tokenized assets (RWA) on Solana | $545.78M across 14 protocols |
+| Tokenized assets (RWA) on Solana | $544.09M across 14 protocols |
 | Monthly active addresses (solana.com) | 50M |
 | Quarterly active wallets (solana.com) | 100m+ |
 | Daily transactions (solana.com) | 100M+ |
@@ -85,8 +85,8 @@
 
 **Largest tokenized-asset protocols**
 
-- OnRe: $296.34M
-- Huma: $209.05M
+- OnRe: $294.72M
+- Huma: $208.97M
 - Plume Vaults: $25.47M
 - Invesco USTB: $3.91M
 - Mansory: $3.01M
@@ -96,9 +96,9 @@
 
 **Solana News**
 
+- [Slot Time Reduction Effects](https://solana.com/news/slot-time-reduction-effects) - 2026-09-28
 - [Solana Foundation Appoints Rachel Conlan as Chief Strategy Officer and Jamal Raees as General Manager of Payments](https://solana.com/news/solana-foundation-appoints-2026) - 2026-09-24
 - [Stocks Go Onchain: What the SEC's Innovation Exemption Means for Solana](https://solana.com/news/stocks-sec-innovation-exemption) - 2026-09-23
-- [Solana Changelog: September 18, 2026](https://solana.com/news/solana-changelog-september-18-2026) - 2026-09-19
 
 **Solana Status**
 
@@ -108,15 +108,15 @@
 
 **Agave Releases**
 
+- [Release v4.4.0-beta.0](https://github.com/anza-xyz/agave/releases/tag/v4.4.0-beta.0) - 2026-09-28
 - [Release v4.4.0-alpha.5](https://github.com/anza-xyz/agave/releases/tag/v4.4.0-alpha.5) - 2026-09-21
 - [Release v4.3.0](https://github.com/anza-xyz/agave/releases/tag/v4.3.0) - 2026-09-21
-- [Release v4.3.0-rc.1](https://github.com/anza-xyz/agave/releases/tag/v4.3.0-rc.1) - 2026-09-14
 
 **Firedancer Releases**
 
+- [Firedancer Mainnet Release v26.09.5](https://github.com/firedancer-io/firedancer/releases/tag/v26.09.5) - 2026-09-28
 - [Firedancer Mainnet Release v26.09.4](https://github.com/firedancer-io/firedancer/releases/tag/v26.09.4) - 2026-09-22
 - [Frankendancer Mainnet v0.1204.40300](https://github.com/firedancer-io/firedancer/releases/tag/v0.1204.40300) - 2026-09-21
-- [v0.1203.40302](https://github.com/firedancer-io/firedancer/releases/tag/v0.1203.40302) - 2026-09-21
 
 **SIMD Activity**
 
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-09-28T12:17:01Z |
-| validators | ok | 2026-09-28T12:17:09Z |
-| supply | ok | 2026-09-28T12:17:10Z |
-| defillama | ok | 2026-09-28T12:17:01Z |
-| price | ok | 2026-09-28T12:16:59Z |
-| news | ok | 2026-09-28T12:17:00Z |
-| solana_com | ok | 2026-09-28T12:17:00Z |
-| dune | off (optional) | 2026-09-28T12:16:59Z |
+| network | ok | 2026-09-28T19:44:58Z |
+| validators | ok | 2026-09-28T19:45:07Z |
+| supply | ok | 2026-09-28T19:45:08Z |
+| defillama | ok | 2026-09-28T19:44:58Z |
+| price | ok | 2026-09-28T19:44:56Z |
+| news | ok | 2026-09-28T19:44:57Z |
+| solana_com | ok | 2026-09-28T19:44:57Z |
+| dune | off (optional) | 2026-09-28T19:44:56Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

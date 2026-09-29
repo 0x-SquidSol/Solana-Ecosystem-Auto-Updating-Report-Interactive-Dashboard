@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-09-29T03:56:22Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-09-29T10:16:17Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -19,13 +19,13 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,743 |
-| Total TPS (incl. votes) | 4,260 |
-| Peak true TPS (30 min) | 2,082 |
+| True TPS (non-vote) | 1,447 |
+| Total TPS (incl. votes) | 3,967 |
+| Peak true TPS (30 min) | 1,710 |
 | Mean slot time | 0.267 s |
-| Slot | 451,526,660 |
-| Block height | 429,566,238 |
-| Epoch | 1045 - 20.06% complete, ~25.6 h remaining |
+| Slot | 451,612,121 |
+| Block height | 429,651,684 |
+| Epoch | 1045 - 39.84% complete, ~19.3 h remaining |
 
 ## Validators
 
@@ -60,22 +60,22 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $117.74 (– 24h, – 7d) |
+| SOL price | $119.81 (– 24h, – 7d) |
 | Price sources | single source (jupiter) |
 | Market cap | – |
-| TVL | $6.42B (-3.1% 24h) |
-| Stablecoin supply | $16.39B |
+| TVL | $6.50B (-2.0% 24h) |
+| Stablecoin supply | $16.21B |
 | DEX volume (24h) | $2.29B |
-| REV (24h) | $1.29M (network fees $1.06M + Jito tips $229.8K) |
+| REV (24h) | $1.29M (network fees $1.06M + Jito tips $230.5K) |
 | App fees (24h) | $17.45M |
 | Median fee (user txs) | – lamports |
-| Circulating supply | 587,852,737 SOL |
+| Circulating supply | 587,852,507 SOL |
 
 ## Ecosystem Growth
 
 | Metric | Value |
 |---|---|
-| Tokenized assets (RWA) on Solana | $543.66M across 14 protocols |
+| Tokenized assets (RWA) on Solana | $542.81M across 14 protocols |
 | Monthly active addresses (solana.com) | 50M |
 | Quarterly active wallets (solana.com) | 100m+ |
 | Daily transactions (solana.com) | 100M+ |
@@ -86,10 +86,10 @@
 **Largest tokenized-asset protocols**
 
 - OnRe: $294.76M
-- Huma: $208.55M
+- Huma: $207.69M
 - Plume Vaults: $25.48M
 - Invesco USTB: $3.91M
-- Mansory: $2.99M
+- Mansory: $3.00M
 
 ## News & Upgrades
 
@@ -108,7 +108,7 @@
 
 **Agave Releases**
 
-- [Release v4.4.0-beta.0](https://github.com/anza-xyz/agave/releases/tag/v4.4.0-beta.0) - 2026-09-28
+- [Release v4.4.0-beta.0](https://github.com/anza-xyz/agave/releases/tag/v4.4.0-beta.0) - 2026-09-29
 - [Release v4.4.0-alpha.5](https://github.com/anza-xyz/agave/releases/tag/v4.4.0-alpha.5) - 2026-09-21
 - [Release v4.3.0](https://github.com/anza-xyz/agave/releases/tag/v4.3.0) - 2026-09-21
 
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-09-29T03:56:03Z |
-| validators | ok | 2026-09-29T03:56:12Z |
-| supply | ok | 2026-09-29T03:56:13Z |
-| defillama | ok | 2026-09-29T03:56:04Z |
-| price | ok | 2026-09-29T03:56:01Z |
-| news | ok | 2026-09-29T03:56:22Z |
-| solana_com | ok | 2026-09-29T03:56:02Z |
-| dune | off (optional) | 2026-09-29T03:56:01Z |
+| network | ok | 2026-09-29T10:16:07Z |
+| validators | ok | 2026-09-29T10:16:16Z |
+| supply | ok | 2026-09-29T10:16:17Z |
+| defillama | ok | 2026-09-29T10:16:06Z |
+| price | ok | 2026-09-29T10:16:05Z |
+| news | ok | 2026-09-29T10:16:06Z |
+| solana_com | ok | 2026-09-29T10:16:05Z |
+| dune | off (optional) | 2026-09-29T10:16:04Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

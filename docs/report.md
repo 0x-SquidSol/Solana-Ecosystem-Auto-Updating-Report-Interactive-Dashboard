@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-09-30T16:59:45Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-09-30T21:16:26Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -19,13 +19,13 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 2,150 |
-| Total TPS (incl. votes) | 4,641 |
-| Peak true TPS (30 min) | 2,602 |
+| True TPS (non-vote) | 2,435 |
+| Total TPS (incl. votes) | 4,931 |
+| Peak true TPS (30 min) | 2,862 |
 | Mean slot time | 0.268 s |
-| Slot | 452,025,349 |
-| Block height | 430,064,631 |
-| Epoch | 1046 - 35.50% complete, ~20.7 h remaining |
+| Slot | 452,082,734 |
+| Block height | 430,121,914 |
+| Epoch | 1046 - 48.78% complete, ~16.5 h remaining |
 
 ## Validators
 
@@ -60,22 +60,22 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $120.30 (+2.0% 24h, +3.6% 7d) |
-| Price sources | cross-checked, 0.051% apart |
-| Market cap | $70.73B |
-| TVL | $6.57B (+1.8% 24h) |
-| Stablecoin supply | $16.13B |
+| SOL price | $118.06 (-0.8% 24h, +2.9% 7d) |
+| Price sources | cross-checked, 0.122% apart |
+| Market cap | $69.40B |
+| TVL | $6.52B (+1.3% 24h) |
+| Stablecoin supply | $16.10B |
 | DEX volume (24h) | $2.53B |
-| REV (24h) | $1.29M (network fees $1.07M + Jito tips $225.6K) |
-| App fees (24h) | $14.69M |
+| REV (24h) | $1.30M (network fees $1.07M + Jito tips $235.7K) |
+| App fees (24h) | $14.67M |
 | Median fee (user txs) | – lamports |
-| Circulating supply | 588,005,672 SOL |
+| Circulating supply | 588,005,473 SOL |
 
 ## Ecosystem Growth
 
 | Metric | Value |
 |---|---|
-| Tokenized assets (RWA) on Solana | $539.00M across 14 protocols |
+| Tokenized assets (RWA) on Solana | $539.41M across 14 protocols |
 | Monthly active addresses (solana.com) | 50M |
 | Quarterly active wallets (solana.com) | 100m+ |
 | Daily transactions (solana.com) | 100M+ |
@@ -85,9 +85,9 @@
 
 **Largest tokenized-asset protocols**
 
-- OnRe: $292.51M
-- Huma: $206.02M
-- Plume Vaults: $25.67M
+- OnRe: $291.03M
+- Huma: $207.96M
+- Plume Vaults: $25.68M
 - Invesco USTB: $3.91M
 - Mansory: $3.00M
 
@@ -96,9 +96,9 @@
 
 **Solana News**
 
+- [Open USD Is Live on Solana](https://solana.com/news/open-usd-is-live-on-solana) - 2026-09-30
 - [Slot Time Reduction Effects](https://solana.com/news/slot-time-reduction-effects) - 2026-09-28
 - [Solana Foundation Appoints Rachel Conlan as Chief Strategy Officer and Jamal Raees as General Manager of Payments](https://solana.com/news/solana-foundation-appoints-2026) - 2026-09-24
-- [Stocks Go Onchain: What the SEC's Innovation Exemption Means for Solana](https://solana.com/news/stocks-sec-innovation-exemption) - 2026-09-23
 
 **Solana Status**
 
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-09-30T16:59:34Z |
-| validators | ok | 2026-09-30T16:59:44Z |
-| supply | ok | 2026-09-30T16:59:45Z |
-| defillama | ok | 2026-09-30T16:59:35Z |
-| price | ok | 2026-09-30T16:59:32Z |
-| news | ok | 2026-09-30T16:59:34Z |
-| solana_com | ok | 2026-09-30T16:59:33Z |
-| dune | off (optional) | 2026-09-30T16:59:32Z |
+| network | ok | 2026-09-30T21:16:14Z |
+| validators | ok | 2026-09-30T21:16:25Z |
+| supply | ok | 2026-09-30T21:16:26Z |
+| defillama | ok | 2026-09-30T21:16:14Z |
+| price | ok | 2026-09-30T21:16:13Z |
+| news | ok | 2026-09-30T21:16:14Z |
+| solana_com | ok | 2026-09-30T21:16:13Z |
+| dune | off (optional) | 2026-09-30T21:16:12Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

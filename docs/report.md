@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-10-03T12:40:15Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-10-03T16:42:16Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -17,27 +17,27 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,644 |
-| Total TPS (incl. votes) | 4,157 |
-| Peak true TPS (30 min) | 2,240 |
-| Mean slot time | 0.266 s |
-| Slot | 452,936,073 |
-| Block height | 430,974,645 |
-| Epoch | 1048 - 46.31% complete, ~17.1 h remaining |
+| True TPS (non-vote) | 2,195 |
+| Total TPS (incl. votes) | 4,692 |
+| Peak true TPS (30 min) | 2,899 |
+| Mean slot time | 0.268 s |
+| Slot | 452,990,447 |
+| Block height | 431,028,995 |
+| Epoch | 1048 - 58.90% complete, ~13.2 h remaining |
 
 ## Validators
 
 | Metric | Value |
 |---|---|
 | Active validators | 672 |
-| Delinquent | 12 (0.01% of stake) |
-| Consensus stall buffer | 0.0% of the 33.3% halt threshold consumed |
+| Delinquent | 13 (0.02% of stake) |
+| Consensus stall buffer | 0.1% of the 33.3% halt threshold consumed |
 | Total stake | 442,013,190 SOL |
 | Nakamoto coefficient | 18 |
 | Top-10 stake share | 24.5% |
 | Top-20 stake share | 35.5% |
 | Client stake split | agave 95.9% / firedancer 4.1% / unknown 0.1% |
-| Stake-weighted commission | 26.52% |
+| Stake-weighted commission | 26.54% |
 
 **Top validators by stake**
 
@@ -58,22 +58,22 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $119.32 (-2.5% 24h, -1.1% 7d) |
-| Price sources | cross-checked, 0.057% apart |
-| Market cap | $70.18B |
-| TVL | $6.64B (+1.0% 24h) |
-| Stablecoin supply | $16.61B |
+| SOL price | $119.73 (+0.2% 24h, -1.0% 7d) |
+| Price sources | cross-checked, 0.053% apart |
+| Market cap | $70.42B |
+| TVL | $6.65B (+1.2% 24h) |
+| Stablecoin supply | $16.63B |
 | DEX volume (24h) | $2.76B |
-| REV (24h) | $1.35M (network fees $1.09M + Jito tips $258.0K) |
-| App fees (24h) | $17.30M |
+| REV (24h) | $1.34M (network fees $1.09M + Jito tips $243.9K) |
+| App fees (24h) | $17.40M |
 | Median fee (user txs) | – lamports |
-| Circulating supply | 588,145,999 SOL |
+| Circulating supply | 588,145,837 SOL |
 
 ## Ecosystem Growth
 
 | Metric | Value |
 |---|---|
-| Tokenized assets (RWA) on Solana | $598.94M across 14 protocols |
+| Tokenized assets (RWA) on Solana | $598.90M across 14 protocols |
 | Monthly active addresses (solana.com) | 50M |
 | Quarterly active wallets (solana.com) | 100m+ |
 | Daily transactions (solana.com) | 100M+ |
@@ -83,20 +83,20 @@
 
 **Largest tokenized-asset protocols**
 
-- OnRe: $291.52M
-- Huma: $260.27M
+- OnRe: $291.53M
+- Huma: $260.15M
 - Plume Vaults: $32.41M
 - Invesco USTB: $3.91M
-- Mansory: $2.99M
+- Mansory: $3.00M
 
 ## News & Upgrades
 
 
 **Solana News**
 
+- [Solana x AI: The Democratization Layer](https://solana.com/news/solana-ai-the-democratization-layer) - 2026-10-02
 - [Open USD Is Live on Solana](https://solana.com/news/open-usd-is-live-on-solana) - 2026-09-30
 - [Slot Time Reduction Effects](https://solana.com/news/slot-time-reduction-effects) - 2026-09-28
-- [Solana Foundation Appoints Rachel Conlan as Chief Strategy Officer and Jamal Raees as General Manager of Payments](https://solana.com/news/solana-foundation-appoints-2026) - 2026-09-24
 
 **Solana Status**
 
@@ -126,13 +126,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-10-03T12:40:04Z |
-| validators | ok | 2026-10-03T12:40:14Z |
-| supply | ok | 2026-10-03T12:40:15Z |
-| defillama | ok | 2026-10-03T12:40:04Z |
-| price | ok | 2026-10-03T12:40:02Z |
-| news | ok | 2026-10-03T12:40:04Z |
-| solana_com | ok | 2026-10-03T12:40:03Z |
-| dune | off (optional) | 2026-10-03T12:40:02Z |
+| network | ok | 2026-10-03T16:42:05Z |
+| validators | ok | 2026-10-03T16:42:15Z |
+| supply | ok | 2026-10-03T16:42:16Z |
+| defillama | ok | 2026-10-03T16:42:05Z |
+| price | ok | 2026-10-03T16:42:03Z |
+| news | ok | 2026-10-03T16:42:05Z |
+| solana_com | ok | 2026-10-03T16:42:04Z |
+| dune | off (optional) | 2026-10-03T16:42:03Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

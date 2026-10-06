@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-10-05T23:21:34Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-10-06T03:09:40Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -18,13 +18,13 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 2,526 |
-| Total TPS (incl. votes) | 5,025 |
-| Peak true TPS (30 min) | 3,018 |
-| Mean slot time | 0.268 s |
-| Slot | 453,725,076 |
-| Block height | 431,762,961 |
-| Epoch | 1050 - 28.95% complete, ~22.8 h remaining |
+| True TPS (non-vote) | 2,154 |
+| Total TPS (incl. votes) | 4,660 |
+| Peak true TPS (30 min) | 2,764 |
+| Mean slot time | 0.267 s |
+| Slot | 453,776,117 |
+| Block height | 431,813,974 |
+| Epoch | 1050 - 40.77% complete, ~19.0 h remaining |
 
 ## Validators
 
@@ -59,22 +59,22 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $120.66 (-1.1% 24h, +2.8% 7d) |
-| Price sources | cross-checked, 0.133% apart |
-| Market cap | $71.00B |
-| TVL | $6.78B (+2.5% 24h) |
-| Stablecoin supply | $16.82B |
-| DEX volume (24h) | $1.71B |
-| REV (24h) | $1.29M (network fees $1.01M + Jito tips $285.1K) |
-| App fees (24h) | $16.12M |
+| SOL price | $120.18 (-0.7% 24h, +2.6% 7d) |
+| Price sources | cross-checked, 0.042% apart |
+| Market cap | $70.71B |
+| TVL | $6.79B (+0.9% 24h) |
+| Stablecoin supply | $16.76B |
+| DEX volume (24h) | $1.90B |
+| REV (24h) | $1.34M (network fees $1.04M + Jito tips $299.5K) |
+| App fees (24h) | $16.11M |
 | Median fee (user txs) | – lamports |
-| Circulating supply | 588,384,544 SOL |
+| Circulating supply | 588,385,681 SOL |
 
 ## Ecosystem Growth
 
 | Metric | Value |
 |---|---|
-| Tokenized assets (RWA) on Solana | $599.76M across 14 protocols |
+| Tokenized assets (RWA) on Solana | $599.46M across 14 protocols |
 | Monthly active addresses (solana.com) | 50M |
 | Quarterly active wallets (solana.com) | 100m+ |
 | Daily transactions (solana.com) | 100M+ |
@@ -84,8 +84,8 @@
 
 **Largest tokenized-asset protocols**
 
-- OnRe: $292.83M
-- Huma: $259.57M
+- OnRe: $292.96M
+- Huma: $259.13M
 - Plume Vaults: $32.54M
 - Invesco USTB: $3.91M
 - Mansory: $3.04M
@@ -95,9 +95,9 @@
 
 **Solana News**
 
+- [Solana Foundation Launches Solana DvP, an Atomic Settlement Program Built for Financial Institutions](https://solana.com/news/solana-foundation-launches-solana-dv-p-an-atomic-settlement-program-built-for-financial-institutions) - 2026-10-06
 - [Solana x AI: The Democratization Layer](https://solana.com/news/solana-ai-the-democratization-layer) - 2026-10-02
 - [Open USD Is Live on Solana](https://solana.com/news/open-usd-is-live-on-solana) - 2026-09-30
-- [Slot Time Reduction Effects](https://solana.com/news/slot-time-reduction-effects) - 2026-09-28
 
 **Solana Status**
 
@@ -113,9 +113,9 @@
 
 **Firedancer Releases**
 
+- [Firedancer Mainnet Release v26.09.6](https://github.com/firedancer-io/firedancer/releases/tag/v26.09.6) - 2026-10-06
 - [Firedancer Mainnet Release v26.09.5](https://github.com/firedancer-io/firedancer/releases/tag/v26.09.5) - 2026-09-28
 - [Firedancer Mainnet Release v26.09.4](https://github.com/firedancer-io/firedancer/releases/tag/v26.09.4) - 2026-09-22
-- [Frankendancer Mainnet v0.1204.40300](https://github.com/firedancer-io/firedancer/releases/tag/v0.1204.40300) - 2026-09-21
 
 **SIMD Activity**
 
@@ -127,13 +127,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-10-05T23:21:24Z |
-| validators | ok | 2026-10-05T23:21:32Z |
-| supply | ok | 2026-10-05T23:21:34Z |
-| defillama | ok | 2026-10-05T23:21:23Z |
-| price | ok | 2026-10-05T23:21:22Z |
-| news | ok | 2026-10-05T23:21:24Z |
-| solana_com | ok | 2026-10-05T23:21:22Z |
-| dune | off (optional) | 2026-10-05T23:21:22Z |
+| network | ok | 2026-10-06T03:09:30Z |
+| validators | ok | 2026-10-06T03:09:39Z |
+| supply | ok | 2026-10-06T03:09:40Z |
+| defillama | ok | 2026-10-06T03:09:30Z |
+| price | ok | 2026-10-06T03:09:28Z |
+| news | ok | 2026-10-06T03:09:30Z |
+| solana_com | ok | 2026-10-06T03:09:29Z |
+| dune | off (optional) | 2026-10-06T03:09:28Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

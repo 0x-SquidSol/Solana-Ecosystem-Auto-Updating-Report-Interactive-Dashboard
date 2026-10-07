@@ -58,5 +58,25 @@
   "value": 116.21,
   "baseline_mean": 119.8606,
   "z_score": -2.96
+ },
+ {
+  "seen_at": "2026-10-07T19:38:00Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "network.mean_slot_time_secs",
+  "message": "slot time is 2.9 standard deviations above its recent mean (0.271 vs 0.267842)",
+  "value": 0.271,
+  "baseline_mean": 0.2678,
+  "z_score": 2.93
+ },
+ {
+  "seen_at": "2026-10-07T19:38:00Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "price.price_usd",
+  "message": "SOL price is 2.7 standard deviations below its recent mean (116.08 vs 119.765)",
+  "value": 116.08,
+  "baseline_mean": 119.7646,
+  "z_score": -2.72
  }
 ]

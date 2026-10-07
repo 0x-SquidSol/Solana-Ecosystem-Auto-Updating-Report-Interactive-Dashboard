@@ -1,31 +1,32 @@
 # Solana Ecosystem Report
 
-> Generated 2026-10-07T13:54:10Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-10-07T19:38:00Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
-- 🟡 **WARNING**: SOL price is 3.0 standard deviations below its recent mean (116.21 vs 119.861)
+- 🟡 **WARNING**: slot time is 2.9 standard deviations above its recent mean (0.271 vs 0.267842)
+- 🟡 **WARNING**: SOL price is 2.7 standard deviations below its recent mean (116.08 vs 119.765)
 
 **Recently seen**
 
-- 2026-09-27T00:32Z delinquent stake is 4.7 standard deviations above its recent mean (0.18 vs 0.0411364)
-- 2026-09-27T15:26Z slot time is 2.6 standard deviations above its recent mean (0.27 vs 0.266851)
 - 2026-10-05T17:37Z slot time is 2.7 standard deviations above its recent mean (0.27 vs 0.267632)
 - 2026-10-06T16:46Z slot time is 3.6 standard deviations above its recent mean (0.271 vs 0.267649)
 - 2026-10-07T13:54Z SOL price is 3.0 standard deviations below its recent mean (116.21 vs 119.861)
+- 2026-10-07T19:38Z slot time is 2.9 standard deviations above its recent mean (0.271 vs 0.267842)
+- 2026-10-07T19:38Z SOL price is 2.7 standard deviations below its recent mean (116.08 vs 119.765)
 
 ## Network
 
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 2,752 |
-| Total TPS (incl. votes) | 5,230 |
-| Peak true TPS (30 min) | 3,537 |
-| Mean slot time | 0.269 s |
-| Slot | 454,242,066 |
-| Block height | 432,279,648 |
-| Epoch | 1051 - 48.63% complete, ~16.6 h remaining |
+| True TPS (non-vote) | 2,438 |
+| Total TPS (incl. votes) | 4,896 |
+| Peak true TPS (30 min) | 3,189 |
+| Mean slot time | 0.271 s |
+| Slot | 454,318,618 |
+| Block height | 432,356,180 |
+| Epoch | 1051 - 66.35% complete, ~10.9 h remaining |
 
 ## Validators
 
@@ -39,7 +40,7 @@
 | Top-10 stake share | 24.6% |
 | Top-20 stake share | 35.6% |
 | Client stake split | agave 98.6% / firedancer 1.3% / unknown 0.1% |
-| Stake-weighted commission | 26.64% |
+| Stake-weighted commission | 26.65% |
 
 **Top validators by stake**
 
@@ -60,22 +61,22 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $116.21 (-4.0% 24h, -2.5% 7d) |
-| Price sources | cross-checked, 0.092% apart |
-| Market cap | $68.43B |
-| TVL | $6.50B (-4.3% 24h) |
-| Stablecoin supply | $16.64B |
+| SOL price | $116.08 (-3.7% 24h, -2.6% 7d) |
+| Price sources | cross-checked, 0.232% apart |
+| Market cap | $68.38B |
+| TVL | $6.44B (-5.1% 24h) |
+| Stablecoin supply | $16.45B |
 | DEX volume (24h) | $2.05B |
-| REV (24h) | $1.32M (network fees $1.05M + Jito tips $270.7K) |
-| App fees (24h) | $16.04M |
+| REV (24h) | $1.32M (network fees $1.05M + Jito tips $266.1K) |
+| App fees (24h) | $16.05M |
 | Median fee (user txs) | – lamports |
-| Circulating supply | 589,094,417 SOL |
+| Circulating supply | 589,094,153 SOL |
 
 ## Ecosystem Growth
 
 | Metric | Value |
 |---|---|
-| Tokenized assets (RWA) on Solana | $596.36M across 14 protocols |
+| Tokenized assets (RWA) on Solana | $597.11M across 14 protocols |
 | Monthly active addresses (solana.com) | 50M |
 | Quarterly active wallets (solana.com) | 100m+ |
 | Daily transactions (solana.com) | 100M+ |
@@ -85,20 +86,20 @@
 
 **Largest tokenized-asset protocols**
 
-- OnRe: $293.08M
-- Huma: $255.69M
-- Plume Vaults: $32.85M
-- Invesco USTB: $3.91M
-- Mansory: $2.97M
+- OnRe: $293.04M
+- Huma: $256.41M
+- Plume Vaults: $32.94M
+- Invesco USTB: $3.92M
+- Mansory: $2.96M
 
 ## News & Upgrades
 
 
 **Solana News**
 
+- [Solana Ecosystem Roundup: September 2026](https://solana.com/news/solana-ecosystem-roundup-september-2026) - 2026-10-06
 - [Solana Foundation Launches Solana DvP, an Atomic Settlement Program Built for Financial Institutions](https://solana.com/news/solana-foundation-launches-solana-dv-p-an-atomic-settlement-program-built-for-financial-institutions) - 2026-10-06
 - [Introducing Solana Microscope: Program Monitoring and Alerts](https://solana.com/news/solana-microscope) - 2026-10-05
-- [Solana x AI: The Democratization Layer](https://solana.com/news/solana-ai-the-democratization-layer) - 2026-10-02
 
 **Solana Status**
 
@@ -114,9 +115,9 @@
 
 **Firedancer Releases**
 
+- [Firedancer Testnet Release v26.10.0](https://github.com/firedancer-io/firedancer/releases/tag/v26.10.0) - 2026-10-07
 - [Firedancer Mainnet Release v26.09.6](https://github.com/firedancer-io/firedancer/releases/tag/v26.09.6) - 2026-10-06
 - [Firedancer Mainnet Release v26.09.5](https://github.com/firedancer-io/firedancer/releases/tag/v26.09.5) - 2026-09-28
-- [Firedancer Mainnet Release v26.09.4](https://github.com/firedancer-io/firedancer/releases/tag/v26.09.4) - 2026-09-22
 
 **SIMD Activity**
 
@@ -128,13 +129,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-10-07T13:54:01Z |
-| validators | ok | 2026-10-07T13:54:09Z |
-| supply | ok | 2026-10-07T13:54:10Z |
-| defillama | ok | 2026-10-07T13:54:09Z |
-| price | ok | 2026-10-07T13:53:59Z |
-| news | ok | 2026-10-07T13:54:01Z |
-| solana_com | ok | 2026-10-07T13:53:59Z |
-| dune | off (optional) | 2026-10-07T13:53:58Z |
+| network | ok | 2026-10-07T19:37:49Z |
+| validators | ok | 2026-10-07T19:37:59Z |
+| supply | ok | 2026-10-07T19:38:00Z |
+| defillama | ok | 2026-10-07T19:37:50Z |
+| price | ok | 2026-10-07T19:37:47Z |
+| news | ok | 2026-10-07T19:37:49Z |
+| solana_com | ok | 2026-10-07T19:37:48Z |
+| dune | off (optional) | 2026-10-07T19:37:47Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

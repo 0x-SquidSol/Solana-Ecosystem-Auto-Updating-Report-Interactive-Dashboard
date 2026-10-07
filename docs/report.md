@@ -1,38 +1,38 @@
 # Solana Ecosystem Report
 
-> Generated 2026-10-07T06:40:24Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-10-07T13:54:10Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
-- ✅ No active anomalies.
+- 🟡 **WARNING**: SOL price is 3.0 standard deviations below its recent mean (116.21 vs 119.861)
 
 **Recently seen**
 
-- 2026-09-26T01:58Z slot time is 3.2 standard deviations above its recent mean (0.27 vs 0.266587)
 - 2026-09-27T00:32Z delinquent stake is 4.7 standard deviations above its recent mean (0.18 vs 0.0411364)
 - 2026-09-27T15:26Z slot time is 2.6 standard deviations above its recent mean (0.27 vs 0.266851)
 - 2026-10-05T17:37Z slot time is 2.7 standard deviations above its recent mean (0.27 vs 0.267632)
 - 2026-10-06T16:46Z slot time is 3.6 standard deviations above its recent mean (0.271 vs 0.267649)
+- 2026-10-07T13:54Z SOL price is 3.0 standard deviations below its recent mean (116.21 vs 119.861)
 
 ## Network
 
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,574 |
-| Total TPS (incl. votes) | 4,079 |
-| Peak true TPS (30 min) | 1,886 |
-| Mean slot time | 0.268 s |
-| Slot | 454,144,975 |
-| Block height | 432,182,572 |
-| Epoch | 1051 - 26.15% complete, ~23.7 h remaining |
+| True TPS (non-vote) | 2,752 |
+| Total TPS (incl. votes) | 5,230 |
+| Peak true TPS (30 min) | 3,537 |
+| Mean slot time | 0.269 s |
+| Slot | 454,242,066 |
+| Block height | 432,279,648 |
+| Epoch | 1051 - 48.63% complete, ~16.6 h remaining |
 
 ## Validators
 
 | Metric | Value |
 |---|---|
-| Active validators | 673 |
-| Delinquent | 8 (0.00% of stake) |
+| Active validators | 671 |
+| Delinquent | 10 (0.01% of stake) |
 | Consensus stall buffer | 0.0% of the 33.3% halt threshold consumed |
 | Total stake | 439,343,031 SOL |
 | Nakamoto coefficient | 18 |
@@ -46,7 +46,7 @@
 | # | Vote account | Stake | Share | Commission |
 |---|---|---|---|---|
 | 1 | `CcaH..oTN1` | 17,653,055 SOL | 4.02% | 7% |
-| 2 | `he1i..uBtk` | 15,968,869 SOL | 3.63% | 0% |
+| 2 | `he1i..uBtk` | 15,968,869 SOL | 3.64% | 0% |
 | 3 | `3N7s..iD5g` | 12,308,201 SOL | 2.80% | 0% |
 | 4 | `8Gbw..F8iD` | 11,264,081 SOL | 2.56% | 0% |
 | 5 | `Catz..Diqb` | 11,149,017 SOL | 2.54% | 5% |
@@ -60,22 +60,22 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $118.79 (-0.8% 24h, +0.1% 7d) |
-| Price sources | cross-checked, 0.058% apart |
-| Market cap | $69.99B |
-| TVL | $6.53B (-3.7% 24h) |
-| Stablecoin supply | $16.65B |
-| DEX volume (24h) | $2.04B |
-| REV (24h) | $1.33M (network fees $1.05M + Jito tips $280.1K) |
-| App fees (24h) | $16.06M |
+| SOL price | $116.21 (-4.0% 24h, -2.5% 7d) |
+| Price sources | cross-checked, 0.092% apart |
+| Market cap | $68.43B |
+| TVL | $6.50B (-4.3% 24h) |
+| Stablecoin supply | $16.64B |
+| DEX volume (24h) | $2.05B |
+| REV (24h) | $1.32M (network fees $1.05M + Jito tips $270.7K) |
+| App fees (24h) | $16.04M |
 | Median fee (user txs) | – lamports |
-| Circulating supply | 589,094,702 SOL |
+| Circulating supply | 589,094,417 SOL |
 
 ## Ecosystem Growth
 
 | Metric | Value |
 |---|---|
-| Tokenized assets (RWA) on Solana | $596.27M across 14 protocols |
+| Tokenized assets (RWA) on Solana | $596.36M across 14 protocols |
 | Monthly active addresses (solana.com) | 50M |
 | Quarterly active wallets (solana.com) | 100m+ |
 | Daily transactions (solana.com) | 100M+ |
@@ -86,10 +86,10 @@
 **Largest tokenized-asset protocols**
 
 - OnRe: $293.08M
-- Huma: $255.72M
-- Plume Vaults: $32.72M
+- Huma: $255.69M
+- Plume Vaults: $32.85M
 - Invesco USTB: $3.91M
-- Mansory: $2.98M
+- Mansory: $2.97M
 
 ## News & Upgrades
 
@@ -97,8 +97,8 @@
 **Solana News**
 
 - [Solana Foundation Launches Solana DvP, an Atomic Settlement Program Built for Financial Institutions](https://solana.com/news/solana-foundation-launches-solana-dv-p-an-atomic-settlement-program-built-for-financial-institutions) - 2026-10-06
+- [Introducing Solana Microscope: Program Monitoring and Alerts](https://solana.com/news/solana-microscope) - 2026-10-05
 - [Solana x AI: The Democratization Layer](https://solana.com/news/solana-ai-the-democratization-layer) - 2026-10-02
-- [Solana Changelog: October 1, 2026](https://solana.com/news/solana-changelog-october-1-2026) - 2026-10-01
 
 **Solana Status**
 
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-10-07T06:40:14Z |
-| validators | ok | 2026-10-07T06:40:24Z |
-| supply | ok | 2026-10-07T06:40:24Z |
-| defillama | ok | 2026-10-07T06:40:14Z |
-| price | ok | 2026-10-07T06:40:12Z |
-| news | ok | 2026-10-07T06:40:13Z |
-| solana_com | ok | 2026-10-07T06:40:12Z |
-| dune | off (optional) | 2026-10-07T06:40:12Z |
+| network | ok | 2026-10-07T13:54:01Z |
+| validators | ok | 2026-10-07T13:54:09Z |
+| supply | ok | 2026-10-07T13:54:10Z |
+| defillama | ok | 2026-10-07T13:54:09Z |
+| price | ok | 2026-10-07T13:53:59Z |
+| news | ok | 2026-10-07T13:54:01Z |
+| solana_com | ok | 2026-10-07T13:53:59Z |
+| dune | off (optional) | 2026-10-07T13:53:58Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-10-09T21:03:34Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-10-10T00:46:10Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -19,13 +19,13 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 2,266 |
-| Total TPS (incl. votes) | 5,336 |
-| Peak true TPS (30 min) | 2,932 |
-| Mean slot time | 0.219 s |
-| Slot | 455,000,966 |
-| Block height | 433,038,216 |
-| Epoch | 1053 - 24.30% complete, ~19.9 h remaining |
+| True TPS (non-vote) | 1,803 |
+| Total TPS (incl. votes) | 4,885 |
+| Peak true TPS (30 min) | 2,641 |
+| Mean slot time | 0.218 s |
+| Slot | 455,062,105 |
+| Block height | 433,099,351 |
+| Epoch | 1053 - 38.45% complete, ~16.1 h remaining |
 
 ## Validators
 
@@ -60,22 +60,22 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $108.93 (-0.7% 24h, -7.6% 7d) |
-| Price sources | cross-checked, 0.025% apart |
-| Market cap | $64.13B |
-| TVL | $6.19B (-4.2% 24h) |
-| Stablecoin supply | $16.13B |
-| DEX volume (24h) | $2.64B |
-| REV (24h) | $1.19M (network fees $940.1K + Jito tips $246.1K) |
-| App fees (24h) | $15.07M |
+| SOL price | $109.32 (+0.1% 24h, -7.9% 7d) |
+| Price sources | cross-checked, 0.009% apart |
+| Market cap | $64.37B |
+| TVL | $6.16B (-4.5% 24h) |
+| Stablecoin supply | $16.15B |
+| DEX volume (24h) | $2.35B |
+| REV (24h) | $1.17M (network fees $940.1K + Jito tips $227.5K) |
+| App fees (24h) | $14.99M |
 | Median fee (user txs) | – lamports |
-| Circulating supply | 588,768,240 SOL |
+| Circulating supply | 588,792,163 SOL |
 
 ## Ecosystem Growth
 
 | Metric | Value |
 |---|---|
-| Tokenized assets (RWA) on Solana | $596.96M across 14 protocols |
+| Tokenized assets (RWA) on Solana | $596.98M across 14 protocols |
 | Monthly active addresses (solana.com) | 50M |
 | Quarterly active wallets (solana.com) | 100m+ |
 | Daily transactions (solana.com) | 100M+ |
@@ -85,11 +85,11 @@
 
 **Largest tokenized-asset protocols**
 
-- OnRe: $293.12M
-- Huma: $256.22M
-- Plume Vaults: $32.97M
+- OnRe: $293.14M
+- Huma: $256.23M
+- Plume Vaults: $32.98M
 - Invesco USTB: $3.92M
-- Mansory: $2.86M
+- Mansory: $2.85M
 
 ## News & Upgrades
 
@@ -114,7 +114,7 @@
 
 **Firedancer Releases**
 
-- [v26.10.1](https://github.com/firedancer-io/firedancer/releases/tag/v26.10.1) - 2026-10-09
+- [Firedancer Testnet Release v26.10.1](https://github.com/firedancer-io/firedancer/releases/tag/v26.10.1) - 2026-10-09
 - [Firedancer Testnet Release v26.10.0](https://github.com/firedancer-io/firedancer/releases/tag/v26.10.0) - 2026-10-07
 - [Firedancer Mainnet Release v26.09.6](https://github.com/firedancer-io/firedancer/releases/tag/v26.09.6) - 2026-10-06
 
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-10-09T21:03:22Z |
-| validators | ok | 2026-10-09T21:03:33Z |
-| supply | ok | 2026-10-09T21:03:34Z |
-| defillama | ok | 2026-10-09T21:03:23Z |
-| price | ok | 2026-10-09T21:03:23Z |
-| news | ok | 2026-10-09T21:03:22Z |
-| solana_com | ok | 2026-10-09T21:03:21Z |
-| dune | off (optional) | 2026-10-09T21:03:20Z |
+| network | ok | 2026-10-10T00:46:08Z |
+| validators | ok | 2026-10-10T00:46:10Z |
+| supply | ok | 2026-10-10T00:46:09Z |
+| defillama | ok | 2026-10-10T00:45:59Z |
+| price | ok | 2026-10-10T00:45:57Z |
+| news | ok | 2026-10-10T00:45:59Z |
+| solana_com | ok | 2026-10-10T00:45:58Z |
+| dune | off (optional) | 2026-10-10T00:45:57Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

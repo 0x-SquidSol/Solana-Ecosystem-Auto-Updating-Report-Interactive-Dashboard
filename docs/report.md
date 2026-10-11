@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-10-11T10:14:34Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-10-11T16:19:41Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -19,13 +19,13 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,481 |
-| Total TPS (incl. votes) | 4,552 |
-| Peak true TPS (30 min) | 1,984 |
-| Mean slot time | 0.218 s |
-| Slot | 455,614,367 |
-| Block height | 433,651,516 |
-| Epoch | 1054 - 66.29% complete, ~8.8 h remaining |
+| True TPS (non-vote) | 2,185 |
+| Total TPS (incl. votes) | 5,226 |
+| Peak true TPS (30 min) | 2,756 |
+| Mean slot time | 0.220 s |
+| Slot | 455,714,670 |
+| Block height | 433,751,804 |
+| Epoch | 1054 - 89.51% complete, ~2.8 h remaining |
 
 ## Validators
 
@@ -39,7 +39,7 @@
 | Top-10 stake share | 24.5% |
 | Top-20 stake share | 35.6% |
 | Client stake split | agave 99.6% / firedancer 0.3% / unknown 0.1% |
-| Stake-weighted commission | 26.81% |
+| Stake-weighted commission | 26.83% |
 
 **Top validators by stake**
 
@@ -60,22 +60,22 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $109.41 (-0.2% 24h, -9.5% 7d) |
-| Price sources | cross-checked, 0.032% apart |
-| Market cap | $64.45B |
-| TVL | $6.19B (+0.0% 24h) |
-| Stablecoin supply | $16.10B |
-| DEX volume (24h) | $1.58B |
-| REV (24h) | $913.9K (network fees $740.7K + Jito tips $173.3K) |
-| App fees (24h) | $11.84M |
+| SOL price | $111.62 (+1.2% 24h, -8.2% 7d) |
+| Price sources | cross-checked, 0.248% apart |
+| Market cap | $65.76B |
+| TVL | $6.19B (-0.1% 24h) |
+| Stablecoin supply | $16.07B |
+| DEX volume (24h) | $1.29B |
+| REV (24h) | $916.8K (network fees $740.7K + Jito tips $176.2K) |
+| App fees (24h) | $11.94M |
 | Median fee (user txs) | – lamports |
-| Circulating supply | 589,051,129 SOL |
+| Circulating supply | 589,050,859 SOL |
 
 ## Ecosystem Growth
 
 | Metric | Value |
 |---|---|
-| Tokenized assets (RWA) on Solana | $595.67M across 14 protocols |
+| Tokenized assets (RWA) on Solana | $595.91M across 14 protocols |
 | Monthly active addresses (solana.com) | 50M |
 | Quarterly active wallets (solana.com) | 100m+ |
 | Daily transactions (solana.com) | 100M+ |
@@ -86,10 +86,10 @@
 **Largest tokenized-asset protocols**
 
 - OnRe: $292.36M
-- Huma: $255.50M
-- Plume Vaults: $33.24M
+- Huma: $255.38M
+- Plume Vaults: $33.57M
 - Invesco USTB: $3.92M
-- Mansory: $2.82M
+- Mansory: $2.83M
 
 ## News & Upgrades
 
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-10-11T10:14:23Z |
-| validators | ok | 2026-10-11T10:14:34Z |
-| supply | ok | 2026-10-11T10:14:34Z |
-| defillama | ok | 2026-10-11T10:14:23Z |
-| price | ok | 2026-10-11T10:14:21Z |
-| news | ok | 2026-10-11T10:14:23Z |
-| solana_com | ok | 2026-10-11T10:14:22Z |
-| dune | off (optional) | 2026-10-11T10:14:21Z |
+| network | ok | 2026-10-11T16:19:30Z |
+| validators | ok | 2026-10-11T16:19:40Z |
+| supply | ok | 2026-10-11T16:19:41Z |
+| defillama | ok | 2026-10-11T16:19:31Z |
+| price | ok | 2026-10-11T16:19:29Z |
+| news | ok | 2026-10-11T16:19:30Z |
+| solana_com | ok | 2026-10-11T16:19:29Z |
+| dune | off (optional) | 2026-10-11T16:19:28Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

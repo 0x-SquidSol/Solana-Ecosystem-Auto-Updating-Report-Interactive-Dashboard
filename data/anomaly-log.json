@@ -1,15 +1,5 @@
 [
  {
-  "seen_at": "2026-09-27T00:32:42Z",
-  "kind": "statistical",
-  "severity": "alert",
-  "metric": "validators.delinquent_stake_pct",
-  "message": "delinquent stake is 4.7 standard deviations above its recent mean (0.18 vs 0.0411364)",
-  "value": 0.18,
-  "baseline_mean": 0.0411,
-  "z_score": 4.71
- },
- {
   "seen_at": "2026-09-27T15:26:52Z",
   "kind": "statistical",
   "severity": "warning",
@@ -148,5 +138,15 @@
   "value": 6248816868.0,
   "baseline_mean": 6604911926.9429,
   "z_score": -2.5
+ },
+ {
+  "seen_at": "2026-10-11T03:29:36Z",
+  "kind": "statistical",
+  "severity": "alert",
+  "metric": "validators.delinquent_stake_pct",
+  "message": "delinquent stake is 7.9 standard deviations above its recent mean (0.12 vs 0.0151515)",
+  "value": 0.12,
+  "baseline_mean": 0.0152,
+  "z_score": 7.91
  }
 ]

@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-10-11T23:47:13Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-10-12T03:09:02Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -19,13 +19,13 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,560 |
-| Total TPS (incl. votes) | 4,648 |
-| Peak true TPS (30 min) | 2,057 |
-| Mean slot time | 0.217 s |
-| Slot | 455,837,424 |
-| Block height | 433,874,543 |
-| Epoch | 1055 - 17.92% complete, ~21.4 h remaining |
+| True TPS (non-vote) | 2,020 |
+| Total TPS (incl. votes) | 5,065 |
+| Peak true TPS (30 min) | 2,424 |
+| Mean slot time | 0.220 s |
+| Slot | 455,892,838 |
+| Block height | 433,929,948 |
+| Epoch | 1055 - 30.75% complete, ~18.3 h remaining |
 
 ## Validators
 
@@ -60,22 +60,22 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $111.17 (+1.0% 24h, -8.4% 7d) |
-| Price sources | cross-checked, 0.095% apart |
-| Market cap | $65.49B |
-| TVL | $6.24B (+0.8% 24h) |
-| Stablecoin supply | $16.07B |
-| DEX volume (24h) | $1.29B |
-| REV (24h) | $913.3K (network fees $740.7K + Jito tips $172.6K) |
-| App fees (24h) | $11.94M |
+| SOL price | $111.77 (+1.8% 24h, -7.5% 7d) |
+| Price sources | cross-checked, 0.094% apart |
+| Market cap | $65.85B |
+| TVL | $6.26B (+0.6% 24h) |
+| Stablecoin supply | $16.09B |
+| DEX volume (24h) | $1.25B |
+| REV (24h) | $925.6K (network fees $753.3K + Jito tips $172.2K) |
+| App fees (24h) | $11.26M |
 | Median fee (user txs) | – lamports |
-| Circulating supply | 589,107,476 SOL |
+| Circulating supply | 589,107,324 SOL |
 
 ## Ecosystem Growth
 
 | Metric | Value |
 |---|---|
-| Tokenized assets (RWA) on Solana | $595.96M across 14 protocols |
+| Tokenized assets (RWA) on Solana | $594.43M across 14 protocols |
 | Monthly active addresses (solana.com) | 50M |
 | Quarterly active wallets (solana.com) | 100m+ |
 | Daily transactions (solana.com) | 100M+ |
@@ -85,20 +85,20 @@
 
 **Largest tokenized-asset protocols**
 
-- OnRe: $292.37M
-- Huma: $255.39M
+- OnRe: $292.46M
+- Huma: $253.77M
 - Plume Vaults: $33.58M
 - Invesco USTB: $3.92M
-- Mansory: $2.83M
+- Mansory: $2.82M
 
 ## News & Upgrades
 
 
 **Solana News**
 
+- [Breakpoint 2026: Booked Breakpoint? Let's Get You Prepped (Part 2)](https://solana.com/news/breakpoint-guide-part2) - 2026-10-08
+- [Solana Changelog: October 8, 2026](https://solana.com/news/solana-changelog-october-8-2026) - 2026-10-08
 - [Samsung Partners with Solana to Natively Deliver Stablecoins in Samsung Wallet to 82 Million U.S. Galaxy Devices](https://solana.com/news/samsung-wallet) - 2026-10-07
-- [Solana Ecosystem Roundup: September 2026](https://solana.com/news/solana-ecosystem-roundup-september-2026) - 2026-10-06
-- [Solana Foundation Launches Solana DvP, an Atomic Settlement Program Built for Financial Institutions](https://solana.com/news/solana-foundation-launches-solana-dv-p-an-atomic-settlement-program-built-for-financial-institutions) - 2026-10-06
 
 **Solana Status**
 
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-10-11T23:47:02Z |
-| validators | ok | 2026-10-11T23:47:12Z |
-| supply | ok | 2026-10-11T23:47:13Z |
-| defillama | ok | 2026-10-11T23:47:01Z |
-| price | ok | 2026-10-11T23:47:00Z |
-| news | ok | 2026-10-11T23:47:01Z |
-| solana_com | ok | 2026-10-11T23:47:00Z |
-| dune | off (optional) | 2026-10-11T23:46:59Z |
+| network | ok | 2026-10-12T03:08:52Z |
+| validators | ok | 2026-10-12T03:09:01Z |
+| supply | ok | 2026-10-12T03:09:02Z |
+| defillama | ok | 2026-10-12T03:08:53Z |
+| price | ok | 2026-10-12T03:08:50Z |
+| news | ok | 2026-10-12T03:08:52Z |
+| solana_com | ok | 2026-10-12T03:08:51Z |
+| dune | off (optional) | 2026-10-12T03:08:50Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

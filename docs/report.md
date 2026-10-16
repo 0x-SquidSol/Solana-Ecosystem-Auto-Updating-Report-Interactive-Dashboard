@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-10-16T19:47:44Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-10-16T22:18:49Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -19,13 +19,13 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 2,523 |
-| Total TPS (incl. votes) | 5,618 |
-| Peak true TPS (30 min) | 3,027 |
+| True TPS (non-vote) | 1,923 |
+| Total TPS (incl. votes) | 5,016 |
+| Peak true TPS (30 min) | 2,915 |
 | Mean slot time | 0.216 s |
-| Slot | 457,759,202 |
-| Block height | 435,794,990 |
-| Epoch | 1059 - 62.78% complete, ~9.6 h remaining |
+| Slot | 457,801,154 |
+| Block height | 435,836,931 |
+| Epoch | 1059 - 72.49% complete, ~7.1 h remaining |
 
 ## Validators
 
@@ -60,22 +60,22 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $103.00 (-2.8% 24h, -6.3% 7d) |
-| Price sources | cross-checked, 0.021% apart |
-| Market cap | $60.70B |
-| TVL | $5.92B (-0.3% 24h) |
-| Stablecoin supply | $15.73B |
+| SOL price | $104.45 (-1.4% 24h, -4.4% 7d) |
+| Price sources | cross-checked, 0.029% apart |
+| Market cap | $61.55B |
+| TVL | $5.91B (-0.5% 24h) |
+| Stablecoin supply | $15.85B |
 | DEX volume (24h) | $2.54B |
-| REV (24h) | $980.2K (network fees $811.0K + Jito tips $169.2K) |
+| REV (24h) | $976.5K (network fees $811.0K + Jito tips $165.5K) |
 | App fees (24h) | $12.78M |
 | Median fee (user txs) | – lamports |
-| Circulating supply | 589,323,908 SOL |
+| Circulating supply | 589,323,784 SOL |
 
 ## Ecosystem Growth
 
 | Metric | Value |
 |---|---|
-| Tokenized assets (RWA) on Solana | $621.19M across 12 protocols |
+| Tokenized assets (RWA) on Solana | $621.36M across 12 protocols |
 | Monthly active addresses (solana.com) | 50M |
 | Quarterly active wallets (solana.com) | 100m+ |
 | Daily transactions (solana.com) | 100M+ |
@@ -87,9 +87,9 @@
 
 - OnRe: $293.33M
 - Huma: $282.44M
-- Plume Vaults: $35.40M
+- Plume Vaults: $35.50M
 - Mansory: $2.72M
-- International Stable Currency: $2.41M
+- International Stable Currency: $2.45M
 
 ## News & Upgrades
 
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-10-16T19:47:32Z |
-| validators | ok | 2026-10-16T19:47:42Z |
-| supply | ok | 2026-10-16T19:47:44Z |
-| defillama | ok | 2026-10-16T19:47:33Z |
-| price | ok | 2026-10-16T19:47:31Z |
-| news | ok | 2026-10-16T19:47:32Z |
-| solana_com | ok | 2026-10-16T19:47:31Z |
-| dune | off (optional) | 2026-10-16T19:47:30Z |
+| network | ok | 2026-10-16T22:18:37Z |
+| validators | ok | 2026-10-16T22:18:48Z |
+| supply | ok | 2026-10-16T22:18:49Z |
+| defillama | ok | 2026-10-16T22:18:37Z |
+| price | ok | 2026-10-16T22:18:35Z |
+| news | ok | 2026-10-16T22:18:37Z |
+| solana_com | ok | 2026-10-16T22:18:36Z |
+| dune | off (optional) | 2026-10-16T22:18:35Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

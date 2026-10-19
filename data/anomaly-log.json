@@ -1,15 +1,5 @@
 [
  {
-  "seen_at": "2026-10-05T17:37:52Z",
-  "kind": "statistical",
-  "severity": "warning",
-  "metric": "network.mean_slot_time_secs",
-  "message": "slot time is 2.7 standard deviations above its recent mean (0.27 vs 0.267632)",
-  "value": 0.27,
-  "baseline_mean": 0.2676,
-  "z_score": 2.68
- },
- {
   "seen_at": "2026-10-06T16:46:24Z",
   "kind": "statistical",
   "severity": "alert",
@@ -148,5 +138,15 @@
   "value": 1.08,
   "baseline_mean": 0.0153,
   "z_score": 43.24
+ },
+ {
+  "seen_at": "2026-10-19T19:17:14Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "network.tps_true",
+  "message": "true TPS is 3.0 standard deviations above its recent mean (2,862 vs 1,841)",
+  "value": 2862.2,
+  "baseline_mean": 1841.0044,
+  "z_score": 3.03
  }
 ]

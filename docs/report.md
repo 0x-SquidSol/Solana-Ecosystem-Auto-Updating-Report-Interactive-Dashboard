@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-10-23T17:09:27Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-10-23T20:24:50Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -19,13 +19,13 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,969 |
-| Total TPS (incl. votes) | 1,969 |
-| Peak true TPS (30 min) | 2,497 |
-| Mean slot time | 0.211 s |
-| Slot | 460,522,623 |
-| Block height | 438,553,973 |
-| Epoch | 1066 - 2.46% complete, ~24.7 h remaining |
+| True TPS (non-vote) | 2,083 |
+| Total TPS (incl. votes) | 2,083 |
+| Peak true TPS (30 min) | 2,508 |
+| Mean slot time | 0.212 s |
+| Slot | 460,577,900 |
+| Block height | 438,608,692 |
+| Epoch | 1066 - 15.26% complete, ~21.6 h remaining |
 
 ## Validators
 
@@ -60,22 +60,22 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $104.58 (+1.0% 24h, +0.7% 7d) |
-| Price sources | cross-checked, 0.155% apart |
-| Market cap | $61.67B |
-| TVL | $5.84B (-2.4% 24h) |
-| Stablecoin supply | $15.63B |
+| SOL price | $103.41 (+0.0% 24h, +0.6% 7d) |
+| Price sources | cross-checked, 0.045% apart |
+| Market cap | $60.97B |
+| TVL | $5.83B (-2.5% 24h) |
+| Stablecoin supply | $15.62B |
 | DEX volume (24h) | $2.04B |
-| REV (24h) | $769.7K (network fees $631.0K + Jito tips $138.6K) |
-| App fees (24h) | $11.29M |
+| REV (24h) | $770.9K (network fees $631.0K + Jito tips $139.9K) |
+| App fees (24h) | $11.47M |
 | Median fee (user txs) | – lamports |
-| Circulating supply | 589,709,197 SOL |
+| Circulating supply | 589,708,997 SOL |
 
 ## Ecosystem Growth
 
 | Metric | Value |
 |---|---|
-| Tokenized assets (RWA) on Solana | $593.92M across 12 protocols |
+| Tokenized assets (RWA) on Solana | $594.23M across 12 protocols |
 | Monthly active addresses (solana.com) | 50M |
 | Quarterly active wallets (solana.com) | 100m+ |
 | Daily transactions (solana.com) | 100M+ |
@@ -85,11 +85,11 @@
 
 **Largest tokenized-asset protocols**
 
-- OnRe: $295.17M
-- Huma: $252.40M
-- Plume Vaults: $36.43M
-- Mansory: $2.71M
-- International Stable Currency: $2.46M
+- OnRe: $295.21M
+- Huma: $252.74M
+- Plume Vaults: $36.44M
+- Mansory: $2.70M
+- International Stable Currency: $2.40M
 
 ## News & Upgrades
 
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-10-23T17:09:16Z |
-| validators | ok | 2026-10-23T17:09:27Z |
-| supply | ok | 2026-10-23T17:09:26Z |
-| defillama | ok | 2026-10-23T17:09:17Z |
-| price | ok | 2026-10-23T17:09:14Z |
-| news | ok | 2026-10-23T17:09:16Z |
-| solana_com | ok | 2026-10-23T17:09:15Z |
-| dune | off (optional) | 2026-10-23T17:09:14Z |
+| network | ok | 2026-10-23T20:24:40Z |
+| validators | ok | 2026-10-23T20:24:50Z |
+| supply | ok | 2026-10-23T20:24:50Z |
+| defillama | ok | 2026-10-23T20:24:40Z |
+| price | ok | 2026-10-23T20:24:38Z |
+| news | ok | 2026-10-23T20:24:40Z |
+| solana_com | ok | 2026-10-23T20:24:39Z |
+| dune | off (optional) | 2026-10-23T20:24:38Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

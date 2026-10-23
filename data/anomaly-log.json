@@ -1,15 +1,5 @@
 [
  {
-  "seen_at": "2026-10-09T09:21:14Z",
-  "kind": "statistical",
-  "severity": "warning",
-  "metric": "defillama.tvl_usd",
-  "message": "TVL is 2.5 standard deviations below its recent mean (6.25B vs 6.60B)",
-  "value": 6248816868.0,
-  "baseline_mean": 6604911926.9429,
-  "z_score": -2.5
- },
- {
   "seen_at": "2026-10-11T03:29:36Z",
   "kind": "statistical",
   "severity": "alert",
@@ -78,5 +68,15 @@
   "value": 3000.6,
   "baseline_mean": 1911.4843,
   "z_score": 2.86
+ },
+ {
+  "seen_at": "2026-10-23T12:15:16Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "validators.delinquent_stake_pct",
+  "message": "delinquent stake is 2.5 standard deviations above its recent mean (0.35 vs 0.0529787)",
+  "value": 0.35,
+  "baseline_mean": 0.053,
+  "z_score": 2.53
  }
 ]

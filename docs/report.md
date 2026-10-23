@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-10-22T23:35:34Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-10-23T01:56:18Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -19,13 +19,13 @@
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,868 |
-| Total TPS (incl. votes) | 1,868 |
-| Peak true TPS (30 min) | 2,279 |
+| True TPS (non-vote) | 1,799 |
+| Total TPS (incl. votes) | 1,799 |
+| Peak true TPS (30 min) | 2,481 |
 | Mean slot time | 0.211 s |
-| Slot | 460,223,899 |
-| Block height | 438,256,230 |
-| Epoch | 1065 - 33.31% complete, ~16.9 h remaining |
+| Slot | 460,263,789 |
+| Block height | 438,296,110 |
+| Epoch | 1065 - 42.54% complete, ~14.5 h remaining |
 
 ## Validators
 
@@ -60,22 +60,22 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $103.24 (-3.5% 24h, -2.6% 7d) |
-| Price sources | cross-checked, 0.052% apart |
-| Market cap | $60.87B |
-| TVL | $5.85B (-2.0% 24h) |
+| SOL price | $104.14 (-1.9% 24h, -1.4% 7d) |
+| Price sources | cross-checked, 0.148% apart |
+| Market cap | $61.41B |
+| TVL | $5.82B (-0.9% 24h) |
 | Stablecoin supply | $15.69B |
-| DEX volume (24h) | $2.27B |
-| REV (24h) | $888.6K (network fees $732.1K + Jito tips $156.4K) |
-| App fees (24h) | $11.96M |
+| DEX volume (24h) | $2.12B |
+| REV (24h) | $779.4K (network fees $631.0K + Jito tips $148.3K) |
+| App fees (24h) | $11.29M |
 | Median fee (user txs) | – lamports |
-| Circulating supply | 589,653,461 SOL |
+| Circulating supply | 589,653,420 SOL |
 
 ## Ecosystem Growth
 
 | Metric | Value |
 |---|---|
-| Tokenized assets (RWA) on Solana | $600.00M across 12 protocols |
+| Tokenized assets (RWA) on Solana | $593.27M across 12 protocols |
 | Monthly active addresses (solana.com) | 50M |
 | Quarterly active wallets (solana.com) | 100m+ |
 | Daily transactions (solana.com) | 100M+ |
@@ -85,11 +85,11 @@
 
 **Largest tokenized-asset protocols**
 
-- OnRe: $295.02M
-- Huma: $258.93M
+- OnRe: $295.16M
+- Huma: $252.09M
 - Plume Vaults: $36.23M
 - Mansory: $2.70M
-- International Stable Currency: $2.41M
+- International Stable Currency: $2.39M
 
 ## News & Upgrades
 
@@ -120,21 +120,21 @@
 
 **SIMD Activity**
 
+- [[SIMD-0529] Finalize compute unit costs for the SIMD-0529 big_mod_exp…](https://github.com/solana-foundation/solana-improvement-documents/commit/51dbb649da0233481cc40f5640f33fe74d6dbffe) - 2026-10-23
 - [SIMD-0648: Unbound LoaderV3 Instruction Data (#648)](https://github.com/solana-foundation/solana-improvement-documents/commit/27ff5a704391d121869dd3bc8cfa8127483329d0) - 2026-10-21
 - [[SIMD-0565] Specify compute unit costs for the SIMD-0565 secp256r1 sy…](https://github.com/solana-foundation/solana-improvement-documents/commit/f13f5d657ccae32cb19cae84ccb6c781cd125ad7) - 2026-10-20
-- [simd-0504: remove identical signature requirement (#593)](https://github.com/solana-foundation/solana-improvement-documents/commit/33c75cffdeb38468989313c6381c179a541808f1) - 2026-10-20
 
 ## Data Sources
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-10-22T23:35:24Z |
-| validators | ok | 2026-10-22T23:35:33Z |
-| supply | ok | 2026-10-22T23:35:34Z |
-| defillama | ok | 2026-10-22T23:35:24Z |
-| price | ok | 2026-10-22T23:35:23Z |
-| news | ok | 2026-10-22T23:35:24Z |
-| solana_com | ok | 2026-10-22T23:35:23Z |
-| dune | off (optional) | 2026-10-22T23:35:22Z |
+| network | ok | 2026-10-23T01:56:08Z |
+| validators | ok | 2026-10-23T01:56:17Z |
+| supply | ok | 2026-10-23T01:56:18Z |
+| defillama | ok | 2026-10-23T01:56:08Z |
+| price | ok | 2026-10-23T01:56:06Z |
+| news | ok | 2026-10-23T01:56:08Z |
+| solana_com | ok | 2026-10-23T01:56:07Z |
+| dune | off (optional) | 2026-10-23T01:56:06Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

@@ -1,31 +1,31 @@
 # Solana Ecosystem Report
 
-> Generated 2026-10-28T05:42:32Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
+> Generated 2026-10-28T11:38:45Z - heliostat 0.1.0 - 7/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
-- 🔴 **ALERT**: delinquent stake is 4.9 standard deviations above its recent mean (0.89 vs 0.122558)
+- 🔴 **ALERT**: delinquent stake is 3.9 standard deviations above its recent mean (0.89 vs 0.14)
 
 **Recently seen**
 
-- 2026-10-21T23:15Z true TPS is 2.9 standard deviations above its recent mean (3,001 vs 1,911)
 - 2026-10-23T12:15Z delinquent stake is 2.5 standard deviations above its recent mean (0.35 vs 0.0529787)
 - 2026-10-24T17:35Z TVL is 2.7 standard deviations below its recent mean (5.68B vs 5.88B)
 - 2026-10-28T00:14Z delinquent stake is 7.8 standard deviations above its recent mean (0.89 vs 0.104286)
 - 2026-10-28T05:42Z delinquent stake is 4.9 standard deviations above its recent mean (0.89 vs 0.122558)
+- 2026-10-28T11:38Z delinquent stake is 3.9 standard deviations above its recent mean (0.89 vs 0.14)
 
 ## Network
 
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,355 |
-| Total TPS (incl. votes) | 1,355 |
-| Peak true TPS (30 min) | 1,646 |
-| Mean slot time | 0.213 s |
-| Slot | 462,361,914 |
-| Block height | 440,386,531 |
-| Epoch | 1070 - 28.22% complete, ~18.3 h remaining |
+| True TPS (non-vote) | 1,261 |
+| Total TPS (incl. votes) | 1,261 |
+| Peak true TPS (30 min) | 1,671 |
+| Mean slot time | 0.212 s |
+| Slot | 462,462,309 |
+| Block height | 440,486,874 |
+| Epoch | 1070 - 51.46% complete, ~12.3 h remaining |
 
 ## Validators
 
@@ -39,7 +39,7 @@
 | Top-10 stake share | 24.8% |
 | Top-20 stake share | 36.0% |
 | Client stake split | agave 99.9% / firedancer 0.1% / unknown 0.1% |
-| Stake-weighted commission | 26.94% |
+| Stake-weighted commission | 26.95% |
 
 **Top validators by stake**
 
@@ -60,22 +60,22 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $101.80 (+1.9% 24h, -3.7% 7d) |
-| Price sources | cross-checked, 0.088% apart |
-| Market cap | $60.06B |
-| TVL | $5.72B (+0.9% 24h) |
-| Stablecoin supply | $15.34B |
-| DEX volume (24h) | $1.85B |
-| REV (24h) | $702.6K (network fees $568.3K + Jito tips $134.3K) |
-| App fees (24h) | $11.08M |
+| SOL price | $102.75 (+2.8% 24h, -3.5% 7d) |
+| Price sources | cross-checked, 0.038% apart |
+| Market cap | $60.61B |
+| TVL | $5.76B (+1.7% 24h) |
+| Stablecoin supply | $15.10B |
+| DEX volume (24h) | $1.58B |
+| REV (24h) | $679.2K (network fees $538.0K + Jito tips $141.2K) |
+| App fees (24h) | $10.91M |
 | Median fee (user txs) | – lamports |
-| Circulating supply | 589,928,485 SOL |
+| Circulating supply | 589,928,410 SOL |
 
 ## Ecosystem Growth
 
 | Metric | Value |
 |---|---|
-| Tokenized assets (RWA) on Solana | $602.45M across 12 protocols |
+| Tokenized assets (RWA) on Solana | $602.52M across 12 protocols |
 | Monthly active addresses (solana.com) | 50M |
 | Quarterly active wallets (solana.com) | 100m+ |
 | Daily transactions (solana.com) | 100M+ |
@@ -86,10 +86,10 @@
 **Largest tokenized-asset protocols**
 
 - OnRe: $301.24M
-- Huma: $254.17M
+- Huma: $254.22M
 - Plume Vaults: $37.18M
 - Mansory: $2.64M
-- International Stable Currency: $2.41M
+- International Stable Currency: $2.43M
 
 ## News & Upgrades
 
@@ -128,13 +128,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-10-28T05:42:20Z |
-| validators | ok | 2026-10-28T05:42:31Z |
-| supply | ok | 2026-10-28T05:42:32Z |
-| defillama | ok | 2026-10-28T05:42:19Z |
-| price | ok | 2026-10-28T05:42:18Z |
-| news | ok | 2026-10-28T05:42:20Z |
-| solana_com | ok | 2026-10-28T05:42:19Z |
-| dune | off (optional) | 2026-10-28T05:42:18Z |
+| network | ok | 2026-10-28T11:38:35Z |
+| validators | ok | 2026-10-28T11:38:44Z |
+| supply | ok | 2026-10-28T11:38:45Z |
+| defillama | ok | 2026-10-28T11:38:35Z |
+| price | ok | 2026-10-28T11:38:33Z |
+| news | ok | 2026-10-28T11:38:35Z |
+| solana_com | ok | 2026-10-28T11:38:33Z |
+| dune | off (optional) | 2026-10-28T11:38:33Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

@@ -1,39 +1,39 @@
 # Solana Ecosystem Report
 
-> Generated 2026-10-29T19:50:48Z - heliostat 0.1.0 - 6/8 sources ok - refreshes every 15 min
+> Generated 2026-10-29T23:42:11Z - heliostat 0.1.0 - 6/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
-- 🟡 **WARNING**: slot time is 3.0 standard deviations above its recent mean (0.215 vs 0.212386)
+- 🔴 **ALERT**: SOL price is 3.7 standard deviations below its recent mean (96.18 vs 101.968)
 - 🟡 **WARNING**: data source 'solana_com' failed this run
 
 **Recently seen**
 
-- 2026-10-29T01:21Z data source 'solana_com' failed this run
-- 2026-10-29T07:19Z data source 'solana_com' failed this run
 - 2026-10-29T14:31Z data source 'solana_com' failed this run
 - 2026-10-29T19:50Z slot time is 3.0 standard deviations above its recent mean (0.215 vs 0.212386)
 - 2026-10-29T19:50Z data source 'solana_com' failed this run
+- 2026-10-29T23:42Z SOL price is 3.7 standard deviations below its recent mean (96.18 vs 101.968)
+- 2026-10-29T23:42Z data source 'solana_com' failed this run
 
 ## Network
 
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,884 |
-| Total TPS (incl. votes) | 1,884 |
-| Peak true TPS (30 min) | 2,419 |
-| Mean slot time | 0.215 s |
-| Slot | 463,005,010 |
-| Block height | 441,028,311 |
-| Epoch | 1071 - 77.09% complete, ~5.9 h remaining |
+| True TPS (non-vote) | 2,102 |
+| Total TPS (incl. votes) | 2,102 |
+| Peak true TPS (30 min) | 3,228 |
+| Mean slot time | 0.214 s |
+| Slot | 463,069,803 |
+| Block height | 441,092,973 |
+| Epoch | 1071 - 92.08% complete, ~2.0 h remaining |
 
 ## Validators
 
 | Metric | Value |
 |---|---|
-| Active validators | 665 |
-| Delinquent | 24 (0.74% of stake) |
+| Active validators | 666 |
+| Delinquent | 23 (0.74% of stake) |
 | Consensus stall buffer | 2.2% of the 33.3% halt threshold consumed |
 | Total stake | 436,776,187 SOL |
 | Nakamoto coefficient | 18 |
@@ -61,31 +61,31 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $100.03 (-2.4% 24h, -2.9% 7d) |
-| Price sources | cross-checked, 0.050% apart |
-| Market cap | $59.01B |
-| TVL | $5.66B (-0.6% 24h) |
-| Stablecoin supply | $15.32B |
+| SOL price | $96.18 (-6.0% 24h, -6.5% 7d) |
+| Price sources | cross-checked, 0.100% apart |
+| Market cap | $56.74B |
+| TVL | $5.55B (-2.6% 24h) |
+| Stablecoin supply | $15.16B |
 | DEX volume (24h) | $1.73B |
-| REV (24h) | $673.2K (network fees $527.1K + Jito tips $146.1K) |
+| REV (24h) | $673.1K (network fees $527.1K + Jito tips $145.9K) |
 | App fees (24h) | $10.35M |
 | Median fee (user txs) | – lamports |
-| Circulating supply | 589,983,653 SOL |
+| Circulating supply | 589,983,547 SOL |
 
 ## Ecosystem Growth
 
 | Metric | Value |
 |---|---|
-| Tokenized assets (RWA) on Solana | $597.54M across 13 protocols |
+| Tokenized assets (RWA) on Solana | $596.44M across 13 protocols |
 | Daily active addresses | available via optional DUNE_API_KEY |
 
 **Largest tokenized-asset protocols**
 
-- OnRe: $305.22M
-- Huma: $246.27M
-- Plume Vaults: $35.55M
-- Mansory: $2.63M
-- International Stable Currency: $2.37M
+- OnRe: $304.10M
+- Huma: $246.31M
+- Plume Vaults: $35.56M
+- Mansory: $2.59M
+- International Stable Currency: $2.41M
 
 ## News & Upgrades
 
@@ -118,13 +118,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-10-29T19:50:38Z |
-| validators | ok | 2026-10-29T19:50:47Z |
-| supply | ok | 2026-10-29T19:50:48Z |
-| defillama | ok | 2026-10-29T19:50:37Z |
-| price | ok | 2026-10-29T19:50:36Z |
-| news | ok | 2026-10-29T19:50:41Z |
-| solana_com | failed: HTTP 429 (https://solana.com/data) | 2026-10-29T19:50:40Z |
-| dune | off (optional) | 2026-10-29T19:50:36Z |
+| network | ok | 2026-10-29T23:42:01Z |
+| validators | ok | 2026-10-29T23:42:11Z |
+| supply | ok | 2026-10-29T23:42:11Z |
+| defillama | ok | 2026-10-29T23:42:01Z |
+| price | ok | 2026-10-29T23:41:59Z |
+| news | ok | 2026-10-29T23:42:05Z |
+| solana_com | failed: HTTP 429 (https://solana.com/data) | 2026-10-29T23:42:03Z |
+| dune | off (optional) | 2026-10-29T23:41:59Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-10-29T07:19:32Z - heliostat 0.1.0 - 6/8 sources ok - refreshes every 15 min
+> Generated 2026-10-29T14:31:44Z - heliostat 0.1.0 - 6/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -8,83 +8,83 @@
 
 **Recently seen**
 
-- 2026-10-28T17:22Z data source 'solana_com' failed this run
 - 2026-10-28T21:46Z delinquent stake is 2.9 standard deviations above its recent mean (0.89 vs 0.172826)
 - 2026-10-28T21:46Z data source 'solana_com' failed this run
 - 2026-10-29T01:21Z data source 'solana_com' failed this run
 - 2026-10-29T07:19Z data source 'solana_com' failed this run
+- 2026-10-29T14:31Z data source 'solana_com' failed this run
 
 ## Network
 
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,061 |
-| Total TPS (incl. votes) | 1,061 |
-| Peak true TPS (30 min) | 1,284 |
+| True TPS (non-vote) | 2,022 |
+| Total TPS (incl. votes) | 2,022 |
+| Peak true TPS (30 min) | 2,672 |
 | Mean slot time | 0.214 s |
-| Slot | 462,794,193 |
-| Block height | 440,817,710 |
-| Epoch | 1071 - 28.29% complete, ~18.4 h remaining |
+| Slot | 462,915,566 |
+| Block height | 440,938,985 |
+| Epoch | 1071 - 56.38% complete, ~11.2 h remaining |
 
 ## Validators
 
 | Metric | Value |
 |---|---|
-| Active validators | 666 |
-| Delinquent | 23 (0.74% of stake) |
-| Consensus stall buffer | 2.2% of the 33.3% halt threshold consumed |
+| Active validators | 663 |
+| Delinquent | 26 (0.84% of stake) |
+| Consensus stall buffer | 2.5% of the 33.3% halt threshold consumed |
 | Total stake | 436,776,187 SOL |
 | Nakamoto coefficient | 18 |
 | Top-10 stake share | 24.7% |
 | Top-20 stake share | 36.1% |
 | Client stake split | agave 99.9% / firedancer 0.1% / unknown 0.1% |
-| Stake-weighted commission | 26.91% |
+| Stake-weighted commission | 26.95% |
 
 **Top validators by stake**
 
 | # | Vote account | Stake | Share | Commission |
 |---|---|---|---|---|
 | 1 | `CcaH..oTN1` | 17,028,574 SOL | 3.93% | 7% |
-| 2 | `he1i..uBtk` | 16,665,444 SOL | 3.84% | 0% |
+| 2 | `he1i..uBtk` | 16,665,444 SOL | 3.85% | 0% |
 | 3 | `3N7s..iD5g` | 12,878,826 SOL | 2.97% | 0% |
 | 4 | `8Gbw..F8iD` | 10,762,073 SOL | 2.48% | 0% |
 | 5 | `Catz..Diqb` | 9,705,356 SOL | 2.24% | 5% |
-| 6 | `51JB..UNAm` | 9,466,646 SOL | 2.18% | 10% |
+| 6 | `51JB..UNAm` | 9,466,646 SOL | 2.19% | 10% |
 | 7 | `26pV..3dJx` | 9,218,110 SOL | 2.13% | 7% |
 | 8 | `9QU2..29mF` | 7,761,555 SOL | 1.79% | 7% |
-| 9 | `Dumi..Zk4a` | 6,998,037 SOL | 1.61% | 0% |
+| 9 | `Dumi..Zk4a` | 6,998,037 SOL | 1.62% | 0% |
 | 10 | `CvSb..wycB` | 6,646,428 SOL | 1.53% | 5% |
 
 ## Economy
 
 | Metric | Value |
 |---|---|
-| SOL price | $99.71 (-2.1% 24h, -4.7% 7d) |
-| Price sources | cross-checked, 0.011% apart |
-| Market cap | $58.83B |
+| SOL price | $100.69 (+0.1% 24h, -3.6% 7d) |
+| Price sources | cross-checked, 0.115% apart |
+| Market cap | $59.39B |
 | TVL | $5.63B (-1.1% 24h) |
-| Stablecoin supply | $15.41B |
-| DEX volume (24h) | $1.62B |
-| REV (24h) | $658.3K (network fees $527.1K + Jito tips $131.1K) |
+| Stablecoin supply | $15.42B |
+| DEX volume (24h) | $1.73B |
+| REV (24h) | $667.7K (network fees $527.1K + Jito tips $140.5K) |
 | App fees (24h) | $10.35M |
 | Median fee (user txs) | – lamports |
-| Circulating supply | 589,983,872 SOL |
+| Circulating supply | 589,983,770 SOL |
 
 ## Ecosystem Growth
 
 | Metric | Value |
 |---|---|
-| Tokenized assets (RWA) on Solana | $596.20M across 13 protocols |
+| Tokenized assets (RWA) on Solana | $597.00M across 13 protocols |
 | Daily active addresses | available via optional DUNE_API_KEY |
 
 **Largest tokenized-asset protocols**
 
-- OnRe: $305.41M
-- Huma: $245.23M
-- Plume Vaults: $35.03M
-- Mansory: $2.62M
-- International Stable Currency: $2.41M
+- OnRe: $305.42M
+- Huma: $246.03M
+- Plume Vaults: $35.02M
+- Mansory: $2.63M
+- International Stable Currency: $2.39M
 
 ## News & Upgrades
 
@@ -97,7 +97,7 @@
 
 **Agave Releases**
 
-- [Release v4.4.0](https://github.com/anza-xyz/agave/releases/tag/v4.4.0) - 2026-10-28
+- [Release v4.4.0](https://github.com/anza-xyz/agave/releases/tag/v4.4.0) - 2026-10-29
 - [Release v4.5.0-alpha.4](https://github.com/anza-xyz/agave/releases/tag/v4.5.0-alpha.4) - 2026-10-26
 - [v4.5.0-alpha.3: Bump version to 4.5.0-alpha.3 (#16402)](https://github.com/anza-xyz/agave/releases/tag/v4.5.0-alpha.3) - 2026-10-26
 
@@ -109,21 +109,21 @@
 
 **SIMD Activity**
 
+- [docs: align SIMD-0550 with the integer inflation schedule (#704)](https://github.com/solana-foundation/solana-improvement-documents/commit/2be4cb0c0fd1025df8c037b19372f7346119b231) - 2026-10-29
 - [Mark SIMDs as Activated (#710)](https://github.com/solana-foundation/solana-improvement-documents/commit/6cc17538e26601e65beca89bbfa761e755720956) - 2026-10-28
 - [Amend SIMD-0607: Derive per-slot decay and increase intermediate prec…](https://github.com/solana-foundation/solana-improvement-documents/commit/2934dbeb1c8a7dfecc4f70a93a6b152e525b1698) - 2026-10-28
-- [SIMD-0690: Hash validation in program migrations and upgrades (#690)](https://github.com/solana-foundation/solana-improvement-documents/commit/eac20f2994dd064482d96f178a4bbc0f4e358fd0) - 2026-10-26
 
 ## Data Sources
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-10-29T07:19:31Z |
-| validators | ok | 2026-10-29T07:19:32Z |
-| supply | ok | 2026-10-29T07:19:31Z |
-| defillama | ok | 2026-10-29T07:19:20Z |
-| price | ok | 2026-10-29T07:19:19Z |
-| news | ok | 2026-10-29T07:19:25Z |
-| solana_com | failed: HTTP 429 (https://solana.com/data) | 2026-10-29T07:19:23Z |
-| dune | off (optional) | 2026-10-29T07:19:18Z |
+| network | ok | 2026-10-29T14:31:33Z |
+| validators | ok | 2026-10-29T14:31:43Z |
+| supply | ok | 2026-10-29T14:31:44Z |
+| defillama | ok | 2026-10-29T14:31:34Z |
+| price | ok | 2026-10-29T14:31:31Z |
+| news | ok | 2026-10-29T14:31:37Z |
+| solana_com | failed: HTTP 429 (https://solana.com/data) | 2026-10-29T14:31:36Z |
+| dune | off (optional) | 2026-10-29T14:31:31Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

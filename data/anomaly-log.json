@@ -214,5 +214,32 @@
   "severity": "warning",
   "metric": "sources.solana_com",
   "message": "data source 'solana_com' failed this run"
+ },
+ {
+  "seen_at": "2026-10-30T09:30:48Z",
+  "kind": "statistical",
+  "severity": "alert",
+  "metric": "defillama.tvl_usd",
+  "message": "TVL is 3.6 standard deviations below its recent mean (5.42B vs 5.72B)",
+  "value": 5415049783.0,
+  "baseline_mean": 5716352826.9512,
+  "z_score": -3.57
+ },
+ {
+  "seen_at": "2026-10-30T09:30:48Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "price.price_usd",
+  "message": "SOL price is 2.6 standard deviations below its recent mean (96.75 vs 101.316)",
+  "value": 96.75,
+  "baseline_mean": 101.3163,
+  "z_score": -2.56
+ },
+ {
+  "seen_at": "2026-10-30T09:30:48Z",
+  "kind": "rule",
+  "severity": "warning",
+  "metric": "sources.solana_com",
+  "message": "data source 'solana_com' failed this run"
  }
 ]

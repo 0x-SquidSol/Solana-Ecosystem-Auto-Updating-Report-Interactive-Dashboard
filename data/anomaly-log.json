@@ -1,15 +1,5 @@
 [
  {
-  "seen_at": "2026-10-21T16:00:26Z",
-  "kind": "statistical",
-  "severity": "warning",
-  "metric": "price.price_usd",
-  "message": "SOL price is 2.8 standard deviations above its recent mean (108.44 vs 104.546)",
-  "value": 108.44,
-  "baseline_mean": 104.5455,
-  "z_score": 2.79
- },
- {
   "seen_at": "2026-10-21T23:15:18Z",
   "kind": "statistical",
   "severity": "warning",
@@ -401,6 +391,13 @@
  },
  {
   "seen_at": "2026-11-04T09:32:55Z",
+  "kind": "rule",
+  "severity": "warning",
+  "metric": "sources.solana_com",
+  "message": "data source 'solana_com' failed this run"
+ },
+ {
+  "seen_at": "2026-11-04T17:30:15Z",
   "kind": "rule",
   "severity": "warning",
   "metric": "sources.solana_com",

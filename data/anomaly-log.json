@@ -413,5 +413,22 @@
   "severity": "warning",
   "metric": "sources.solana_com",
   "message": "data source 'solana_com' failed this run"
+ },
+ {
+  "seen_at": "2026-11-05T18:00:24Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "price.price_usd",
+  "message": "SOL price is 2.6 standard deviations below its recent mean (89.02 vs 95.4136)",
+  "value": 89.02,
+  "baseline_mean": 95.4136,
+  "z_score": -2.62
+ },
+ {
+  "seen_at": "2026-11-05T18:00:24Z",
+  "kind": "rule",
+  "severity": "warning",
+  "metric": "sources.solana_com",
+  "message": "data source 'solana_com' failed this run"
  }
 ]

@@ -1,15 +1,5 @@
 [
  {
-  "seen_at": "2026-10-21T23:15:18Z",
-  "kind": "statistical",
-  "severity": "warning",
-  "metric": "network.tps_true",
-  "message": "true TPS is 2.9 standard deviations above its recent mean (3,001 vs 1,911)",
-  "value": 3000.6,
-  "baseline_mean": 1911.4843,
-  "z_score": 2.86
- },
- {
   "seen_at": "2026-10-23T12:15:16Z",
   "kind": "statistical",
   "severity": "warning",
@@ -405,6 +395,13 @@
  },
  {
   "seen_at": "2026-11-04T22:46:46Z",
+  "kind": "rule",
+  "severity": "warning",
+  "metric": "sources.solana_com",
+  "message": "data source 'solana_com' failed this run"
+ },
+ {
+  "seen_at": "2026-11-05T02:57:06Z",
   "kind": "rule",
   "severity": "warning",
   "metric": "sources.solana_com",

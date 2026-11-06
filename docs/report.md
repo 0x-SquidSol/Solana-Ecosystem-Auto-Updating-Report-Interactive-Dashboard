@@ -1,45 +1,46 @@
 # Solana Ecosystem Report
 
-> Generated 2026-11-06T18:08:47Z - heliostat 0.1.0 - 6/8 sources ok - refreshes every 15 min
+> Generated 2026-11-06T23:04:02Z - heliostat 0.1.0 - 6/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
+- 🟡 **WARNING**: TVL is 2.7 standard deviations below its recent mean (5.21B vs 5.41B)
 - 🟡 **WARNING**: data source 'solana_com' failed this run
 
 **Recently seen**
 
-- 2026-11-05T18:00Z data source 'solana_com' failed this run
-- 2026-11-06T03:29Z TVL is 2.7 standard deviations below its recent mean (5.26B vs 5.42B)
 - 2026-11-06T03:29Z data source 'solana_com' failed this run
 - 2026-11-06T11:21Z data source 'solana_com' failed this run
 - 2026-11-06T18:08Z data source 'solana_com' failed this run
+- 2026-11-06T23:04Z TVL is 2.7 standard deviations below its recent mean (5.21B vs 5.41B)
+- 2026-11-06T23:04Z data source 'solana_com' failed this run
 
 ## Network
 
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 2,226 |
-| Total TPS (incl. votes) | 2,226 |
-| Peak true TPS (30 min) | 3,572 |
-| Mean slot time | 0.214 s |
-| Slot | 466,204,639 |
-| Block height | 444,223,739 |
-| Epoch | 1079 - 17.74% complete, ~21.1 h remaining |
+| True TPS (non-vote) | 1,867 |
+| Total TPS (incl. votes) | 1,867 |
+| Peak true TPS (30 min) | 2,349 |
+| Mean slot time | 0.215 s |
+| Slot | 466,287,054 |
+| Block height | 444,305,960 |
+| Epoch | 1079 - 36.82% complete, ~16.3 h remaining |
 
 ## Validators
 
 | Metric | Value |
 |---|---|
-| Active validators | 658 |
-| Delinquent | 38 (0.35% of stake) |
+| Active validators | 659 |
+| Delinquent | 37 (0.32% of stake) |
 | Consensus stall buffer | 1.0% of the 33.3% halt threshold consumed |
 | Total stake | 434,917,723 SOL |
 | Nakamoto coefficient | 17 |
 | Top-10 stake share | 24.7% |
 | Top-20 stake share | 36.2% |
 | Client stake split | agave 99.3% / firedancer 0.6% / unknown 0.0% |
-| Stake-weighted commission | 26.89% |
+| Stake-weighted commission | 26.88% |
 
 **Top validators by stake**
 
@@ -60,31 +61,31 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $89.87 (+1.2% 24h, -5.2% 7d) |
-| Price sources | cross-checked, 0.171% apart |
-| Market cap | $53.05B |
-| TVL | $5.28B (-4.6% 24h) |
-| Stablecoin supply | $14.54B |
+| SOL price | $89.95 (+0.4% 24h, -5.6% 7d) |
+| Price sources | cross-checked, 0.049% apart |
+| Market cap | $53.11B |
+| TVL | $5.21B (-5.8% 24h) |
+| Stablecoin supply | $14.51B |
 | DEX volume (24h) | $2.20B |
-| REV (24h) | $629.8K (network fees $499.4K + Jito tips $130.4K) |
-| App fees (24h) | $9.64M |
+| REV (24h) | $628.0K (network fees $499.4K + Jito tips $128.5K) |
+| App fees (24h) | $9.71M |
 | Median fee (user txs) | – lamports |
-| Circulating supply | 590,342,639 SOL |
+| Circulating supply | 590,342,542 SOL |
 
 ## Ecosystem Growth
 
 | Metric | Value |
 |---|---|
-| Tokenized assets (RWA) on Solana | $591.99M across 13 protocols |
+| Tokenized assets (RWA) on Solana | $601.36M across 13 protocols |
 | Daily active addresses | available via optional DUNE_API_KEY |
 
 **Largest tokenized-asset protocols**
 
-- OnRe: $308.58M
-- Huma: $236.26M
-- Plume Vaults: $36.79M
+- OnRe: $308.55M
+- Huma: $245.70M
+- Plume Vaults: $36.80M
 - Mansory: $2.51M
-- International Stable Currency: $2.43M
+- International Stable Currency: $2.40M
 
 ## News & Upgrades
 
@@ -109,21 +110,21 @@
 
 **SIMD Activity**
 
+- [SIMD-0701: Vote Account v5 (#701)](https://github.com/solana-foundation/solana-improvement-documents/commit/ae7b00f3287a614c5aa5d0a7ceb7bad0cdc4e022) - 2026-11-06
+- [SIMD-0602: Disallow Nonce Account as Program ID (#602)](https://github.com/solana-foundation/solana-improvement-documents/commit/809a97a0b0e0f2190fa5d494bcc5856a06907969) - 2026-11-06
 - [SIMD-0685: Loader V3: Remove ExtendProgram (#685)](https://github.com/solana-foundation/solana-improvement-documents/commit/540f6ab4b9b71b584eae4f00c156194308d6650e) - 2026-11-02
-- [rekey simd-0529 big int mod exp (#715)](https://github.com/solana-foundation/solana-improvement-documents/commit/0434aab3b2c6b596f607194bee44e94088ff2591) - 2026-11-01
-- [SIMD-0567: CU-optimized ATA Program (`p-ATA`) (#567)](https://github.com/solana-foundation/solana-improvement-documents/commit/93cdf03a368a8bb2743a7f8d458a4cd36d2a904f) - 2026-11-01
 
 ## Data Sources
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-11-06T18:08:37Z |
-| validators | ok | 2026-11-06T18:08:46Z |
-| supply | ok | 2026-11-06T18:08:47Z |
-| defillama | ok | 2026-11-06T18:08:37Z |
-| price | ok | 2026-11-06T18:08:35Z |
-| news | ok | 2026-11-06T18:08:41Z |
-| solana_com | failed: HTTP 429 (https://solana.com/data) | 2026-11-06T18:08:39Z |
-| dune | off (optional) | 2026-11-06T18:08:35Z |
+| network | ok | 2026-11-06T23:03:51Z |
+| validators | ok | 2026-11-06T23:04:00Z |
+| supply | ok | 2026-11-06T23:04:02Z |
+| defillama | ok | 2026-11-06T23:03:51Z |
+| price | ok | 2026-11-06T23:03:49Z |
+| news | ok | 2026-11-06T23:03:55Z |
+| solana_com | failed: HTTP 429 (https://solana.com/data) | 2026-11-06T23:03:53Z |
+| dune | off (optional) | 2026-11-06T23:03:49Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

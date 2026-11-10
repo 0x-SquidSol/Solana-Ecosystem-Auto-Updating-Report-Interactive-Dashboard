@@ -563,5 +563,22 @@
   "severity": "warning",
   "metric": "sources.solana_com",
   "message": "data source 'solana_com' failed this run"
+ },
+ {
+  "seen_at": "2026-11-10T19:59:34Z",
+  "kind": "statistical",
+  "severity": "alert",
+  "metric": "validators.delinquent_stake_pct",
+  "message": "delinquent stake is 5.5 standard deviations above its recent mean (1.34 vs 0.304)",
+  "value": 1.34,
+  "baseline_mean": 0.304,
+  "z_score": 5.53
+ },
+ {
+  "seen_at": "2026-11-10T19:59:34Z",
+  "kind": "rule",
+  "severity": "warning",
+  "metric": "sources.solana_com",
+  "message": "data source 'solana_com' failed this run"
  }
 ]

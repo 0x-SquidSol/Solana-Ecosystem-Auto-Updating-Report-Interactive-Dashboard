@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-11-11T06:52:47Z - heliostat 0.1.0 - 6/8 sources ok - refreshes every 15 min
+> Generated 2026-11-11T14:47:45Z - heliostat 0.1.0 - 6/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -8,37 +8,37 @@
 
 **Recently seen**
 
-- 2026-11-10T12:36Z data source 'solana_com' failed this run
 - 2026-11-10T19:59Z delinquent stake is 5.5 standard deviations above its recent mean (1.34 vs 0.304)
 - 2026-11-10T19:59Z data source 'solana_com' failed this run
 - 2026-11-11T00:26Z data source 'solana_com' failed this run
 - 2026-11-11T06:52Z data source 'solana_com' failed this run
+- 2026-11-11T14:47Z data source 'solana_com' failed this run
 
 ## Network
 
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,374 |
-| Total TPS (incl. votes) | 1,374 |
-| Peak true TPS (30 min) | 1,876 |
-| Mean slot time | 0.214 s |
-| Slot | 468,029,488 |
-| Block height | 446,045,977 |
-| Epoch | 1083 - 40.16% complete, ~15.4 h remaining |
+| True TPS (non-vote) | 2,181 |
+| Total TPS (incl. votes) | 2,181 |
+| Peak true TPS (30 min) | 2,997 |
+| Mean slot time | 0.215 s |
+| Slot | 468,162,215 |
+| Block height | 446,178,542 |
+| Epoch | 1083 - 70.88% complete, ~7.5 h remaining |
 
 ## Validators
 
 | Metric | Value |
 |---|---|
-| Active validators | 658 |
-| Delinquent | 41 (0.23% of stake) |
+| Active validators | 659 |
+| Delinquent | 40 (0.22% of stake) |
 | Consensus stall buffer | 0.7% of the 33.3% halt threshold consumed |
 | Total stake | 433,423,964 SOL |
-| Nakamoto coefficient | 17 |
+| Nakamoto coefficient | 18 |
 | Top-10 stake share | 24.6% |
 | Top-20 stake share | 36.1% |
-| Client stake split | agave 97.9% / firedancer 2.1% |
+| Client stake split | agave 99.2% / firedancer 0.8% |
 | Stake-weighted commission | 25.83% |
 
 **Top validators by stake**
@@ -60,31 +60,31 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $82.52 (-4.1% 24h, -9.6% 7d) |
-| Price sources | cross-checked, 0.095% apart |
-| Market cap | $48.80B |
-| TVL | $5.02B (-0.6% 24h) |
-| Stablecoin supply | $14.52B |
+| SOL price | $84.17 (-0.0% 24h, -8.7% 7d) |
+| Price sources | cross-checked, 0.111% apart |
+| Market cap | $49.78B |
+| TVL | $5.05B (-0.0% 24h) |
+| Stablecoin supply | $14.47B |
 | DEX volume (24h) | $1.34B |
-| REV (24h) | $569.4K (network fees $444.5K + Jito tips $124.9K) |
-| App fees (24h) | $8.16M |
+| REV (24h) | $574.8K (network fees $444.5K + Jito tips $130.3K) |
+| App fees (24h) | $8.41M |
 | Median fee (user txs) | – lamports |
-| Circulating supply | 591,408,480 SOL |
+| Circulating supply | 591,408,369 SOL |
 
 ## Ecosystem Growth
 
 | Metric | Value |
 |---|---|
-| Tokenized assets (RWA) on Solana | $582.21M across 13 protocols |
+| Tokenized assets (RWA) on Solana | $582.26M across 13 protocols |
 | Daily active addresses | available via optional DUNE_API_KEY |
 
 **Largest tokenized-asset protocols**
 
-- OnRe: $309.24M
-- Huma: $225.86M
-- Plume Vaults: $36.89M
-- Mansory: $2.43M
-- International Stable Currency: $2.39M
+- OnRe: $309.26M
+- Huma: $225.79M
+- Plume Vaults: $36.90M
+- Mansory: $2.41M
+- International Stable Currency: $2.38M
 
 ## News & Upgrades
 
@@ -103,9 +103,9 @@
 
 **Firedancer Releases**
 
-- [Firedancer Mainnet Release v26.10.6](https://github.com/firedancer-io/firedancer/releases/tag/v26.10.6) - 2026-11-10
-- [Firedancer Mainnet Release v26.10.5](https://github.com/firedancer-io/firedancer/releases/tag/v26.10.5) - 2026-10-27
-- [Firedancer Mainnet Release v26.10.4](https://github.com/firedancer-io/firedancer/releases/tag/v26.10.4) - 2026-10-21
+- [Firedancer Testnet Release v26.11.0](https://github.com/firedancer-io/firedancer/releases/tag/v26.11.0) - 2026-11-11
+- [Firedancer Mainnet Release v26.10.8](https://github.com/firedancer-io/firedancer/releases/tag/v26.10.8) - 2026-11-11
+- [v26.10.7](https://github.com/firedancer-io/firedancer/releases/tag/v26.10.7) - 2026-11-11
 
 **SIMD Activity**
 
@@ -117,13 +117,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-11-11T06:52:36Z |
-| validators | ok | 2026-11-11T06:52:46Z |
-| supply | ok | 2026-11-11T06:52:47Z |
-| defillama | ok | 2026-11-11T06:52:37Z |
-| price | ok | 2026-11-11T06:52:34Z |
-| news | ok | 2026-11-11T06:52:40Z |
-| solana_com | failed: HTTP 429 (https://solana.com/data) | 2026-11-11T06:52:38Z |
-| dune | off (optional) | 2026-11-11T06:52:34Z |
+| network | ok | 2026-11-11T14:47:35Z |
+| validators | ok | 2026-11-11T14:47:43Z |
+| supply | ok | 2026-11-11T14:47:45Z |
+| defillama | ok | 2026-11-11T14:47:36Z |
+| price | ok | 2026-11-11T14:47:33Z |
+| news | ok | 2026-11-11T14:47:38Z |
+| solana_com | failed: HTTP 429 (https://solana.com/data) | 2026-11-11T14:47:37Z |
+| dune | off (optional) | 2026-11-11T14:47:33Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

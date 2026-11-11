@@ -1,22 +1,5 @@
 [
  {
-  "seen_at": "2026-10-28T17:22:27Z",
-  "kind": "statistical",
-  "severity": "warning",
-  "metric": "validators.delinquent_stake_pct",
-  "message": "delinquent stake is 3.4 standard deviations above its recent mean (0.9 vs 0.156667)",
-  "value": 0.9,
-  "baseline_mean": 0.1567,
-  "z_score": 3.37
- },
- {
-  "seen_at": "2026-10-28T17:22:27Z",
-  "kind": "rule",
-  "severity": "warning",
-  "metric": "sources.solana_com",
-  "message": "data source 'solana_com' failed this run"
- },
- {
   "seen_at": "2026-10-28T21:46:32Z",
   "kind": "statistical",
   "severity": "warning",
@@ -567,6 +550,23 @@
  },
  {
   "seen_at": "2026-11-11T14:47:45Z",
+  "kind": "rule",
+  "severity": "warning",
+  "metric": "sources.solana_com",
+  "message": "data source 'solana_com' failed this run"
+ },
+ {
+  "seen_at": "2026-11-11T21:38:32Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "network.tps_true",
+  "message": "true TPS is 2.7 standard deviations above its recent mean (2,754 vs 1,652)",
+  "value": 2754.1,
+  "baseline_mean": 1651.63,
+  "z_score": 2.65
+ },
+ {
+  "seen_at": "2026-11-11T21:38:32Z",
   "kind": "rule",
   "severity": "warning",
   "metric": "sources.solana_com",

@@ -1,12 +1,5 @@
 [
  {
-  "seen_at": "2026-10-31T19:56:25Z",
-  "kind": "rule",
-  "severity": "warning",
-  "metric": "sources.solana_com",
-  "message": "data source 'solana_com' failed this run"
- },
- {
   "seen_at": "2026-10-31T22:57:12Z",
   "kind": "rule",
   "severity": "warning",
@@ -466,6 +459,43 @@
  },
  {
   "seen_at": "2026-11-14T17:01:33Z",
+  "kind": "rule",
+  "severity": "warning",
+  "metric": "sources.solana_com",
+  "message": "data source 'solana_com' failed this run"
+ },
+ {
+  "seen_at": "2026-11-14T21:25:37Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "network.tps_true",
+  "message": "true TPS is 3.2 standard deviations above its recent mean (3,054 vs 1,670)",
+  "value": 3054.2,
+  "baseline_mean": 1670.3839,
+  "z_score": 3.22
+ },
+ {
+  "seen_at": "2026-11-14T21:25:37Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "defillama.tvl_usd",
+  "message": "TVL is 2.8 standard deviations below its recent mean (4.70B vs 5.05B)",
+  "value": 4701941119.0,
+  "baseline_mean": 5050938953.3226,
+  "z_score": -2.8
+ },
+ {
+  "seen_at": "2026-11-14T21:25:37Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "price.price_usd",
+  "message": "SOL price is 3.0 standard deviations below its recent mean (69.79 vs 84.2135)",
+  "value": 69.79,
+  "baseline_mean": 84.2135,
+  "z_score": -3.0
+ },
+ {
+  "seen_at": "2026-11-14T21:25:37Z",
   "kind": "rule",
   "severity": "warning",
   "metric": "sources.solana_com",

@@ -1,39 +1,38 @@
 # Solana Ecosystem Report
 
-> Generated 2026-11-14T03:57:17Z - heliostat 0.1.0 - 6/8 sources ok - refreshes every 15 min
+> Generated 2026-11-14T11:09:25Z - heliostat 0.1.0 - 6/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
-- 🟡 **WARNING**: SOL price is 2.7 standard deviations below its recent mean (75.21 vs 85.2611)
 - 🟡 **WARNING**: data source 'solana_com' failed this run
 
 **Recently seen**
 
-- 2026-11-13T11:31Z data source 'solana_com' failed this run
 - 2026-11-13T18:44Z data source 'solana_com' failed this run
 - 2026-11-13T23:53Z data source 'solana_com' failed this run
 - 2026-11-14T03:57Z SOL price is 2.7 standard deviations below its recent mean (75.21 vs 85.2611)
 - 2026-11-14T03:57Z data source 'solana_com' failed this run
+- 2026-11-14T11:09Z data source 'solana_com' failed this run
 
 ## Network
 
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,913 |
-| Total TPS (incl. votes) | 1,913 |
-| Peak true TPS (30 min) | 2,784 |
-| Mean slot time | 0.215 s |
-| Slot | 469,185,230 |
-| Block height | 447,200,371 |
-| Epoch | 1086 - 7.69% complete, ~23.8 h remaining |
+| True TPS (non-vote) | 1,066 |
+| Total TPS (incl. votes) | 1,066 |
+| Peak true TPS (30 min) | 1,367 |
+| Mean slot time | 0.214 s |
+| Slot | 469,305,753 |
+| Block height | 447,320,847 |
+| Epoch | 1086 - 35.59% complete, ~16.5 h remaining |
 
 ## Validators
 
 | Metric | Value |
 |---|---|
-| Active validators | 663 |
-| Delinquent | 36 (0.09% of stake) |
+| Active validators | 661 |
+| Delinquent | 38 (0.11% of stake) |
 | Consensus stall buffer | 0.3% of the 33.3% halt threshold consumed |
 | Total stake | 429,651,631 SOL |
 | Nakamoto coefficient | 18 |
@@ -47,7 +46,7 @@
 | # | Vote account | Stake | Share | Commission |
 |---|---|---|---|---|
 | 1 | `he1i..uBtk` | 16,955,905 SOL | 3.95% | 0% |
-| 2 | `CcaH..oTN1` | 16,374,909 SOL | 3.81% | 7% |
+| 2 | `CcaH..oTN1` | 16,374,909 SOL | 3.82% | 7% |
 | 3 | `3N7s..iD5g` | 12,611,498 SOL | 2.94% | 0% |
 | 4 | `8Gbw..F8iD` | 10,140,468 SOL | 2.36% | 0% |
 | 5 | `51JB..UNAm` | 9,736,890 SOL | 2.27% | 10% |
@@ -61,31 +60,31 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $75.21 (-3.8% 24h, -16.0% 7d) |
-| Price sources | cross-checked, 0.193% apart |
-| Market cap | $44.49B |
-| TVL | $4.83B (-3.1% 24h) |
-| Stablecoin supply | $13.96B |
-| DEX volume (24h) | $1.45B |
-| REV (24h) | $562.3K (network fees $448.8K + Jito tips $113.5K) |
-| App fees (24h) | $9.34M |
+| SOL price | $75.68 (-6.1% 24h, -15.9% 7d) |
+| Price sources | cross-checked, 0.080% apart |
+| Market cap | $44.77B |
+| TVL | $4.82B (-3.7% 24h) |
+| Stablecoin supply | $14.07B |
+| DEX volume (24h) | $1.47B |
+| REV (24h) | $557.4K (network fees $448.8K + Jito tips $108.7K) |
+| App fees (24h) | $9.29M |
 | Median fee (user txs) | – lamports |
-| Circulating supply | 591,573,947 SOL |
+| Circulating supply | 591,573,858 SOL |
 
 ## Ecosystem Growth
 
 | Metric | Value |
 |---|---|
-| Tokenized assets (RWA) on Solana | $605.35M across 13 protocols |
+| Tokenized assets (RWA) on Solana | $604.90M across 13 protocols |
 | Daily active addresses | available via optional DUNE_API_KEY |
 
 **Largest tokenized-asset protocols**
 
-- OnRe: $308.89M
-- Huma: $248.63M
-- Plume Vaults: $37.04M
-- International Stable Currency: $2.39M
-- Mansory: $2.34M
+- OnRe: $308.45M
+- Huma: $248.61M
+- Plume Vaults: $37.01M
+- International Stable Currency: $2.44M
+- Mansory: $2.33M
 
 ## News & Upgrades
 
@@ -118,13 +117,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-11-14T03:57:07Z |
-| validators | ok | 2026-11-14T03:57:15Z |
-| supply | ok | 2026-11-14T03:57:17Z |
-| defillama | ok | 2026-11-14T03:57:07Z |
-| price | ok | 2026-11-14T03:57:05Z |
-| news | ok | 2026-11-14T03:57:10Z |
-| solana_com | failed: HTTP 429 (https://solana.com/data) | 2026-11-14T03:57:09Z |
-| dune | off (optional) | 2026-11-14T03:57:05Z |
+| network | ok | 2026-11-14T11:09:15Z |
+| validators | ok | 2026-11-14T11:09:24Z |
+| supply | ok | 2026-11-14T11:09:25Z |
+| defillama | ok | 2026-11-14T11:09:15Z |
+| price | ok | 2026-11-14T11:09:13Z |
+| news | ok | 2026-11-14T11:09:18Z |
+| solana_com | failed: HTTP 429 (https://solana.com/data) | 2026-11-14T11:09:17Z |
+| dune | off (optional) | 2026-11-14T11:09:13Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

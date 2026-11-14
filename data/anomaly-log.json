@@ -1,19 +1,5 @@
 [
  {
-  "seen_at": "2026-10-31T11:14:08Z",
-  "kind": "rule",
-  "severity": "warning",
-  "metric": "sources.solana_com",
-  "message": "data source 'solana_com' failed this run"
- },
- {
-  "seen_at": "2026-10-31T16:05:56Z",
-  "kind": "rule",
-  "severity": "warning",
-  "metric": "sources.solana_com",
-  "message": "data source 'solana_com' failed this run"
- },
- {
   "seen_at": "2026-10-31T19:56:25Z",
   "kind": "rule",
   "severity": "warning",
@@ -463,6 +449,23 @@
  },
  {
   "seen_at": "2026-11-14T11:09:25Z",
+  "kind": "rule",
+  "severity": "warning",
+  "metric": "sources.solana_com",
+  "message": "data source 'solana_com' failed this run"
+ },
+ {
+  "seen_at": "2026-11-14T17:01:33Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "price.price_usd",
+  "message": "SOL price is 2.8 standard deviations below its recent mean (72.42 vs 84.6067)",
+  "value": 72.42,
+  "baseline_mean": 84.6067,
+  "z_score": -2.8
+ },
+ {
+  "seen_at": "2026-11-14T17:01:33Z",
   "kind": "rule",
   "severity": "warning",
   "metric": "sources.solana_com",

@@ -1,12 +1,5 @@
 [
  {
-  "seen_at": "2026-10-31T00:14:43Z",
-  "kind": "rule",
-  "severity": "warning",
-  "metric": "sources.solana_com",
-  "message": "data source 'solana_com' failed this run"
- },
- {
   "seen_at": "2026-10-31T05:42:07Z",
   "kind": "rule",
   "severity": "warning",
@@ -453,6 +446,23 @@
  },
  {
   "seen_at": "2026-11-13T23:53:46Z",
+  "kind": "rule",
+  "severity": "warning",
+  "metric": "sources.solana_com",
+  "message": "data source 'solana_com' failed this run"
+ },
+ {
+  "seen_at": "2026-11-14T03:57:17Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "price.price_usd",
+  "message": "SOL price is 2.7 standard deviations below its recent mean (75.21 vs 85.2611)",
+  "value": 75.21,
+  "baseline_mean": 85.2611,
+  "z_score": -2.71
+ },
+ {
+  "seen_at": "2026-11-14T03:57:17Z",
   "kind": "rule",
   "severity": "warning",
   "metric": "sources.solana_com",

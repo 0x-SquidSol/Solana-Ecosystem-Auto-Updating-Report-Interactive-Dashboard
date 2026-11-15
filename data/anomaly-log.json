@@ -1,12 +1,5 @@
 [
  {
-  "seen_at": "2026-10-31T22:57:12Z",
-  "kind": "rule",
-  "severity": "warning",
-  "metric": "sources.solana_com",
-  "message": "data source 'solana_com' failed this run"
- },
- {
   "seen_at": "2026-11-01T01:46:30Z",
   "kind": "rule",
   "severity": "warning",
@@ -496,6 +489,40 @@
  },
  {
   "seen_at": "2026-11-14T21:25:37Z",
+  "kind": "rule",
+  "severity": "warning",
+  "metric": "sources.solana_com",
+  "message": "data source 'solana_com' failed this run"
+ },
+ {
+  "seen_at": "2026-11-15T01:08:55Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "defillama.tvl_usd",
+  "message": "TVL is 3.2 standard deviations below its recent mean (4.61B vs 5.01B)",
+  "value": 4605467588.0,
+  "baseline_mean": 5008937639.2222,
+  "z_score": -3.19
+ },
+ {
+  "seen_at": "2026-11-15T01:08:55Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "price.price_usd",
+  "message": "SOL price is 2.6 standard deviations below its recent mean (69.29 vs 82.67)",
+  "value": 69.29,
+  "baseline_mean": 82.67,
+  "z_score": -2.6
+ },
+ {
+  "seen_at": "2026-11-15T01:08:55Z",
+  "kind": "rule",
+  "severity": "warning",
+  "metric": "price.price_divergence_pct",
+  "message": "price sources diverge by 1.078% (CoinGecko vs Jupiter)"
+ },
+ {
+  "seen_at": "2026-11-15T01:08:55Z",
   "kind": "rule",
   "severity": "warning",
   "metric": "sources.solana_com",

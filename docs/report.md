@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-11-20T01:15:54Z - heliostat 0.1.0 - 6/8 sources ok - refreshes every 15 min
+> Generated 2026-11-20T08:44:34Z - heliostat 0.1.0 - 6/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -8,24 +8,24 @@
 
 **Recently seen**
 
-- 2026-11-18T21:39Z data source 'solana_com' failed this run
 - 2026-11-19T02:47Z data source 'solana_com' failed this run
 - 2026-11-19T10:52Z data source 'solana_com' failed this run
 - 2026-11-19T19:14Z data source 'solana_com' failed this run
 - 2026-11-20T01:15Z data source 'solana_com' failed this run
+- 2026-11-20T08:44Z data source 'solana_com' failed this run
 
 ## Network
 
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 2,037 |
-| Total TPS (incl. votes) | 2,037 |
-| Peak true TPS (30 min) | 2,782 |
-| Mean slot time | 0.216 s |
-| Slot | 471,549,555 |
-| Block height | 449,563,675 |
-| Epoch | 1091 - 54.99% complete, ~11.7 h remaining |
+| True TPS (non-vote) | 1,421 |
+| Total TPS (incl. votes) | 1,421 |
+| Peak true TPS (30 min) | 1,684 |
+| Mean slot time | 0.215 s |
+| Slot | 471,674,750 |
+| Block height | 449,688,846 |
+| Epoch | 1091 - 83.97% complete, ~4.1 h remaining |
 
 ## Validators
 
@@ -60,31 +60,31 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $73.20 (-0.4% 24h, -10.7% 7d) |
-| Price sources | cross-checked, 0.205% apart |
-| Market cap | $43.32B |
-| TVL | $4.70B (-0.0% 24h) |
-| Stablecoin supply | $13.19B |
-| DEX volume (24h) | $1.97B |
-| REV (24h) | $685.2K (network fees $560.5K + Jito tips $124.8K) |
-| App fees (24h) | $10.77M |
+| SOL price | $72.66 (-2.3% 24h, -9.4% 7d) |
+| Price sources | cross-checked, 0.036% apart |
+| Market cap | $42.99B |
+| TVL | $4.69B (-0.5% 24h) |
+| Stablecoin supply | $13.00B |
+| DEX volume (24h) | $1.85B |
+| REV (24h) | $587.0K (network fees $470.0K + Jito tips $117.0K) |
+| App fees (24h) | $9.57M |
 | Median fee (user txs) | – lamports |
-| Circulating supply | 591,851,356 SOL |
+| Circulating supply | 591,851,234 SOL |
 
 ## Ecosystem Growth
 
 | Metric | Value |
 |---|---|
-| Tokenized assets (RWA) on Solana | $571.73M across 12 protocols |
+| Tokenized assets (RWA) on Solana | $571.59M across 12 protocols |
 | Daily active addresses | available via optional DUNE_API_KEY |
 
 **Largest tokenized-asset protocols**
 
-- OnRe: $291.71M
-- Huma: $231.42M
+- OnRe: $291.60M
+- Huma: $231.40M
 - Plume Vaults: $40.05M
 - International Stable Currency: $2.40M
-- Mansory: $2.14M
+- Mansory: $2.13M
 
 ## News & Upgrades
 
@@ -109,21 +109,21 @@
 
 **SIMD Activity**
 
+- [Amend 0529: charge a flat cu first before execution (#707)](https://github.com/solana-foundation/solana-improvement-documents/commit/6cf17cb7138d3fac03f5b637c1fde91a00fb48fc) - 2026-11-20
 - [SIMD-0701: Vote Account v5 (#701)](https://github.com/solana-foundation/solana-improvement-documents/commit/ae7b00f3287a614c5aa5d0a7ceb7bad0cdc4e022) - 2026-11-06
 - [SIMD-0602: Disallow Nonce Account as Program ID (#602)](https://github.com/solana-foundation/solana-improvement-documents/commit/809a97a0b0e0f2190fa5d494bcc5856a06907969) - 2026-11-06
-- [SIMD-0685: Loader V3: Remove ExtendProgram (#685)](https://github.com/solana-foundation/solana-improvement-documents/commit/540f6ab4b9b71b584eae4f00c156194308d6650e) - 2026-11-02
 
 ## Data Sources
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-11-20T01:15:43Z |
-| validators | ok | 2026-11-20T01:15:53Z |
-| supply | ok | 2026-11-20T01:15:54Z |
-| defillama | ok | 2026-11-20T01:15:43Z |
-| price | ok | 2026-11-20T01:15:42Z |
-| news | ok | 2026-11-20T01:15:47Z |
-| solana_com | failed: HTTP 429 (https://solana.com/data) | 2026-11-20T01:15:46Z |
-| dune | off (optional) | 2026-11-20T01:15:41Z |
+| network | ok | 2026-11-20T08:44:24Z |
+| validators | ok | 2026-11-20T08:44:34Z |
+| supply | ok | 2026-11-20T08:44:34Z |
+| defillama | ok | 2026-11-20T08:44:23Z |
+| price | ok | 2026-11-20T08:44:22Z |
+| news | ok | 2026-11-20T08:44:28Z |
+| solana_com | failed: HTTP 429 (https://solana.com/data) | 2026-11-20T08:44:26Z |
+| dune | off (optional) | 2026-11-20T08:44:22Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

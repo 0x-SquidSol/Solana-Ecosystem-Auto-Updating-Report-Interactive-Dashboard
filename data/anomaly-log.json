@@ -1,12 +1,5 @@
 [
  {
-  "seen_at": "2026-11-07T09:23:55Z",
-  "kind": "rule",
-  "severity": "warning",
-  "metric": "sources.solana_com",
-  "message": "data source 'solana_com' failed this run"
- },
- {
   "seen_at": "2026-11-07T15:48:13Z",
   "kind": "rule",
   "severity": "warning",
@@ -492,6 +485,23 @@
  },
  {
   "seen_at": "2026-11-21T03:57:37Z",
+  "kind": "rule",
+  "severity": "warning",
+  "metric": "sources.solana_com",
+  "message": "data source 'solana_com' failed this run"
+ },
+ {
+  "seen_at": "2026-11-21T12:00:11Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "defillama.tvl_usd",
+  "message": "TVL is 2.9 standard deviations below its recent mean (4.50B vs 4.71B)",
+  "value": 4495301769.0,
+  "baseline_mean": 4705318464.9615,
+  "z_score": -2.87
+ },
+ {
+  "seen_at": "2026-11-21T12:00:11Z",
   "kind": "rule",
   "severity": "warning",
   "metric": "sources.solana_com",

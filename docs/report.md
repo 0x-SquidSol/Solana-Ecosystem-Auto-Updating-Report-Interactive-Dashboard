@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-11-22T03:28:19Z - heliostat 0.1.0 - 6/8 sources ok - refreshes every 15 min
+> Generated 2026-11-22T11:47:38Z - heliostat 0.1.0 - 6/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -8,24 +8,24 @@
 
 **Recently seen**
 
-- 2026-11-21T12:00Z TVL is 2.9 standard deviations below its recent mean (4.50B vs 4.71B)
 - 2026-11-21T12:00Z data source 'solana_com' failed this run
 - 2026-11-21T18:50Z data source 'solana_com' failed this run
 - 2026-11-21T23:37Z data source 'solana_com' failed this run
 - 2026-11-22T03:28Z data source 'solana_com' failed this run
+- 2026-11-22T11:47Z data source 'solana_com' failed this run
 
 ## Network
 
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,382 |
-| Total TPS (incl. votes) | 1,382 |
-| Peak true TPS (30 min) | 1,804 |
-| Mean slot time | 0.216 s |
-| Slot | 472,390,078 |
-| Block height | 450,403,998 |
-| Epoch | 1093 - 49.56% complete, ~13.1 h remaining |
+| True TPS (non-vote) | 1,093 |
+| Total TPS (incl. votes) | 1,093 |
+| Peak true TPS (30 min) | 1,434 |
+| Mean slot time | 0.215 s |
+| Slot | 472,529,422 |
+| Block height | 450,543,311 |
+| Epoch | 1093 - 81.81% complete, ~4.7 h remaining |
 
 ## Validators
 
@@ -60,30 +60,30 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $69.45 (+2.2% 24h, +2.3% 7d) |
-| Price sources | cross-checked, 0.130% apart |
-| Market cap | $41.11B |
-| TVL | $4.59B (+0.9% 24h) |
-| Stablecoin supply | $13.13B |
-| DEX volume (24h) | $1.56B |
-| REV (24h) | $413.2K (network fees $317.1K + Jito tips $96.2K) |
-| App fees (24h) | $7.89M |
+| SOL price | $70.65 (+2.8% 24h, -1.5% 7d) |
+| Price sources | cross-checked, 0.033% apart |
+| Market cap | $41.82B |
+| TVL | $4.59B (+0.8% 24h) |
+| Stablecoin supply | $13.09B |
+| DEX volume (24h) | $1.35B |
+| REV (24h) | $397.3K (network fees $317.1K + Jito tips $80.3K) |
+| App fees (24h) | $7.79M |
 | Median fee (user txs) | – lamports |
-| Circulating supply | 591,961,579 SOL |
+| Circulating supply | 591,961,483 SOL |
 
 ## Ecosystem Growth
 
 | Metric | Value |
 |---|---|
-| Tokenized assets (RWA) on Solana | $521.25M across 11 protocols |
+| Tokenized assets (RWA) on Solana | $521.30M across 11 protocols |
 | Daily active addresses | available via optional DUNE_API_KEY |
 
 **Largest tokenized-asset protocols**
 
-- OnRe: $287.49M
-- Huma: $225.24M
-- International Stable Currency: $2.41M
-- Mansory: $2.11M
+- OnRe: $287.50M
+- Huma: $225.25M
+- International Stable Currency: $2.43M
+- Mansory: $2.12M
 - Exceed Finance exUSDC: $1.34M
 
 ## News & Upgrades
@@ -117,13 +117,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-11-22T03:28:18Z |
-| validators | ok | 2026-11-22T03:28:19Z |
-| supply | ok | 2026-11-22T03:28:17Z |
-| defillama | ok | 2026-11-22T03:28:09Z |
-| price | ok | 2026-11-22T03:28:07Z |
-| news | ok | 2026-11-22T03:28:12Z |
-| solana_com | failed: HTTP 429 (https://solana.com/data) | 2026-11-22T03:28:10Z |
-| dune | off (optional) | 2026-11-22T03:28:07Z |
+| network | ok | 2026-11-22T11:47:28Z |
+| validators | ok | 2026-11-22T11:47:37Z |
+| supply | ok | 2026-11-22T11:47:38Z |
+| defillama | ok | 2026-11-22T11:47:28Z |
+| price | ok | 2026-11-22T11:47:26Z |
+| news | ok | 2026-11-22T11:47:33Z |
+| solana_com | failed: HTTP 429 (https://solana.com/data) | 2026-11-22T11:47:30Z |
+| dune | off (optional) | 2026-11-22T11:47:26Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

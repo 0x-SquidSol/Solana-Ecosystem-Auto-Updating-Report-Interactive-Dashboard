@@ -1,6 +1,6 @@
 # Solana Ecosystem Report
 
-> Generated 2026-11-22T18:48:22Z - heliostat 0.1.0 - 6/8 sources ok - refreshes every 15 min
+> Generated 2026-11-22T23:56:04Z - heliostat 0.1.0 - 6/8 sources ok - refreshes every 15 min
 
 ## Anomalies
 
@@ -8,24 +8,24 @@
 
 **Recently seen**
 
-- 2026-11-21T18:50Z data source 'solana_com' failed this run
 - 2026-11-21T23:37Z data source 'solana_com' failed this run
 - 2026-11-22T03:28Z data source 'solana_com' failed this run
 - 2026-11-22T11:47Z data source 'solana_com' failed this run
 - 2026-11-22T18:48Z data source 'solana_com' failed this run
+- 2026-11-22T23:56Z data source 'solana_com' failed this run
 
 ## Network
 
 | Metric | Value |
 |---|---|
 | Health | healthy |
-| True TPS (non-vote) | 1,950 |
-| Total TPS (incl. votes) | 1,950 |
-| Peak true TPS (30 min) | 2,697 |
-| Mean slot time | 0.216 s |
-| Slot | 472,646,896 |
-| Block height | 450,660,519 |
-| Epoch | 1094 - 9.00% complete, ~23.6 h remaining |
+| True TPS (non-vote) | 1,755 |
+| Total TPS (incl. votes) | 1,755 |
+| Peak true TPS (30 min) | 2,163 |
+| Mean slot time | 0.215 s |
+| Slot | 472,732,690 |
+| Block height | 450,746,284 |
+| Epoch | 1094 - 28.86% complete, ~18.4 h remaining |
 
 ## Validators
 
@@ -60,16 +60,16 @@
 
 | Metric | Value |
 |---|---|
-| SOL price | $70.30 (-0.6% 24h, -1.6% 7d) |
-| Price sources | cross-checked, 0.007% apart |
-| Market cap | $41.62B |
-| TVL | $4.61B (+1.4% 24h) |
-| Stablecoin supply | $13.08B |
+| SOL price | $70.59 (+0.5% 24h, -2.3% 7d) |
+| Price sources | cross-checked, 0.021% apart |
+| Market cap | $41.79B |
+| TVL | $4.60B (+1.1% 24h) |
+| Stablecoin supply | $13.14B |
 | DEX volume (24h) | $1.35B |
-| REV (24h) | $393.5K (network fees $317.1K + Jito tips $76.5K) |
+| REV (24h) | $390.0K (network fees $317.1K + Jito tips $72.9K) |
 | App fees (24h) | $7.59M |
 | Median fee (user txs) | – lamports |
-| Circulating supply | 592,016,958 SOL |
+| Circulating supply | 592,016,861 SOL |
 
 ## Ecosystem Growth
 
@@ -80,9 +80,9 @@
 
 **Largest tokenized-asset protocols**
 
-- OnRe: $287.48M
-- Huma: $225.32M
-- International Stable Currency: $2.39M
+- OnRe: $287.46M
+- Huma: $225.33M
+- International Stable Currency: $2.40M
 - Mansory: $2.14M
 - Exceed Finance exUSDC: $1.34M
 
@@ -117,13 +117,13 @@
 
 | Source | Status | Fetched |
 |---|---|---|
-| network | ok | 2026-11-22T18:48:11Z |
-| validators | ok | 2026-11-22T18:48:21Z |
-| supply | ok | 2026-11-22T18:48:22Z |
-| defillama | ok | 2026-11-22T18:48:11Z |
-| price | ok | 2026-11-22T18:48:10Z |
-| news | ok | 2026-11-22T18:48:15Z |
-| solana_com | failed: HTTP 429 (https://solana.com/data) | 2026-11-22T18:48:13Z |
-| dune | off (optional) | 2026-11-22T18:48:09Z |
+| network | ok | 2026-11-22T23:55:53Z |
+| validators | ok | 2026-11-22T23:56:03Z |
+| supply | ok | 2026-11-22T23:56:04Z |
+| defillama | ok | 2026-11-22T23:55:52Z |
+| price | ok | 2026-11-22T23:55:51Z |
+| news | ok | 2026-11-22T23:55:57Z |
+| solana_com | failed: HTTP 429 (https://solana.com/data) | 2026-11-22T23:55:55Z |
+| dune | off (optional) | 2026-11-22T23:55:50Z |
 
 _On-chain data served by `https://api.mainnet-beta.solana.com`._

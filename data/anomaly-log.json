@@ -1,19 +1,5 @@
 [
  {
-  "seen_at": "2026-11-12T18:13:43Z",
-  "kind": "rule",
-  "severity": "warning",
-  "metric": "sources.solana_com",
-  "message": "data source 'solana_com' failed this run"
- },
- {
-  "seen_at": "2026-11-12T23:38:30Z",
-  "kind": "rule",
-  "severity": "warning",
-  "metric": "sources.solana_com",
-  "message": "data source 'solana_com' failed this run"
- },
- {
   "seen_at": "2026-11-13T03:34:25Z",
   "kind": "statistical",
   "severity": "warning",
@@ -474,6 +460,23 @@
  },
  {
   "seen_at": "2026-11-26T15:58:20Z",
+  "kind": "rule",
+  "severity": "warning",
+  "metric": "sources.solana_com",
+  "message": "data source 'solana_com' failed this run"
+ },
+ {
+  "seen_at": "2026-11-27T00:17:04Z",
+  "kind": "statistical",
+  "severity": "warning",
+  "metric": "validators.delinquent_stake_pct",
+  "message": "delinquent stake is 2.8 standard deviations above its recent mean (0.06 vs 0.0259091)",
+  "value": 0.06,
+  "baseline_mean": 0.0259,
+  "z_score": 2.79
+ },
+ {
+  "seen_at": "2026-11-27T00:17:04Z",
   "kind": "rule",
   "severity": "warning",
   "metric": "sources.solana_com",
